@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Label Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-05-09 06:23:37
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <labelLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="pattern_DescriptionOfInventoryComponents"
+      xlink:href="Hierarchy.xsd#pattern_DescriptionOfInventoryComponents" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DescriptionOfInventoryComponents"
+      xlink:to="pattern_DescriptionOfInventoryComponents_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DescriptionOfInventoryComponents_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Vivamus quis nunc. Proin porta tincidunt nunc. Pellentesque condimentum commodo wisi. Fusce gravida, ligula a placerat placerat, leo erat euismod lectus, et lacinia justo libero non pede.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_DescriptionOfInventoryComponents_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Description of Inventory Components</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryCostMethod"
+      xlink:href="Hierarchy.xsd#pattern_InventoryCostMethod" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryCostMethod"
+      xlink:to="pattern_InventoryCostMethod_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryCostMethod_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Praesent eleifend dignissim eros. Proin feugiat lobortis mi. Nunc congue. Fusce venenatis.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryCostMethod_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Cost Method</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryPoliciesHierarchy"
+      xlink:href="Hierarchy.xsd#pattern_InventoryPoliciesHierarchy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryPoliciesHierarchy"
+      xlink:to="pattern_InventoryPoliciesHierarchy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPoliciesHierarchy_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Ut venenatis, velit a accumsan interdum, odio metus mollis mauris, non pharetra augue arcu eu felis.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPoliciesHierarchy_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Policies [Hierarchy]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryPoliciesLineItems"
+      xlink:href="Hierarchy.xsd#pattern_InventoryPoliciesLineItems" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryPoliciesLineItems"
+      xlink:to="pattern_InventoryPoliciesLineItems_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPoliciesLineItems_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Phasellus eleifend, diam vitae dapibus pulvinar, erat ligula auctor dui, eget congue justo lorem hendrerit tellus.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPoliciesLineItems_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Policies [Line Items]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryPoliciesTable"
+      xlink:href="Hierarchy.xsd#pattern_InventoryPoliciesTable" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryPoliciesTable"
+      xlink:to="pattern_InventoryPoliciesTable_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPoliciesTable_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Nullam dui orci, scelerisque porttitor, volutpat a, porttitor a, enim. Sed lobortis. Maecenas scelerisque ullamcorper libero.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryPoliciesTable_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Policies [Table]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_InventoryValuationMethod"
+      xlink:href="Hierarchy.xsd#pattern_InventoryValuationMethod" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_InventoryValuationMethod"
+      xlink:to="pattern_InventoryValuationMethod_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryValuationMethod_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/documentation">Donec malesuada lorem id mi. Nunc ut purus ac nisl tempus accumsan. Ut pellentesque, sapien nec egestas fermentum, justo mauris sollicitudin mi, sed placerat elit est a lectus. Quisque in odio. Fusce tincidunt, justo sed eleifend posuere, mauris purus iaculis orci, et ullamcorper leo lorem in libero. Cras ullamcorper felis vitae eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_InventoryValuationMethod_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Inventory Valuation Method</label>
+  </labelLink>
+</linkbase>
