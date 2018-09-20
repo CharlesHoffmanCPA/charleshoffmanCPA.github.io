@@ -1,0 +1,222 @@
+XBRL Report Runner(tm), Version 1.10.7, presented by Coyote Reporting, LLC
+
+Current license expires:  Thu Feb 01 00:00:00 PST 2018
+
+[ XPath, XSL, and XQuery functionality provided by the Saxon XSLT and XQuery Processor from Saxonica Limited ]
+
+Type 'help' or '?' for a list of commands
+Type 'help <command>' for detailed assistance on specific commands
+
+Running script file:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/_ProcessUsingXRUN.xrun
+
+XRun> open 01-Hierarchy/Hierarchy-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/01-Hierarchy/Hierarchy-SampleInstance.xml]
+Duration:  87ms;  Approximate Memory in use:  5712888
+XRun> outputfile 01-Hierarchy/Hierarchy_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/01-Hierarchy/Hierarchy_XRun_Validation.html
+Duration:  0ms;  Approximate Memory in use:  5802920
+XRun> validate
+Duration:  692ms;  Approximate Memory in use:  9940648
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/01-Hierarchy/Hierarchy_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\01-Hierarchy\Hierarchy_XRun_Validation.html
+2017-05-10 10:31:13:673; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:13:760; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  235ms;  Approximate Memory in use:  10828896
+XRun> close
+Duration:  2ms;  Approximate Memory in use:  10828896
+XRun> open 02-RollUp/RollUp-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/02-RollUp/RollUp-SampleInstance.xml]
+Duration:  25ms;  Approximate Memory in use:  9882376
+XRun> outputfile 02-RollUp/RollUp_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/02-RollUp/RollUp_XRun_Validation.html
+Duration:  0ms;  Approximate Memory in use:  9882376
+XRun> validate
+Duration:  364ms;  Approximate Memory in use:  13601864
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/02-RollUp/RollUp_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\02-RollUp\RollUp_XRun_Validation.html
+2017-05-10 10:31:14:156; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:14:173; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  21ms;  Approximate Memory in use:  10706896
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  10706896
+XRun> open 03-RollForward/RollForward-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/03-RollForward/RollForward-SampleInstance.xml]
+Duration:  21ms;  Approximate Memory in use:  13801744
+XRun> outputfile 03-RollForward/RollForward_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/03-RollForward/RollForward_XRun_Validation.html
+Duration:  0ms;  Approximate Memory in use:  13801744
+XRun> validate
+Duration:  427ms;  Approximate Memory in use:  8540680
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/03-RollForward/RollForward_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\03-RollForward\RollForward_XRun_Validation.html
+2017-05-10 10:31:14:626; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:14:639; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  16ms;  Approximate Memory in use:  9719152
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  9719152
+XRun> open 08-TextBlock/TextBlock-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/08-TextBlock/TextBlock-SampleInstance.xml]
+Duration:  21ms;  Approximate Memory in use:  9047992
+XRun> outputfile 08-TextBlock/TextBlock_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/08-TextBlock/TextBlock_XRun_Validation.html
+Duration:  0ms;  Approximate Memory in use:  9047992
+XRun> validate
+Duration:  267ms;  Approximate Memory in use:  10528216
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/08-TextBlock/TextBlock_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\08-TextBlock\TextBlock_XRun_Validation.html
+2017-05-10 10:31:14:933; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:14:952; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  25ms;  Approximate Memory in use:  11758896
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  11758896
+XRun> open 04-CompoundFact/CompoundFact-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/04-CompoundFact/CompoundFact-SampleInstance.xml]
+Duration:  23ms;  Approximate Memory in use:  11308992
+XRun> outputfile 04-CompoundFact/CompoundFact_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/04-CompoundFact/CompoundFact_XRun_Validation.html
+Duration:  1ms;  Approximate Memory in use:  11308992
+XRun> validate
+Duration:  393ms;  Approximate Memory in use:  13702440
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/04-CompoundFact/CompoundFact_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\04-CompoundFact\CompoundFact_XRun_Validation.html
+2017-05-10 10:31:15:376; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:15:399; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  28ms;  Approximate Memory in use:  14943704
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  14943704
+XRun> open 05-Adjustment/Adjustment-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/05-Adjustment/Adjustment-SampleInstance.xml]
+Duration:  27ms;  Approximate Memory in use:  14044872
+XRun> outputfile 05-Adjustment/Adjustment_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/05-Adjustment/Adjustment_XRun_Validation.html
+Duration:  0ms;  Approximate Memory in use:  14044872
+XRun> validate
+Duration:  416ms;  Approximate Memory in use:  7959904
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/05-Adjustment/Adjustment_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\05-Adjustment\Adjustment_XRun_Validation.html
+2017-05-10 10:31:15:850; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:15:863; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  21ms;  Approximate Memory in use:  9167080
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  9268360
+XRun> open 06-Variance/Variance-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/06-Variance/Variance-SampleInstance.xml]
+Duration:  22ms;  Approximate Memory in use:  7710744
+XRun> outputfile 06-Variance/Variance_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/06-Variance/Variance_XRun_Validation.html
+Duration:  1ms;  Approximate Memory in use:  7710744
+XRun> validate
+Duration:  397ms;  Approximate Memory in use:  10703600
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/06-Variance/Variance_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\06-Variance\Variance_XRun_Validation.html
+2017-05-10 10:31:16:292; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:16:309; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  24ms;  Approximate Memory in use:  11901976
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  11945536
+XRun> open 09-Grid/Grid-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/09-Grid/Grid-SampleInstance.xml]
+Duration:  27ms;  Approximate Memory in use:  10706280
+XRun> outputfile 09-Grid/Grid_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/09-Grid/Grid_XRun_Validation.html
+Duration:  0ms;  Approximate Memory in use:  10706280
+XRun> validate
+Duration:  461ms;  Approximate Memory in use:  11527056
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/09-Grid/Grid_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\09-Grid\Grid_XRun_Validation.html
+2017-05-10 10:31:16:802; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:16:813; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  16ms;  Approximate Memory in use:  12723544
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  12723544
+XRun> open 07-ComplexComputation/ComplexComputation-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/07-ComplexComputation/ComplexComputation-SampleInstance.xml]
+Duration:  20ms;  Approximate Memory in use:  12038160
+XRun> outputfile 07-ComplexComputation/ComplexComputation_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/07-ComplexComputation/ComplexComputation_XRun_Validation.html
+Duration:  1ms;  Approximate Memory in use:  12038160
+XRun> validate
+Duration:  369ms;  Approximate Memory in use:  14495352
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/07-ComplexComputation/ComplexComputation_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\07-ComplexComputation\ComplexComputation_XRun_Validation.html
+2017-05-10 10:31:17:209; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:17:223; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  18ms;  Approximate Memory in use:  15657408
+XRun> close
+Duration:  2ms;  Approximate Memory in use:  15657408
+XRun> open 10-RollForwardInfo/RollForwardInfo-SampleInstance.xml
+Opening [file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/10-RollForwardInfo/RollForwardInfo-SampleInstance.xml]
+Duration:  34ms;  Approximate Memory in use:  5956656
+XRun> outputfile 10-RollForwardInfo/RollForwardInfo_XRun_Validation.html
+Output file set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/10-RollForwardInfo/RollForwardInfo_XRun_Validation.html
+Duration:  0ms;  Approximate Memory in use:  5956656
+XRun> validate
+Duration:  107ms;  Approximate Memory in use:  7469768
+XRun> signalhtml
+No signals to write
+Output File (variable '_outputFile') set to:  file:/C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/10-RollForwardInfo/RollForwardInfo_XRun_Validation.html
+Saving signals to C:\Users\Charlie\Documents\CurrentVersions\DigitalFinancialReporting\Metapatterns\2017-05-07\10-RollForwardInfo\RollForwardInfo_XRun_Validation.html
+2017-05-10 10:31:17:371; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+2017-05-10 10:31:17:382; PROGRESS; {http://www.coyotereporting.com/xre/xsl}XslTransformProgressSignal>
+	
+
+Duration:  16ms;  Approximate Memory in use:  8661840
+XRun> close
+Duration:  1ms;  Approximate Memory in use:  8661840
+Total Script Duration:  4636ms;  Approximate Memory in use:  8661840

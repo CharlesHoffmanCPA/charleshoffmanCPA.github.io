@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='en'>
+ <head>
+ <title>Concept Arrangement Patterns Summary (Metapatterns)</title>
+  <STYLE>
+          BODY {font-size:8pt; font-family:Verdana, Arial; color:Black; background-color:White}
+          HR {width:100%; color:Black}
+          p.Center {text-align:center; }
+          table {margin: 20px auto; border-collapse:collapse; table-layout:fixed; background-color:white; }
+          th {font-weight:bold; color:White; background-color:Navy; border:1px solid black; vertical-align:text-bottom}
+          td {color:Black; border:1px solid black; vertical-align:top;}
+          td.Bold {font-weight:bold; color:Black; border:1px solid black; vertical-align:text-top;}
+          h1 {font-size:12pt; font-weight:bold; text-align:center; margin-top:1em}
+          h3 {font-size:8pt; font-weight:bold; text-align:center; color:navy; margin-top:1em}
+ </STYLE>
+ </head>
+ <body>
+     <h1>Concept Arrangement Patterns (Metapatterns) Summary (2017-05-07)</h1>
+     <p class='Center'><a href='rss.xml' target='_new'>RSS</a> | <a href='rdf.xml' target='_new'>RDF</a> | <a href='Matrix.html' target='_new'>HTML</a></p>
+     <p class='Center'><a href='http://xbrlsite.azurewebsites.net/2017/IntelligentDigitalFinancialReporting/Part04_Chapter07.2_ConceptArrangementPatternExamples.pdf' target='_new'>Concept Arrangement Patterns documentation (PDF)</a></p>
+     <p class='Center'><a href='Index_Visual.html' target='_new'>Visual Index of Concept Arrangment Patterns</a></p>
+     <p class='Center'><a href='ConceptArrangementPatterns-2017-05-07.zip' target='_new'>ZIP archive of all Concept Arrangement Patterns</a></p>
+     <table>
+        <tr>
+           <th style='width:25px'>#</th>
+           <th style='width:100px'>Metapattern name</th>
+           <th style='width:400px'>Description</th>
+           <th style='width:300px'>Visual image</th>
+        </tr>
+          <tr>
+             <td>1.</td>
+             <td><a href='01-Hierarchy/Index.html' target='_new'>Hierarchy</a></td>
+             <td>A hierarchy information model denotes a hierarchy of concepts with no numeric relations. If no numeric relations exist, then the information model of the component is a hierarchy.  Basically, anything can be modelled as a hierarchy. It is the addition of additional  relations, typically mathematical computations, which turns a hierarchy into some other metapattern.</td>
+             <td><img border='0' src='01-Hierarchy/Hierarchy.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>2.</td>
+             <td><a href='02-RollUp/Index.html' target='_new'>Roll Up</a></td>
+             <td>A roll up information model computes a total from a set of other concepts. This information model is commonly referred to a roll up, or by the equation A + B = C.  All concepts involved in this information model have the same set of characteristics and all must be numeric.</td>
+             <td><img border='0' src='02-RollUp/RollUp.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>3.</td>
+             <td><a href='03-RollForward/Index.html' target='_new'>Roll Forward</a></td>
+             <td>A roll forward information model reconciles the balance of a concept between two points in time. This information model is commonly referred to a roll forward or movement analysis or by the equation: beginning balance + changes = ending balance. In this equation period [Axis] is as of two different points in time and the changes occur during the period between those two points in time.</td>
+             <td><img border='0' src='03-RollForward/RollForward.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>4.</td>
+             <td><a href='04-CompoundFact/Index.html' target='_new'>Compound Fact</a></td>
+             <td>A compound fact information model is characterized by the fact that for some set of concepts expressed within some information model; that information model can be expressed over some characteristic expressed as an [Axis]. Basically, it is the [Axis] which provides additional information which makes each information model unique.  For example, the salary information for the directors of an entity is a compound fact.  The salary information is made up of salary, bonuses, director fees and such information must be associated with a specific director to be meaningful and to distinguish, say, one salary from another salary.</td>
+             <td><img border='0' src='04-CompoundFact/CompoundFact.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>5.</td>
+             <td><a href='05-Adjustment/Index.html' target='_new'>Adjustment</a></td>
+             <td>An adjustment information model reconciles an originally stated balance to a restated balance, the adjustment being the total change, between two different report dates.  An adjustment is similar to a roll forward in that it is a reconciliation, however rather than the period [Axis] changing; it is the Report Date [Axis] which changes: originally reported balance + adjustment = restated balance.</td>
+             <td><img border='0' src='05-Adjustment/Adjustment.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>6.</td>
+             <td><a href='06-Variance/Index.html' target='_new'>Variance</a></td>
+             <td>A variance information model reconciles some reporting scenario with another reporting scenario, the variance between reporting scenarios being the variance or changes.  For example, a sales analysis which reconciles the concept sales for the reporting scenarios of actual and budgeted is a variance.  The equation in this case is: actual - budget = variance. But a variance could take other forms such as a variance from forecast, variance from plan, etc.</td>
+             <td><img border='0' src='06-Variance/Variance.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>7.</td>
+             <td><a href='07-ComplexComputation/Index.html' target='_new'>Complex Computation</a></td>
+             <td>A complex computation information model can be thought of as a hierarchy plus a set of commutations between different concepts within that hierarchy which are more challenging to model than a roll up or roll forward. The type of computations can vary significantly, thus the challenging in modelling.  For example, the computation of earnings per share is a complex computation.</td>
+             <td><img border='0' src='07-ComplexComputation/ComplexComputation.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>8.</td>
+             <td><a href='08-TextBlock/Index.html' target='_new'>Text Block</a></td>
+             <td>A text block information model is an information model which contains, by definition, only one concept and that concept expresses what amounts to a narrative or prose as escaped HTML within that one concept. For example, the narrative associated with a set of accounting policies expressed as a list or a table presentation format is a text block. As there is only one concept, there can be no relations within the information model.</td>
+             <td><img border='0' src='08-TextBlock/TextBlock.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>9.</td>
+             <td><a href='09-Grid/Index.html' target='_new'>Grid</a></td>
+             <td>A grid information model is a pseudo metapattern which uses the presentation characteristics of the columns and rows of a table to model information.  Because the grid models presentation information and not business semantics, it cannot be considered a metapattern.  However, the grid is included in this list because the US GAAP Taxonomy uses a grid information model to model the statement of changes in equity.</td>
+             <td><img border='0' src='09-Grid/Grid.png' width='250' /></td>
+          </tr>
+          <tr>
+             <td>10.</td>
+             <td><a href='10-RollForwardInfo/Index.html' target='_new'>RollForwardInfo</a></td>
+             <td>A roll forward info is similar to a roll forward in that it has a beginning and ending balance; however, the numbers do not roll forward.  The pattern is used to disclose the weighted average price rather than an amount.  The data type is always num:perShareItemType.</td>
+             <td><img border='0' src='10-RollForwardInfo/RollForwardInfo.png' width='250' /></td>
+          </tr>
+       </table>
+       <center>
+      <p style='visibility:hidden; margin:0em'>*</p>
+       <p xmlns:dct='http://purl.org/dc/terms/'>
+         <a rel='license'
+            href='http://creativecommons.org/publicdomain/zero/1.0/'>
+           <img src='http://i.creativecommons.org/p/zero/1.0/88x31.png' style='border-style: none;' alt='CC0' />
+         </a>
+         <br />
+         To the extent possible under law,
+         <span rel='dct:publisher' resource='[_:publisher]'>the person who associated CC0</span>
+         with this work has waived all copyright and related or neighboring
+         rights to this work.
+       </p>
+       </center>
+    </body>
+</html>
