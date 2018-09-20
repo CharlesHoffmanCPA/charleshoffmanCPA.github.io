@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA, UBmatrix: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/RollForward" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="RollForward.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='RollForward-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="I-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2008">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2008-12-31</instant>
+      </period>
+   </context>
+
+   <context id="D-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2009-01-01</startDate>
+         <endDate>2009-12-31</endDate>
+      </period>
+   </context>
+
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+
+   <pattern:Land contextRef="I-2010" unitRef="U-Monetary" decimals="INF">5347000</pattern:Land>
+   <pattern:Land contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1147000</pattern:Land>
+   <pattern:Land contextRef="I-2008" unitRef="U-Monetary" decimals="INF">1147000</pattern:Land>
+
+   <pattern:LandAdditions contextRef="D-2009" unitRef="U-Monetary" decimals="INF">400000</pattern:LandAdditions>
+   <pattern:LandDisposals contextRef="D-2009" unitRef="U-Monetary" decimals="INF">200000</pattern:LandDisposals>
+   <pattern:LandTranslationDifference contextRef="D-2009" unitRef="U-Monetary" decimals="INF">-200000</pattern:LandTranslationDifference>
+
+   <pattern:LandAdditions contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1992000</pattern:LandAdditions>
+   <pattern:LandDisposals contextRef="D-2010" unitRef="U-Monetary" decimals="INF">193000</pattern:LandDisposals>
+   <pattern:LandTranslationDifference contextRef="D-2010" unitRef="U-Monetary" decimals="INF">2401000</pattern:LandTranslationDifference>
+
+
+
+</xbrl>

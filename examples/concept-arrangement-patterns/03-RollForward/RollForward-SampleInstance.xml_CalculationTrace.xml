@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:/C:/Programs/XPE40/resources/System/CalcTrace-toHtml.xsl"?>
+<CalculationTrace Date="10:28:52" PhysicalUri="C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/03-RollForward/RollForward-SampleInstance.xml">
+     <Statistics duplicates="0" duration="39 ms" fail="0"
+          inconsistent="0" pass="0" total="0"/>
+</CalculationTrace>
