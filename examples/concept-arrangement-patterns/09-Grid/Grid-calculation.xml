@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="Grid.xsd#StatementOfChangesInEquity"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/Grid/StatementOfChangesInEquity" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/Grid/StatementOfChangesInEquity">
+    <loc xlink:type="locator"
+      xlink:label="pattern_ChangesInEquityPeriodIncreaseDecrease"
+      xlink:href="Grid.xsd#pattern_ChangesInEquityPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_NetIncomeLoss"
+      xlink:href="Grid.xsd#pattern_NetIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_ChangesInEquityPeriodIncreaseDecrease"
+      xlink:to="pattern_NetIncomeLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Dividends"
+      xlink:href="Grid.xsd#pattern_Dividends" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_ChangesInEquityPeriodIncreaseDecrease"
+      xlink:to="pattern_Dividends"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CommonStockIssued"
+      xlink:href="Grid.xsd#pattern_CommonStockIssued" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_ChangesInEquityPeriodIncreaseDecrease"
+      xlink:to="pattern_CommonStockIssued"
+      order="3"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>
