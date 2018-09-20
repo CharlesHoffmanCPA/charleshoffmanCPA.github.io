@@ -1,2 +1,6 @@
 # charleshoffmanCPA.github.io
-Pages repository
+
+All these files can be accessed from the URL:
+
+https://charleshoffmancpa.github.io/intelligent-xbrl/
+
