@@ -1,1 +1,1 @@
-
+A roll up information model computes a total from a set of other concepts. This information model is commonly referred to a roll up, or by the equation A + B = C. All concepts involved in this information model have the same set of characteristics and all must be numeric.
