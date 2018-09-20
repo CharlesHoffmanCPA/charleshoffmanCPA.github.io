@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<!-- Metapatterns -->
+
+<link:linkbase
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xfi='http://www.xbrl.org/2008/function/instance'
+	xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+	xmlns:generic="http://xbrl.org/2008/generic"
+	xmlns:formula="http://xbrl.org/2008/formula"
+	xmlns:validation="http://xbrl.org/2008/validation"
+	xmlns:ca="http://xbrl.org/2008/assertion/consistency"
+   xmlns:ea="http://xbrl.org/2008/assertion/existence"
+   xmlns:va="http://xbrl.org/2008/assertion/value"
+	xmlns:variable="http://xbrl.org/2008/variable"
+	xmlns:pf="http://xbrl.org/2008/filter/period"
+	xmlns:cf="http://xbrl.org/2008/filter/concept"
+	xmlns:df="http://xbrl.org/2008/filter/dimension"
+	xmlns:gf="http://xbrl.org/2008/filter/general"
+	xmlns:label="http://xbrl.org/2008/label"
+   xmlns:uf="http://xbrl.org/2008/filter/unit"
+   xmlns:ef="http://xbrl.org/2008/filter/entity"
+   xmlns:msg="http://xbrl.org/2010/message"
+
+   xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/ComplexComputation" 
+   xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+
+	xsi:schemaLocation="
+		http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+		http://www.xbrl.org/dtr/type/numeric http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd
+		http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd
+		http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd
+		http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd
+		http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/2008/consistency-assertion.xsd
+      http://xbrl.org/2008/assertion/existence http://www.xbrl.org/2008/existence-assertion.xsd
+      http://xbrl.org/2008/assertion/value http://www.xbrl.org/2008/value-assertion.xsd
+		http://xbrl.org/2008/filter/period http://www.xbrl.org/2008/period-filter.xsd
+		http://xbrl.org/2008/filter/concept http://www.xbrl.org/2008/concept-filter.xsd
+		http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd
+		http://xbrl.org/2008/filter/general http://www.xbrl.org/2008/general-filter.xsd
+		http://xbrl.org/2008/filter/unit http://www.xbrl.org/2008/unit-filter.xsd
+		http://xbrl.org/2008/filter/entity http://www.xbrl.org/2008/entity-filter.xsd
+		http://xbrl.org/2008/variable http://www.xbrl.org/2008/variable.xsd
+		http://xbrl.org/2008/validation http://www.xbrl.org/2008/validation.xsd
+      http://xbrl.org/2010/message http://www.xbrl.org/2010/generic-message.xsd
+  ">
+  
+	<!-- ArcroleRef declarations.  All these are declared by XBRL Formulas. -->
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-filter" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set-precondition" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:href="http://www.xbrl.org/2008/consistency-assertion.xsd#consistency-assertion-formula" xlink:type="simple"/>
+
+	<link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role" xlink:type="simple"/>
+	<link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label" xlink:type="simple"/>
+	<link:roleRef roleURI="http://www.xbrl.org/2010/role/message" xlink:href="http://www.xbrl.org/2010/generic-message.xsd#standard-message" xlink:type="simple"/>
+
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-satisfied-message" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-satisfied-message" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-unsatisfied-message" xlink:type="simple"/>
+
+	<link:documentation> 
+		Metapatterns
+	</link:documentation>
+
+
+   <link:roleRef xlink:type="simple" xlink:href="ComplexComputation.xsd#EarningsPerShareComponents" roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/ComplexComputation/EarningsPerShareComponents" />
+
+
+	<!-- Exists -->
+	<generic:link xlink:type="extended" xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/ComplexComputation/EarningsPerShareComponents">
+	
+		<!-- Messages -->
+		<ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+		  id="Exists_NetIncomeLoss"
+		  aspectModel="dimensional" 
+		  implicitFiltering="true"/>
+	
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>NetIncomeLoss is required.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for NetIncomeLoss which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for NetIncomeLoss which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"  
+	         nils="true"/>
+	
+		 <!-- Concept filters -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+	      <cf:concept>
+	        <cf:qname>pattern:NetIncomeLoss</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+
+
+	<generic:link xlink:type="extended" xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/ComplexComputation/EarningsPerShareComponents">
+	
+		<!-- Messages -->
+		<ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+		  id="Exists_WeightedAverageCommonShares"
+		  aspectModel="dimensional" 
+		  implicitFiltering="true"/>
+	
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>WeightedAverageCommonShares is required.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for WeightedAverageCommonShares which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for WeightedAverageCommonShares which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"  nils="true"/>
+	
+		 <!-- Concept filters -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+	      <cf:concept>
+	        <cf:qname>pattern:WeightedAverageCommonShares</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+
+	<generic:link xlink:type="extended" xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/ComplexComputation/EarningsPerShareComponents">
+	
+		<!-- Messages -->
+		<ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+		  id="Exists_EarningsPerShare"
+		  aspectModel="dimensional" 
+		  implicitFiltering="true"/>
+	
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>EarningsPerShare is required.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for EarningsPerShare which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for EarningsPerShare which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"  nils="true"/>
+	
+		 <!-- Concept filters -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+	      <cf:concept>
+	        <cf:qname>pattern:EarningsPerShare</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+
+	<generic:link xlink:type="extended" xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/ComplexComputation/EarningsPerShareComponents">
+	<!-- GREATER THAN ZERO: Tests to determine if a reported fact is greater than zero.  For example, the reported fact value of 'treasury stock value' must always be greater than zero. -->
+
+		<!-- Assertion -->
+       <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION"
+         id="GreaterThanZero_WeightedAverageCommonShares"
+         aspectModel="dimensional" 
+         implicitFiltering="true" 
+         test="$VARIABLE_FactGreaterThanZero gt 0" />
+
+		<!-- Label -->
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>WeightedAverageCommonShares greater than zero.</label:label>
+
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact value of {$VARIABLE_FactGreaterThanZero} for {node-name($VARIABLE_FactGreaterThanZero)} is greater than zero as is expected.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact value of with the concept characteristic of {node-name($VARIABLE_FactGreaterThanZero)} has a value of {$VARIABLE_FactGreaterThanZero}; however this value MUST always be less than zero.
+		 	</msg:message>
+
+	    <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	             xlink:from="ASSERTION" 
+	             xlink:to="VARIABLE_FactGreaterThanZero" 
+	             order="1.0" 
+	             name="VARIABLE_FactGreaterThanZero" 
+	             />
+		
+	    <!--  Facts -->
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_FactGreaterThanZero" 
+	             bindAsSequence="false" 
+	             />
+	
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+	             xlink:from="VARIABLE_FactGreaterThanZero" 
+	             xlink:to="FILTER_FactGreaterThanZero" 
+	             order="1.0"
+	             complement="false" 
+	             cover="true" 
+	             />
+
+	    <!-- Concept filters -->
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_FactGreaterThanZero">
+	      <cf:concept>
+	        <cf:qname>pattern:WeightedAverageCommonShares</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName>
+	
+     </generic:link>   
+
+
+
+
+	<!-- COMPLEX COMPUTATION -->
+	<generic:link xlink:type="extended" xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/ComplexComputation/EarningsPerShareComponents">
+
+		<!-- Assertion -->
+      <va:valueAssertion xlink:type='resource' xlink:label='ASSERTION'
+          id='ComplexComputation_BasicEarningsPerShare'
+          aspectModel='dimensional' 
+          implicitFiltering='true' 
+          test='abs($EarningsPerShare - ($NetIncomeLoss div $WeightedAverageCommonShares)) eq 0' />
+
+      <!--  Label -->
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+ 
+      <label:label xlink:type='resource' xlink:label='ASSERTION_Label'
+         xlink:role='http://www.xbrl.org/2008/role/label'
+         xml:lang='en'>Basic earnings per share properly computes.</label:label>
+
+
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported value of earnings per share {$EarningsPerShare} for the concept {node-name($EarningsPerShare)} agrees to the computed value.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported earnings per share of {$EarningsPerShare} for the concept {node-name($EarningsPerShare)} 
+				does *NOT* agree to the computation {$NetIncomeLoss} ({node-name($EarningsPerShare)}) 
+				divided by {$WeightedAverageCommonShares} ({node-name($WeightedAverageCommonShares)}) 
+				for the context with the ID of '{$EarningsPerShare/@contextRef}'.
+		 	</msg:message>
+
+	    <!--  Fact variables -->
+	    <variable:variableArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-set' 
+	             xlink:from='ASSERTION' 
+	             xlink:to='VARIABLE_NetIncomeLoss' 
+	             order='1.0' 
+	             name='NetIncomeLoss' 
+	             />
+	    <variable:variableArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-set' 
+	             xlink:from='ASSERTION' 
+	             xlink:to='VARIABLE_WeightedAverageCommonShares' 
+	             order='1.0' 
+	             name='WeightedAverageCommonShares' 
+	             />
+	    <variable:variableArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-set' 
+	             xlink:from='ASSERTION' 
+	             xlink:to='VARIABLE_EarningsPerShare' 
+	             order='1.0' 
+	             name='EarningsPerShare' 
+	             />
+		
+		
+	    <variable:factVariable xlink:type='resource' 
+		    xlink:label='VARIABLE_NetIncomeLoss' 
+		    bindAsSequence='false' 
+		    />
+
+	    <variable:factVariable xlink:type='resource' 
+		    xlink:label='VARIABLE_WeightedAverageCommonShares' 
+		    bindAsSequence='false' 
+		    />
+
+	    <variable:factVariable xlink:type='resource' 
+		    xlink:label='VARIABLE_EarningsPerShare' 
+		    bindAsSequence='false' 
+		    />
+
+
+	    <!--  Concept filters -->
+	    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter' 
+	             xlink:from='VARIABLE_NetIncomeLoss' 
+	             xlink:to='FILTER_NetIncomeLoss' 
+	             order='1.0'
+	             complement='false' 
+	             cover='true'  />
+	             
+	    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter' 
+	             xlink:from='VARIABLE_WeightedAverageCommonShares' 
+	             xlink:to='FILTER_WeightedAverageCommonShares' 
+	             order='1.0'
+	             complement='false' 
+	             cover='true'  />
+	             
+	    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter' 
+	             xlink:from='VARIABLE_EarningsPerShare' 
+	             xlink:to='FILTER_EarningsPerShare' 
+	             order='1.0'
+	             complement='false' 
+	             cover='true' />
+
+
+	    <cf:conceptName xlink:type='resource' xlink:label='FILTER_NetIncomeLoss'>
+	      <cf:concept>
+	        <cf:qname>pattern:NetIncomeLoss</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName>	    
+		    
+	    <cf:conceptName xlink:type='resource' xlink:label='FILTER_WeightedAverageCommonShares'>
+	      <cf:concept>
+	        <cf:qname>pattern:WeightedAverageCommonShares</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName>	    
+		    
+	    <cf:conceptName xlink:type='resource' xlink:label='FILTER_EarningsPerShare'>
+	      <cf:concept>
+	        <cf:qname>pattern:EarningsPerShare</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName> 
+
+	
+
+	    <!--  Unit filters: -->
+	    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter' 
+	             xlink:from='VARIABLE_NetIncomeLoss' 
+	             xlink:to='FILTER_Unit' 
+	             order='1.0'
+	             complement='false' 
+	             cover='true'  />
+	    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter' 
+	             xlink:from='VARIABLE_WeightedAverageCommonShares' 
+	             xlink:to='FILTER_Unit' 
+	             order='1.0'
+	             complement='false' 
+	             cover='true'  />
+	    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter' 
+	             xlink:from='VARIABLE_EarningsPerShare' 
+	             xlink:to='FILTER_Unit' 
+	             order='1.0'
+	             complement='false' 
+	             cover='true' />
+
+	    <uf:generalMeasures xlink:type='resource' xlink:label='FILTER_Unit' test='true()' /> 
+
+	</generic:link>	
+
+
+
+</link:linkbase>
