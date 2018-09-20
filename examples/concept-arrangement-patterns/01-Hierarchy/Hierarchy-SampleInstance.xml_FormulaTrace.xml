@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?><?xml-stylesheet type="text/xsl" href="file:/C:/Programs/XPE40/resources/System/XbrlFormula2008Trace-toHtml.xsl"?><formulaTrace type="Full Report" version="4.0.0.2125" date="Wed May 10 10:23:08 PDT 2017" baseURI="C:/Users/Charlie/Documents/CurrentVersions/DigitalFinancialReporting/Metapatterns/2017-05-07/01-Hierarchy/Hierarchy-SampleInstance.xml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xsi:schemaLocation="http://xbrl.org/2006/xbrldi xbrldi-2006.xsd" >
- <assertionTest cnt="1" count="1" id="Exists_InventoryValuationMethod" message="SATISFIED: (OK) The reported fact for InventoryValuationMethod which is expected was found." satisfied="satisfied" test="[1]" type="existenceAssertion" value="1" />
- <assertionReport count="1">
- <assertionTest cnt="1" count="1" id="Exists_InventoryValuationMethod" message="SATISFIED: (OK) The reported fact for InventoryValuationMethod which is expected was found." satisfied="satisfied" test="[1]" type="existenceAssertion" value="1" />
-  </assertionReport>
- <summary notSatisfiedAssertionCount="0" firedAssertionCount="1" duration="359ms" outputContextCount="0" outputUnitCount="0" firedFormulaCount="0" compiledFormulaCount="0" satisifiedAssertionCount="1" outputFactCount="0" compiledAssertionCount="1" />
-</formulaTrace>
