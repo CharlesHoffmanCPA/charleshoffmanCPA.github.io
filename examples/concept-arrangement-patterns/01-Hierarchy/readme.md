@@ -1,1 +1,1 @@
-
+A hierarchy information model denotes a hierarchy of concepts with no numeric relations. If no numeric relations exist, then the information model of the component is a hierarchy. Basically, anything can be modelled as a hierarchy. It is the addition of additional relations, typically mathematical computations, which turns a hierarchy into some other metapattern.
