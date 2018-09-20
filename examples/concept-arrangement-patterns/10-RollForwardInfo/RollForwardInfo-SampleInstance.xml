@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA, UBmatrix: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/RollForwardInfo" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="RollForwardInfo.xsd" />
+
+   <context id="I-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <context id="D-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+
+	<unit id="U-PerShare">
+	 <divide>
+	   <unitNumerator>
+	     <measure>iso4217:USD</measure>
+	   </unitNumerator>
+	   <unitDenominator>
+	     <measure>shares</measure>
+	   </unitDenominator>
+	 </divide>
+	</unit>
+
+   <pattern:NonvestedFairValue contextRef="I-2009" unitRef="U-PerShare" decimals="2">32.72</pattern:NonvestedFairValue>
+
+   <pattern:Granted contextRef="D-2010" unitRef="U-PerShare" decimals="2">41.51</pattern:Granted>
+   <pattern:Vested contextRef="D-2010" unitRef="U-PerShare" decimals="2">30.92</pattern:Vested>
+   <pattern:Forfeited contextRef="D-2010" unitRef="U-PerShare" decimals="2">35.93</pattern:Forfeited>
+
+   <pattern:NonvestedFairValue contextRef="I-2010" unitRef="U-PerShare" decimals="2">36.92</pattern:NonvestedFairValue>
+
+
+</xbrl>
