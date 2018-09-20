@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/RollUp"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  targetNamespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/RollUp"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/RollUp/PropertyPlantAndEquipmentByComponent"
+        id="PropertyPlantAndEquipmentByComponent">
+        <link:definition>30000 - Property, Plant, and Equipment, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="RollUp-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="RollUp-definition.xml"
+        xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="RollUp-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="RollUp-calculation.xml"
+        xlink:title="Calculation Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+    schemaLocation="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2004/ref"
+    schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="pattern_BuildingsNet"
+    name="BuildingsNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_ComputerEquipmentNet"
+    name="ComputerEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_FurnitureAndFixturesNet"
+    name="FurnitureAndFixturesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_Land"
+    name="Land"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_OtherPropertyPlantAndEquipmentNet"
+    name="OtherPropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantAndEquipmentByComponentLineItems"
+    name="PropertyPlantAndEquipmentByComponentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantAndEquipmentNet"
+    name="PropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantAndEquipmentNetRollUp"
+    name="PropertyPlantAndEquipmentNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_PropertyPlantEquipmentByComponentTable"
+    name="PropertyPlantEquipmentByComponentTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_SampleCompanyMember"
+    name="SampleCompanyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+</schema>

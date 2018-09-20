@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA, UBmatrix: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/RollUp" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="RollUp.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='RollUp-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="I-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+
+   <pattern:Land contextRef="I-2010" unitRef="U-Monetary" decimals="INF">5347000</pattern:Land>
+   <pattern:Land contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1147000</pattern:Land>
+
+   <pattern:BuildingsNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">244508000</pattern:BuildingsNet>
+   <pattern:BuildingsNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">366375000</pattern:BuildingsNet>
+
+   <pattern:FurnitureAndFixturesNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">34457000</pattern:FurnitureAndFixturesNet>
+   <pattern:FurnitureAndFixturesNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">34457000</pattern:FurnitureAndFixturesNet>
+
+   <pattern:ComputerEquipmentNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">4169000</pattern:ComputerEquipmentNet>
+   <pattern:ComputerEquipmentNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">5313000</pattern:ComputerEquipmentNet>
+
+   <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">6702000</pattern:OtherPropertyPlantAndEquipmentNet>
+   <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">6149000</pattern:OtherPropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">295183000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">413441000</pattern:PropertyPlantAndEquipmentNet>
+
+
+</xbrl>
