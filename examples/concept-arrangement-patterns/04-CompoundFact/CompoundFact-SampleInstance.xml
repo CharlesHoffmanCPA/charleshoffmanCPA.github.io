@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA, UBmatrix: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ConceptArrangementPatterns/CompoundFact" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="CompoundFact.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='CompoundFact-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+   
+   <context id="D-2010-John">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="frm:DirectorAxis">pattern:JohnDoeMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-Jane">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="frm:DirectorAxis">pattern:JaneDoeMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-AllDirectors">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+             <xbrldi:explicitMember dimension="frm:DirectorAxis">frm:DirectorsAllMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+
+   <pattern:DirectorSalary contextRef="D-2010-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorSalary>
+   <pattern:DirectorBonuses contextRef="D-2010-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorBonuses>
+   <pattern:DirectorFees contextRef="D-2010-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorFees>
+   <pattern:DirectorOptionsGrantedAtFairValue contextRef="D-2010-John" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorOptionsGrantedAtFairValue>
+
+   <pattern:DirectorSalary contextRef="D-2010-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorSalary>
+   <pattern:DirectorBonuses contextRef="D-2010-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorBonuses>
+   <pattern:DirectorFees contextRef="D-2010-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorFees>
+   <pattern:DirectorOptionsGrantedAtFairValue contextRef="D-2010-Jane" unitRef="U-Monetary" decimals="INF">1000</pattern:DirectorOptionsGrantedAtFairValue>
+
+   <pattern:DirectorSalary contextRef="D-2010-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorSalary>
+   <pattern:DirectorBonuses contextRef="D-2010-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorBonuses>
+   <pattern:DirectorFees contextRef="D-2010-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorFees>
+   <pattern:DirectorOptionsGrantedAtFairValue contextRef="D-2010-AllDirectors" unitRef="U-Monetary" decimals="INF">2000</pattern:DirectorOptionsGrantedAtFairValue>
+
+
+</xbrl>

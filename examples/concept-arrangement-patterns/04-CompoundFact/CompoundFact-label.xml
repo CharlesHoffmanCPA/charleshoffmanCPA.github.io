@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <labelLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorBonuses"
+      xlink:href="CompoundFact.xsd#pattern_DirectorBonuses" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DirectorBonuses" xlink:to="pattern_DirectorBonuses_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorBonuses_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Director, Bonuses</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorCompensationLineItems"
+      xlink:href="CompoundFact.xsd#pattern_DirectorCompensationLineItems" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DirectorCompensationLineItems"
+      xlink:to="pattern_DirectorCompensationLineItems_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorCompensationLineItems_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Director Compensation [Line Items]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorCompensationTable"
+      xlink:href="CompoundFact.xsd#pattern_DirectorCompensationTable" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DirectorCompensationTable"
+      xlink:to="pattern_DirectorCompensationTable_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorCompensationTable_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Director Compensation [Table]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorFees"
+      xlink:href="CompoundFact.xsd#pattern_DirectorFees" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DirectorFees" xlink:to="pattern_DirectorFees_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorFees_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Director, Fees</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorHierarchy"
+      xlink:href="CompoundFact.xsd#pattern_DirectorHierarchy" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DirectorHierarchy"
+      xlink:to="pattern_DirectorHierarchy_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorHierarchy_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Director [Hierarchy]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorOptionsGrantedAtFairValue"
+      xlink:href="CompoundFact.xsd#pattern_DirectorOptionsGrantedAtFairValue" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DirectorOptionsGrantedAtFairValue"
+      xlink:to="pattern_DirectorOptionsGrantedAtFairValue_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorOptionsGrantedAtFairValue_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Director, Options Granted, at Fair Value</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_DirectorSalary"
+      xlink:href="CompoundFact.xsd#pattern_DirectorSalary" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_DirectorSalary" xlink:to="pattern_DirectorSalary_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorSalary_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">Land, Ending Balance</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorSalary_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">Land, Beginning Balance</label>
+    <label xlink:type="resource"
+      xlink:label="pattern_DirectorSalary_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Director, Salary</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_JaneDoeMember"
+      xlink:href="CompoundFact.xsd#pattern_JaneDoeMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_JaneDoeMember" xlink:to="pattern_JaneDoeMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_JaneDoeMember_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">Jane Doe [Member]</label>
+    <loc xlink:type="locator"
+      xlink:label="pattern_JohnDoeMember"
+      xlink:href="CompoundFact.xsd#pattern_JohnDoeMember" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="pattern_JohnDoeMember" xlink:to="pattern_JohnDoeMember_lbl" />
+    <label xlink:type="resource"
+      xlink:label="pattern_JohnDoeMember_lbl"
+      xml:lang="en"
+      xlink:role="http://www.xbrl.org/2003/role/label">John Doe [Member]</label>
+  </labelLink>
+</linkbase>
