@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA: 5/9/2017 12:00:57 PM -->
+<rss version='2.0' xmlns:rss='http://purl.org/rss/1.0/'>
+   <channel>
+      <title>Digital Financial Reporting Member Arrangement Patterns (2017-05-07)</title>
+      <link>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/rss.xml</link>
+      <description>Digital Financial Reporting Member Arrangement Patterns (2017-05-07)</description>
+      <language>en-us</language>
+      <pubDate>Tue, 9 May 2017 12:00:57 GMT</pubDate>
+      <lastBuildDate>Tue, 9 May 2017 12:00:57 GMT</lastBuildDate>
+      <docs>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/Index.html</docs>
+      <generator>Manual</generator>
+      <managingEditor>charles.hoffman@me.com (Charles Hoffman)</managingEditor>
+      <webMaster>charles.hoffman@me.com (Charles Hoffman)</webMaster>
+         <item>
+            <title>MAP01 - Complete Flat Set</title>
+            <link>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP01-CompleteFlatSet/CompleteFlatSet-SampleInstance.xml</link>
+            <description>Is-a relation. A set of members, no root member, no aggregation</description>
+            <pubDate>Tue, 9 May 2017 12:00:57 GMT</pubDate>
+            <guid>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP01-CompleteFlatSet/CompleteFlatSet-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>MAP02 - Simple Flat Aggregation</title>
+            <link>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP02-SimpleFlatAggregation/SimpleFlatAggregation-SampleInstance.xml</link>
+            <description>Whole-Part relation. A set of members, with aggregation, therefore MUST have root member.</description>
+            <pubDate>Tue, 9 May 2017 12:00:57 GMT</pubDate>
+            <guid>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP02-SimpleFlatAggregation/SimpleFlatAggregation-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>MAP03 - Nested Member Aggregation</title>
+            <link>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP03-NestedMemberAggregation/NestedMemberAggregation-SampleInstance.xml</link>
+            <description>Whole-Part relation. A set of members, with aggregation, also has nested aggregation. Region and country are represented using one characteristic.</description>
+            <pubDate>Tue, 9 May 2017 12:00:57 GMT</pubDate>
+            <guid>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP03-NestedMemberAggregation/NestedMemberAggregation-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>MAP05 - Multiple Characteristics</title>
+            <link>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP05-MultipleCharacteristics/MultipleCharacteristics-SampleInstance.xml</link>
+            <description>Whole-Part relation. A set of members, with aggregation, also has nested aggregation. Region and country are represented using two characteristics. (Note that the meaning of the information did not change, only the representation method.)</description>
+            <pubDate>Tue, 9 May 2017 12:00:57 GMT</pubDate>
+            <guid>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP05-MultipleCharacteristics/MultipleCharacteristics-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>MAP06 - Explicit Characteristics</title>
+            <link>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP06-ExplicitCharacteristics/ExplicitCharacteristics-SampleInstance.xml</link>
+            <description>Whole-Part relation. A set of members, with aggregation, all characteristics are explicitly provided (rather then implied). Shows intersections between multiple tables where conflicts do NOT exist. (i.e. dimension defaults are not necessary)</description>
+            <pubDate>Tue, 9 May 2017 12:00:57 GMT</pubDate>
+            <guid>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP06-ExplicitCharacteristics/ExplicitCharacteristics-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>MAP07 - Intersecting Tables</title>
+            <link>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP07-IntersectingTables/IntersectingTables-SampleInstance.xml</link>
+            <description>Whole-Part relation. A set of members, with aggregation, all characteristics are explicitly provided (rather then implied). Shows intersections between multiple tables where conflicts would exist if dimension defaults are not used.</description>
+            <pubDate>Tue, 9 May 2017 12:00:57 GMT</pubDate>
+            <guid>https://charleshoffmanCPA.github.io/examples/member-arrangement-patterns/MAP07-IntersectingTables/IntersectingTables-SampleInstance.xml</guid>
+         </item>
+   </channel>
+</rss>
