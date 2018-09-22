@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-05-16 07:40:18
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="basic.xsd#BalanceSheet"
+    roleURI="http://www.xbrlsite.com/basic/role/Fragment01" />
+  <roleRef xlink:type="simple"
+    xlink:href="basic.xsd#IncomeStatement"
+    roleURI="http://www.xbrlsite.com/basic/role/Fragment02" />
+  <roleRef xlink:type="simple"
+    xlink:href="basic.xsd#CashFlowStatement"
+    roleURI="http://www.xbrlsite.com/basic/role/Fragment03" />
+  <roleRef xlink:type="simple"
+    xlink:href="basic.xsd#InventoriesDetail"
+    roleURI="http://www.xbrlsite.com/basic/role/Fragment11" />
+  <roleRef xlink:type="simple"
+    xlink:href="basic.xsd#FinishedGoodsDetail"
+    roleURI="http://www.xbrlsite.com/basic/role/Fragment12" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.xbrlsite.com/basic/role/Fragment01">
+    <loc xlink:type="locator"
+      xlink:label="basic_Ipsum"
+      xlink:href="basic.xsd#basic_Ipsum" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Phasellus"
+      xlink:href="basic.xsd#basic_Phasellus" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Ipsum" xlink:to="basic_Phasellus"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Nulla"
+      xlink:href="basic.xsd#basic_Nulla" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Phasellus" xlink:to="basic_Nulla"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Pellentesque"
+      xlink:href="basic.xsd#basic_Pellentesque" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Phasellus" xlink:to="basic_Pellentesque"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Etiam"
+      xlink:href="basic.xsd#basic_Etiam" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Phasellus" xlink:to="basic_Etiam"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Aenean"
+      xlink:href="basic.xsd#basic_Aenean" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Ipsum" xlink:to="basic_Aenean"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Proin"
+      xlink:href="basic.xsd#basic_Proin" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Aenean" xlink:to="basic_Proin"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Lorem"
+      xlink:href="basic.xsd#basic_Lorem" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Morbi"
+      xlink:href="basic.xsd#basic_Morbi" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Lorem" xlink:to="basic_Morbi"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Aliquam"
+      xlink:href="basic.xsd#basic_Aliquam" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Morbi" xlink:to="basic_Aliquam"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Facilisis"
+      xlink:href="basic.xsd#basic_Facilisis" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Aliquam" xlink:to="basic_Facilisis"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Donec"
+      xlink:href="basic.xsd#basic_Donec" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Morbi" xlink:to="basic_Donec"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Blandit"
+      xlink:href="basic.xsd#basic_Blandit" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Donec" xlink:to="basic_Blandit"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_DuisIaculis"
+      xlink:href="basic.xsd#basic_DuisIaculis" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Lorem" xlink:to="basic_DuisIaculis"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Commodo"
+      xlink:href="basic.xsd#basic_Commodo" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_DuisIaculis" xlink:to="basic_Commodo"
+      order="1"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.xbrlsite.com/basic/role/Fragment02">
+    <loc xlink:type="locator"
+      xlink:label="basic_SollicitudinUltricies"
+      xlink:href="basic.xsd#basic_SollicitudinUltricies" />
+    <loc xlink:type="locator"
+      xlink:label="basic_PellentesqueMagna"
+      xlink:href="basic.xsd#basic_PellentesqueMagna" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_SollicitudinUltricies"
+      xlink:to="basic_PellentesqueMagna"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Fermentum"
+      xlink:href="basic.xsd#basic_Fermentum" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_PellentesqueMagna" xlink:to="basic_Fermentum"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Nunc"
+      xlink:href="basic.xsd#basic_Nunc" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_PellentesqueMagna" xlink:to="basic_Nunc"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Euismod"
+      xlink:href="basic.xsd#basic_Euismod" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_SollicitudinUltricies"
+      xlink:to="basic_Euismod"
+      order="2"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.xbrlsite.com/basic/role/Fragment03">
+    <loc xlink:type="locator"
+      xlink:label="basic_Efficitur"
+      xlink:href="basic.xsd#basic_Efficitur" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Condimentum"
+      xlink:href="basic.xsd#basic_Condimentum" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Efficitur" xlink:to="basic_Condimentum"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Malesuada"
+      xlink:href="basic.xsd#basic_Malesuada" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Condimentum" xlink:to="basic_Malesuada"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_FinibusEuismod"
+      xlink:href="basic.xsd#basic_FinibusEuismod" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Condimentum" xlink:to="basic_FinibusEuismod"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Purus"
+      xlink:href="basic.xsd#basic_Purus" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Efficitur" xlink:to="basic_Purus"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Nullam"
+      xlink:href="basic.xsd#basic_Nullam" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Purus" xlink:to="basic_Nullam"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Semper"
+      xlink:href="basic.xsd#basic_Semper" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Purus" xlink:to="basic_Semper"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Vivamus"
+      xlink:href="basic.xsd#basic_Vivamus" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Efficitur" xlink:to="basic_Vivamus"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Egestas"
+      xlink:href="basic.xsd#basic_Egestas" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Vivamus" xlink:to="basic_Egestas"
+      order="1"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.xbrlsite.com/basic/role/Fragment11">
+    <loc xlink:type="locator"
+      xlink:label="basic_Etiam"
+      xlink:href="basic.xsd#basic_Etiam" />
+    <loc xlink:type="locator"
+      xlink:label="basic_EuEleifendAugue"
+      xlink:href="basic.xsd#basic_EuEleifendAugue" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Etiam" xlink:to="basic_EuEleifendAugue"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_EstAliquetAnte"
+      xlink:href="basic.xsd#basic_EstAliquetAnte" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Etiam" xlink:to="basic_EstAliquetAnte"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_NuncMattisAliquam"
+      xlink:href="basic.xsd#basic_NuncMattisAliquam" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_Etiam" xlink:to="basic_NuncMattisAliquam"
+      order="3"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.xbrlsite.com/basic/role/Fragment12">
+    <loc xlink:type="locator"
+      xlink:label="basic_EuEleifendAugue"
+      xlink:href="basic.xsd#basic_EuEleifendAugue" />
+    <loc xlink:type="locator"
+      xlink:label="basic_LiberoVel"
+      xlink:href="basic.xsd#basic_LiberoVel" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_EuEleifendAugue" xlink:to="basic_LiberoVel"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_TristiqueLibero"
+      xlink:href="basic.xsd#basic_TristiqueLibero" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_EuEleifendAugue" xlink:to="basic_TristiqueLibero"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

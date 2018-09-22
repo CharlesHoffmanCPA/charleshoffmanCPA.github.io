@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-05-16 07:40:18
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:basic="http://www.xbrlsite.com/basic"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  targetNamespace="http://www.xbrlsite.com/basic"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment01"
+        id="BalanceSheet">
+        <link:definition>01 - Schedule - Fragment 01</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment02"
+        id="IncomeStatement">
+        <link:definition>02 - Schedule - Fragment 02</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment03"
+        id="CashFlowStatement">
+        <link:definition>03 - Schedule - Fragment 03 (Cash flow statement)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment04"
+        id="CashAndCashEquivalents">
+        <link:definition>04 - Schedule - Fragment 04</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment05"
+        id="Receivables">
+        <link:definition>05 - Schedule - Fragment 05</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment06"
+        id="Inventories">
+        <link:definition>06 - Schedule - Fragment 06</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment07"
+        id="PropertyPlantAndEquipment">
+        <link:definition>07 - Schedule - Fragment 07</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment08"
+        id="AccountsPayable">
+        <link:definition>08 - Schedule - Fragment 08</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment09"
+        id="LongTermDebt">
+        <link:definition>09 - Schedule - Fragment 09</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment10"
+        id="RetainedEarnings">
+        <link:definition>10 - Schedule - Fragment 10</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment11"
+        id="InventoriesDetail">
+        <link:definition>11 - Schedule - Fragment 11</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Fragment12"
+        id="FinishedGoodsDetail">
+        <link:definition>12 - Schedule - Fragment 12</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="basic-label.xml"
+        xlink:title="Label Links EN, all" />
+
+
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="basic-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="basic-calculation.xml"
+        xlink:title="Calculation Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact"
+    schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/negated"
+    schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/net"
+    schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="basic_Aenean"
+    name="Aenean"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_AeneanRollUp"
+    name="AeneanRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Aliquam"
+    name="Aliquam"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_AliquamEratVolutpat"
+    name="AliquamEratVolutpat"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_AliquamIdSapien"
+    name="AliquamIdSapien"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_AliquamRollUp"
+    name="AliquamRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Blandit"
+    name="Blandit"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_BlanditRollForward"
+    name="BlanditRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Commodo"
+    name="Commodo"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_CommodoRollForward"
+    name="CommodoRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Condimentum"
+    name="Condimentum"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="basic_CondimentumRollUp"
+    name="CondimentumRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_DapibusSed"
+    name="DapibusSed"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_DiamMaximusPorta"
+    name="DiamMaximusPorta"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Donec"
+    name="Donec"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_DonecRollUp"
+    name="DonecRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_DuiEget"
+    name="DuiEget"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_DuisIaculis"
+    name="DuisIaculis"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_DuisIaculisRollUp"
+    name="DuisIaculisRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Efficitur"
+    name="Efficitur"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_EfficiturRollUp"
+    name="EfficiturRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Egestas"
+    name="Egestas"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_EstAliquetAnte"
+    name="EstAliquetAnte"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_EtEgestasIaculis"
+    name="EtEgestasIaculis"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Etiam"
+    name="Etiam"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_EtiamRollForward"
+    name="EtiamRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_EtiamRollUp"
+    name="EtiamRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_EuEleifendAugue"
+    name="EuEleifendAugue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_EuEleifendAugueRollUp"
+    name="EuEleifendAugueRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Euismod"
+    name="Euismod"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Facilisis"
+    name="Facilisis"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_FacilisisRollForward"
+    name="FacilisisRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Fermentum"
+    name="Fermentum"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_FinibusEuismod"
+    name="FinibusEuismod"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Ipsum"
+    name="Ipsum"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_IpsumLoremAbstract"
+    name="IpsumLoremAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_IpsumRollUp"
+    name="IpsumRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_JustoVel"
+    name="JustoVel"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_LiberoVel"
+    name="LiberoVel"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_Lorem"
+    name="Lorem"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_LoremRollUp"
+    name="LoremRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Malesuada"
+    name="Malesuada"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Morbi"
+    name="Morbi"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_MorbiRollUp"
+    name="MorbiRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NibhVulputate"
+    name="NibhVulputate"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Nulla"
+    name="Nulla"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_NullaFlowRollForward"
+    name="NullaFlowRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NullaRollForward"
+    name="NullaRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Nullam"
+    name="Nullam"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Nunc"
+    name="Nunc"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_NuncMattisAliquam"
+    name="NuncMattisAliquam"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_OrnareRisus"
+    name="OrnareRisus"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Pellentesque"
+    name="Pellentesque"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_PellentesqueMagna"
+    name="PellentesqueMagna"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_PellentesqueMagnaRollUp"
+    name="PellentesqueMagnaRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_PellentesqueRollForward"
+    name="PellentesqueRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Phasellus"
+    name="Phasellus"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_PhasellusRollUp"
+    name="PhasellusRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Proin"
+    name="Proin"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_ProinRollForward"
+    name="ProinRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Purus"
+    name="Purus"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_PurusRollUp"
+    name="PurusRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_SedEtQuamDapibus"
+    name="SedEtQuamDapibus"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_SedImperdietIaculis"
+    name="SedImperdietIaculis"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Semper"
+    name="Semper"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_SollicitudinUltricies"
+    name="SollicitudinUltricies"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_SollicitudinUltriciesRollUp"
+    name="SollicitudinUltriciesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_TristiqueLibero"
+    name="TristiqueLibero"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+     
+    nillable="true" />
+  <element
+    id="basic_Ullamcorper"
+    name="Ullamcorper"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_UltriciesTristiqueLibero"
+    name="UltriciesTristiqueLibero"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_VelVolutpat"
+    name="VelVolutpat"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_Vivamus"
+    name="Vivamus"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+     
+    nillable="true" />
+  <element
+    id="basic_VivamusRollUp"
+    name="VivamusRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+</schema>

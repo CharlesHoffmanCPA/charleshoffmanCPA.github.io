@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Taxonomy Label Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-05-16 07:40:18
+-->
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+	<roleRef xlink:type="simple" xlink:href="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd#negatedLabel" roleURI="http://www.xbrl.org/2009/role/negatedLabel"/>
+	<labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+		<loc xlink:type="locator" xlink:label="basic_AeneanRollUp" xlink:href="basic.xsd#basic_AeneanRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_AeneanRollUp" xlink:to="basic_AeneanRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_AeneanRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">보험료</label>
+		<loc xlink:type="locator" xlink:label="basic_Aenean" xlink:href="basic.xsd#basic_Aenean"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Aenean" xlink:to="basic_Aenean_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Aenean_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">취득일</label>
+		<loc xlink:type="locator" xlink:label="basic_AliquamEratVolutpat" xlink:href="basic.xsd#basic_AliquamEratVolutpat"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_AliquamEratVolutpat" xlink:to="basic_AliquamEratVolutpat_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_AliquamEratVolutpat_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">임차료</label>
+		<label xlink:type="resource" xlink:label="basic_AliquamEratVolutpat_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">통신비</label>
+		<loc xlink:type="locator" xlink:label="basic_AliquamIdSapien" xlink:href="basic.xsd#basic_AliquamIdSapien"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_AliquamIdSapien" xlink:to="basic_AliquamIdSapien_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_AliquamIdSapien_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">자기주식</label>
+		<label xlink:type="resource" xlink:label="basic_AliquamIdSapien_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">마감환율</label>
+		<loc xlink:type="locator" xlink:label="basic_AliquamRollUp" xlink:href="basic.xsd#basic_AliquamRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_AliquamRollUp" xlink:to="basic_AliquamRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_AliquamRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">진행청구</label>
+		<loc xlink:type="locator" xlink:label="basic_Aliquam" xlink:href="basic.xsd#basic_Aliquam"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Aliquam" xlink:to="basic_Aliquam_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Aliquam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">이자지급</label>
+		<loc xlink:type="locator" xlink:label="basic_BlanditRollForward" xlink:href="basic.xsd#basic_BlanditRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_BlanditRollForward" xlink:to="basic_BlanditRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_BlanditRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">유동자산</label>
+		<loc xlink:type="locator" xlink:label="basic_Blandit" xlink:href="basic.xsd#basic_Blandit"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Blandit" xlink:to="basic_Blandit_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Blandit_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">자기주식</label>
+		<label xlink:type="resource" xlink:label="basic_Blandit_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">기말자본</label>
+		<label xlink:type="resource" xlink:label="basic_Blandit_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">이자비용</label>
+		<loc xlink:type="locator" xlink:label="basic_CommodoRollForward" xlink:href="basic.xsd#basic_CommodoRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_CommodoRollForward" xlink:to="basic_CommodoRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_CommodoRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기초자본</label>
+		<loc xlink:type="locator" xlink:label="basic_Commodo" xlink:href="basic.xsd#basic_Commodo"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Commodo" xlink:to="basic_Commodo_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Commodo_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">기타채권</label>
+		<label xlink:type="resource" xlink:label="basic_Commodo_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">자본총계</label>
+		<label xlink:type="resource" xlink:label="basic_Commodo_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">주당이익</label>
+		<loc xlink:type="locator" xlink:label="basic_CondimentumRollUp" xlink:href="basic.xsd#basic_CondimentumRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_CondimentumRollUp" xlink:to="basic_CondimentumRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_CondimentumRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">당좌차월</label>
+		<loc xlink:type="locator" xlink:label="basic_Condimentum" xlink:href="basic.xsd#basic_Condimentum"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Condimentum" xlink:to="basic_Condimentum_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Condimentum_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">리스부채</label>
+		<loc xlink:type="locator" xlink:label="basic_DapibusSed" xlink:href="basic.xsd#basic_DapibusSed"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_DapibusSed" xlink:to="basic_DapibusSed_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_DapibusSed_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">자산총계</label>
+		<label xlink:type="resource" xlink:label="basic_DapibusSed_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">투자수익</label>
+		<loc xlink:type="locator" xlink:label="basic_DiamMaximusPorta" xlink:href="basic.xsd#basic_DiamMaximusPorta"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_DiamMaximusPorta" xlink:to="basic_DiamMaximusPorta_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_DiamMaximusPorta_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">금융부채</label>
+		<loc xlink:type="locator" xlink:label="basic_DonecRollUp" xlink:href="basic.xsd#basic_DonecRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_DonecRollUp" xlink:to="basic_DonecRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_DonecRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">적용세율</label>
+		<loc xlink:type="locator" xlink:label="basic_Donec" xlink:href="basic.xsd#basic_Donec"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Donec" xlink:to="basic_Donec_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Donec_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">금융자산</label>
+		<loc xlink:type="locator" xlink:label="basic_DuiEget" xlink:href="basic.xsd#basic_DuiEget"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_DuiEget" xlink:to="basic_DuiEget_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_DuiEget_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기계장치</label>
+		<label xlink:type="resource" xlink:label="basic_DuiEget_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">유동부채</label>
+		<loc xlink:type="locator" xlink:label="basic_DuisIaculisRollUp" xlink:href="basic.xsd#basic_DuisIaculisRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_DuisIaculisRollUp" xlink:to="basic_DuisIaculisRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_DuisIaculisRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">명목금액</label>
+		<loc xlink:type="locator" xlink:label="basic_DuisIaculis" xlink:href="basic.xsd#basic_DuisIaculis"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_DuisIaculis" xlink:to="basic_DuisIaculis_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_DuisIaculis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기타수익</label>
+		<loc xlink:type="locator" xlink:label="basic_EfficiturRollUp" xlink:href="basic.xsd#basic_EfficiturRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_EfficiturRollUp" xlink:to="basic_EfficiturRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_EfficiturRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">당좌차월</label>
+		<loc xlink:type="locator" xlink:label="basic_Efficitur" xlink:href="basic.xsd#basic_Efficitur"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Efficitur" xlink:to="basic_Efficitur_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Efficitur_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">생물자산</label>
+		<loc xlink:type="locator" xlink:label="basic_Egestas" xlink:href="basic.xsd#basic_Egestas"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Egestas" xlink:to="basic_Egestas_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Egestas_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">브랜드명</label>
+		<label xlink:type="resource" xlink:label="basic_Egestas_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">예금잔액</label>
+		<loc xlink:type="locator" xlink:label="basic_EstAliquetAnte" xlink:href="basic.xsd#basic_EstAliquetAnte"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_EstAliquetAnte" xlink:to="basic_EstAliquetAnte_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_EstAliquetAnte_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">기타재고</label>
+		<label xlink:type="resource" xlink:label="basic_EstAliquetAnte_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">이자지급</label>
+		<label xlink:type="resource" xlink:label="basic_EstAliquetAnte_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">미수이자</label>
+		<loc xlink:type="locator" xlink:label="basic_EtEgestasIaculis" xlink:href="basic.xsd#basic_EtEgestasIaculis"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_EtEgestasIaculis" xlink:to="basic_EtEgestasIaculis_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_EtEgestasIaculis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">매출원가</label>
+		<label xlink:type="resource" xlink:label="basic_EtEgestasIaculis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">이자지급</label>
+		<loc xlink:type="locator" xlink:label="basic_EtiamRollForward" xlink:href="basic.xsd#basic_EtiamRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_EtiamRollForward" xlink:to="basic_EtiamRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_EtiamRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">매출채권</label>
+		<loc xlink:type="locator" xlink:label="basic_EtiamRollUp" xlink:href="basic.xsd#basic_EtiamRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_EtiamRollUp" xlink:to="basic_EtiamRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_EtiamRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">이자수취</label>
+		<loc xlink:type="locator" xlink:label="basic_Etiam" xlink:href="basic.xsd#basic_Etiam"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Etiam" xlink:to="basic_Etiam_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Etiam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">기타이익</label>
+		<label xlink:type="resource" xlink:label="basic_Etiam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">이자수취</label>
+		<label xlink:type="resource" xlink:label="basic_Etiam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">회계이익</label>
+		<loc xlink:type="locator" xlink:label="basic_EuEleifendAugueRollUp" xlink:href="basic.xsd#basic_EuEleifendAugueRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_EuEleifendAugueRollUp" xlink:to="basic_EuEleifendAugueRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_EuEleifendAugueRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">부채총계</label>
+		<loc xlink:type="locator" xlink:label="basic_EuEleifendAugue" xlink:href="basic.xsd#basic_EuEleifendAugue"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_EuEleifendAugue" xlink:to="basic_EuEleifendAugue_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_EuEleifendAugue_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">장기예금</label>
+		<label xlink:type="resource" xlink:label="basic_EuEleifendAugue_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">계약부채</label>
+		<label xlink:type="resource" xlink:label="basic_EuEleifendAugue_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">물류원가</label>
+		<loc xlink:type="locator" xlink:label="basic_Euismod" xlink:href="basic.xsd#basic_Euismod"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Euismod" xlink:to="basic_Euismod_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Euismod_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">물류원가</label>
+		<label xlink:type="resource" xlink:label="basic_Euismod_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">유형자산</label>
+		<loc xlink:type="locator" xlink:label="basic_FacilisisRollForward" xlink:href="basic.xsd#basic_FacilisisRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_FacilisisRollForward" xlink:to="basic_FacilisisRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_FacilisisRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기말자본</label>
+		<loc xlink:type="locator" xlink:label="basic_Facilisis" xlink:href="basic.xsd#basic_Facilisis"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Facilisis" xlink:to="basic_Facilisis_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Facilisis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">유동부채</label>
+		<label xlink:type="resource" xlink:label="basic_Facilisis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">이연수익</label>
+		<label xlink:type="resource" xlink:label="basic_Facilisis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">평균환율</label>
+		<loc xlink:type="locator" xlink:label="basic_Fermentum" xlink:href="basic.xsd#basic_Fermentum"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Fermentum" xlink:to="basic_Fermentum_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Fermentum_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">유동원유</label>
+		<loc xlink:type="locator" xlink:label="basic_FinibusEuismod" xlink:href="basic.xsd#basic_FinibusEuismod"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_FinibusEuismod" xlink:to="basic_FinibusEuismod_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_FinibusEuismod_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">배당수익</label>
+		<label xlink:type="resource" xlink:label="basic_FinibusEuismod_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">손상차손</label>
+		<loc xlink:type="locator" xlink:label="basic_IpsumLoremAbstract" xlink:href="basic.xsd#basic_IpsumLoremAbstract"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_IpsumLoremAbstract" xlink:to="basic_IpsumLoremAbstract_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_IpsumLoremAbstract_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기타부채</label>
+		<loc xlink:type="locator" xlink:label="basic_IpsumRollUp" xlink:href="basic.xsd#basic_IpsumRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_IpsumRollUp" xlink:to="basic_IpsumRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_IpsumRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기타자산</label>
+		<loc xlink:type="locator" xlink:label="basic_Ipsum" xlink:href="basic.xsd#basic_Ipsum"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Ipsum" xlink:to="basic_Ipsum_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Ipsum_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">외환차손</label>
+		<loc xlink:type="locator" xlink:label="basic_JustoVel" xlink:href="basic.xsd#basic_JustoVel"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_JustoVel" xlink:to="basic_JustoVel_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_JustoVel_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">이자수익</label>
+		<loc xlink:type="locator" xlink:label="basic_LiberoVel" xlink:href="basic.xsd#basic_LiberoVel"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_LiberoVel" xlink:to="basic_LiberoVel_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_LiberoVel_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">재고자산</label>
+		<loc xlink:type="locator" xlink:label="basic_LoremRollUp" xlink:href="basic.xsd#basic_LoremRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_LoremRollUp" xlink:to="basic_LoremRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_LoremRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">유동상품</label>
+		<loc xlink:type="locator" xlink:label="basic_Lorem" xlink:href="basic.xsd#basic_Lorem"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Lorem" xlink:to="basic_Lorem_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Lorem_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">외환차익</label>
+		<loc xlink:type="locator" xlink:label="basic_Malesuada" xlink:href="basic.xsd#basic_Malesuada"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Malesuada" xlink:to="basic_Malesuada_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Malesuada_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">매입채무</label>
+		<label xlink:type="resource" xlink:label="basic_Malesuada_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">매출원가</label>
+		<loc xlink:type="locator" xlink:label="basic_MorbiRollUp" xlink:href="basic.xsd#basic_MorbiRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_MorbiRollUp" xlink:to="basic_MorbiRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_MorbiRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">금융수익</label>
+		<loc xlink:type="locator" xlink:label="basic_Morbi" xlink:href="basic.xsd#basic_Morbi"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Morbi" xlink:to="basic_Morbi_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Morbi_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">충당부채</label>
+		<loc xlink:type="locator" xlink:label="basic_NibhVulputate" xlink:href="basic.xsd#basic_NibhVulputate"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_NibhVulputate" xlink:to="basic_NibhVulputate_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_NibhVulputate_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">영업비용</label>
+		<label xlink:type="resource" xlink:label="basic_NibhVulputate_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">연료비용</label>
+		<loc xlink:type="locator" xlink:label="basic_NullaFlowRollForward" xlink:href="basic.xsd#basic_NullaFlowRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_NullaFlowRollForward" xlink:to="basic_NullaFlowRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_NullaFlowRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기타지분</label>
+		<loc xlink:type="locator" xlink:label="basic_NullaRollForward" xlink:href="basic.xsd#basic_NullaRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_NullaRollForward" xlink:to="basic_NullaRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_NullaRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">포괄손익</label>
+		<loc xlink:type="locator" xlink:label="basic_Nullam" xlink:href="basic.xsd#basic_Nullam"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Nullam" xlink:to="basic_Nullam_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Nullam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기타비용</label>
+		<loc xlink:type="locator" xlink:label="basic_Nulla" xlink:href="basic.xsd#basic_Nulla"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Nulla" xlink:to="basic_Nulla_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Nulla_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">보유현금</label>
+		<label xlink:type="resource" xlink:label="basic_Nulla_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">미수수익</label>
+		<label xlink:type="resource" xlink:label="basic_Nulla_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">종업원수</label>
+		<loc xlink:type="locator" xlink:label="basic_NuncMattisAliquam" xlink:href="basic.xsd#basic_NuncMattisAliquam"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_NuncMattisAliquam" xlink:to="basic_NuncMattisAliquam_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_NuncMattisAliquam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">금융원가</label>
+		<label xlink:type="resource" xlink:label="basic_NuncMattisAliquam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">금융원가</label>
+		<label xlink:type="resource" xlink:label="basic_NuncMattisAliquam_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">계약자산</label>
+		<loc xlink:type="locator" xlink:label="basic_Nunc" xlink:href="basic.xsd#basic_Nunc"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Nunc" xlink:to="basic_Nunc_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Nunc_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">광업자산</label>
+		<label xlink:type="resource" xlink:label="basic_Nunc_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">기초 부채</label>
+		<loc xlink:type="locator" xlink:label="basic_OrnareRisus" xlink:href="basic.xsd#basic_OrnareRisus"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_OrnareRisus" xlink:to="basic_OrnareRisus_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_OrnareRisus_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">투자부동산</label>
+		<loc xlink:type="locator" xlink:label="basic_PellentesqueMagnaRollUp" xlink:href="basic.xsd#basic_PellentesqueMagnaRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_PellentesqueMagnaRollUp" xlink:to="basic_PellentesqueMagnaRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_PellentesqueMagnaRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">이익잉여금</label>
+		<loc xlink:type="locator" xlink:label="basic_PellentesqueMagna" xlink:href="basic.xsd#basic_PellentesqueMagna"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_PellentesqueMagna" xlink:to="basic_PellentesqueMagna_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_PellentesqueMagna_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">수수료수익</label>
+		<loc xlink:type="locator" xlink:label="basic_PellentesqueRollForward" xlink:href="basic.xsd#basic_PellentesqueRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_PellentesqueRollForward" xlink:to="basic_PellentesqueRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_PellentesqueRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">미지급비용</label>
+		<loc xlink:type="locator" xlink:label="basic_Pellentesque" xlink:href="basic.xsd#basic_Pellentesque"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Pellentesque" xlink:to="basic_Pellentesque_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Pellentesque_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">법정적립금</label>
+		<label xlink:type="resource" xlink:label="basic_Pellentesque_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">차량운반구</label>
+		<label xlink:type="resource" xlink:label="basic_Pellentesque_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">총포괄손익</label>
+		<loc xlink:type="locator" xlink:label="basic_PhasellusRollUp" xlink:href="basic.xsd#basic_PhasellusRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_PhasellusRollUp" xlink:to="basic_PhasellusRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_PhasellusRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">은행수수료</label>
+		<loc xlink:type="locator" xlink:label="basic_Phasellus" xlink:href="basic.xsd#basic_Phasellus"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Phasellus" xlink:to="basic_Phasellus_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Phasellus_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">유동원재료</label>
+		<loc xlink:type="locator" xlink:label="basic_ProinRollForward" xlink:href="basic.xsd#basic_ProinRollForward"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_ProinRollForward" xlink:to="basic_ProinRollForward_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_ProinRollForward_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">합병준비금</label>
+		<loc xlink:type="locator" xlink:label="basic_Proin" xlink:href="basic.xsd#basic_Proin"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Proin" xlink:to="basic_Proin_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Proin_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">정부보조금</label>
+		<label xlink:type="resource" xlink:label="basic_Proin_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">비유동부채</label>
+		<label xlink:type="resource" xlink:label="basic_Proin_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">사용권자산</label>
+		<loc xlink:type="locator" xlink:label="basic_PurusRollUp" xlink:href="basic.xsd#basic_PurusRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_PurusRollUp" xlink:to="basic_PurusRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_PurusRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">배당금수취</label>
+		<loc xlink:type="locator" xlink:label="basic_Purus" xlink:href="basic.xsd#basic_Purus"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Purus" xlink:to="basic_Purus_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Purus_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">재보험자산</label>
+		<loc xlink:type="locator" xlink:label="basic_SedEtQuamDapibus" xlink:href="basic.xsd#basic_SedEtQuamDapibus"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_SedEtQuamDapibus" xlink:to="basic_SedEtQuamDapibus_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_SedEtQuamDapibus_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">로열티수익</label>
+		<label xlink:type="resource" xlink:label="basic_SedEtQuamDapibus_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">유동 연료</label>
+		<loc xlink:type="locator" xlink:label="basic_SedImperdietIaculis" xlink:href="basic.xsd#basic_SedImperdietIaculis"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_SedImperdietIaculis" xlink:to="basic_SedImperdietIaculis_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_SedImperdietIaculis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">입대료수입</label>
+		<label xlink:type="resource" xlink:label="basic_SedImperdietIaculis_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">유동저장품</label>
+		<loc xlink:type="locator" xlink:label="basic_Semper" xlink:href="basic.xsd#basic_Semper"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Semper" xlink:to="basic_Semper_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Semper_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">법인세비용</label>
+		<label xlink:type="resource" xlink:label="basic_Semper_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">기말 부채</label>
+		<loc xlink:type="locator" xlink:label="basic_SollicitudinUltriciesRollUp" xlink:href="basic.xsd#basic_SollicitudinUltriciesRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_SollicitudinUltriciesRollUp" xlink:to="basic_SollicitudinUltriciesRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_SollicitudinUltriciesRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">에너지비용</label>
+		<loc xlink:type="locator" xlink:label="basic_SollicitudinUltricies" xlink:href="basic.xsd#basic_SollicitudinUltricies"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_SollicitudinUltricies" xlink:to="basic_SollicitudinUltricies_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_SollicitudinUltricies_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">수선유지비</label>
+		<loc xlink:type="locator" xlink:label="basic_TristiqueLibero" xlink:href="basic.xsd#basic_TristiqueLibero"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_TristiqueLibero" xlink:to="basic_TristiqueLibero_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_TristiqueLibero_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodEndLabel">배당금수취</label>
+		<label xlink:type="resource" xlink:label="basic_TristiqueLibero_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/periodStartLabel">배당금지급</label>
+		<label xlink:type="resource" xlink:label="basic_TristiqueLibero_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">수권주식수</label>
+		<loc xlink:type="locator" xlink:label="basic_Ullamcorper" xlink:href="basic.xsd#basic_Ullamcorper"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Ullamcorper" xlink:to="basic_Ullamcorper_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Ullamcorper_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">현금 합계</label>
+		<label xlink:type="resource" xlink:label="basic_Ullamcorper_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">수익 합계</label>
+		<loc xlink:type="locator" xlink:label="basic_UltriciesTristiqueLibero" xlink:href="basic.xsd#basic_UltriciesTristiqueLibero"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_UltriciesTristiqueLibero" xlink:to="basic_UltriciesTristiqueLibero_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_UltriciesTristiqueLibero_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">매출총이익</label>
+		<loc xlink:type="locator" xlink:label="basic_VelVolutpat" xlink:href="basic.xsd#basic_VelVolutpat"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_VelVolutpat" xlink:to="basic_VelVolutpat_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_VelVolutpat_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">기초 자산</label>
+		<label xlink:type="resource" xlink:label="basic_VelVolutpat_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2009/role/negatedLabel">비유동자산</label>
+		<loc xlink:type="locator" xlink:label="basic_VivamusRollUp" xlink:href="basic.xsd#basic_VivamusRollUp"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_VivamusRollUp" xlink:to="basic_VivamusRollUp_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_VivamusRollUp_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">비지배지분</label>
+		<loc xlink:type="locator" xlink:label="basic_Vivamus" xlink:href="basic.xsd#basic_Vivamus"/>
+		<labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="basic_Vivamus" xlink:to="basic_Vivamus_lbl"/>
+		<label xlink:type="resource" xlink:label="basic_Vivamus_lbl" xml:lang="ko" xlink:role="http://www.xbrl.org/2003/role/label">보상권수익</label>
+	</labelLink>
+</linkbase>

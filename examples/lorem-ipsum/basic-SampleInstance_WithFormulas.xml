@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- Created by Charles Hoffman, CPA: 2018-02-19 -->
+<xbrl 
+	xmlns="http://www.xbrl.org/2003/instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase" 
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	
+	xmlns:basic="http://www.xbrlsite.com/basic" 
+	xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+
+	  >
+	
+	  <link:schemaRef xlink:href="basic.xsd" xlink:type="simple" />
+
+  	  <link:linkbaseRef xlink:type='simple' xlink:title="Report specific business rules" xlink:href='basic-SampleInstance-XBRL-Formulas.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+  	  <link:linkbaseRef xlink:type='simple' xlink:title="Continuity cross checks" xlink:href='basic-SampleInstance-Fundamental-Accounting-Concepts.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+	  <context id="I-2018">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <instant>2018-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2017">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <instant>2017-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="D-2018">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2018-01-01</startDate>
+	      <endDate>2018-12-31</endDate>
+	    </period>
+	  </context>
+	
+	
+	
+	  <unit id="U-Monetary">
+	    <measure>iso4217:USD</measure>
+	  </unit>
+
+
+
+
+
+  <!-- Balance sheet -->
+  <basic:Nulla contextRef="I-2018" decimals="INF" unitRef="U-Monetary">4000</basic:Nulla>
+  <basic:Nulla contextRef="I-2017" decimals="INF" unitRef="U-Monetary">3000</basic:Nulla>
+
+  <basic:Pellentesque contextRef="I-2018" decimals="INF" unitRef="U-Monetary">2000</basic:Pellentesque>
+  <basic:Pellentesque contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Pellentesque>
+
+  <basic:Etiam contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Etiam>
+  <basic:Etiam contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Etiam>
+
+  <basic:Phasellus contextRef="I-2018" decimals="INF" unitRef="U-Monetary">7000</basic:Phasellus>
+  <basic:Phasellus contextRef="I-2017" decimals="INF" unitRef="U-Monetary">5000</basic:Phasellus>
+
+  <basic:Proin contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:Proin>
+  <basic:Proin contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Proin>
+
+  <basic:Aenean contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:Aenean>
+  <basic:Aenean contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Aenean>
+
+  <basic:Ipsum contextRef="I-2018" decimals="INF" unitRef="U-Monetary">13000</basic:Ipsum>
+  <basic:Ipsum contextRef="I-2017" decimals="INF" unitRef="U-Monetary">6000</basic:Ipsum>
+
+
+  <basic:Facilisis contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Facilisis>
+  <basic:Facilisis contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Facilisis>
+
+  <basic:Aliquam contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Aliquam>
+  <basic:Aliquam contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Aliquam>
+
+  <basic:Blandit contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:Blandit>
+  <basic:Blandit contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Blandit>
+
+  <basic:Donec contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:Donec>
+  <basic:Donec contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Donec>
+
+  <basic:Morbi contextRef="I-2018" decimals="INF" unitRef="U-Monetary">7000</basic:Morbi>
+  <basic:Morbi contextRef="I-2017" decimals="INF" unitRef="U-Monetary">2000</basic:Morbi>
+
+  <basic:Commodo contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:Commodo>
+  <basic:Commodo contextRef="I-2017" decimals="INF" unitRef="U-Monetary">4000</basic:Commodo>
+
+  <basic:DuisIaculis contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:DuisIaculis>
+  <basic:DuisIaculis contextRef="I-2017" decimals="INF" unitRef="U-Monetary">4000</basic:DuisIaculis>
+
+  <basic:Lorem contextRef="I-2018" decimals="INF" unitRef="U-Monetary">13000</basic:Lorem>
+  <basic:Lorem contextRef="I-2017" decimals="INF" unitRef="U-Monetary">6000</basic:Lorem>
+
+
+
+  <!-- Income Statement -->
+  <basic:PellentesqueMagna contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:PellentesqueMagna>
+
+  <!-- Cash Flow Statement -->
+  <basic:Condimentum contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Condimentum>
+  <basic:Purus contextRef="D-2018" decimals="INF" unitRef="U-Monetary">5000</basic:Purus>
+  <basic:Vivamus contextRef="D-2018" decimals="INF" unitRef="U-Monetary">-5000</basic:Vivamus>
+
+  <basic:Efficitur contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Efficitur>
+
+
+  <!-- Cash and Cash Equivalents Roll Forward -->
+  <basic:Malesuada contextRef="D-2018" decimals="INF" unitRef="U-Monetary">3000</basic:Malesuada>
+  <basic:Ullamcorper contextRef="D-2018" decimals="INF" unitRef="U-Monetary">3000</basic:Ullamcorper>
+
+  <basic:FinibusEuismod contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:FinibusEuismod>
+  <basic:SedImperdietIaculis contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:SedImperdietIaculis>
+
+  <basic:Nullam contextRef="D-2018" decimals="INF" unitRef="U-Monetary">6000</basic:Nullam>
+  <basic:UltriciesTristiqueLibero contextRef="D-2018" decimals="INF" unitRef="U-Monetary">6000</basic:UltriciesTristiqueLibero>
+
+  <basic:Semper contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Semper>
+  <basic:AliquamEratVolutpat contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:AliquamEratVolutpat>
+
+  <basic:Egestas contextRef="D-2018" decimals="INF" unitRef="U-Monetary">5000</basic:Egestas>
+  <basic:AliquamIdSapien contextRef="D-2018" decimals="INF" unitRef="U-Monetary">5000</basic:AliquamIdSapien>
+
+
+  <!-- Receivables Roll Forward -->
+  <basic:Fermentum contextRef="D-2018" decimals="INF" unitRef="U-Monetary">4000</basic:Fermentum>
+  <basic:JustoVel contextRef="D-2018" decimals="INF" unitRef="U-Monetary">4000</basic:JustoVel>
+
+  <basic:DapibusSed contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:DapibusSed>
+  <basic:DuiEget contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:DuiEget>
+
+
+  <!-- Inventories Roll Forward -->
+  <basic:OrnareRisus contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:OrnareRisus>
+  <basic:DiamMaximusPorta contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:DiamMaximusPorta>
+
+  <basic:Nunc contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:Nunc>
+  <basic:EtEgestasIaculis contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:EtEgestasIaculis>
+
+  <basic:NibhVulputate contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:NibhVulputate>
+
+
+  <!-- Property, Plant and Equipment Roll Forward -->
+  <basic:Euismod contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:Euismod>
+  <basic:VelVolutpat contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:VelVolutpat>
+
+  <basic:SedEtQuamDapibus contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:SedEtQuamDapibus>
+
+
+  <!-- Accounts Payable Roll Forward -->
+
+
+
+  <!-- Long-term Debt Roll Forward -->
+
+
+
+  <!-- Equity Roll Forward -->
+  <basic:SollicitudinUltricies contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:SollicitudinUltricies>
+
+
+
+
+  <!-- Inventories Detail Roll Up -->
+  <basic:EuEleifendAugue contextRef="I-2018" decimals="INF" unitRef="U-Monetary">600</basic:EuEleifendAugue>
+  <basic:EuEleifendAugue contextRef="I-2017" decimals="INF" unitRef="U-Monetary">700</basic:EuEleifendAugue>
+
+  <basic:EstAliquetAnte contextRef="I-2018" decimals="INF" unitRef="U-Monetary">200</basic:EstAliquetAnte>
+  <basic:EstAliquetAnte contextRef="I-2017" decimals="INF" unitRef="U-Monetary">100</basic:EstAliquetAnte>
+
+  <basic:NuncMattisAliquam contextRef="I-2018" decimals="INF" unitRef="U-Monetary">200</basic:NuncMattisAliquam>
+  <basic:NuncMattisAliquam contextRef="I-2017" decimals="INF" unitRef="U-Monetary">200</basic:NuncMattisAliquam>
+
+
+
+  <!-- Finished Goods Detail Roll Up -->
+  <basic:LiberoVel contextRef="I-2018" decimals="INF" unitRef="U-Monetary">400</basic:LiberoVel>
+  <basic:LiberoVel contextRef="I-2017" decimals="INF" unitRef="U-Monetary">600</basic:LiberoVel>
+
+  <basic:TristiqueLibero contextRef="I-2018" decimals="INF" unitRef="U-Monetary">200</basic:TristiqueLibero>
+  <basic:TristiqueLibero contextRef="I-2017" decimals="INF" unitRef="U-Monetary">100</basic:TristiqueLibero>
+
+</xbrl>
