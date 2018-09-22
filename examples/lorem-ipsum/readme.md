@@ -7,5 +7,7 @@
 
 The Lorem Ipsum example uses [Lorem Ipsum](https://www.lipsum.com/feed/html) text to represent an XBRL taxonomy and XBRL instance.  This clearly shows that XBRL can be used to represent ANY INFORMATION, not only financial information.
 
+Note that the FOUR additional label linkbases are not attached to the XBRL taxonomy or XBRL instance; they should be APPENDED after loanding the XBRL instance.
+
 
 
