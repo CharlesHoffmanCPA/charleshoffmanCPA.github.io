@@ -4,4 +4,8 @@
 
 [Documentation](http://xbrlsite.azurewebsites.net/2017/IntelligentDigitalFinancialReporting/Part04_Chapter07.2_ConceptArrangementPatternExamples.pdf)
 
-* Roll up
+* Hierarchy
+* Roll Up
+* Roll Forward
+* Adjustment
+* Variance
