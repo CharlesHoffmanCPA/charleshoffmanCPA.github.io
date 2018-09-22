@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- Created by Charles Hoffman, CPA: 2018-09-04 -->
+<xbrl 
+	xmlns="http://www.xbrl.org/2003/instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase" 
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	
+	xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+	xmlns:negated="http://www.xbrl.org/2009/role/negated"
+
+	xmlns:dcfm="http://www.example.com/dcfm"
+	>
+	
+	  <link:schemaRef xlink:href="DiscountedCashFlowModel.xsd" xlink:type="simple" />
+
+  	  <link:linkbaseRef xlink:type='simple' xlink:title="Business rules" xlink:href='DiscountedCashFlowModel-formulas.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+
+	  <context id="I-2016">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2016-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2017">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2017-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2018">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2018-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2019">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2019-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2020">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2020-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2021">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2021-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2022">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2022-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2023">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <instant>2023-12-31</instant>
+	    </period>
+	  </context>
+	
+	  <context id="D-2016">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2016-01-01</startDate>
+	      <endDate>2016-12-31</endDate>
+	    </period>
+	  </context>
+	  <context id="D-2017">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2017-01-01</startDate>
+	      <endDate>2017-12-31</endDate>
+	    </period>
+	  </context>
+	  <context id="D-2018">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2018-01-01</startDate>
+	      <endDate>2018-12-31</endDate>
+	    </period>
+	  </context>
+	  <context id="D-2019">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2019-01-01</startDate>
+	      <endDate>2019-12-31</endDate>
+	    </period>
+	  </context>
+	  <context id="D-2020">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2020-01-01</startDate>
+	      <endDate>2020-12-31</endDate>
+	    </period>
+	  </context>
+	  <context id="D-2021">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2021-01-01</startDate>
+	      <endDate>2021-12-31</endDate>
+	    </period>
+	  </context>
+	  <context id="D-2022">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2022-01-01</startDate>
+	      <endDate>2022-12-31</endDate>
+	    </period>
+	  </context>
+	  <context id="D-2023">
+	    <entity>
+	      <identifier scheme="http://www.sec.gov/CIK">0000789019</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2023-01-01</startDate>
+	      <endDate>2023-12-31</endDate>
+	    </period>
+	  </context>
+	
+	
+
+	
+	
+	
+	  <unit id="U-Monetary">
+	    <measure>iso4217:USD</measure>
+	  </unit>
+	  <unit id="U-Shares">
+	    <measure>shares</measure>
+	  </unit>
+	  <unit id="U-Pure">
+	    <measure>pure</measure>
+	  </unit>
+	  <unit id="U-PerShare">
+	    <divide>
+	      <unitNumerator>
+	        <measure>iso4217:USD</measure>
+	      </unitNumerator>
+	      <unitDenominator>
+	        <measure>shares</measure>
+	      </unitDenominator>
+	    </divide>
+	  </unit>
+
+  <!-- Heading -->
+  <dcfm:ValuationDate contextRef="I-2018">2018-09-01</dcfm:ValuationDate>
+  <dcfm:SharePriceOnValuationDate contextRef="I-2018" unitRef="U-PerShare" decimals="2">112.33</dcfm:SharePriceOnValuationDate>
+  <dcfm:DilutedSharesOutstanding contextRef="I-2018" unitRef="U-Shares" decimals="-6">7794000000</dcfm:DilutedSharesOutstanding>
+
+
+
+  <!-- Selected operating data -->
+  <dcfm:Revenue contextRef="D-2016" unitRef="U-Monetary" decimals="0">85320000000</dcfm:Revenue>
+  <dcfm:Revenue contextRef="D-2017" unitRef="U-Monetary" decimals="0">89950000000</dcfm:Revenue>
+  <dcfm:Revenue contextRef="D-2018" unitRef="U-Monetary" decimals="0">110360000000</dcfm:Revenue>
+  <dcfm:Revenue contextRef="D-2019" unitRef="U-Monetary" decimals="0">121396000000</dcfm:Revenue>
+  <dcfm:Revenue contextRef="D-2020" unitRef="U-Monetary" decimals="0">133535600000</dcfm:Revenue>
+  <dcfm:Revenue contextRef="D-2021" unitRef="U-Monetary" decimals="0">146889160000</dcfm:Revenue>
+  <dcfm:Revenue contextRef="D-2022" unitRef="U-Monetary" decimals="0">161578076000</dcfm:Revenue>
+  <dcfm:Revenue contextRef="D-2023" unitRef="U-Monetary" decimals="0">177735883600</dcfm:Revenue>
+
+
+  <dcfm:EBITDA contextRef="D-2016" unitRef="U-Monetary" decimals="0">27616000000</dcfm:EBITDA>
+  <dcfm:EBITDA contextRef="D-2017" unitRef="U-Monetary" decimals="0">34149000000</dcfm:EBITDA>
+  <dcfm:EBITDA contextRef="D-2018" unitRef="U-Monetary" decimals="0">49468000000</dcfm:EBITDA>
+  <dcfm:EBITDA contextRef="D-2019" unitRef="U-Monetary" decimals="0">48558400000</dcfm:EBITDA>
+  <dcfm:EBITDA contextRef="D-2020" unitRef="U-Monetary" decimals="0">53414240000</dcfm:EBITDA>
+  <dcfm:EBITDA contextRef="D-2021" unitRef="U-Monetary" decimals="0">58755664000</dcfm:EBITDA>
+  <dcfm:EBITDA contextRef="D-2022" unitRef="U-Monetary" decimals="0">64631230400</dcfm:EBITDA>
+  <dcfm:EBITDA contextRef="D-2023" unitRef="U-Monetary" decimals="0">71094353440</dcfm:EBITDA>
+
+							
+
+  <dcfm:EBIT contextRef="D-2016" unitRef="U-Monetary" decimals="0">26373000000</dcfm:EBIT>
+  <dcfm:EBIT contextRef="D-2017" unitRef="U-Monetary" decimals="0">31927000000</dcfm:EBIT>
+  <dcfm:EBIT contextRef="D-2018" unitRef="U-Monetary" decimals="0">46735000000</dcfm:EBIT>
+  <dcfm:EBIT contextRef="D-2019" unitRef="U-Monetary" decimals="0">36418800000</dcfm:EBIT>
+  <dcfm:EBIT contextRef="D-2020" unitRef="U-Monetary" decimals="0">40060680000</dcfm:EBIT>
+  <dcfm:EBIT contextRef="D-2021" unitRef="U-Monetary" decimals="0">44066748000</dcfm:EBIT>
+  <dcfm:EBIT contextRef="D-2022" unitRef="U-Monetary" decimals="0">48473422800</dcfm:EBIT>
+  <dcfm:EBIT contextRef="D-2023" unitRef="U-Monetary" decimals="0">53320765080</dcfm:EBIT>
+
+
+  <dcfm:DepreciationAndAmortization contextRef="D-2016" unitRef="U-Monetary" decimals="0">6622000000</dcfm:DepreciationAndAmortization>
+  <dcfm:DepreciationAndAmortization contextRef="D-2017" unitRef="U-Monetary" decimals="0">8778000000</dcfm:DepreciationAndAmortization>
+  <dcfm:DepreciationAndAmortization contextRef="D-2018" unitRef="U-Monetary" decimals="0">10261000000</dcfm:DepreciationAndAmortization>
+  <dcfm:DepreciationAndAmortization contextRef="D-2019" unitRef="U-Monetary" decimals="0">9711680000</dcfm:DepreciationAndAmortization>
+  <dcfm:DepreciationAndAmortization contextRef="D-2020" unitRef="U-Monetary" decimals="0">10682848000</dcfm:DepreciationAndAmortization>
+  <dcfm:DepreciationAndAmortization contextRef="D-2021" unitRef="U-Monetary" decimals="0">11751132800</dcfm:DepreciationAndAmortization>
+  <dcfm:DepreciationAndAmortization contextRef="D-2022" unitRef="U-Monetary" decimals="0">12926246080</dcfm:DepreciationAndAmortization>
+  <dcfm:DepreciationAndAmortization contextRef="D-2023" unitRef="U-Monetary" decimals="0">14218870688</dcfm:DepreciationAndAmortization>
+
+
+  <!-- Selected operating data - Growth rates -->
+  <dcfm:RevenueGrowthRate contextRef="D-2019" unitRef="U-Pure" decimals="3">.100</dcfm:RevenueGrowthRate>
+  <dcfm:RevenueGrowthRate contextRef="D-2020" unitRef="U-Pure" decimals="3">.100</dcfm:RevenueGrowthRate>
+  <dcfm:RevenueGrowthRate contextRef="D-2021" unitRef="U-Pure" decimals="3">.100</dcfm:RevenueGrowthRate>
+  <dcfm:RevenueGrowthRate contextRef="D-2022" unitRef="U-Pure" decimals="3">.100</dcfm:RevenueGrowthRate>
+  <dcfm:RevenueGrowthRate contextRef="D-2023" unitRef="U-Pure" decimals="3">.100</dcfm:RevenueGrowthRate>
+
+  <dcfm:EBITDAMargin contextRef="D-2019" unitRef="U-Pure" decimals="3">.400</dcfm:EBITDAMargin>
+  <dcfm:EBITDAMargin contextRef="D-2020" unitRef="U-Pure" decimals="3">.400</dcfm:EBITDAMargin>
+  <dcfm:EBITDAMargin contextRef="D-2021" unitRef="U-Pure" decimals="3">.400</dcfm:EBITDAMargin>
+  <dcfm:EBITDAMargin contextRef="D-2022" unitRef="U-Pure" decimals="3">.400</dcfm:EBITDAMargin>
+  <dcfm:EBITDAMargin contextRef="D-2023" unitRef="U-Pure" decimals="3">.400</dcfm:EBITDAMargin>
+
+  <dcfm:EBITMargin contextRef="D-2019" unitRef="U-Pure" decimals="3">.300</dcfm:EBITMargin>
+  <dcfm:EBITMargin contextRef="D-2020" unitRef="U-Pure" decimals="3">.300</dcfm:EBITMargin>
+  <dcfm:EBITMargin contextRef="D-2021" unitRef="U-Pure" decimals="3">.300</dcfm:EBITMargin>
+  <dcfm:EBITMargin contextRef="D-2022" unitRef="U-Pure" decimals="3">.300</dcfm:EBITMargin>
+  <dcfm:EBITMargin contextRef="D-2023" unitRef="U-Pure" decimals="3">.300</dcfm:EBITMargin>
+
+  <dcfm:DepreciationAndAmortizationAsPercentOfRevenue contextRef="D-2019" unitRef="U-Pure" decimals="3">.080</dcfm:DepreciationAndAmortizationAsPercentOfRevenue>
+  <dcfm:DepreciationAndAmortizationAsPercentOfRevenue contextRef="D-2020" unitRef="U-Pure" decimals="3">.080</dcfm:DepreciationAndAmortizationAsPercentOfRevenue>
+  <dcfm:DepreciationAndAmortizationAsPercentOfRevenue contextRef="D-2021" unitRef="U-Pure" decimals="3">.080</dcfm:DepreciationAndAmortizationAsPercentOfRevenue>
+  <dcfm:DepreciationAndAmortizationAsPercentOfRevenue contextRef="D-2022" unitRef="U-Pure" decimals="3">.080</dcfm:DepreciationAndAmortizationAsPercentOfRevenue>
+  <dcfm:DepreciationAndAmortizationAsPercentOfRevenue contextRef="D-2023" unitRef="U-Pure" decimals="3">.080</dcfm:DepreciationAndAmortizationAsPercentOfRevenue>
+
+
+  <!-- Selected balance sheet and other data -->
+
+
+  <dcfm:Cash contextRef="I-2016" unitRef="U-Monetary" decimals="0">6510000000</dcfm:Cash>
+  <dcfm:Cash contextRef="I-2017" unitRef="U-Monetary" decimals="0">7663000000</dcfm:Cash>
+  <dcfm:Cash contextRef="I-2018" unitRef="U-Monetary" decimals="0">11946000000</dcfm:Cash>
+  <dcfm:Cash contextRef="I-2019" unitRef="U-Monetary" decimals="0">11946000000</dcfm:Cash>
+  <dcfm:Cash contextRef="I-2020" unitRef="U-Monetary" decimals="0">11946000000</dcfm:Cash>
+  <dcfm:Cash contextRef="I-2021" unitRef="U-Monetary" decimals="0">11946000000</dcfm:Cash>
+  <dcfm:Cash contextRef="I-2022" unitRef="U-Monetary" decimals="0">11946000000</dcfm:Cash>
+  <dcfm:Cash contextRef="I-2023" unitRef="U-Monetary" decimals="0">11946000000</dcfm:Cash>
+
+
+  <dcfm:AccountsReceivable contextRef="I-2016" unitRef="U-Monetary" decimals="0">18277000000</dcfm:AccountsReceivable>
+  <dcfm:AccountsReceivable contextRef="I-2017" unitRef="U-Monetary" decimals="0">19792000000</dcfm:AccountsReceivable>
+  <dcfm:AccountsReceivable contextRef="I-2018" unitRef="U-Monetary" decimals="0">26481000000</dcfm:AccountsReceivable>
+  <dcfm:AccountsReceivable contextRef="I-2019" unitRef="U-Monetary" decimals="0">29129100000</dcfm:AccountsReceivable>
+  <dcfm:AccountsReceivable contextRef="I-2020" unitRef="U-Monetary" decimals="0">32333301000</dcfm:AccountsReceivable>
+  <dcfm:AccountsReceivable contextRef="I-2021" unitRef="U-Monetary" decimals="0">36213297120</dcfm:AccountsReceivable>
+  <dcfm:AccountsReceivable contextRef="I-2022" unitRef="U-Monetary" decimals="0">40921025746</dcfm:AccountsReceivable>
+  <dcfm:AccountsReceivable contextRef="I-2023" unitRef="U-Monetary" decimals="0">46240759093</dcfm:AccountsReceivable>
+
+  <dcfm:Inventories contextRef="I-2016" unitRef="U-Monetary" decimals="0">2251000000</dcfm:Inventories>
+  <dcfm:Inventories contextRef="I-2017" unitRef="U-Monetary" decimals="0">2181000000</dcfm:Inventories>
+  <dcfm:Inventories contextRef="I-2018" unitRef="U-Monetary" decimals="0">2662000000</dcfm:Inventories>
+  <dcfm:Inventories contextRef="I-2019" unitRef="U-Monetary" decimals="0">2701930000</dcfm:Inventories>
+  <dcfm:Inventories contextRef="I-2020" unitRef="U-Monetary" decimals="0">2837026500</dcfm:Inventories>
+  <dcfm:Inventories contextRef="I-2021" unitRef="U-Monetary" decimals="0">2978877825</dcfm:Inventories>
+  <dcfm:Inventories contextRef="I-2022" unitRef="U-Monetary" decimals="0">3127821716</dcfm:Inventories>
+  <dcfm:Inventories contextRef="I-2023" unitRef="U-Monetary" decimals="0">3284212801</dcfm:Inventories>
+
+  <dcfm:PrepaidExpenses contextRef="I-2016" unitRef="U-Monetary" decimals="0">5892000000</dcfm:PrepaidExpenses>
+  <dcfm:PrepaidExpenses contextRef="I-2017" unitRef="U-Monetary" decimals="0">4897000000</dcfm:PrepaidExpenses>
+  <dcfm:PrepaidExpenses contextRef="I-2018" unitRef="U-Monetary" decimals="0">6751000000</dcfm:PrepaidExpenses>
+  <dcfm:PrepaidExpenses contextRef="I-2019" unitRef="U-Monetary" decimals="0">7763650000</dcfm:PrepaidExpenses>
+  <dcfm:PrepaidExpenses contextRef="I-2020" unitRef="U-Monetary" decimals="0">8928197500</dcfm:PrepaidExpenses>
+  <dcfm:PrepaidExpenses contextRef="I-2021" unitRef="U-Monetary" decimals="0">10267427125</dcfm:PrepaidExpenses>
+  <dcfm:PrepaidExpenses contextRef="I-2022" unitRef="U-Monetary" decimals="0">11807541194</dcfm:PrepaidExpenses>
+  <dcfm:PrepaidExpenses contextRef="I-2023" unitRef="U-Monetary" decimals="0">13578672373</dcfm:PrepaidExpenses>
+
+  <dcfm:AccountsPayable contextRef="I-2016" unitRef="U-Monetary" decimals="0">6898000000</dcfm:AccountsPayable>
+  <dcfm:AccountsPayable contextRef="I-2017" unitRef="U-Monetary" decimals="0">7390000000</dcfm:AccountsPayable>
+  <dcfm:AccountsPayable contextRef="I-2018" unitRef="U-Monetary" decimals="0">8617000000</dcfm:AccountsPayable>
+  <dcfm:AccountsPayable contextRef="I-2019" unitRef="U-Monetary" decimals="0">9478700000</dcfm:AccountsPayable>
+  <dcfm:AccountsPayable contextRef="I-2020" unitRef="U-Monetary" decimals="0">10426570000</dcfm:AccountsPayable>
+  <dcfm:AccountsPayable contextRef="I-2021" unitRef="U-Monetary" decimals="0">11469227000</dcfm:AccountsPayable>
+  <dcfm:AccountsPayable contextRef="I-2022" unitRef="U-Monetary" decimals="0">12616149700</dcfm:AccountsPayable>
+  <dcfm:AccountsPayable contextRef="I-2023" unitRef="U-Monetary" decimals="0">13877764670</dcfm:AccountsPayable>
+
+  <dcfm:AccruedExpenses contextRef="I-2016" unitRef="U-Monetary" decimals="0">5264000000</dcfm:AccruedExpenses>
+  <dcfm:AccruedExpenses contextRef="I-2017" unitRef="U-Monetary" decimals="0">5819000000</dcfm:AccruedExpenses>
+  <dcfm:AccruedExpenses contextRef="I-2018" unitRef="U-Monetary" decimals="0">6103000000</dcfm:AccruedExpenses>
+  <dcfm:AccruedExpenses contextRef="I-2019" unitRef="U-Monetary" decimals="0">6713300000</dcfm:AccruedExpenses>
+  <dcfm:AccruedExpenses contextRef="I-2020" unitRef="U-Monetary" decimals="0">7384630000</dcfm:AccruedExpenses>
+  <dcfm:AccruedExpenses contextRef="I-2021" unitRef="U-Monetary" decimals="0">8123093000</dcfm:AccruedExpenses>
+  <dcfm:AccruedExpenses contextRef="I-2022" unitRef="U-Monetary" decimals="0">8935402300</dcfm:AccruedExpenses>
+  <dcfm:AccruedExpenses contextRef="I-2023" unitRef="U-Monetary" decimals="0">9828942530</dcfm:AccruedExpenses>
+
+  <dcfm:Debt contextRef="I-2016" unitRef="U-Monetary" decimals="0">40949000000</dcfm:Debt>
+  <dcfm:Debt contextRef="I-2017" unitRef="U-Monetary" decimals="0">77837000000</dcfm:Debt>
+  <dcfm:Debt contextRef="I-2018" unitRef="U-Monetary" decimals="0">76898000000</dcfm:Debt>
+  <dcfm:Debt contextRef="I-2019" unitRef="U-Monetary" decimals="0">76898000000</dcfm:Debt>
+  <dcfm:Debt contextRef="I-2020" unitRef="U-Monetary" decimals="0">76898000000</dcfm:Debt>
+  <dcfm:Debt contextRef="I-2021" unitRef="U-Monetary" decimals="0">76898000000</dcfm:Debt>
+  <dcfm:Debt contextRef="I-2022" unitRef="U-Monetary" decimals="0">76898000000</dcfm:Debt>
+  <dcfm:Debt contextRef="I-2023" unitRef="U-Monetary" decimals="0">76898000000</dcfm:Debt>
+
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2016" unitRef="U-Monetary" decimals="0">38156000000</dcfm:PropertyPlantAndEquipmentGross>
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2017" unitRef="U-Monetary" decimals="0">47913000000</dcfm:PropertyPlantAndEquipmentGross>
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2018" unitRef="U-Monetary" decimals="0">58683000000</dcfm:PropertyPlantAndEquipmentGross>
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2019" unitRef="U-Monetary" decimals="0">64551300000</dcfm:PropertyPlantAndEquipmentGross>
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2020" unitRef="U-Monetary" decimals="0">71006430000</dcfm:PropertyPlantAndEquipmentGross>
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2021" unitRef="U-Monetary" decimals="0">78107073000</dcfm:PropertyPlantAndEquipmentGross>
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2022" unitRef="U-Monetary" decimals="0">85917780300</dcfm:PropertyPlantAndEquipmentGross>
+  <dcfm:PropertyPlantAndEquipmentGross contextRef="I-2023" unitRef="U-Monetary" decimals="0">94509558330</dcfm:PropertyPlantAndEquipmentGross>
+
+  <!-- Selected balance sheet and other data - Growth rates -->
+
+
+  <dcfm:AccountsReceivableGrowth contextRef="D-2019" unitRef="U-Pure" decimals="3">.100</dcfm:AccountsReceivableGrowth>
+  <dcfm:AccountsReceivableGrowth contextRef="D-2020" unitRef="U-Pure" decimals="3">.110</dcfm:AccountsReceivableGrowth>
+  <dcfm:AccountsReceivableGrowth contextRef="D-2021" unitRef="U-Pure" decimals="3">.120</dcfm:AccountsReceivableGrowth>
+  <dcfm:AccountsReceivableGrowth contextRef="D-2022" unitRef="U-Pure" decimals="3">.130</dcfm:AccountsReceivableGrowth>
+  <dcfm:AccountsReceivableGrowth contextRef="D-2023" unitRef="U-Pure" decimals="3">.130</dcfm:AccountsReceivableGrowth>
+
+  <dcfm:InventoriesGrowth contextRef="D-2019" unitRef="U-Pure" decimals="3">.015</dcfm:InventoriesGrowth>
+  <dcfm:InventoriesGrowth contextRef="D-2020" unitRef="U-Pure" decimals="3">.050</dcfm:InventoriesGrowth>
+  <dcfm:InventoriesGrowth contextRef="D-2021" unitRef="U-Pure" decimals="3">.050</dcfm:InventoriesGrowth>
+  <dcfm:InventoriesGrowth contextRef="D-2022" unitRef="U-Pure" decimals="3">.050</dcfm:InventoriesGrowth>
+  <dcfm:InventoriesGrowth contextRef="D-2023" unitRef="U-Pure" decimals="3">.050</dcfm:InventoriesGrowth>
+
+  <dcfm:PrepaidExpensesGrowth contextRef="D-2019" unitRef="U-Pure" decimals="3">.150</dcfm:PrepaidExpensesGrowth>
+  <dcfm:PrepaidExpensesGrowth contextRef="D-2020" unitRef="U-Pure" decimals="3">.150</dcfm:PrepaidExpensesGrowth>
+  <dcfm:PrepaidExpensesGrowth contextRef="D-2021" unitRef="U-Pure" decimals="3">.150</dcfm:PrepaidExpensesGrowth>
+  <dcfm:PrepaidExpensesGrowth contextRef="D-2022" unitRef="U-Pure" decimals="3">.150</dcfm:PrepaidExpensesGrowth>
+  <dcfm:PrepaidExpensesGrowth contextRef="D-2023" unitRef="U-Pure" decimals="3">.150</dcfm:PrepaidExpensesGrowth>
+
+  <dcfm:AccountsPayableGrowth contextRef="D-2019" unitRef="U-Pure" decimals="3">.100</dcfm:AccountsPayableGrowth>
+  <dcfm:AccountsPayableGrowth contextRef="D-2020" unitRef="U-Pure" decimals="3">.100</dcfm:AccountsPayableGrowth>
+  <dcfm:AccountsPayableGrowth contextRef="D-2021" unitRef="U-Pure" decimals="3">.100</dcfm:AccountsPayableGrowth>
+  <dcfm:AccountsPayableGrowth contextRef="D-2022" unitRef="U-Pure" decimals="3">.100</dcfm:AccountsPayableGrowth>
+  <dcfm:AccountsPayableGrowth contextRef="D-2023" unitRef="U-Pure" decimals="3">.100</dcfm:AccountsPayableGrowth>
+
+  <dcfm:AccruedExpensesGrowth contextRef="D-2019" unitRef="U-Pure" decimals="3">.100</dcfm:AccruedExpensesGrowth>
+  <dcfm:AccruedExpensesGrowth contextRef="D-2020" unitRef="U-Pure" decimals="3">.100</dcfm:AccruedExpensesGrowth>
+  <dcfm:AccruedExpensesGrowth contextRef="D-2021" unitRef="U-Pure" decimals="3">.100</dcfm:AccruedExpensesGrowth>
+  <dcfm:AccruedExpensesGrowth contextRef="D-2022" unitRef="U-Pure" decimals="3">.100</dcfm:AccruedExpensesGrowth>
+  <dcfm:AccruedExpensesGrowth contextRef="D-2023" unitRef="U-Pure" decimals="3">.100</dcfm:AccruedExpensesGrowth>
+
+  <dcfm:CapitalExpendituresGrowth contextRef="D-2019" unitRef="U-Pure" decimals="3">.100</dcfm:CapitalExpendituresGrowth>
+  <dcfm:CapitalExpendituresGrowth contextRef="D-2020" unitRef="U-Pure" decimals="3">.100</dcfm:CapitalExpendituresGrowth>
+  <dcfm:CapitalExpendituresGrowth contextRef="D-2021" unitRef="U-Pure" decimals="3">.100</dcfm:CapitalExpendituresGrowth>
+  <dcfm:CapitalExpendituresGrowth contextRef="D-2022" unitRef="U-Pure" decimals="3">.100</dcfm:CapitalExpendituresGrowth>
+  <dcfm:CapitalExpendituresGrowth contextRef="D-2023" unitRef="U-Pure" decimals="3">.100</dcfm:CapitalExpendituresGrowth>
+
+  <!-- Free Cash Flow Buildup -->
+
+  <dcfm:TaxRate contextRef="D-2019" unitRef="U-Pure" decimals="3">.220</dcfm:TaxRate>
+  <dcfm:TaxRate contextRef="D-2020" unitRef="U-Pure" decimals="3">.220</dcfm:TaxRate>
+  <dcfm:TaxRate contextRef="D-2021" unitRef="U-Pure" decimals="3">.220</dcfm:TaxRate>
+  <dcfm:TaxRate contextRef="D-2022" unitRef="U-Pure" decimals="3">.220</dcfm:TaxRate>
+  <dcfm:TaxRate contextRef="D-2023" unitRef="U-Pure" decimals="3">.220</dcfm:TaxRate>
+
+  <!-- Roll Up -->
+
+  <dcfm:EBIAT contextRef="D-2019" unitRef="U-Monetary" decimals="0">28406664000</dcfm:EBIAT>
+  <dcfm:EBIAT contextRef="D-2020" unitRef="U-Monetary" decimals="0">31247330400</dcfm:EBIAT>
+  <dcfm:EBIAT contextRef="D-2021" unitRef="U-Monetary" decimals="0">34372063440</dcfm:EBIAT>
+  <dcfm:EBIAT contextRef="D-2022" unitRef="U-Monetary" decimals="0">37809269784</dcfm:EBIAT>
+  <dcfm:EBIAT contextRef="D-2023" unitRef="U-Monetary" decimals="0">41590196762</dcfm:EBIAT>
+
+
+  <dcfm:AccountsReceivableIncreaseDecrease contextRef="D-2019" unitRef="U-Monetary" decimals="0">-2648100000</dcfm:AccountsReceivableIncreaseDecrease>
+  <dcfm:AccountsReceivableIncreaseDecrease contextRef="D-2020" unitRef="U-Monetary" decimals="0">-3204201000</dcfm:AccountsReceivableIncreaseDecrease>
+  <dcfm:AccountsReceivableIncreaseDecrease contextRef="D-2021" unitRef="U-Monetary" decimals="0">-3879996120</dcfm:AccountsReceivableIncreaseDecrease>
+  <dcfm:AccountsReceivableIncreaseDecrease contextRef="D-2022" unitRef="U-Monetary" decimals="0">-4707728626</dcfm:AccountsReceivableIncreaseDecrease>
+  <dcfm:AccountsReceivableIncreaseDecrease contextRef="D-2023" unitRef="U-Monetary" decimals="0">-5319733347</dcfm:AccountsReceivableIncreaseDecrease>
+				
+
+  <dcfm:InventoriesIncreaseDecrease contextRef="D-2019" unitRef="U-Monetary" decimals="0">-39930000</dcfm:InventoriesIncreaseDecrease>
+  <dcfm:InventoriesIncreaseDecrease contextRef="D-2020" unitRef="U-Monetary" decimals="0">-135096500</dcfm:InventoriesIncreaseDecrease>
+  <dcfm:InventoriesIncreaseDecrease contextRef="D-2021" unitRef="U-Monetary" decimals="0">-141851325</dcfm:InventoriesIncreaseDecrease>
+  <dcfm:InventoriesIncreaseDecrease contextRef="D-2022" unitRef="U-Monetary" decimals="0">-148943891</dcfm:InventoriesIncreaseDecrease>
+  <dcfm:InventoriesIncreaseDecrease contextRef="D-2023" unitRef="U-Monetary" decimals="0">-156391085</dcfm:InventoriesIncreaseDecrease>
+
+				
+
+  <dcfm:PrepaidExpensesIncreaseDecrease contextRef="D-2019" unitRef="U-Monetary" decimals="0">-1012650000</dcfm:PrepaidExpensesIncreaseDecrease>
+  <dcfm:PrepaidExpensesIncreaseDecrease contextRef="D-2020" unitRef="U-Monetary" decimals="0">-1164547500</dcfm:PrepaidExpensesIncreaseDecrease>
+  <dcfm:PrepaidExpensesIncreaseDecrease contextRef="D-2021" unitRef="U-Monetary" decimals="0">-1339229625</dcfm:PrepaidExpensesIncreaseDecrease>
+  <dcfm:PrepaidExpensesIncreaseDecrease contextRef="D-2022" unitRef="U-Monetary" decimals="0">-1540114069</dcfm:PrepaidExpensesIncreaseDecrease>
+  <dcfm:PrepaidExpensesIncreaseDecrease contextRef="D-2023" unitRef="U-Monetary" decimals="0">-1771131179</dcfm:PrepaidExpensesIncreaseDecrease>
+
+
+  <dcfm:AccountsPayableIncreaseDecrease contextRef="D-2019" unitRef="U-Monetary" decimals="0">861700000</dcfm:AccountsPayableIncreaseDecrease>
+  <dcfm:AccountsPayableIncreaseDecrease contextRef="D-2020" unitRef="U-Monetary" decimals="0">947870000</dcfm:AccountsPayableIncreaseDecrease>
+  <dcfm:AccountsPayableIncreaseDecrease contextRef="D-2021" unitRef="U-Monetary" decimals="0">1042657000</dcfm:AccountsPayableIncreaseDecrease>
+  <dcfm:AccountsPayableIncreaseDecrease contextRef="D-2022" unitRef="U-Monetary" decimals="0">1146922700</dcfm:AccountsPayableIncreaseDecrease>
+  <dcfm:AccountsPayableIncreaseDecrease contextRef="D-2023" unitRef="U-Monetary" decimals="0">1261614970</dcfm:AccountsPayableIncreaseDecrease>
+
+
+  <dcfm:AccruedExpensesIncreaseDecrease contextRef="D-2019" unitRef="U-Monetary" decimals="0">610300000</dcfm:AccruedExpensesIncreaseDecrease>
+  <dcfm:AccruedExpensesIncreaseDecrease contextRef="D-2020" unitRef="U-Monetary" decimals="0">671330000</dcfm:AccruedExpensesIncreaseDecrease>
+  <dcfm:AccruedExpensesIncreaseDecrease contextRef="D-2021" unitRef="U-Monetary" decimals="0">738463000</dcfm:AccruedExpensesIncreaseDecrease>
+  <dcfm:AccruedExpensesIncreaseDecrease contextRef="D-2022" unitRef="U-Monetary" decimals="0">812309300</dcfm:AccruedExpensesIncreaseDecrease>
+  <dcfm:AccruedExpensesIncreaseDecrease contextRef="D-2023" unitRef="U-Monetary" decimals="0">893540230</dcfm:AccruedExpensesIncreaseDecrease>
+
+
+  <dcfm:CapitalExpenditures contextRef="D-2019" unitRef="U-Monetary" decimals="0">-5868300000</dcfm:CapitalExpenditures>
+  <dcfm:CapitalExpenditures contextRef="D-2020" unitRef="U-Monetary" decimals="0">-6455130000</dcfm:CapitalExpenditures>
+  <dcfm:CapitalExpenditures contextRef="D-2021" unitRef="U-Monetary" decimals="0">-7100643000</dcfm:CapitalExpenditures>
+  <dcfm:CapitalExpenditures contextRef="D-2022" unitRef="U-Monetary" decimals="0">-7810707300</dcfm:CapitalExpenditures>
+  <dcfm:CapitalExpenditures contextRef="D-2023" unitRef="U-Monetary" decimals="0">-8591778030</dcfm:CapitalExpenditures>
+
+ 																												 
+  <dcfm:UnleveredFreeCashFlows contextRef="D-2019" unitRef="U-Monetary" decimals="0">30021364000</dcfm:UnleveredFreeCashFlows>
+  <dcfm:UnleveredFreeCashFlows contextRef="D-2020" unitRef="U-Monetary" decimals="0">32590403400</dcfm:UnleveredFreeCashFlows>
+  <dcfm:UnleveredFreeCashFlows contextRef="D-2021" unitRef="U-Monetary" decimals="0">35442596170</dcfm:UnleveredFreeCashFlows>
+  <dcfm:UnleveredFreeCashFlows contextRef="D-2022" unitRef="U-Monetary" decimals="0">38487253978</dcfm:UnleveredFreeCashFlows>
+  <dcfm:UnleveredFreeCashFlows contextRef="D-2023" unitRef="U-Monetary" decimals="0">42125189009</dcfm:UnleveredFreeCashFlows>
+
+
+  <!-- Present value -->
+
+  <dcfm:WACC contextRef="D-2019" unitRef="U-Pure" decimals="3">.123</dcfm:WACC>
+  <dcfm:WACC contextRef="D-2020" unitRef="U-Pure" decimals="3">.123</dcfm:WACC>
+  <dcfm:WACC contextRef="D-2021" unitRef="U-Pure" decimals="3">.123</dcfm:WACC>
+  <dcfm:WACC contextRef="D-2022" unitRef="U-Pure" decimals="3">.123</dcfm:WACC>
+  <dcfm:WACC contextRef="D-2023" unitRef="U-Pure" decimals="3">.123</dcfm:WACC>
+
+				
+
+  <dcfm:PresentValueOfFreeCashFlows contextRef="I-2019" unitRef="U-Monetary" decimals="0">26738456798</dcfm:PresentValueOfFreeCashFlows>
+  <dcfm:PresentValueOfFreeCashFlows contextRef="I-2020" unitRef="U-Monetary" decimals="0">25852442011</dcfm:PresentValueOfFreeCashFlows>
+  <dcfm:PresentValueOfFreeCashFlows contextRef="I-2021" unitRef="U-Monetary" decimals="0">25040516417</dcfm:PresentValueOfFreeCashFlows>
+  <dcfm:PresentValueOfFreeCashFlows contextRef="I-2022" unitRef="U-Monetary" decimals="0">24218129591</dcfm:PresentValueOfFreeCashFlows>
+  <dcfm:PresentValueOfFreeCashFlows contextRef="I-2023" unitRef="U-Monetary" decimals="0">23608666306</dcfm:PresentValueOfFreeCashFlows>
+ 
+
+  <dcfm:PresentValueOfFreeCashFlows contextRef="I-2018" unitRef="U-Monetary" decimals="0">125458211123</dcfm:PresentValueOfFreeCashFlows>
+  <!-- This is a DUPLICATE FACT, should be removed -->
+  <dcfm:SumPresentValuesFCFs contextRef="I-2018" unitRef="U-Monetary" decimals="0">125458211123</dcfm:SumPresentValuesFCFs>
+
+  <!-- Terminal value -->
+
+  <dcfm:LongTermGrowthRate contextRef="D-2018" unitRef="U-Pure" decimals="3">.010</dcfm:LongTermGrowthRate>
+  <dcfm:WACC contextRef="D-2018" unitRef="U-Pure" decimals="3">.123</dcfm:WACC>
+  <dcfm:FreeCashFlow contextRef="D-2018" unitRef="U-Monetary" decimals="0">46337707909</dcfm:FreeCashFlow>
+  <dcfm:TerminalValue contextRef="D-2018" unitRef="U-Monetary" decimals="0">2034275284202</dcfm:TerminalValue>
+ 
+  <dcfm:PresentValueOfTerminalValue contextRef="I-2018" unitRef="U-Monetary" decimals="0">1140090465809</dcfm:PresentValueOfTerminalValue>
+
+  <!-- WACC -->
+  <dcfm:SharePrice contextRef="I-2018" unitRef="U-Monetary" decimals="0">112.33</dcfm:SharePrice>
+  <dcfm:CostOfDebt contextRef="D-2018" unitRef="U-Pure" decimals="3">.052</dcfm:CostOfDebt>
+  <dcfm:TaxRate contextRef="D-2018" unitRef="U-Pure" decimals="3">.220</dcfm:TaxRate>
+  <dcfm:AfterTaxCostOfDebt contextRef="D-2018" unitRef="U-Pure" decimals="3">.041</dcfm:AfterTaxCostOfDebt>
+  <dcfm:CostOfEquity contextRef="D-2018" unitRef="U-Pure" decimals="3">.130</dcfm:CostOfEquity>
+
+  
+ 
+
+
+  <dcfm:Equity contextRef="I-2018" unitRef="U-Monetary" decimals="0">875500020000</dcfm:Equity>
+  <dcfm:Capital contextRef="I-2018" unitRef="U-Monetary" decimals="0">952398020000</dcfm:Capital>
+
+  <dcfm:DebtWeighting contextRef="I-2018" unitRef="U-Pure" decimals="3">.081</dcfm:DebtWeighting>
+  <dcfm:EquityWeighting contextRef="I-2018" unitRef="U-Pure" decimals="3">.919</dcfm:EquityWeighting>
+
+  <!-- Enterprise Value to Equity Value -->
+  <dcfm:EnterpriseValue contextRef="I-2018" unitRef="U-Monetary" decimals="0">1265548676932</dcfm:EnterpriseValue>
+  <dcfm:NetDebt contextRef="I-2018" unitRef="U-Monetary" decimals="0">64952000000</dcfm:NetDebt>
+  <dcfm:EquityValue contextRef="I-2018" unitRef="U-Monetary" decimals="0">1200596676932</dcfm:EquityValue>
+
+  <dcfm:EquityValuePerShare contextRef="I-2018" unitRef="U-PerShare" decimals="2">154.04</dcfm:EquityValuePerShare>
+
+  <dcfm:ValuationGapPerShare contextRef="I-2018" unitRef="U-PerShare" decimals="2">41.71</dcfm:ValuationGapPerShare>
+
+  
+
+  
+
+
+
+</xbrl>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-08-30 18:57:46
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="DiscountedCashFlowModel.xsd#FreeCashFlowBuildup"
+    roleURI="http://www.example.com/FreeCashFlowBuildup" />
+  <roleRef xlink:type="simple"
+    xlink:href="DiscountedCashFlowModel.xsd#WACC"
+    roleURI="http://www.example.com/WACC" />
+  <roleRef xlink:type="simple"
+    xlink:href="DiscountedCashFlowModel.xsd#EnterpriseValueToEquityValue"
+    roleURI="http://www.example.com/EnterpriseValueToEquityValue" />
+  <roleRef xlink:type="simple"
+    xlink:href="DiscountedCashFlowModel.xsd#Conclusion"
+    roleURI="http://www.example.com/Conclusion" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.example.com/FreeCashFlowBuildup">
+    <loc xlink:type="locator"
+      xlink:label="dcfm_UnleveredFreeCashFlows"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_UnleveredFreeCashFlows" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_EBIAT"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_EBIAT" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_EBIAT"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_DepreciationAndAmortization"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_DepreciationAndAmortization" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_DepreciationAndAmortization"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_AccountsReceivableIncreaseDecrease"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_AccountsReceivableIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_AccountsReceivableIncreaseDecrease"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_InventoriesIncreaseDecrease"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_InventoriesIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_InventoriesIncreaseDecrease"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_PrepaidExpensesIncreaseDecrease"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_PrepaidExpensesIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_PrepaidExpensesIncreaseDecrease"
+      order="5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_AccountsPayableIncreaseDecrease"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_AccountsPayableIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_AccountsPayableIncreaseDecrease"
+      order="6"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_AccruedExpensesIncreaseDecrease"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_AccruedExpensesIncreaseDecrease" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_AccruedExpensesIncreaseDecrease"
+      order="7"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_CapitalExpenditures"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_CapitalExpenditures" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_UnleveredFreeCashFlows"
+      xlink:to="dcfm_CapitalExpenditures"
+      order="8"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.example.com/WACC">
+    <loc xlink:type="locator"
+      xlink:label="dcfm_Capital"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_Capital" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_Debt"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_Debt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_Capital" xlink:to="dcfm_Debt"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_Equity"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_Equity" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_Capital" xlink:to="dcfm_Equity"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.example.com/EnterpriseValueToEquityValue">
+    <loc xlink:type="locator"
+      xlink:label="dcfm_EquityValue"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_EquityValue" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_EnterpriseValue"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_EnterpriseValue" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_EquityValue" xlink:to="dcfm_EnterpriseValue"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_NetDebt"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_NetDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_EquityValue" xlink:to="dcfm_NetDebt"
+      order="2"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.example.com/Conclusion">
+    <loc xlink:type="locator"
+      xlink:label="dcfm_ValuationGapPerShare"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_ValuationGapPerShare" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_EquityValuePerShare"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_EquityValuePerShare" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_ValuationGapPerShare"
+      xlink:to="dcfm_EquityValuePerShare"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dcfm_SharePriceOnValuationDate"
+      xlink:href="DiscountedCashFlowModel.xsd#dcfm_SharePriceOnValuationDate" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="dcfm_ValuationGapPerShare"
+      xlink:to="dcfm_SharePriceOnValuationDate"
+      order="2"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

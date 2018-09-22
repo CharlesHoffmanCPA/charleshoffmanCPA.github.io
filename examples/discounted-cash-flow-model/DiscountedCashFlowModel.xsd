@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-08-30 18:57:46
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:dcfm="http://www.example.com/dcfm"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+  targetNamespace="http://www.example.com/dcfm"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://www.example.com/Heading"
+        id="Heading">
+        <link:definition>01-Heading</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.example.com/SelectedOperatingData"
+        id="SelectedOperatingData">
+        <link:definition>02-Selected Operating Data</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.example.com/SelectedBalanceSheetAndOtherData"
+        id="SelectedBalanceSheetAndOtherData">
+        <link:definition>03-Selected Balance Sheet and Other Data</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.example.com/FreeCashFlowBuildup"
+        id="FreeCashFlowBuildup">
+        <link:definition>04-Free Cash Flow Buildup</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.example.com/TerminalValue"
+        id="TerminalValue">
+        <link:definition>05-Terminal Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.example.com/WACC"
+        id="WACC">
+        <link:definition>06-Weighted Average Cost of Capital (WACC)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.example.com/EnterpriseValueToEquityValue"
+        id="EnterpriseValueToEquityValue">
+        <link:definition>07-Enterprise Value to Equity Value</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.example.com/Conclusion"
+        id="Conclusion">
+        <link:definition>08-Conclusion</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="DiscountedCashFlowModel-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="DiscountedCashFlowModel-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="DiscountedCashFlowModel-calculation.xml"
+        xlink:title="Calculation Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/negated"
+    schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <element
+    id="dcfm_AccountsPayable"
+    name="AccountsPayable"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_AccountsPayableGrowth"
+    name="AccountsPayableGrowth"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_AccountsPayableIncreaseDecrease"
+    name="AccountsPayableIncreaseDecrease"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_AccountsReceivable"
+    name="AccountsReceivable"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_AccountsReceivableGrowth"
+    name="AccountsReceivableGrowth"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_AccountsReceivableIncreaseDecrease"
+    name="AccountsReceivableIncreaseDecrease"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_AccruedExpenses"
+    name="AccruedExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_AccruedExpensesGrowth"
+    name="AccruedExpensesGrowth"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_AccruedExpensesIncreaseDecrease"
+    name="AccruedExpensesIncreaseDecrease"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_AfterTaxCostOfDebt"
+    name="AfterTaxCostOfDebt"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_Capital"
+    name="Capital"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_CapitalExpenditures"
+    name="CapitalExpenditures"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_CapitalExpendituresGrowth"
+    name="CapitalExpendituresGrowth"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_Cash"
+    name="Cash"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_ConclusionHypercube"
+    name="ConclusionHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_CostOfDebt"
+    name="CostOfDebt"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_CostOfEquity"
+    name="CostOfEquity"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_Debt"
+    name="Debt"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_DebtWeighting"
+    name="DebtWeighting"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_DepreciationAndAmortization"
+    name="DepreciationAndAmortization"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_DepreciationAndAmortizationAsPercentOfRevenue"
+    name="DepreciationAndAmortizationAsPercentOfRevenue"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_DilutedSharesOutstanding"
+    name="DilutedSharesOutstanding"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_EBIAT"
+    name="EBIAT"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_EBIT"
+    name="EBIT"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_EBITDA"
+    name="EBITDA"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_EBITDAMargin"
+    name="EBITDAMargin"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_EBITMargin"
+    name="EBITMargin"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_EnterpriseValue"
+    name="EnterpriseValue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_EnterpriseValueToEquityValueHypercube"
+    name="EnterpriseValueToEquityValueHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_Equity"
+    name="Equity"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_EquityValue"
+    name="EquityValue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_EquityValuePerShare"
+    name="EquityValuePerShare"
+    type="num:perShareItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_EquityValuePerShareHierarchy"
+    name="EquityValuePerShareHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_EquityValueRollUp"
+    name="EquityValueRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_EquityWeighting"
+    name="EquityWeighting"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_FreeCashFlow"
+    name="FreeCashFlow"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_FreeCashFlowBuildupHierarchy"
+    name="FreeCashFlowBuildupHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_FreeCashFlowBuildupHypercube"
+    name="FreeCashFlowBuildupHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_GrowthRatesHierarchy"
+    name="GrowthRatesHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_GrowthRatesSelectedOperatingDataHierarchy"
+    name="GrowthRatesSelectedOperatingDataHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_HeadingHierarchy"
+    name="HeadingHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_HeadingHypercube"
+    name="HeadingHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_Inventories"
+    name="Inventories"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_InventoriesGrowth"
+    name="InventoriesGrowth"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_InventoriesIncreaseDecrease"
+    name="InventoriesIncreaseDecrease"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_LongTermGrowthRate"
+    name="LongTermGrowthRate"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_NetDebt"
+    name="NetDebt"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_PrepaidExpenses"
+    name="PrepaidExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_PrepaidExpensesGrowth"
+    name="PrepaidExpensesGrowth"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_PrepaidExpensesIncreaseDecrease"
+    name="PrepaidExpensesIncreaseDecrease"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_PresentValueFreeCashFlowsHierarchy"
+    name="PresentValueFreeCashFlowsHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_PresentValueOfFreeCashFlows"
+    name="PresentValueOfFreeCashFlows"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_PresentValueOfTerminalValue"
+    name="PresentValueOfTerminalValue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_PropertyPlantAndEquipmentGross"
+    name="PropertyPlantAndEquipmentGross"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="dcfm_ResultingWACCHierarchy"
+    name="ResultingWACCHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_Revenue"
+    name="Revenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="dcfm_RevenueGrowthRate"
+    name="RevenueGrowthRate"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_SelectedBalanceSheetOtherDataHierarchy"
+    name="SelectedBalanceSheetOtherDataHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_SelectedBalanceSheetOtherDataHypercube"
+    name="SelectedBalanceSheetOtherDataHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_SelectedOperatingDataHierarchy"
+    name="SelectedOperatingDataHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_SelectedOperatingDataHypercube"
+    name="SelectedOperatingDataHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_SharePrice"
+    name="SharePrice"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_SharePriceOnValuationDate"
+    name="SharePriceOnValuationDate"
+    type="num:perShareItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_SumPresentValuesFCFs"
+    name="SumPresentValuesFCFs"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_TaxRate"
+    name="TaxRate"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_TerminalValue"
+    name="TerminalValue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_TerminalValueHierarchy"
+    name="TerminalValueHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_TerminalValueHypercube"
+    name="TerminalValueHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_TotalCapitalRollUp"
+    name="TotalCapitalRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_UnleveredFreeCashFlows"
+    name="UnleveredFreeCashFlows"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_UnleveredFreeCashFlowsRollUp"
+    name="UnleveredFreeCashFlowsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_ValuationDate"
+    name="ValuationDate"
+    type="xbrli:dateItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_ValuationGapPerShare"
+    name="ValuationGapPerShare"
+    type="num:perShareItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="dcfm_ValuationGapRollUp"
+    name="ValuationGapRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_WACC"
+    name="WACC"
+    type="num:percentItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="dcfm_WeightedAverageCostCapitalComponentsHierarchy"
+    name="WeightedAverageCostCapitalComponentsHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_WeightedAverageCostCapitalHypercube"
+    name="WeightedAverageCostCapitalHypercube"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="dcfm_WeightingsHierarchy"
+    name="WeightingsHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+</schema>
