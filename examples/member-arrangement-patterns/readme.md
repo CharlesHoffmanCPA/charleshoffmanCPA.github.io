@@ -1,8 +1,11 @@
 
-# Headings
+# Member Arrangement Patterns
 
-[Links](http://google.com)
+[Prior Version](http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/MemberArrangementPatterns/2017-05-07/)
 
-* Lists
-* of
-* items
+* Complete Flat Set
+* Simple Flat Aggregation
+* Nested Member Aggregation
+* Multiple Characteristics
+* Explicit Characteristic
+* Intersecting Tables
