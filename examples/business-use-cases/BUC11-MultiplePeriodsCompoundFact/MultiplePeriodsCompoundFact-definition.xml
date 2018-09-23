@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Definition Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-05-10 07:08:13
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    http://xbrl.org/2005/xbrldt  http://www.xbrl.org/2005/xbrldt-2005.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="MultiplePeriodsCompoundFact.xsd#LeaseHoldLandAndBuildings"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/MultiplePeriodsCompoundFact/LeaseHoldLandAndBuildings" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/all" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" />
+  <arcroleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+    arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" />
+  <definitionLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/MultiplePeriodsCompoundFact/LeaseHoldLandAndBuildings">
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandBuildingLineItems"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandBuildingLineItems" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandBuildingHierarchy"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandBuildingHierarchy" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdLandBuildingLineItems"
+      xlink:to="pattern_LeaseholdLandBuildingHierarchy"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandAndBuildingsLocation"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandAndBuildingsLocation" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdLandBuildingHierarchy"
+      xlink:to="pattern_LeaseholdLandAndBuildingsLocation"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandAndBuildingsDescriptionOfFacility"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandAndBuildingsDescriptionOfFacility" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdLandBuildingHierarchy"
+      xlink:to="pattern_LeaseholdLandAndBuildingsDescriptionOfFacility"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandAndBuildingsTenure"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandAndBuildingsTenure" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdLandBuildingHierarchy"
+      xlink:to="pattern_LeaseholdLandAndBuildingsTenure"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandAndBuildingsTenureStartDate"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandAndBuildingsTenureStartDate" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdLandBuildingHierarchy"
+      xlink:to="pattern_LeaseholdLandAndBuildingsTenureStartDate"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandAndBuildingsLandArea"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandAndBuildingsLandArea" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdLandBuildingHierarchy"
+      xlink:to="pattern_LeaseholdLandAndBuildingsLandArea"
+      order="5"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandAndBuildingsValueAtCost"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandAndBuildingsValueAtCost" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdLandBuildingHierarchy"
+      xlink:to="pattern_LeaseholdLandAndBuildingsValueAtCost"
+      order="6"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandBuildingsTable"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandBuildingsTable" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+      xlink:from="pattern_LeaseholdLandBuildingLineItems"
+      xlink:to="pattern_LeaseholdLandBuildingsTable"
+      order="2"
+      use="optional"
+      xbrldt:contextElement="segment"
+      xbrldt:closed="true" />
+    <loc xlink:type="locator"
+      xlink:label="frm_LegalEntityAxis"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_LegalEntityAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_LeaseholdLandBuildingsTable"
+      xlink:to="frm_LegalEntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="frm_ConsolidatedEntityMember"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_ConsolidatedEntityMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="frm_LegalEntityAxis" xlink:to="frm_ConsolidatedEntityMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdLandBuildingIdentifierAxis"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdLandBuildingIdentifierAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_LeaseholdLandBuildingsTable"
+      xlink:to="pattern_LeaseholdLandBuildingIdentifierAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_LeaseholdsAllMember"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_LeaseholdsAllMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_LeaseholdLandBuildingIdentifierAxis"
+      xlink:to="pattern_LeaseholdsAllMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_TacomaWarehouseUnder15YearLeaseMember"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_TacomaWarehouseUnder15YearLeaseMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdsAllMember"
+      xlink:to="pattern_TacomaWarehouseUnder15YearLeaseMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SeattleWarehouseUnder20YearLeaseMember"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_SeattleWarehouseUnder20YearLeaseMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_LeaseholdsAllMember"
+      xlink:to="pattern_SeattleWarehouseUnder20YearLeaseMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_StateAxis"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_StateAxis" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+      xlink:from="pattern_LeaseholdLandBuildingsTable"
+      xlink:to="pattern_StateAxis"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_StatesAllMember"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_StatesAllMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+      xlink:from="pattern_StateAxis" xlink:to="pattern_StatesAllMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_WashingtonMember"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_WashingtonMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_StatesAllMember" xlink:to="pattern_WashingtonMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OregonMember"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_OregonMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_StatesAllMember" xlink:to="pattern_OregonMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CaliforniaMember"
+      xlink:href="MultiplePeriodsCompoundFact.xsd#pattern_CaliforniaMember" />
+    <definitionArc xlink:type="arc"
+      xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+      xlink:from="pattern_StatesAllMember" xlink:to="pattern_CaliforniaMember"
+      order="3"
+      use="optional" />
+  </definitionLink>
+</linkbase>
