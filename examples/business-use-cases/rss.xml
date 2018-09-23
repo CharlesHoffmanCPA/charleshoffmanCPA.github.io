@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA, UBmatrix: 5/10/2017 4:44:21 PM -->
+<rss version='2.0' xmlns:rss='http://purl.org/rss/1.0/'>
+   <channel>
+      <title>Business Use Cases (2017-05-07)</title>
+      <link>https://charleshoffmancpa.github.io/examples/business-use-cases/rss.xml</link>
+      <description>Business Use Cases (2017-05-07)</description>
+      <language>en-us</language>
+      <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+      <lastBuildDate>Wed, 10 May 2017 16:44:21 GMT</lastBuildDate>
+      <docs>https://charleshoffmancpa.github.io/examples/business-use-cases/Index.html</docs>
+      <generator>Manual</generator>
+      <managingEditor>Charles.Hoffman@me.com (Charles Hoffman)</managingEditor>
+      <webMaster>Charles.Hoffman@me.com (Charles Hoffman)</webMaster>
+         <item>
+            <title>BUC01 - Flat Hierarchy</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC01-FlatHierarchy/FlatHierarchy-SampleInstance.xml</link>
+            <description>Metapattern. One level flat hierarchy.  No computations.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC01-FlatHierarchy/FlatHierarchy-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC02 - Nested Hierarchy</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC02-NestedHierarchy/NestedHierarchy-SampleInstance.xml</link>
+            <description>Variation of hierarchy. Multi-level hierarchy.  No computations.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC02-NestedHierarchy/NestedHierarchy-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC03 - Simple Roll Up</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC03-SimpleRollUp/SimpleRollUp-SampleInstance.xml</link>
+            <description>Metapattern. Simple hierarchy of numeric facts with a roll up type of computation. Computation where A + B + n = Total.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC03-SimpleRollUp/SimpleRollUp-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC04 - Nested Roll Up</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC04-NestedRollUp/NestedRollUp-SampleInstance.xml</link>
+            <description>Variation of roll up. Nesting one roll up inside another roll up.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC04-NestedRollUp/NestedRollUp-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC05 - Inverted Roll Up</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC05-InvertedRollUp/InvertedRollUp-SampleInstance.xml</link>
+            <description>Variation of roll up. Multi-level nested roll up. Multiple levels of nested roll ups.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC05-InvertedRollUp/InvertedRollUp-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC06 - Multiple Roll Ups</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC06-MultipleRollUps/MultipleRollUps-SampleInstance.xml</link>
+            <description>Variation of roll up. One total rolled up in more than one way forcing roll ups to be expressed within separate networks.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC06-MultipleRollUps/MultipleRollUps-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC07 - Simple Roll Forward</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC07-SimpleRollForward/SimpleRollForward-SampleInstance.xml</link>
+            <description>Metapattern. Simple roll forward of one balance. Also known as movement analysis. Reconciles the changes between two balances, beginning balance + changes = ending balance.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC07-SimpleRollForward/SimpleRollForward-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC08 - Complex Roll Forward</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC08-ComplexRollForward/ComplexRollForward-SampleInstance.xml</link>
+            <description>Variation of roll forward. Roll forward of multiple balances which roll up.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC08-ComplexRollForward/ComplexRollForward-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC09 - Simple Compound Fact</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC09-SimpleCompoundFact/SimpleCompoundFact-SampleInstance.xml</link>
+            <description>Metapattern. Set of facts which go together to form a compound fact. Facts are held together by an axis.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC09-SimpleCompoundFact/SimpleCompoundFact-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC10 - Repeating Fact</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC10-RepeatingFact/RepeatingFact-SampleInstance.xml</link>
+            <description>Variation of compound fact. Similar to simple compound fact, points out that fact can repeat.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC10-RepeatingFact/RepeatingFact-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC11 - Multiple Periods Compound Fact</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC11-MultiplePeriodsCompoundFact/MultiplePeriodsCompoundFact-SampleInstance.xml</link>
+            <description>Variation of compound fact. Simple compound fact which has more than one period disclosed within the compound fact.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC11-MultiplePeriodsCompoundFact/MultiplePeriodsCompoundFact-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC12 - Roll Forward in Compound Fact</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC12-RollForwardInCompoundFact/RollForwardInCompoundFact-SampleInstance.xml</link>
+            <description>Variation of compound fact. Roll forward within a compound fact.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC12-RollForwardInCompoundFact/RollForwardInCompoundFact-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC13 - Nested Compound Fact</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC13-NestedCompoundFact/NestedCompoundFact-SampleInstance.xml</link>
+            <description>Variation of compound fact. Compound fact nested within another compound fact. (Good example of different ways to represent characteristics)</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC13-NestedCompoundFact/NestedCompoundFact-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC14 - Reconciliation of Balance</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC14-ReconciliationOfBalance/ReconciliationOfBalance-SampleInstance.xml</link>
+            <description>Variation of roll up. Reconciliation of a balance with another balance. (Note that this is not a roll forward.)</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC14-ReconciliationOfBalance/ReconciliationOfBalance-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC15 - Adjustment</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC15-Adjustment/Adjustment-SampleInstance.xml</link>
+            <description>Reconciles an originally stated balance to a restated balance, the adjustment being the total change, between two different report dates such as a prior period adjustment.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC15-Adjustment/Adjustment-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC16 - Variance</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC16-Variance/Variance-SampleInstance.xml</link>
+            <description>Reconciles some reporting scenario with another reporting scenario, the variance between reporting scenarios being the variance or changes such as the variance between actual and budget.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC16-Variance/Variance-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC17 - Complex Computation</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC17-ComplexComputation/ComplexComputation-SampleInstance.xml</link>
+            <description>Metapattern. A complex computation information model can be thought of as a hierarchy plus a set of commutations between different concepts within that hierarchy which are challenging to model as the parent/child relations.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC17-ComplexComputation/ComplexComputation-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC24 - Text Block</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC24-TextBlock/TextBlock-SampleInstance.xml</link>
+            <description>Metapattern. Modelling of what could be modelled as some other information model as one fact. By definition a text block is one fact.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC24-TextBlock/TextBlock-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC25 - Prose</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC25-Prose/Prose-SampleInstance.xml</link>
+            <description>Information which contains multiple paragraphs, schedules, lists etc. which should appear in a particular order or sequence to be meaningful.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC25-Prose/Prose-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC26 - Escaped XHTML</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC26-EscapedXHTML/EscapedXHTML-SampleInstance.xml</link>
+            <description>Variation of text block. Same as prose or text block.  Points out how escaped XHTML can be used to report a fact or set of facts.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC26-EscapedXHTML/EscapedXHTML-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC27 - Using JSON</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC27-UsingJSON/UsingJSON-SampleInstance.xml</link>
+            <description>Variation of text block. Same information contained in the simple compound fact expressed using the JSON syntax.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC27-UsingJSON/UsingJSON-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC28 - General Comment</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC28-GeneralComment/GeneralComment-SampleInstance.xml</link>
+            <description>Example of a parenthetical explanation.  A comment or footnote which expands on or provided additional information for some reported fact.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC28-GeneralComment/GeneralComment-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC30 - Classes</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC30-Classes/Classes-SampleInstance.xml</link>
+            <description>Shows how concepts can be related to other concepts and points out the differences between modelling something as a concept and as the member of an axis.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC30-Classes/Classes-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC31 - Class Properties</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC31-ClassProperties/ClassProperties-SampleInstance.xml</link>
+            <description>Shows how concepts related to other concepts can be expressed making the use of an [Axis].</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC31-ClassProperties/ClassProperties-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC32 - Grid</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC32-Grid/Grid-SampleInstance.xml</link>
+            <description>A grid information model is a pseudo metapattern which uses the presentation characteristics of the columns and rows of a table to model information. (Not recommended)</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC32-Grid/Grid-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC34 - Pivot Table</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC34-PivotTable/PivotTable-SampleInstance.xml</link>
+            <description>A set of facts comprised of a single concept which is characterized by one or more axis. Information set is similar to a pivot table. Test Case 1: Explicit hypercube/[Table] exists for Sales Analysis, Summary; Legal Entity [Axis], Business Segment [Axis], Geographic Area [Axis] Explicitly provided</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC34-PivotTable/PivotTable-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC35 - Grouped Report</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC35-GroupedReport/GroupedReport-SampleInstance.xml</link>
+            <description>Variation of compound fact. Table which contains multiple axis which are used to provide information for a complex information set.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC35-GroupedReport/GroupedReport-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC36 - Flow</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC36-Flow/Flow-SampleInstance.xml</link>
+            <description>Shows the notion of flow or ordering/sequencing of different tables within a business report and how the ordering or sequencing is important and can be achieved.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC36-Flow/Flow-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC41 - Restatement</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC41-Restatement/Restatement-SampleInstance.xml</link>
+            <description>Financial reporting use case of a restatement of income resulting from prior period error or change in accounting policy.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC41-Restatement/Restatement-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC42 - Reissue Report</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC42-ReissueReport/ReissueReport-SampleInstance.xml</link>
+            <description>Financial reporting use case of the reissuance of a report which has already been issued.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC42-ReissueReport/ReissueReport-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC43 - Reclassification</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC43-Reclassification/Reclassification-SampleInstance.xml</link>
+            <description>Financial reporting use case of the reclassification of prior period line items of a report to conform to current period classifications.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC43-Reclassification/Reclassification-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC44 - Reason Not Reported</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC44-ReasonNotReported/ReasonNotReported-SampleInstance.xml</link>
+            <description>A specific type of comment or footnote which explains why a fact has not been reported. Points out that footnotes can be differentiated using roles.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC44-ReasonNotReported/ReasonNotReported-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC55 - PivotTable2</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC55-PivotTable/PivotTable-SampleInstance.xml</link>
+            <description>Test Case 2: Explicit hypercube/[Table] exists for Sales Analysis, Summary; Legal Entity [Axis], Business Segment [Axis], Geographic Area [Axis] Explicitly provided</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC55-PivotTable/PivotTable-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC56 - PivotTable3</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC56-PivotTable/PivotTable-SampleInstance.xml</link>
+            <description>Test Case 3: Explicit hypercube/[Table] exists for Sales Analysis, Summary; Legal Entity [Axis] Explicitly provided</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC56-PivotTable/PivotTable-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC57 - PivotTable4</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC57-PivotTable/PivotTable-SampleInstance.xml</link>
+            <description>Test Case 4: Explicit hypercube/[Table], but no dimensions /[Axes] are explicitly provided</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC57-PivotTable/PivotTable-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC58 - PivotTable5</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC58-PivotTable/PivotTable-SampleInstance.xml</link>
+            <description>Test Case 5: No explicit hypercube/[Table] exists for Sales Analysis, Summary</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC58-PivotTable/PivotTable-SampleInstance.xml</guid>
+         </item>
+         <item>
+            <title>BUC99 - Non Financial Information</title>
+            <link>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC99-NonFinancialInformation/NonFinancialInformation-SampleInstance.xml</link>
+            <description>Shows that there is no difference between expressing financial and non-financial information.</description>
+            <pubDate>Wed, 10 May 2017 16:44:21 GMT</pubDate>
+            <guid>https://charleshoffmancpa.github.io/examples/business-use-cases/BUC99-NonFinancialInformation/NonFinancialInformation-SampleInstance.xml</guid>
+         </item>
+   </channel>
+</rss>
