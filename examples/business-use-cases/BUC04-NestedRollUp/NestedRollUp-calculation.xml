@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2433 (2009-05-15 09:36).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2011 UBmatrix inc., All Rights Reserved
+Produced on 2011-07-16 09:20:58
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="NestedRollUp.xsd#PropertyPlantAndEquipmentByComponent"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/NestedRollUp/IncomeTaxExpenseBenefit" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/NestedRollUp/IncomeTaxExpenseBenefit">
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefit"
+      xlink:href="NestedRollUp.xsd#pattern_IncomeTaxExpenseBenefit" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefitCurrent"
+      xlink:href="NestedRollUp.xsd#pattern_IncomeTaxExpenseBenefitCurrent" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeTaxExpenseBenefit"
+      xlink:to="pattern_IncomeTaxExpenseBenefitCurrent"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefitCurrentForeign"
+      xlink:href="NestedRollUp.xsd#pattern_IncomeTaxExpenseBenefitCurrentForeign" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeTaxExpenseBenefitCurrent"
+      xlink:to="pattern_IncomeTaxExpenseBenefitCurrentForeign"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefitCurrentDomestic"
+      xlink:href="NestedRollUp.xsd#pattern_IncomeTaxExpenseBenefitCurrentDomestic" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeTaxExpenseBenefitCurrent"
+      xlink:to="pattern_IncomeTaxExpenseBenefitCurrentDomestic"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefitDeferred"
+      xlink:href="NestedRollUp.xsd#pattern_IncomeTaxExpenseBenefitDeferred" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeTaxExpenseBenefit"
+      xlink:to="pattern_IncomeTaxExpenseBenefitDeferred"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefitDeferredForeign"
+      xlink:href="NestedRollUp.xsd#pattern_IncomeTaxExpenseBenefitDeferredForeign" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeTaxExpenseBenefitDeferred"
+      xlink:to="pattern_IncomeTaxExpenseBenefitDeferredForeign"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefitDeferredDomestic"
+      xlink:href="NestedRollUp.xsd#pattern_IncomeTaxExpenseBenefitDeferredDomestic" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeTaxExpenseBenefitDeferred"
+      xlink:to="pattern_IncomeTaxExpenseBenefitDeferredDomestic"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>
