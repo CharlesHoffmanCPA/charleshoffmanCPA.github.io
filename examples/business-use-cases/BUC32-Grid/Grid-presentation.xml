@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Presentation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-06-13 09:07:39
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="Grid.xsd#StatementOfChangesInEquity"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Grid/StatementOfChangesInEquity" />
+  <roleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd#negatedLabel"
+    roleURI="http://www.xbrl.org/2009/role/negatedLabel" />
+  <presentationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Grid/StatementOfChangesInEquity">
+    <loc xlink:type="locator"
+      xlink:label="pattern_StatementChangesInEquityTable"
+      xlink:href="Grid.xsd#pattern_StatementChangesInEquityTable" />
+    <loc xlink:type="locator"
+      xlink:label="frm_LegalEntityAxis"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_LegalEntityAxis" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityTable"
+      xlink:to="frm_LegalEntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="frm_ConsolidatedEntityMember"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_ConsolidatedEntityMember" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="frm_LegalEntityAxis" xlink:to="frm_ConsolidatedEntityMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EquityComponentAxis"
+      xlink:href="Grid.xsd#pattern_EquityComponentAxis" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityTable"
+      xlink:to="pattern_EquityComponentAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_EquityMember"
+      xlink:href="Grid.xsd#pattern_EquityMember" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_EquityComponentAxis"
+      xlink:to="pattern_EquityMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CommonStockMember"
+      xlink:href="Grid.xsd#pattern_CommonStockMember" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_EquityMember" xlink:to="pattern_CommonStockMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_AdditionalPaidInCapitalMember"
+      xlink:href="Grid.xsd#pattern_AdditionalPaidInCapitalMember" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_EquityMember" xlink:to="pattern_AdditionalPaidInCapitalMember"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RetainedEarningsAccumulatedDeficitMember"
+      xlink:href="Grid.xsd#pattern_RetainedEarningsAccumulatedDeficitMember" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_EquityMember" xlink:to="pattern_RetainedEarningsAccumulatedDeficitMember"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_StatementChangesInEquityLineItems"
+      xlink:href="Grid.xsd#pattern_StatementChangesInEquityLineItems" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityTable"
+      xlink:to="pattern_StatementChangesInEquityLineItems"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_StatementChangesInEquityGrid"
+      xlink:href="Grid.xsd#pattern_StatementChangesInEquityGrid" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityLineItems"
+      xlink:to="pattern_StatementChangesInEquityGrid"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Equity"
+      xlink:href="Grid.xsd#pattern_Equity" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityGrid"
+      xlink:to="pattern_Equity"
+      preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_NetIncomeLoss"
+      xlink:href="Grid.xsd#pattern_NetIncomeLoss" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityGrid"
+      xlink:to="pattern_NetIncomeLoss"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Dividends"
+      xlink:href="Grid.xsd#pattern_Dividends" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityGrid"
+      xlink:to="pattern_Dividends"
+      preferredLabel="http://www.xbrl.org/2009/role/negatedLabel"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CommonStockIssued"
+      xlink:href="Grid.xsd#pattern_CommonStockIssued" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityGrid"
+      xlink:to="pattern_CommonStockIssued"
+      order="4"
+      use="optional" />
+  </presentationLink>
+  <presentationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Grid/StatementOfChangesInEquity">
+    <loc xlink:type="locator"
+      xlink:label="pattern_StatementChangesInEquityGrid"
+      xlink:href="Grid.xsd#pattern_StatementChangesInEquityGrid" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Equity"
+      xlink:href="Grid.xsd#pattern_Equity" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_StatementChangesInEquityGrid"
+      xlink:to="pattern_Equity"
+      preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"
+      order="5"
+      use="optional" />
+  </presentationLink>
+</linkbase>
