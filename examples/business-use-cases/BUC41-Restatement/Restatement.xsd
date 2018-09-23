@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-06-13 09:09:52
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  targetNamespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/Schemas/brm/roles/originallyStatedLabel"
+        id="originallyStatedLabel">
+        <link:definition>The label for a concept when presenting values that have been restated from their value as originally reported. Used in an adjustment.</link:definition>
+        <link:usedOn>link:label</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/Schemas/brm/roles/restatedLabel"
+        id="restatedLabel">
+        <link:definition>The label for a concept when presenting values that have been restated from their value as originally reported. Used in an adjustment.</link:definition>
+        <link:usedOn>link:label</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/BalanceSheet"
+        id="BalanceSheet">
+        <link:definition>Balance Sheet (Fragnent)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/IncomeStatement"
+        id="IncomeStatement">
+        <link:definition>Income Statement (Fragnent)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/PriorPeriodAdjustments"
+        id="PriorPeriodAdjustments">
+        <link:definition>Prior Period Adjustments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/ChangesInEquity"
+        id="ChangesInEquity">
+        <link:definition>Changes in Equity (Fragment)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="Restatement-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="Restatement-definition.xml"
+        xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="Restatement-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="Restatement-calculation.xml"
+        xlink:title="Calculation Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2004/ref"
+    schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd" />
+  <import
+    namespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+    schemaLocation="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd" />
+  <import
+    namespace="http://xbrlsite.azurewebsites.net/2016/conceptual-model/cm-roles"
+    schemaLocation="http://xbrlsite.azurewebsites.net/2016/conceptual-model/cm-roles.xsd" />
+  <import
+    namespace="http://www.xbrl.org/role/fr/RestatedLabel/2008-07-31"
+    schemaLocation="http://www.xbrl.org/lrr/role/restated-2006-02-21.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="pattern_BalanceSheetLineItems"
+    name="BalanceSheetLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_BalanceSheetTable"
+    name="BalanceSheetTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_ChangesInAccountingPolicy"
+    name="ChangesInAccountingPolicy"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_ChangesInEquityLineItems"
+    name="ChangesInEquityLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_ChangesInEquityTable"
+    name="ChangesInEquityTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_ChangesInRetainedEarningsRollForward"
+    name="ChangesInRetainedEarningsRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_CommonStock"
+    name="CommonStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_CorrectionAnError"
+    name="CorrectionAnError"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_CostOfSales"
+    name="CostOfSales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_DividendsPaid"
+    name="DividendsPaid"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_Equity"
+    name="Equity"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_EquityRollUp"
+    name="EquityRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_IncomeStatementLineItems"
+    name="IncomeStatementLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_IncomeStatementTable"
+    name="IncomeStatementTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_NetIncomeLoss"
+    name="NetIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_NetIncomeLossRollUp"
+    name="NetIncomeLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_OperatingExpenses"
+    name="OperatingExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_PriorPeriodAdjustments"
+    name="PriorPeriodAdjustments"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_PriorPeriodAdjustmentsLineItems"
+    name="PriorPeriodAdjustmentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_PriorPeriodAdjustmentsPeriodIncreaseDecreaseTotalRollUp"
+    name="PriorPeriodAdjustmentsPeriodIncreaseDecreaseTotalRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_PriorPeriodAdjustmentsTable"
+    name="PriorPeriodAdjustmentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_PriorPeriodAdjustmentsToRetainedEarningsAdjustment"
+    name="PriorPeriodAdjustmentsToRetainedEarningsAdjustment"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_ReportedMarch182011Member"
+    name="ReportedMarch182011Member"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_ReportedMarch212010Member"
+    name="ReportedMarch212010Member"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_RetainedEarningsAccumulatedLosses"
+    name="RetainedEarningsAccumulatedLosses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease"
+    name="RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_RetainedEarningsAccumulatedLossesPeriodIncreaseDecreaseTotalRollUp"
+    name="RetainedEarningsAccumulatedLossesPeriodIncreaseDecreaseTotalRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_SalesGross"
+    name="SalesGross"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_SalesNet"
+    name="SalesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_SalesNetRollUp"
+    name="SalesNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+</schema>

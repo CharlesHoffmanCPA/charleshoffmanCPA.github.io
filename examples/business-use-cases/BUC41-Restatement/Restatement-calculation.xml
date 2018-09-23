@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-06-13 09:09:52
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="Restatement.xsd#BalanceSheet"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/BalanceSheet" />
+  <roleRef xlink:type="simple"
+    xlink:href="Restatement.xsd#IncomeStatement"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/IncomeStatement" />
+  <roleRef xlink:type="simple"
+    xlink:href="Restatement.xsd#PriorPeriodAdjustments"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/PriorPeriodAdjustments" />
+  <roleRef xlink:type="simple"
+    xlink:href="Restatement.xsd#ChangesInEquity"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/ChangesInEquity" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/BalanceSheet">
+    <loc xlink:type="locator"
+      xlink:label="pattern_Equity"
+      xlink:href="Restatement.xsd#pattern_Equity" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RetainedEarningsAccumulatedLosses"
+      xlink:href="Restatement.xsd#pattern_RetainedEarningsAccumulatedLosses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_Equity" xlink:to="pattern_RetainedEarningsAccumulatedLosses"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CommonStock"
+      xlink:href="Restatement.xsd#pattern_CommonStock" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_Equity" xlink:to="pattern_CommonStock"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/IncomeStatement">
+    <loc xlink:type="locator"
+      xlink:label="pattern_NetIncomeLoss"
+      xlink:href="Restatement.xsd#pattern_NetIncomeLoss" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesNet"
+      xlink:href="Restatement.xsd#pattern_SalesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_NetIncomeLoss" xlink:to="pattern_SalesNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesGross"
+      xlink:href="Restatement.xsd#pattern_SalesGross" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_SalesNet" xlink:to="pattern_SalesGross"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CostOfSales"
+      xlink:href="Restatement.xsd#pattern_CostOfSales" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_SalesNet" xlink:to="pattern_CostOfSales"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OperatingExpenses"
+      xlink:href="Restatement.xsd#pattern_OperatingExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_NetIncomeLoss" xlink:to="pattern_OperatingExpenses"
+      order="2"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/PriorPeriodAdjustments">
+    <loc xlink:type="locator"
+      xlink:label="pattern_PriorPeriodAdjustments"
+      xlink:href="Restatement.xsd#pattern_PriorPeriodAdjustments" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ChangesInAccountingPolicy"
+      xlink:href="Restatement.xsd#pattern_ChangesInAccountingPolicy" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PriorPeriodAdjustments"
+      xlink:to="pattern_ChangesInAccountingPolicy"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CorrectionAnError"
+      xlink:href="Restatement.xsd#pattern_CorrectionAnError" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PriorPeriodAdjustments"
+      xlink:to="pattern_CorrectionAnError"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Restatement/ChangesInEquity">
+    <loc xlink:type="locator"
+      xlink:label="pattern_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease"
+      xlink:href="Restatement.xsd#pattern_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_NetIncomeLoss"
+      xlink:href="Restatement.xsd#pattern_NetIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease"
+      xlink:to="pattern_NetIncomeLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_DividendsPaid"
+      xlink:href="Restatement.xsd#pattern_DividendsPaid" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_RetainedEarningsAccumulatedLossesPeriodIncreaseDecrease"
+      xlink:to="pattern_DividendsPaid"
+      order="2"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+</linkbase>
