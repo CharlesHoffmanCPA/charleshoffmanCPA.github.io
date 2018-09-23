@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  		 
+  		xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/NestedHierarchy" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="NestedHierarchy.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='NestedHierarchy-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="D-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+   <pattern:BasisOfPresentationTextBlock contextRef="D-2010">The financial statements have been prepared on the historical cost basis, except for the revaluation of land and buildings and certain financial instruments. The principal accounting policies adopted are set out below.</pattern:BasisOfPresentationTextBlock>
+   <pattern:BasisOfPresentation contextRef="D-2010">Historical Cost</pattern:BasisOfPresentation>
+
+   <pattern:InventoryPolicyTextBlock contextRef="D-2010">Inventories are stated at the lower of cost and net realisable value.  Cost comprises direct materials and, where applicable, direct labour costs and those overheads that have been incurred in bringing the inventories to their present location and condition.  Cost is calculated using the weighted average method.  Net realisable value represents the estimated selling price less all estimated costs to completion and costs to be incurred in marketing, selling and distribution.  Inventories are comprised of raw materials and work in progress.</pattern:InventoryPolicyTextBlock>
+   <pattern:InventoryValuationMethod contextRef="D-2010">Cost</pattern:InventoryValuationMethod>
+   <pattern:InventoryCostMethod contextRef="D-2010">FIFO</pattern:InventoryCostMethod>
+   <pattern:DescriptionNetRealizableValue contextRef="D-2010">This is the description of the net realizable value.</pattern:DescriptionNetRealizableValue>
+   <pattern:DescriptionOfInventoryComponents contextRef="D-2010">weighted average method</pattern:DescriptionOfInventoryComponents>
+   
+   <pattern:FinancialInstrumentsPolicyTextBlock contextRef="D-2010">Financial assets and liabilities are recognised on the Group's balance sheet when the Group has become a party to the contractual provisions of the investment.</pattern:FinancialInstrumentsPolicyTextBlock>
+   <pattern:TradeReceivablesPolicy contextRef="D-2010">Trade receivables are stated at their nominal value as reduced by appropriate allowances for estimated irrecoverable amounts.</pattern:TradeReceivablesPolicy>
+   <pattern:InvestmentsInSecuritiesPolicy contextRef="D-2010">Investments in securities are recognised on a trade-date basis and are initially measured at cost.</pattern:InvestmentsInSecuritiesPolicy>
+   <pattern:BankBorrowingsPolicy contextRef="D-2010">Interest-bearing bank loans and overdrafts are recorded at the proceeds received, net of direct issue costs.  Finance charges, including premiums payable on settlement or redemption, are accounted for on an accrual basis and are added to the carrying amount of the instrument to the extent that they are not settled in the period in which they arise.</pattern:BankBorrowingsPolicy>
+   
+   <pattern:ProvisionsPolicy contextRef="D-2010">Provisions are recognised when the Group has a present obligation as a result of a past event which it is probable will result in an outflow of economic benefits that can be reasonably estimated.</pattern:ProvisionsPolicy>
+
+</xbrl>
