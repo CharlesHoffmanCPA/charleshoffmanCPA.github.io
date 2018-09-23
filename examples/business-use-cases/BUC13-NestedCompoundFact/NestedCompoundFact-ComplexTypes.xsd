@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<schema 
+   xmlns="http://www.w3.org/2001/XMLSchema" 
+   xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+   xmlns:types="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/NestedCompoundFact/types" 
+   targetNamespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/NestedCompoundFact/types" 
+   elementFormDefault="qualified" 
+   attributeFormDefault="unqualified">
+
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+
+  <complexType name="RelatedPartyItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <enumeration value="Parent" />
+        <enumeration value="EntitiesWithJointControlOrSignificantInfluence" />
+        <enumeration value="Subsidiary" />
+        <enumeration value="Associate" />
+        <enumeration value="JointVenture" />
+        <enumeration value="KeyManagementPersonel" />
+        <enumeration value="OtherRelatedPartyType" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+
+</schema>

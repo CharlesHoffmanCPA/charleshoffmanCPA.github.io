@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  		 
+  		xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:types="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/NestedCompoundFact/types"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/NestedCompoundFact" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="NestedCompoundFact.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='NestedCompoundFact-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+
+   <!-- Related Parties -->
+   <context id="D-2010-RP1">
+      <!-- Related Party 1, Related Party Transactions, All Transactions, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+           <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyNameAxis">pattern:RelatedParty1Member</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-RP2">
+      <!-- Related Party 2, Related Party Transactions, All Transactions, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+           <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyNameAxis">pattern:RelatedParty2Member</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+   <!-- Related Party Transactions -->
+   <context id="D-2010-RP1T1">
+      <!-- Related Party 1, Related Party Transactions, Transaction 1, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+           <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyNameAxis">pattern:RelatedParty1Member</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyTransactionTypeAxis">pattern:PurchaseOrSaleOfGoodsWithRelatedPartyMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-RP1T2">
+      <!-- Related Party 1, Related Party Transactions, Transaction 2, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+           <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyNameAxis">pattern:RelatedParty1Member</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyTransactionTypeAxis">pattern:PurchaseOrSaleOfPropertyOrOtherAssetsWithRelatedPartyMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-RP2T1">
+      <!-- Related Party 2, Related Party Transactions, Transaction 1, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+           <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyNameAxis">pattern:RelatedParty2Member</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyTransactionTypeAxis">pattern:PurchaseOrSaleOfGoodsWithRelatedPartyMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-RP2T2">
+      <!-- Related Party 2, Related Party Transactions, Transaction 2, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+           <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyNameAxis">pattern:RelatedParty2Member</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:RelatedPartyTransactionTypeAxis">pattern:LeasingArrangementsWithRelatedPartyMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+
+
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+
+   <!-- Related Parties -->
+
+   <pattern:RelatedPartyTypeOfRelationship contextRef="D-2010-RP1">Parent</pattern:RelatedPartyTypeOfRelationship>
+   <pattern:RelatedPartyNatureOfRelationship contextRef="D-2010-RP1">This is other descriptive information about the relationship.</pattern:RelatedPartyNatureOfRelationship>
+
+   <pattern:RelatedPartyTypeOfRelationship contextRef="D-2010-RP2">JointVenture</pattern:RelatedPartyTypeOfRelationship>
+   <pattern:RelatedPartyNatureOfRelationship contextRef="D-2010-RP2">This is other descriptive information about the relationship.</pattern:RelatedPartyNatureOfRelationship>
+
+   <!-- Related Party Transactions -->
+
+   <pattern:RelatedPartyTransactionDescription contextRef="D-2010-RP1T1">Transaction 1 description</pattern:RelatedPartyTransactionDescription>
+   <pattern:RelatedPartyTransactionPricingPolicy contextRef="D-2010-RP1T1">Cost</pattern:RelatedPartyTransactionPricingPolicy>
+   <pattern:RelatedPartyTransactionAmount contextRef="D-2010-RP1T1" unitRef="U-Monetary" decimals="INF">1000</pattern:RelatedPartyTransactionAmount>
+
+   <pattern:RelatedPartyTransactionDescription contextRef="D-2010-RP1T2">Transaction 2 description</pattern:RelatedPartyTransactionDescription>
+   <pattern:RelatedPartyTransactionPricingPolicy contextRef="D-2010-RP1T2">Cost</pattern:RelatedPartyTransactionPricingPolicy>
+   <pattern:RelatedPartyTransactionAmount contextRef="D-2010-RP1T2" unitRef="U-Monetary" decimals="INF">1000</pattern:RelatedPartyTransactionAmount>
+
+
+   <pattern:RelatedPartyTransactionDescription contextRef="D-2010-RP2T1">Transaction 1 description</pattern:RelatedPartyTransactionDescription>
+   <pattern:RelatedPartyTransactionPricingPolicy contextRef="D-2010-RP2T1">Cost</pattern:RelatedPartyTransactionPricingPolicy>
+   <pattern:RelatedPartyTransactionAmount contextRef="D-2010-RP2T1" unitRef="U-Monetary" decimals="INF">1000</pattern:RelatedPartyTransactionAmount>
+
+   <pattern:RelatedPartyTransactionDescription contextRef="D-2010-RP2T2">Transaction 2 description</pattern:RelatedPartyTransactionDescription>
+   <pattern:RelatedPartyTransactionPricingPolicy contextRef="D-2010-RP2T2">Cost</pattern:RelatedPartyTransactionPricingPolicy>
+   <pattern:RelatedPartyTransactionAmount contextRef="D-2010-RP2T2" unitRef="U-Monetary" decimals="INF">1000</pattern:RelatedPartyTransactionAmount>
+
+
+
+</xbrl>
