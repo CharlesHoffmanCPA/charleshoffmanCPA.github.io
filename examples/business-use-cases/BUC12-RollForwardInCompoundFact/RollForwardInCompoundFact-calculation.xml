@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2433 (2009-05-15 09:36).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2011 UBmatrix inc., All Rights Reserved
+Produced on 2011-07-21 09:39:31
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="RollForwardInCompoundFact.xsd#ReconciliationOfOutstandingBalance"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/RollForwardInCompoundFact/ReconciliationOfOutstandingBalance" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/RollForwardInCompoundFact/ReconciliationOfOutstandingBalance">
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsGranted"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsGranted" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsGranted"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsForfeited"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsForfeited" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsForfeited"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsExercised"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsExercised" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsExercised"
+      order="3"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsExpired"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsExpired" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingPeriodIncreaseDecrease"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsExpired"
+      order="4"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

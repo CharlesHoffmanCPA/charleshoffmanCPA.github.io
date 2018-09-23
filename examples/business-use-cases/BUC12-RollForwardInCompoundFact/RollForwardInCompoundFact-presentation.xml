@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Presentation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-06-13 08:32:21
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="RollForwardInCompoundFact.xsd#ShareOwnershipPlans"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/RollForwardInCompoundFact/ShareOwnershipPlans" />
+  <roleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd#negatedLabel"
+    roleURI="http://www.xbrl.org/2009/role/negatedLabel" />
+  <presentationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/RollForwardInCompoundFact/ShareOwnershipPlans">
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanTable"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanTable" />
+    <loc xlink:type="locator"
+      xlink:label="frm_LegalEntityAxis"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_LegalEntityAxis" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanTable"
+      xlink:to="frm_LegalEntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="frm_ConsolidatedEntityMember"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_ConsolidatedEntityMember" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="frm_LegalEntityAxis" xlink:to="frm_ConsolidatedEntityMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanIdentifierAxis"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanIdentifierAxis" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanTable"
+      xlink:to="pattern_ShareOwnershipPlanIdentifierAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlan1Member"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlan1Member" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanIdentifierAxis"
+      xlink:to="pattern_ShareOwnershipPlan1Member"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanLineItems"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanLineItems" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanTable"
+      xlink:to="pattern_ShareOwnershipPlanLineItems"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanHierarchy"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanHierarchy" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanLineItems"
+      xlink:to="pattern_ShareOwnershipPlanHierarchy"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanDescriptionGeneralTermsAndConditions"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanDescriptionGeneralTermsAndConditions" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanHierarchy"
+      xlink:to="pattern_ShareOwnershipPlanDescriptionGeneralTermsAndConditions"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanLineItems"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsOutstanding"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsOutstanding" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsOutstanding"
+      preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsGranted"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsGranted" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsGranted"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsForfeited"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsForfeited" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsForfeited"
+      preferredLabel="http://www.xbrl.org/2009/role/negatedLabel"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsExercised"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsExercised" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsExercised"
+      preferredLabel="http://www.xbrl.org/2009/role/negatedLabel"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsExpired"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsExpired" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsExpired"
+      preferredLabel="http://www.xbrl.org/2009/role/negatedLabel"
+      order="5"
+      use="optional" />
+  </presentationLink>
+  <presentationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/RollForwardInCompoundFact/ShareOwnershipPlans">
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ShareOwnershipPlanShareOptionsOutstanding"
+      xlink:href="RollForwardInCompoundFact.xsd#pattern_ShareOwnershipPlanShareOptionsOutstanding" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+      xlink:to="pattern_ShareOwnershipPlanShareOptionsOutstanding"
+      preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel"
+      order="6"
+      use="optional" />
+  </presentationLink>
+</linkbase>

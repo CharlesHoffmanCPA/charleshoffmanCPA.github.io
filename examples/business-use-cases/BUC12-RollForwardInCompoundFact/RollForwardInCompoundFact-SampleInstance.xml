@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance"
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  		 
+  		xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/RollForwardInCompoundFact" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="RollForwardInCompoundFact.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='RollForwardInCompoundFact-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+
+<!-- Share Ownership Plans -->
+   <context id="D-2010-SOP1">
+      <!-- Share Ownership Plans, Plan 1, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:ShareOwnershipPlanIdentifierAxis">pattern:ShareOwnershipPlan1Member</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="I-2010-SOP1">
+      <!-- Share Ownership Plans, Plan 1, Current Period, As of -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:ShareOwnershipPlanIdentifierAxis">pattern:ShareOwnershipPlan1Member</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009-SOP1">
+      <!-- Share Ownership Plans, Plan 1, Prior Period, As of -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+           <xbrldi:explicitMember dimension="pattern:ShareOwnershipPlanIdentifierAxis">pattern:ShareOwnershipPlan1Member</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+
+
+   <unit id="U-Shares">
+      <!-- Shares -->
+     <measure>shares</measure>
+   </unit>
+
+
+
+   <!-- Share Ownership Plans -->
+
+   <pattern:ShareOwnershipPlanDescriptionGeneralTermsAndConditions contextRef="D-2010-SOP1">These are the description, general conditions, and terms of share ownership plan 1. Nam rhoncus mi. Nunc eu dui non mauris interdum tincidunt. Sed magna felis, accumsan a, fermentum quis, varius sed, ipsum. Nullam leo. Donec eros. Maecenas interdum, lectus eget aliquet tincidunt, tellus dolor ultrices tellus, nec hendrerit nunc lectus eget eros. Duis feugiat velit in eros. Curabitur tincidunt aliquet neque. Nulla ac est quis urna luctus elementum. Aliquam erat volutpat. In tincidunt nunc vehicula risus. Praesent dictum arcu sit amet wisi. Praesent ac odio. Donec vestibulum, sem vel facilisis consectetuer, justo arcu tempor sem, vel ultrices turpis leo quis augue.</pattern:ShareOwnershipPlanDescriptionGeneralTermsAndConditions>
+
+   <pattern:ShareOwnershipPlanShareOptionsOutstanding contextRef="I-2009-SOP1" unitRef="U-Shares" decimals="INF">0</pattern:ShareOwnershipPlanShareOptionsOutstanding>
+   <pattern:ShareOwnershipPlanShareOptionsOutstanding contextRef="I-2010-SOP1" unitRef="U-Shares" decimals="INF">1000</pattern:ShareOwnershipPlanShareOptionsOutstanding>
+   <pattern:ShareOwnershipPlanShareOptionsGranted contextRef="D-2010-SOP1" unitRef="U-Shares" decimals="INF">4000</pattern:ShareOwnershipPlanShareOptionsGranted>
+   <pattern:ShareOwnershipPlanShareOptionsForfeited contextRef="D-2010-SOP1" unitRef="U-Shares" decimals="INF">1000</pattern:ShareOwnershipPlanShareOptionsForfeited>
+   <pattern:ShareOwnershipPlanShareOptionsExercised contextRef="D-2010-SOP1" unitRef="U-Shares" decimals="INF">1000</pattern:ShareOwnershipPlanShareOptionsExercised>
+   <pattern:ShareOwnershipPlanShareOptionsExpired contextRef="D-2010-SOP1" unitRef="U-Shares" decimals="INF">1000</pattern:ShareOwnershipPlanShareOptionsExpired>
+
+
+</xbrl>
