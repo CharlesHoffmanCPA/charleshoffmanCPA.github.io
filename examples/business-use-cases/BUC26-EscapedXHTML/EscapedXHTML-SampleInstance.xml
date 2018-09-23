@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+       
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/EscapedXHTML" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="EscapedXHTML.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='EscapedXHTML-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+   
+   <context id="D-2010-AllDirectors">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+  <pattern:DirectorCompensationHTML contextRef="D-2010-AllDirectors">
+
+      &lt;table cellspacing='2' cellpadding='1' border='0' style='table-layout:fixed;word-wrap:break-word'&gt;
+        &lt;col width='150'/&gt;
+        &lt;col width='100'/&gt;
+        &lt;col width='100'/&gt;
+        &lt;col width='100'/&gt;
+        &lt;col width='100'/&gt;
+        &lt;tr bgcolor="white"&gt;
+           &lt;td align='left' valign='bottom' style='BORDER-BOTTOM: black 4px solid'&gt;&lt;font style='FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;Name of director&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 4px solid'&gt;&lt;font style='FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;Salary&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 4px solid'&gt;&lt;font style='FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;Bonus&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 4px solid'&gt;&lt;font style='FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;Director fees&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 4px solid'&gt;&lt;font style='FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;Fair Value of Options Granted&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor="#ccffcc"&gt;
+           &lt;td align='left' valign='bottom'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;Jane Doe&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor="white"&gt;
+           &lt;td align='left' valign='bottom' style='BORDER-BOTTOM:none'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;John Doe&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 1px solid'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 1px solid'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 1px solid'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM: black 1px solid'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;1,000&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor="#ccffcc"&gt;
+           &lt;td align='left' valign='bottom' style='BORDER-BOTTOM:none'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;Total&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM:black 4px double'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;2,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM:black 4px double'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;2,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM:black 4px double'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;2,000&lt;/font&gt;&lt;/td&gt;
+           &lt;td align='right' valign='bottom' style='BORDER-BOTTOM:black 4px double'&gt;&lt;font style='DISPLAY:inline; FONT-SIZE:10pt; FONT-FAMILY:times new roman'&gt;2,000&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+       &lt;/table&gt;
+
+		
+
+
+  </pattern:DirectorCompensationHTML>
+
+
+
+</xbrl>
