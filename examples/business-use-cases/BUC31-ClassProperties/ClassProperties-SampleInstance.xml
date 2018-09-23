@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+       
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/ClassProperties" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="ClassProperties.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='ClassProperties-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="I-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:AllClassesPropertyPlantEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:AllClassesPropertyPlantEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <context id="D-2010-Land">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:LandMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-Buildings">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:BuildingsMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-Furniture">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:FurnitureAndFixturesMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-Computer">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:ComputerEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-Other">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:OtherPropertyPlantAndEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+
+   <context id="I-2010-Land">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:LandMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009-Land">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:LandMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <context id="I-2010-Buildings">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:BuildingsMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009-Buildings">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:BuildingsMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <context id="I-2010-Furniture">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:FurnitureAndFixturesMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009-Furniture">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:FurnitureAndFixturesMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <context id="I-2010-Computer">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:ComputerEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009-Computer">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:ComputerEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <context id="I-2010-Other">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:OtherPropertyPlantAndEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009-Other">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+            <xbrldi:explicitMember dimension="pattern:ClassPropertyPlantEquipmentAxis">pattern:OtherPropertyPlantAndEquipmentMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+
+
+   <pattern:ValuationBasis contextRef="D-2010-Land">Mauris tincidunt cursus est</pattern:ValuationBasis>
+   <pattern:DepreciationMethod contextRef="D-2010-Land">NA</pattern:DepreciationMethod>
+   <pattern:EstimatedUsefulLife contextRef="D-2010-Land">NA</pattern:EstimatedUsefulLife>
+
+   <pattern:ValuationBasis contextRef="D-2010-Buildings">Sed dapibus venenatis ipsum</pattern:ValuationBasis>
+   <pattern:DepreciationMethod contextRef="D-2010-Buildings">Etiam porttitor</pattern:DepreciationMethod>
+   <pattern:EstimatedUsefulLife contextRef="D-2010-Buildings">20 years</pattern:EstimatedUsefulLife>
+
+   <pattern:ValuationBasis contextRef="D-2010-Furniture">Nunc congue</pattern:ValuationBasis>
+   <pattern:DepreciationMethod contextRef="D-2010-Furniture">Maecenas tincidunt</pattern:DepreciationMethod>
+   <pattern:EstimatedUsefulLife contextRef="D-2010-Furniture">10 years</pattern:EstimatedUsefulLife>
+
+   <pattern:ValuationBasis contextRef="D-2010-Computer">Suspendisse potenti</pattern:ValuationBasis>
+   <pattern:DepreciationMethod contextRef="D-2010-Computer">Maecenas tincidunt</pattern:DepreciationMethod>
+   <pattern:EstimatedUsefulLife contextRef="D-2010-Computer">5 years</pattern:EstimatedUsefulLife>
+
+   <pattern:ValuationBasis contextRef="D-2010-Other">Phasellus eleifend</pattern:ValuationBasis>
+   <pattern:DepreciationMethod contextRef="D-2010-Other">Maecenas tincidunt</pattern:DepreciationMethod>
+   <pattern:EstimatedUsefulLife contextRef="D-2010-Other">5 years</pattern:EstimatedUsefulLife>
+
+
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010-Land" unitRef="U-Monetary" decimals="INF">5347000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009-Land" unitRef="U-Monetary" decimals="INF">1147000</pattern:PropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010-Buildings" unitRef="U-Monetary" decimals="INF">244508000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009-Buildings" unitRef="U-Monetary" decimals="INF">366375000</pattern:PropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010-Furniture" unitRef="U-Monetary" decimals="INF">34457000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009-Furniture" unitRef="U-Monetary" decimals="INF">34457000</pattern:PropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010-Computer" unitRef="U-Monetary" decimals="INF">4169000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009-Computer" unitRef="U-Monetary" decimals="INF">5313000</pattern:PropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010-Other" unitRef="U-Monetary" decimals="INF">6702000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009-Other" unitRef="U-Monetary" decimals="INF">6149000</pattern:PropertyPlantAndEquipmentNet>
+
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">295183000</pattern:PropertyPlantAndEquipmentNet>
+   <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">413441000</pattern:PropertyPlantAndEquipmentNet>
+
+
+</xbrl>
