@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2012 UBmatrix inc., All Rights Reserved
+Produced on 2012-09-24 11:27:05
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/InvertedRollUp"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  targetNamespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/InvertedRollUp"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/InvertedRollUp/IncomeStatement"
+        id="IncomeStatement">
+        <link:definition>Income Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="InvertedRollUp-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="InvertedRollUp-definition.xml"
+        xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="InvertedRollUp-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="InvertedRollUp-calculation.xml"
+        xlink:title="Calculation Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+   
+  <import
+    namespace="http://www.xbrl.org/2004/ref"
+    schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd" />
+  <import
+    namespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+    schemaLocation="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/negated"
+    schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="pattern_CostOfSales"
+    name="CostOfSales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_GrossProfitLoss"
+    name="GrossProfitLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_GrossProfitLossRollUp"
+    name="GrossProfitLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+    name="IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_IncomeLossFromContinuingOperationsBeforeIncomeTaxesRollUp"
+    name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_IncomeStatementLineItems"
+    name="IncomeStatementLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_IncomeStatementTable"
+    name="IncomeStatementTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_IncomeTaxExpenseBenefit"
+    name="IncomeTaxExpenseBenefit"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_NetIncomeLoss"
+    name="NetIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_NetIncomeLossRollUp"
+    name="NetIncomeLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_NonoperatingIncomeLoss"
+    name="NonoperatingIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_OperatingIncomeLoss"
+    name="OperatingIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_OperatingIncomeLossRollUp"
+    name="OperatingIncomeLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_OtherOperatingExpenses"
+    name="OtherOperatingExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_OtherOperatingIncome"
+    name="OtherOperatingIncome"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_ReturnsAndAllowances"
+    name="ReturnsAndAllowances"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_RevenuesGross"
+    name="RevenuesGross"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_RevenuesNet"
+    name="RevenuesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_RevenuesNetRollUp"
+    name="RevenuesNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+</schema>

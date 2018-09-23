@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2012 UBmatrix inc., All Rights Reserved
+Produced on 2012-09-24 11:27:05
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="InvertedRollUp.xsd#IncomeStatement"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/InvertedRollUp/IncomeStatement" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/InvertedRollUp/IncomeStatement">
+    <loc xlink:type="locator"
+      xlink:label="pattern_NetIncomeLoss"
+      xlink:href="InvertedRollUp.xsd#pattern_NetIncomeLoss" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      xlink:href="InvertedRollUp.xsd#pattern_IncomeLossFromContinuingOperationsBeforeIncomeTaxes" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_NetIncomeLoss" xlink:to="pattern_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OperatingIncomeLoss"
+      xlink:href="InvertedRollUp.xsd#pattern_OperatingIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      xlink:to="pattern_OperatingIncomeLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_GrossProfitLoss"
+      xlink:href="InvertedRollUp.xsd#pattern_GrossProfitLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_OperatingIncomeLoss"
+      xlink:to="pattern_GrossProfitLoss"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RevenuesNet"
+      xlink:href="InvertedRollUp.xsd#pattern_RevenuesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_GrossProfitLoss" xlink:to="pattern_RevenuesNet"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_RevenuesGross"
+      xlink:href="InvertedRollUp.xsd#pattern_RevenuesGross" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_RevenuesNet" xlink:to="pattern_RevenuesGross"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ReturnsAndAllowances"
+      xlink:href="InvertedRollUp.xsd#pattern_ReturnsAndAllowances" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_RevenuesNet" xlink:to="pattern_ReturnsAndAllowances"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CostOfSales"
+      xlink:href="InvertedRollUp.xsd#pattern_CostOfSales" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_GrossProfitLoss" xlink:to="pattern_CostOfSales"
+      order="2"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherOperatingIncome"
+      xlink:href="InvertedRollUp.xsd#pattern_OtherOperatingIncome" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_OperatingIncomeLoss"
+      xlink:to="pattern_OtherOperatingIncome"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherOperatingExpenses"
+      xlink:href="InvertedRollUp.xsd#pattern_OtherOperatingExpenses" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_OperatingIncomeLoss"
+      xlink:to="pattern_OtherOperatingExpenses"
+      order="3"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_NonoperatingIncomeLoss"
+      xlink:href="InvertedRollUp.xsd#pattern_NonoperatingIncomeLoss" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+      xlink:to="pattern_NonoperatingIncomeLoss"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeTaxExpenseBenefit"
+      xlink:href="InvertedRollUp.xsd#pattern_IncomeTaxExpenseBenefit" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_NetIncomeLoss" xlink:to="pattern_IncomeTaxExpenseBenefit"
+      order="2"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+</linkbase>
