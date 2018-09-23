@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+       
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/RepeatingFact" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="RepeatingFact.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='RepeatingFact-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+   
+
+   <context id="D-2010-SE-1">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+             <xbrldi:explicitMember dimension="pattern:SubsequentEventAxis">pattern:UncollectedReceivableMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2010-SE-2">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+             <xbrldi:explicitMember dimension="pattern:SubsequentEventAxis">pattern:PurchaseBusinessMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+
+   <!-- For subsequent events, this may not be the best way to do this because you cannot track the date of the event or the type of event.  But, you could
+        add more concepts for those things.  The point here is that you have ONE concept and that ONE concept repeats.  So, it needs to be a record. -->
+
+   <pattern:SubsequentEventDescription contextRef="D-2010-SE-1">Description of subsequent event number 1 which relates to the loss of an uncollectable receivable and occurred on January 16, 2011.</pattern:SubsequentEventDescription>
+
+   <pattern:SubsequentEventDescription contextRef="D-2010-SE-2">Description of subsequent event number 2 which relates to the purchase of a business and occurred on February 1, 2011.</pattern:SubsequentEventDescription>
+
+
+</xbrl>
