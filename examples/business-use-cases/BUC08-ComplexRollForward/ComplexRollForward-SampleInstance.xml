@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+       
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/ComplexRollForward" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="ComplexRollForward.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='ComplexRollForward-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="I-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2008">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2008-12-31</instant>
+      </period>
+   </context>
+
+   <context id="D-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2009-01-01</startDate>
+         <endDate>2009-12-31</endDate>
+      </period>
+   </context>
+
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+
+
+  <!-- Property, Plant, and Equipment: Balances -->
+
+  <pattern:Land contextRef="I-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:Land>
+  <pattern:BuildingsNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:BuildingsNet>
+  <pattern:FurnitureAndFixturesNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:FurnitureAndFixturesNet>
+  <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:OtherPropertyPlantAndEquipmentNet>
+  <pattern:PropertyPlantAndEquipmentNet contextRef="I-2010" unitRef="U-Monetary" decimals="INF">4000</pattern:PropertyPlantAndEquipmentNet>
+
+  <pattern:Land contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:Land>
+  <pattern:BuildingsNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:BuildingsNet>
+  <pattern:FurnitureAndFixturesNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:FurnitureAndFixturesNet>
+  <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:OtherPropertyPlantAndEquipmentNet>
+  <pattern:PropertyPlantAndEquipmentNet contextRef="I-2009" unitRef="U-Monetary" decimals="INF">4000</pattern:PropertyPlantAndEquipmentNet>
+
+  <pattern:Land contextRef="I-2008" unitRef="U-Monetary" decimals="INF">1000</pattern:Land>
+  <pattern:BuildingsNet contextRef="I-2008" unitRef="U-Monetary" decimals="INF">1000</pattern:BuildingsNet>
+  <pattern:FurnitureAndFixturesNet contextRef="I-2008" unitRef="U-Monetary" decimals="INF">1000</pattern:FurnitureAndFixturesNet>
+  <pattern:OtherPropertyPlantAndEquipmentNet contextRef="I-2008" unitRef="U-Monetary" decimals="INF">1000</pattern:OtherPropertyPlantAndEquipmentNet>
+  <pattern:PropertyPlantAndEquipmentNet contextRef="I-2008" unitRef="U-Monetary" decimals="INF">4000</pattern:PropertyPlantAndEquipmentNet>
+
+
+  <!-- Property, Plant, and Equipment: Changes -->
+
+  <pattern:LandAdditions contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:LandAdditions>
+  <pattern:LandDisposals contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:LandDisposals>
+  <pattern:LandTranslationDifference contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:LandTranslationDifference>
+  <pattern:LandOtherIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:LandOtherIncreaseDecrease>
+  <pattern:LandPeriodIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:LandPeriodIncreaseDecrease>
+
+  <pattern:BuildingsNetAdditions contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:BuildingsNetAdditions>
+  <pattern:BuildingsNetDisposals contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:BuildingsNetDisposals>
+  <pattern:BuildingsNetTranslationDifference contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:BuildingsNetTranslationDifference>
+  <pattern:BuildingsNetOtherIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:BuildingsNetOtherIncreaseDecrease>
+  <pattern:BuildingsNetPeriodIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:BuildingsNetPeriodIncreaseDecrease>
+
+  <pattern:FurnitureAndFixturesNetAdditions contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:FurnitureAndFixturesNetAdditions>
+  <pattern:FurnitureAndFixturesNetDisposals contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:FurnitureAndFixturesNetDisposals>
+  <pattern:FurnitureAndFixturesNetTranslationDifference contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:FurnitureAndFixturesNetTranslationDifference>
+  <pattern:FurnitureAndFixturesNetOtherIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:FurnitureAndFixturesNetOtherIncreaseDecrease>
+  <pattern:FurnitureAndFixturesNetPeriodIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:FurnitureAndFixturesNetPeriodIncreaseDecrease>
+
+  <pattern:OtherPropertyPlantAndEquipmentNetAdditions contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:OtherPropertyPlantAndEquipmentNetAdditions>
+  <pattern:OtherPropertyPlantAndEquipmentNetDisposals contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000</pattern:OtherPropertyPlantAndEquipmentNetDisposals>
+  <pattern:OtherPropertyPlantAndEquipmentNetTranslationDifference contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:OtherPropertyPlantAndEquipmentNetTranslationDifference>
+  <pattern:OtherPropertyPlantAndEquipmentNetOtherIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:OtherPropertyPlantAndEquipmentNetOtherIncreaseDecrease>
+  <pattern:OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease>
+
+  <pattern:PropertyPlantAndEquipmentNetAdditions contextRef="D-2010" unitRef="U-Monetary" decimals="INF">4000</pattern:PropertyPlantAndEquipmentNetAdditions>
+  <pattern:PropertyPlantAndEquipmentNetDisposals contextRef="D-2010" unitRef="U-Monetary" decimals="INF">4000</pattern:PropertyPlantAndEquipmentNetDisposals>
+  <pattern:PropertyPlantAndEquipmentNetTranslationDifference contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:PropertyPlantAndEquipmentNetTranslationDifference>
+  <pattern:PropertyPlantAndEquipmentNetOtherIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:PropertyPlantAndEquipmentNetOtherIncreaseDecrease>
+  <pattern:PropertyPlantAndEquipmentNetPeriodIncreaseDecrease contextRef="D-2010" unitRef="U-Monetary" decimals="INF">0</pattern:PropertyPlantAndEquipmentNetPeriodIncreaseDecrease>
+
+
+  <pattern:LandAdditions contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:LandAdditions>
+  <pattern:LandDisposals contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:LandDisposals>
+  <pattern:LandTranslationDifference contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:LandTranslationDifference>
+  <pattern:LandOtherIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:LandOtherIncreaseDecrease>
+  <pattern:LandPeriodIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:LandPeriodIncreaseDecrease>
+
+  <pattern:BuildingsNetAdditions contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:BuildingsNetAdditions>
+  <pattern:BuildingsNetDisposals contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:BuildingsNetDisposals>
+  <pattern:BuildingsNetTranslationDifference contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:BuildingsNetTranslationDifference>
+  <pattern:BuildingsNetOtherIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:BuildingsNetOtherIncreaseDecrease>
+  <pattern:BuildingsNetPeriodIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:BuildingsNetPeriodIncreaseDecrease>
+
+  <pattern:FurnitureAndFixturesNetAdditions contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:FurnitureAndFixturesNetAdditions>
+  <pattern:FurnitureAndFixturesNetDisposals contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:FurnitureAndFixturesNetDisposals>
+  <pattern:FurnitureAndFixturesNetTranslationDifference contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:FurnitureAndFixturesNetTranslationDifference>
+  <pattern:FurnitureAndFixturesNetOtherIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:FurnitureAndFixturesNetOtherIncreaseDecrease>
+  <pattern:FurnitureAndFixturesNetPeriodIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:FurnitureAndFixturesNetPeriodIncreaseDecrease>
+
+  <pattern:OtherPropertyPlantAndEquipmentNetAdditions contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:OtherPropertyPlantAndEquipmentNetAdditions>
+  <pattern:OtherPropertyPlantAndEquipmentNetDisposals contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1000</pattern:OtherPropertyPlantAndEquipmentNetDisposals>
+  <pattern:OtherPropertyPlantAndEquipmentNetTranslationDifference contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:OtherPropertyPlantAndEquipmentNetTranslationDifference>
+  <pattern:OtherPropertyPlantAndEquipmentNetOtherIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:OtherPropertyPlantAndEquipmentNetOtherIncreaseDecrease>
+  <pattern:OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:OtherPropertyPlantAndEquipmentNetPeriodIncreaseDecrease>
+
+  <pattern:PropertyPlantAndEquipmentNetAdditions contextRef="D-2009" unitRef="U-Monetary" decimals="INF">4000</pattern:PropertyPlantAndEquipmentNetAdditions>
+  <pattern:PropertyPlantAndEquipmentNetDisposals contextRef="D-2009" unitRef="U-Monetary" decimals="INF">4000</pattern:PropertyPlantAndEquipmentNetDisposals>
+  <pattern:PropertyPlantAndEquipmentNetTranslationDifference contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:PropertyPlantAndEquipmentNetTranslationDifference>
+  <pattern:PropertyPlantAndEquipmentNetOtherIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:PropertyPlantAndEquipmentNetOtherIncreaseDecrease>
+  <pattern:PropertyPlantAndEquipmentNetPeriodIncreaseDecrease contextRef="D-2009" unitRef="U-Monetary" decimals="INF">0</pattern:PropertyPlantAndEquipmentNetPeriodIncreaseDecrease>
+
+
+</xbrl>
