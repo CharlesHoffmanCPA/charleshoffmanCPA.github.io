@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-05-16 06:38:47
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/GroupedReport"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  targetNamespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/GroupedReport"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/GroupedReport/PortfolioOfInvestments"
+        id="PortfolioOfInvestments">
+        <link:definition>Portfolio of Investments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="GroupedReport-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="GroupedReport-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="GroupedReport-definition.xml"
+        xlink:title="Definition Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+    schemaLocation="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd" />
+  <element
+    id="pattern_AllCountriesMember"
+    name="AllCountriesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_AllEntitiesMember"
+    name="AllEntitiesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_AllTermsMember"
+    name="AllTermsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_AllTypesMember"
+    name="AllTypesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_CableAndWirelessOptusFinanceMember"
+    name="CableAndWirelessOptusFinanceMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentCountryAxis"
+    name="InvestmentCountryAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentDescription"
+    name="InvestmentDescription"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentEntityAxis"
+    name="InvestmentEntityAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentHierarchy"
+    name="InvestmentHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentShares"
+    name="InvestmentShares"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentTermAxis"
+    name="InvestmentTermAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentTypeAxis"
+    name="InvestmentTypeAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentValueAtCost"
+    name="InvestmentValueAtCost"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="pattern_InvestmentsLineItems"
+    name="InvestmentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_M9RoboticsMember"
+    name="M9RoboticsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_MicrocomMember"
+    name="MicrocomMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_MoodyRating"
+    name="MoodyRating"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="pattern_PortfolioOfInvestmentsTable"
+    name="PortfolioOfInvestmentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_ShortTermInvestmentMember"
+    name="ShortTermInvestmentMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_SingaporeMember"
+    name="SingaporeMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_SoftwareMember"
+    name="SoftwareMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_StandardAndPoorRating"
+    name="StandardAndPoorRating"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="pattern_TelecomsMember"
+    name="TelecomsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    abstract="true"
+    nillable="true" />
+</schema>

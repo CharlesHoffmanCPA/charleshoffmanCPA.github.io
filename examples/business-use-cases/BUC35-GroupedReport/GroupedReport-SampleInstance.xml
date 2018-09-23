@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+       
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/GroupedReport" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+  <link:schemaRef xlink:type="simple" xlink:href="GroupedReport.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='GroupedReport-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+
+  <context id="I-2010-INV52">
+    <entity>
+      <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      <segment>
+         <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTermAxis">pattern:ShortTermInvestmentMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTypeAxis">pattern:SoftwareMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentCountryAxis">pattern:SingaporeMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentEntityAxis">pattern:M9RoboticsMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2010-INV53">
+    <entity>
+      <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      <segment>
+         <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTermAxis">pattern:ShortTermInvestmentMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTypeAxis">pattern:SoftwareMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentCountryAxis">pattern:SingaporeMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentEntityAxis">pattern:MicrocomMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2010-INV54">
+    <entity>
+      <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      <segment>
+         <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTermAxis">pattern:ShortTermInvestmentMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTypeAxis">pattern:TelecomsMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentCountryAxis">pattern:SingaporeMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentEntityAxis">pattern:CableAndWirelessOptusFinanceMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2010-Singapore">
+    <entity>
+      <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      <segment>
+         <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTermAxis">pattern:ShortTermInvestmentMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTypeAxis">pattern:AllTypesMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentCountryAxis">pattern:SingaporeMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentEntityAxis">pattern:AllEntitiesMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2010-ST">
+    <entity>
+      <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      <segment>
+         <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTermAxis">pattern:ShortTermInvestmentMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTypeAxis">pattern:AllTypesMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentCountryAxis">pattern:AllCountriesMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentEntityAxis">pattern:AllEntitiesMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+  <context id="I-2010-TOTAL">
+    <entity>
+      <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      <segment>
+         <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTermAxis">pattern:AllTermsMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentTypeAxis">pattern:AllTypesMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentCountryAxis">pattern:AllCountriesMember</xbrldi:explicitMember>
+         <xbrldi:explicitMember dimension="pattern:InvestmentEntityAxis">pattern:AllEntitiesMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+
+
+  <unit id="U-Monetary">
+    <measure>iso4217:USD</measure>
+  </unit>
+  <unit id="U-Shares">
+    <measure>shares</measure>
+  </unit>
+
+
+  <pattern:InvestmentDescription contextRef="I-2010-INV52">3.50% 12/7/04</pattern:InvestmentDescription>
+  <pattern:MoodyRating contextRef="I-2010-INV52">A1</pattern:MoodyRating>
+  <pattern:StandardAndPoorRating contextRef="I-2010-INV52">A+</pattern:StandardAndPoorRating>
+  <pattern:InvestmentShares contextRef="I-2010-INV52" unitRef="U-Shares" decimals="INF">11500000</pattern:InvestmentShares>
+  <pattern:InvestmentValueAtCost contextRef="I-2010-INV52" unitRef="U-Monetary" decimals="INF">12993736</pattern:InvestmentValueAtCost>
+
+  <pattern:InvestmentDescription contextRef="I-2010-INV53">3.25% 6/20/06</pattern:InvestmentDescription>
+  <pattern:MoodyRating contextRef="I-2010-INV53">Aa3</pattern:MoodyRating>
+  <pattern:StandardAndPoorRating contextRef="I-2010-INV53">A-</pattern:StandardAndPoorRating>
+  <pattern:InvestmentShares contextRef="I-2010-INV53" unitRef="U-Shares" decimals="INF">5000000</pattern:InvestmentShares>
+  <pattern:InvestmentValueAtCost contextRef="I-2010-INV53" unitRef="U-Monetary" decimals="INF">5662500</pattern:InvestmentValueAtCost>
+
+  <pattern:InvestmentDescription contextRef="I-2010-INV54">3.00% 3/25/09</pattern:InvestmentDescription>
+  <pattern:MoodyRating contextRef="I-2010-INV54">A2</pattern:MoodyRating>
+  <pattern:StandardAndPoorRating contextRef="I-2010-INV54">A+</pattern:StandardAndPoorRating>
+  <pattern:InvestmentShares contextRef="I-2010-INV54" unitRef="U-Shares" decimals="INF">5800000</pattern:InvestmentShares>
+  <pattern:InvestmentValueAtCost contextRef="I-2010-INV54" unitRef="U-Monetary" decimals="INF">6857321</pattern:InvestmentValueAtCost>
+
+  <pattern:InvestmentShares contextRef="I-2010-Singapore" unitRef="U-Shares" decimals="INF">22300000</pattern:InvestmentShares>
+  <pattern:InvestmentValueAtCost contextRef="I-2010-Singapore" unitRef="U-Monetary" decimals="INF">25513557</pattern:InvestmentValueAtCost>
+
+  <pattern:InvestmentShares contextRef="I-2010-ST" unitRef="U-Shares" decimals="INF">22300000</pattern:InvestmentShares>
+  <pattern:InvestmentValueAtCost contextRef="I-2010-ST" unitRef="U-Monetary" decimals="INF">25513557</pattern:InvestmentValueAtCost>
+
+  <pattern:InvestmentShares contextRef="I-2010-TOTAL" unitRef="U-Shares" decimals="INF">22300000</pattern:InvestmentShares>
+  <pattern:InvestmentValueAtCost contextRef="I-2010-TOTAL" unitRef="U-Monetary" decimals="INF">25513557</pattern:InvestmentValueAtCost>
+
+</xbrl>
+
+
