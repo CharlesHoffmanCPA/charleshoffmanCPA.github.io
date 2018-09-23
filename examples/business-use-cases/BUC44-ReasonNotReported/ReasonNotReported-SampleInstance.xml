@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  		 
+  		xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/ReasonNotReported" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="ReasonNotReported.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='ReasonNotReported-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="D-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2009-01-01</startDate>
+         <endDate>2009-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2008">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2008-01-01</startDate>
+         <endDate>2008-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2007">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2007-01-01</startDate>
+         <endDate>2007-12-31</endDate>
+      </period>
+   </context>
+   <context id="D-2006">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2006-01-01</startDate>
+         <endDate>2006-12-31</endDate>
+      </period>
+   </context>
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+   <unit id="U-Pure">
+     <measure>pure</measure>
+   </unit>
+
+   <pattern:SalesNet contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1500000</pattern:SalesNet>
+   <pattern:SalesNet contextRef="D-2009" unitRef="U-Monetary" decimals="INF">1400000</pattern:SalesNet>
+   <pattern:SalesNet contextRef="D-2008" unitRef="U-Monetary" decimals="INF">1300000</pattern:SalesNet>
+   <pattern:SalesNet contextRef="D-2007" unitRef="U-Monetary" decimals="INF">1200000</pattern:SalesNet>
+   <pattern:SalesNet contextRef="D-2006" unitRef="U-Monetary" decimals="INF">1100000</pattern:SalesNet>
+
+   <pattern:IncomeLossFromContinuingOperations contextRef="D-2010" unitRef="U-Monetary" decimals="INF">500000</pattern:IncomeLossFromContinuingOperations>
+   <pattern:IncomeLossFromContinuingOperations contextRef="D-2009" unitRef="U-Monetary" decimals="INF">400000</pattern:IncomeLossFromContinuingOperations>
+   <pattern:IncomeLossFromContinuingOperations contextRef="D-2008" unitRef="U-Monetary" decimals="INF">300000</pattern:IncomeLossFromContinuingOperations>
+   <pattern:IncomeLossFromContinuingOperations contextRef="D-2007" unitRef="U-Monetary" decimals="INF">200000</pattern:IncomeLossFromContinuingOperations>
+   <pattern:IncomeLossFromContinuingOperations contextRef="D-2006" unitRef="U-Monetary" decimals="INF">100000</pattern:IncomeLossFromContinuingOperations>
+
+   <pattern:NetIncomeLoss contextRef="D-2010" unitRef="U-Monetary" decimals="INF">51000</pattern:NetIncomeLoss>
+   <pattern:NetIncomeLoss contextRef="D-2009" unitRef="U-Monetary" decimals="INF">41000</pattern:NetIncomeLoss>
+   <pattern:NetIncomeLoss contextRef="D-2008" unitRef="U-Monetary" decimals="INF">31000</pattern:NetIncomeLoss>
+   <pattern:NetIncomeLoss contextRef="D-2007" unitRef="U-Monetary" decimals="INF">21000</pattern:NetIncomeLoss>
+   <pattern:NetIncomeLoss contextRef="D-2006" unitRef="U-Monetary" decimals="INF">11000</pattern:NetIncomeLoss>
+
+   <pattern:CashFlowProvidedByUsedInOperatingActivitiesNet contextRef="D-2010" unitRef="U-Monetary" decimals="INF">5000000</pattern:CashFlowProvidedByUsedInOperatingActivitiesNet>
+   <pattern:CashFlowProvidedByUsedInOperatingActivitiesNet contextRef="D-2009" unitRef="U-Monetary" decimals="INF">4000000</pattern:CashFlowProvidedByUsedInOperatingActivitiesNet>
+   <pattern:CashFlowProvidedByUsedInOperatingActivitiesNet contextRef="D-2008" unitRef="U-Monetary" decimals="INF">3000000</pattern:CashFlowProvidedByUsedInOperatingActivitiesNet>
+   <pattern:CashFlowProvidedByUsedInOperatingActivitiesNet contextRef="D-2007" unitRef="U-Monetary" decimals="INF">2000000</pattern:CashFlowProvidedByUsedInOperatingActivitiesNet>
+   <pattern:CashFlowProvidedByUsedInOperatingActivitiesNet contextRef="D-2006" unitRef="U-Monetary" decimals="INF">1000000</pattern:CashFlowProvidedByUsedInOperatingActivitiesNet>
+
+   <pattern:CapitalAdditions contextRef="D-2010" unitRef="U-Monetary" decimals="INF">1000000</pattern:CapitalAdditions>
+   <pattern:CapitalAdditions contextRef="D-2009" unitRef="U-Monetary" decimals="INF">650000</pattern:CapitalAdditions>
+   <pattern:CapitalAdditions contextRef="D-2008" unitRef="U-Monetary" decimals="INF">550000</pattern:CapitalAdditions>
+   <pattern:CapitalAdditions contextRef="D-2007" unitRef="U-Monetary" decimals="INF">450000</pattern:CapitalAdditions>
+   <pattern:CapitalAdditions contextRef="D-2006" unitRef="U-Monetary" decimals="INF">350000</pattern:CapitalAdditions>
+
+   <pattern:AverageNumberOfEmployees contextRef="D-2010" unitRef="U-Pure" decimals="INF">300</pattern:AverageNumberOfEmployees>
+   <pattern:AverageNumberOfEmployees contextRef="D-2009" unitRef="U-Pure" decimals="INF">290</pattern:AverageNumberOfEmployees>
+   <pattern:AverageNumberOfEmployees contextRef="D-2008" unitRef="U-Pure" decimals="INF">280</pattern:AverageNumberOfEmployees>
+   <pattern:AverageNumberOfEmployees contextRef="D-2007" unitRef="U-Pure" decimals="INF">270</pattern:AverageNumberOfEmployees>
+   <pattern:AverageNumberOfEmployees id="Item-01" contextRef="D-2006" unitRef="U-Pure" xsi:nil="true"></pattern:AverageNumberOfEmployees>
+
+
+
+  <link:footnoteLink xlink:type="extended" xlink:title='Reason Not Reported' xlink:role="http://www.xbrl.org/2003/role/link">
+    <link:loc xlink:type="locator" xlink:href="#Item-01" xlink:label="FactSet-01" />
+
+    <link:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="FactSet-01" xlink:to="ReasonNotReported-01" />
+    <link:footnote xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:label="ReasonNotReported-01" xml:lang="en">Reason Not Reported: This information unavailable and therefore has not been reported.</link:footnote>
+  </link:footnoteLink>
+
+
+</xbrl>

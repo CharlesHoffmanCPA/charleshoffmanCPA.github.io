@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Presentation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2433 (2009-05-15 09:36).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2011 UBmatrix inc., All Rights Reserved
+Produced on 2011-07-19 16:12:55
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="ReasonNotReported.xsd#FinancialHighlights"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/ReasonNotReported/FinancialHighlights" />
+  <presentationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/ReasonNotReported/FinancialHighlights">
+    <loc xlink:type="locator"
+      xlink:label="pattern_FinancialHighlightsTable"
+      xlink:href="ReasonNotReported.xsd#pattern_FinancialHighlightsTable" />
+    <loc xlink:type="locator"
+      xlink:label="frm_LegalEntityAxis"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_LegalEntityAxis" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsTable"
+      xlink:to="frm_LegalEntityAxis"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="frm_ConsolidatedEntityMember"
+      xlink:href="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd#frm_ConsolidatedEntityMember" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="frm_LegalEntityAxis" xlink:to="frm_ConsolidatedEntityMember"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FinancialHighlightsLineItems"
+      xlink:href="ReasonNotReported.xsd#pattern_FinancialHighlightsLineItems" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsTable"
+      xlink:to="pattern_FinancialHighlightsLineItems"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FinancialHighlightsHierarchy"
+      xlink:href="ReasonNotReported.xsd#pattern_FinancialHighlightsHierarchy" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsLineItems"
+      xlink:to="pattern_FinancialHighlightsHierarchy"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_SalesNet"
+      xlink:href="ReasonNotReported.xsd#pattern_SalesNet" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsHierarchy"
+      xlink:to="pattern_SalesNet"
+      order="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_IncomeLossFromContinuingOperations"
+      xlink:href="ReasonNotReported.xsd#pattern_IncomeLossFromContinuingOperations" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsHierarchy"
+      xlink:to="pattern_IncomeLossFromContinuingOperations"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_NetIncomeLoss"
+      xlink:href="ReasonNotReported.xsd#pattern_NetIncomeLoss" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsHierarchy"
+      xlink:to="pattern_NetIncomeLoss"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      xlink:href="ReasonNotReported.xsd#pattern_CashFlowProvidedByUsedInOperatingActivitiesNet" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsHierarchy"
+      xlink:to="pattern_CashFlowProvidedByUsedInOperatingActivitiesNet"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CapitalAdditions"
+      xlink:href="ReasonNotReported.xsd#pattern_CapitalAdditions" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsHierarchy"
+      xlink:to="pattern_CapitalAdditions"
+      order="5"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_AverageNumberOfEmployees"
+      xlink:href="ReasonNotReported.xsd#pattern_AverageNumberOfEmployees" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="pattern_FinancialHighlightsHierarchy"
+      xlink:to="pattern_AverageNumberOfEmployees"
+      order="6"
+      use="optional" />
+  </presentationLink>
+</linkbase>
