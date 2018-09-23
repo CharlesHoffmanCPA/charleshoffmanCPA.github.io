@@ -1,2 +1,3 @@
+# Business Use Cases
 
-Comming soon!
+[RSS](https://charleshoffmancpa.github.io/examples/business-use-cases/rss.xml)
