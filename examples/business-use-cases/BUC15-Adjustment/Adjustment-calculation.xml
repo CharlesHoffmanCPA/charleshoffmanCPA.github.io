@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-05-10 10:02:08
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="Adjustment.xsd#PriorPeriodAdjustments"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Adjustment/PriorPeriodAdjustments" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/Adjustment/PriorPeriodAdjustments">
+    <loc xlink:type="locator"
+      xlink:label="pattern_PriorPeriodAdjustments"
+      xlink:href="Adjustment.xsd#pattern_PriorPeriodAdjustments" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ChangesInAccountingPolicy"
+      xlink:href="Adjustment.xsd#pattern_ChangesInAccountingPolicy" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PriorPeriodAdjustments"
+      xlink:to="pattern_ChangesInAccountingPolicy"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_CorrectionAnError"
+      xlink:href="Adjustment.xsd#pattern_CorrectionAnError" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PriorPeriodAdjustments"
+      xlink:to="pattern_CorrectionAnError"
+      order="2"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>
