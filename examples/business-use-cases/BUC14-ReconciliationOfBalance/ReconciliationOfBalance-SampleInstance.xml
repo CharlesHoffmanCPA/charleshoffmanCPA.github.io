@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+  		 
+  		xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/ReconciliationOfBalance" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="ReconciliationOfBalance.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='ReconciliationOfBalance-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="I-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+   <context id="I-2009">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <!-- Reconciliation of Cash -->
+   <context id="D-2010-CREC-A">
+      <!-- Reconciliation of Cash, Reconciling Item Type A, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeAMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="I-2010-CREC-A">
+      <!-- Reconciliation of Cash, Reconciling Item Type A, Current Period, As At -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeAMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+
+
+
+
+   <context id="D-2009-CREC-A">
+      <!-- Reconciliation of Cash, Reconciling Item Type A, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeAMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2009-01-01</startDate>
+         <endDate>2009-12-31</endDate>
+      </period>
+   </context>
+   <context id="I-2009-CREC-A">
+      <!-- Reconciliation of Cash, Reconciling Item Type A, Prior Period, As At -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeAMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+   <context id="D-2010-CREC-B">
+      <!-- Reconciliation of Cash, Reconciling Item Type B, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeBMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+   <context id="I-2010-CREC-B">
+      <!-- Reconciliation of Cash, Reconciling Item Type B, Current Period, As At -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeBMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2010-12-31</instant>
+      </period>
+   </context>
+
+   <context id="D-2009-CREC-B">
+      <!-- Reconciliation of Cash, Reconciling Item Type A, Current Period, For Period -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeBMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2009-01-01</startDate>
+         <endDate>2009-12-31</endDate>
+      </period>
+   </context>
+   <context id="I-2009-CREC-B">
+      <!-- Reconciliation of Cash, Reconciling Item Type B, Prior Period, As At -->
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="pattern:ReconcilingItemTypeAxis">pattern:ReconcilingItemTypeBMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <instant>2009-12-31</instant>
+      </period>
+   </context>
+
+
+   <unit id="U-Monetary">
+      <measure>iso4217:USD</measure>
+   </unit>
+
+   <!-- Summary -->
+   <pattern:CashAndCashEquivalents contextRef="I-2010" unitRef="U-Monetary" decimals="INF">1000000</pattern:CashAndCashEquivalents>
+   <pattern:ReconcilingItemAmount contextRef="I-2010" unitRef="U-Monetary" decimals="INF">2000000</pattern:ReconcilingItemAmount>
+   <pattern:CashAndCashEquivalentsPerCashFlowStatement contextRef="I-2010" unitRef="U-Monetary" decimals="INF">3000000</pattern:CashAndCashEquivalentsPerCashFlowStatement>
+
+   <pattern:CashAndCashEquivalents contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1000000</pattern:CashAndCashEquivalents>
+   <pattern:ReconcilingItemAmount contextRef="I-2009" unitRef="U-Monetary" decimals="INF">1000000</pattern:ReconcilingItemAmount>
+   <pattern:CashAndCashEquivalentsPerCashFlowStatement contextRef="I-2009" unitRef="U-Monetary" decimals="INF">2000000</pattern:CashAndCashEquivalentsPerCashFlowStatement>
+
+   <!-- Detail -->
+   <pattern:ReconcilingItemDescription contextRef="D-2010-CREC-A">Reconciling Item A for 2010</pattern:ReconcilingItemDescription>
+   <pattern:ReconcilingItemAmount contextRef="I-2010-CREC-A" unitRef="U-Monetary" decimals="INF">2500000</pattern:ReconcilingItemAmount>
+
+   <pattern:ReconcilingItemDescription contextRef="D-2010-CREC-B">Reconciling Item B for 2010</pattern:ReconcilingItemDescription>
+   <pattern:ReconcilingItemAmount contextRef="I-2010-CREC-B" unitRef="U-Monetary" decimals="INF">-500000</pattern:ReconcilingItemAmount>
+
+   <pattern:ReconcilingItemDescription contextRef="D-2009-CREC-A">Reconciling Item A for 2009</pattern:ReconcilingItemDescription>
+   <pattern:ReconcilingItemAmount contextRef="I-2009-CREC-A" unitRef="U-Monetary" decimals="INF">500000</pattern:ReconcilingItemAmount>
+
+   <pattern:ReconcilingItemDescription contextRef="D-2009-CREC-B">Reconciling Item B for 2009</pattern:ReconcilingItemDescription>
+   <pattern:ReconcilingItemAmount contextRef="I-2009-CREC-B" unitRef="U-Monetary" decimals="INF">500000</pattern:ReconcilingItemAmount>
+
+
+
+</xbrl>
