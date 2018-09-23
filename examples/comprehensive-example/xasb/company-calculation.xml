@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-04-27 08:56:33
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="company.xsd#VarianceAnalysis"
+    roleURI="http://www.ABCCompany.com/company/level4/VarianceAnalysis" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.ABCCompany.com/company/level4/VarianceAnalysis">
+    <loc xlink:type="locator"
+      xlink:label="gaap_GrossProfitLoss"
+      xlink:href="gaap.xsd#gaap_GrossProfitLoss" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_RevenuesNet"
+      xlink:href="gaap.xsd#gaap_RevenuesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_GrossProfitLoss" xlink:to="gaap_RevenuesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="gaap_CostOfSales"
+      xlink:href="gaap.xsd#gaap_CostOfSales" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="gaap_GrossProfitLoss" xlink:to="gaap_CostOfSales"
+      order="4"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

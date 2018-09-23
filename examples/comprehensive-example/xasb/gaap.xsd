@@ -1,0 +1,5001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2017 UBmatrix inc., All Rights Reserved
+Produced on 2017-04-27 08:52:46
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:gaap="http://xasb.org/gaap"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:types="http://xasb.org/gaap/types"
+  targetNamespace="http://xasb.org/gaap"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/FinancialHighlightsSchedule"
+        id="FinancialHighlightsSchedule">
+        <link:definition>AA: Statement: Financial Highlights</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/BalanceSheetSchedule"
+        id="BalanceSheetSchedule">
+        <link:definition>BA: Statement: Balance Sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/ClassesOfPreferredStockSchedule"
+        id="ClassesOfPreferredStockSchedule">
+        <link:definition>BB: Statement: Balance Sheet, Classes of Preferred Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/ClassesOfCommonStockSchedule"
+        id="ClassesOfCommonStockSchedule">
+        <link:definition>BC: Statement: Balance Sheet, Classes of Common Stock</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/IncomeStatementSchedule"
+        id="IncomeStatementSchedule">
+        <link:definition>CA: Statement: Income Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/EarningsPerShare"
+        id="EarningsPerShare">
+        <link:definition>CB: Statement: Income Statement, Earnings Per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/CashFlowDirectSchedule"
+        id="CashFlowDirectSchedule">
+        <link:definition>DA: Statement: Cash Flow Statement, Direct Method</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/PriorPeriodAdjustments"
+        id="PriorPeriodAdjustments">
+        <link:definition>FA: Statement: Changes in Equity, Prior Period Adjustments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/StatementOfEquitySchedule"
+        id="StatementOfEquitySchedule">
+        <link:definition>FB: Statement: Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/StatementOfEquityPreferredSchedule"
+        id="StatementOfEquityPreferredTopic">
+        <link:definition>FC: Statement: Changes in Equity, Preferred Stock, Shares</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/StatementOfEquityCommonSchedule"
+        id="StatementOfCommonEquityTopic">
+        <link:definition>FD: Statement: Changes in Equity, Common Stock, Shares</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/StatementOfEquitySupport"
+        id="StatementOfEquitySchedule2">
+        <link:definition>BF: Schedule: Changes in Equity [Extra]</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/AccountingPoliciesSchedule"
+        id="AccountingPoliciesSchedule">
+        <link:definition>XB: Note: Significant Accounting Policies Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/CashCashEquivalentsSchedule"
+        id="CashCashEquivalentsSchedule">
+        <link:definition>XC: Note: Cash and Cash Equivalents Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/CashCashEquivalentsDetails"
+        id="CashCashEquivalentsDetails">
+        <link:definition>JA: Schedule: Cash and Cash Equivalents, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/ReceivablesSchedule"
+        id="ReceivablesSchedule">
+        <link:definition>XD: Note: Receivables Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/suppport/level4/ReceivablesCNB"
+        id="ReceivablesCNB">
+        <link:definition>JD: Schedule: Receivables, by Current and Noncurrent Portion</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/level4/ReceivablesGNB"
+        id="ReceivablesGNB">
+        <link:definition>JE: Schedule: Receivables, by Gross/Net Portion</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/level4/ReceivablesCOM"
+        id="ReceivablesCOM">
+        <link:definition>JF: Schedule: Receivables, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/level4/InventoryComponents"
+        id="InventoryComponents">
+        <link:definition>JG: Schedule: Inventory, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/level4/PrepaidExpensesComponents"
+        id="PrepaidExpensesComponents">
+        <link:definition>JH: Schedule: Prepaid Expenses, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/InventorySchedule"
+        id="InventorySchedule">
+        <link:definition>XE: Note: Inventory Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/PrepaidExpensesSchedule"
+        id="PrepaidExpensesSchedule">
+        <link:definition>XF: Note: Prepaid Expenses Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/PropertyPlantAndEquipmentSchedule"
+        id="PropertyPlantAndEquipmentSchedule">
+        <link:definition>XG: Note: Property, Plant and Equipment Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/PropertyPlantAndEquipmentDetails"
+        id="PropertyPlantAndEquipmentDetails">
+        <link:definition>KA: Schedule: Property, Plant and Equipment, Net, by Component (Represented as Line Items/Concepts)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/level4/PropertyPlantAndEquipmentSupport"
+        id="PropertyPlantAndEquipmentSupport">
+        <link:definition>KC: Schedule: Property, Plant and Equipment, Estimated Useful Lives (Represented as Axis/Members)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/level4/PropertyPlantAndEquipmentAxissDetails"
+        id="PropertyPlantAndEquipmentAxissDetails">
+        <link:definition>KD: Schedule: Property, Plant and Equipment, Net, by Component (Represented as Axis/Members)</link:definition>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/PropertyPlantAndEquipmentMovementsSchedule"
+        id="PropertyPlantAndEquipmentMovementsSchedule">
+        <link:definition>KB: Schedule: Property, Plant and Equipment, Net, Roll Forward (Represented as Line Items/Concepts)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/LeaseholdLandAndBuildingsSchedule"
+        id="LeaseholdLandAndBuildingsSchedule">
+        <link:definition>KE: Schedule: Property, Plant and Equipment, Leasehold Land and Buildings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/OtherAssetsSchedule"
+        id="OtherAssetsSchedule">
+        <link:definition>XH: Note: Other Assets Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/OtherAssetsDetails"
+        id="OtherAssetsDetails">
+        <link:definition>KF: Schedule: Other Assets, by Current and Noncurrent Portion</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/OtherAssetsCNB"
+        id="OtherAssetsCNB">
+        <link:definition>KG, Part 3: Other Assets, Details, Current/Noncurrent</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/PayablesAndAccrualsSchedule"
+        id="PayablesAndAccrualsSchedule">
+        <link:definition>XI: Note: Payables and Accruals Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/PayablesAndAccrualsDetails"
+        id="PayablesAndAccrualsDetails">
+        <link:definition>NA: Schedule: Payables and Accruals, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/DebtSchedule"
+        id="DebtSchedule">
+        <link:definition>XJ: Note: Long-Term Debt Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/DebtDetails"
+        id="DebtDetails">
+        <link:definition>NB: Schedule: Long-Term Debt, by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/LongTermDebtMaturitiesSchedule"
+        id="LongTermDebtMaturitiesSchedule">
+        <link:definition>ND: Schedule: Long-Term Debt, by Maturity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/DebtInstrumentsSchedule"
+        id="DebtInstrumentsSchedule">
+        <link:definition>NE: Schedule: Long-Term Debt, by Instrument</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/DebtInstrumentsSupport"
+        id="DebtInstrumentsSupport">
+        <link:definition>LB, Part 4b: Long-Term Debt Instruments (For Sum)</link:definition>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/support/level4/DebtCNB"
+        id="DebtCNB">
+        <link:definition>NC: Schedule: Long-Term Debt, by Current and Noncurrent Portion</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/OtherLiabilitiesSchedule"
+        id="OtherLiabilitiesSchedule">
+        <link:definition>XK: Note: Other Liabilities Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/OtherLiabilitiesDetails"
+        id="OtherLiabilitiesDetails">
+        <link:definition>NF: Schedule: Other Liabilities, by Current and Noncurrent Portion</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/OtherLiabilitiesCNB"
+        id="OtherLiabilitiesCNB">
+        <link:definition>Schedule LC, Part 3: Other Liabilities, Details, Current/Noncurrent</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/EquitySchedule"
+        id="EquitySchedule">
+        <link:definition>XL: Note: Equity Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/IncomeTaxesSchedule"
+        id="IncomeTaxesSchedule">
+        <link:definition>XM: Note: Income Taxes Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/IncomeTaxesDetails"
+        id="IncomeTaxesDetails">
+        <link:definition>NG: Schedule: Income Tax Expense (Benefit), by Component</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/SubsequentEventsSchedule"
+        id="SubsequentEventsSchedule">
+        <link:definition>OA: Schedule: Subsequent Events, by Event Category</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/BusinessSegmentsSchedule"
+        id="BusinessSegmentsSchedule">
+        <link:definition>OB: Schedule: Business Segments, by Segment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/RelatedPartiesSchedule"
+        id="RelatedPartiesSchedule">
+        <link:definition>OC: Schedule: Related Parties, by Party</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/RelatedPartyTransactionsSchedule"
+        id="RelatedPartyTransactionsSchedule">
+        <link:definition>OD: Schedule: Related Party Transactions, by Transaction</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/DirectorCompensationSchedule"
+        id="DirectorCompensationSchedule">
+        <link:definition>OE: Schedule: Director Compensation, by Director</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/ShareOwnershipPlansSchedule"
+        id="ShareOwnershipPlansSchedule">
+        <link:definition>OF: Schedule: Share Ownership Plans, by Plan</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level1/OtherOverallFinancialReportingPresentationAndDisplayMattersSchedule"
+        id="OtherOverallFinancialReportingPresentationAndDisplayMattersTopic">
+        <link:definition>XA: Note: Nature of Business and Overall Financial Reporting Presentation and Display Note</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/ReconciliationOfCashSummarySchedule"
+        id="OtherMattersSchedule">
+        <link:definition>JB: Schedule: Reconciliation of Cash per Balance Sheet with Cash Flow Statement, Summary</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/ReconciliationOfCashDetailSchedule"
+        id="ReconciliationOfCashAndCashEquivalentsSchedule">
+        <link:definition>JC: Schedule: Reconciliation of Cash per Balance Sheet with Cash Flow Statement, by Item</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/PortfolioOfInvestmentsSchedule"
+        id="PortfolioOfInvestmentsSchedule">
+        <link:definition>OJ: Schedule: Investments, by Instrument</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/SalesAnanysisSchedule"
+        id="SalesAnanysisSchedule">
+        <link:definition>OK: Schedule: Sales Analysis, by Customer</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/StandardAddressSchedule"
+        id="StandardAddressSchedule">
+        <link:definition>OM: Schedule: Entity Address</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://xasb.org/gaap/role/schedule/level4/DocumentInformationSchedule"
+        id="DocumentInformationSchedule">
+        <link:definition>OL: Schedule: Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-lab.xml"
+        xlink:title="Official labels for financial concepts.  (This should have a specific role, not a default role.)" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-ref.xml"
+        xlink:title="Official referernces for taxonomy concepts.  (This should have a specific role, not a default role.)" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-pre.xml"
+        xlink:title="Testing" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-cal.xml"
+        xlink:title="Calculations." />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="gaap-def.xml"
+        xlink:title="Definition Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://xasb.org/gaap/types"
+    schemaLocation="gaap-ComplexTypes.xsd" />
+  <import
+    namespace="http://www.xbrl.org/role/fr/RestatedLabel/2008-07-31"
+    schemaLocation="http://www.xbrl.org/lrr/role/restated-2006-02-21.xsd" />
+  <import
+    namespace="http://www.xbrlsite.com/Schemas/frm"
+    schemaLocation="frm.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2004/ref"
+    schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd" />
+  <import
+    namespace="http://xbrlsite.azurewebsites.net/2016/conceptual-model/cm-roles"
+    schemaLocation="http://xbrlsite.azurewebsites.net/2016/conceptual-model/cm-roles.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/negated"
+    schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="gaap_AAAMember"
+    name="AAAMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AAMember"
+    name="AAMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AMinusMinusMember"
+    name="AMinusMinusMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_APlusPlusPlusMember"
+    name="APlusPlusPlusMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AccountingPoliciesLineItems"
+    name="AccountingPoliciesLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AccountingPoliciesTable"
+    name="AccountingPoliciesTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AccountingPolicyDetailsHierarchy"
+    name="AccountingPolicyDetailsHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AccountsPayable"
+    name="AccountsPayable"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_AccruedExpenses"
+    name="AccruedExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_AccruedInterestPayable"
+    name="AccruedInterestPayable"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_AdditionalPaidInCapital"
+    name="AdditionalPaidInCapital"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock"
+    name="AdditionalPaidInCapitalAddedFromIssuanceOfCommonStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock"
+    name="AdditionalPaidInCapitalAddedFromIssuanceOfPreferredStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_AdditionalPaidInCapitalChangesRollForward"
+    name="AdditionalPaidInCapitalChangesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AdditionalPaidInCapitalDisclosuresHTML"
+    name="AdditionalPaidInCapitalDisclosuresHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock"
+    name="AdditionalPaidInCapitalRemovedFromBuybacksOfPreferredStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_AddressHierarchy"
+    name="AddressHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AddressLineItems"
+    name="AddressLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AddressTable"
+    name="AddressTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AddressTypeAxis"
+    name="AddressTypeAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AddressTypesMember"
+    name="AddressTypesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AgencyArrangementsWithRelatedPartyMember"
+    name="AgencyArrangementsWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllCategoriesOfSubsequentEventsMember"
+    name="AllCategoriesOfSubsequentEventsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllClassesOfCommonStockMember"
+    name="AllClassesOfCommonStockMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllClassesOfPreferredStockMember"
+    name="AllClassesOfPreferredStockMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllCustomersMember"
+    name="AllCustomersMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllDebtInstrumentsMember"
+    name="AllDebtInstrumentsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllDirectorsMember"
+    name="AllDirectorsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllInvestmentCountriesMember"
+    name="AllInvestmentCountriesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllInvestmentEntitiesMember"
+    name="AllInvestmentEntitiesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllInvestmentTermsMember"
+    name="AllInvestmentTermsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllInvestmentTypesMember"
+    name="AllInvestmentTypesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllInvestmentsMember"
+    name="AllInvestmentsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllLeaseholdIdentifiersMember"
+    name="AllLeaseholdIdentifiersMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllMoodysRatingsMember"
+    name="AllMoodysRatingsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllOperationsMember"
+    name="AllOperationsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllReconcilingItemsOfCashAndCashEquivalentsMember"
+    name="AllReconcilingItemsOfCashAndCashEquivalentsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllRelatedPartiesMember"
+    name="AllRelatedPartiesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllSPRatingsMember"
+    name="AllSPRatingsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllShareOwnershipPlansMember"
+    name="AllShareOwnershipPlansMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllStatesMember"
+    name="AllStatesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllTransactionsWithRelatedPartyMember"
+    name="AllTransactionsWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AllowanceForDoubtfulAccountsReceivables"
+    name="AllowanceForDoubtfulAccountsReceivables"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_Amortization"
+    name="Amortization"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_Assets"
+    name="Assets"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_AssetsCurrent"
+    name="AssetsCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_AssetsCurrentRollUp"
+    name="AssetsCurrentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AssetsNoncurrent"
+    name="AssetsNoncurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_AssetsNoncurrentRollUp"
+    name="AssetsNoncurrentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AssetsRollUp"
+    name="AssetsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AssetsSegmental"
+    name="AssetsSegmental"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_AssetsUnallocatedCorporate"
+    name="AssetsUnallocatedCorporate"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_AttorneyAddressMember"
+    name="AttorneyAddressMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_AverageNumberEmployees"
+    name="AverageNumberEmployees"
+    type="xbrli:decimalItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BalanceSheetDate"
+    name="BalanceSheetDate"
+    type="xbrli:dateItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BalanceSheetLineItems"
+    name="BalanceSheetLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BalanceSheetTable"
+    name="BalanceSheetTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BuildingsMember"
+    name="BuildingsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BuildingsNet"
+    name="BuildingsNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_BuildingsNetAdditions"
+    name="BuildingsNetAdditions"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_BuildingsNetDisposals"
+    name="BuildingsNetDisposals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_BuildingsNetRollForward"
+    name="BuildingsNetRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BuildingsNetTranslationDifference"
+    name="BuildingsNetTranslationDifference"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentAssetsRollUp"
+    name="BusinessSegmentAssetsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentBalanceSheetAbstract"
+    name="BusinessSegmentBalanceSheetAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentDepreciationAmortizationRollUp"
+    name="BusinessSegmentDepreciationAmortizationRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentLiabilitiesRollUp"
+    name="BusinessSegmentLiabilitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentOtherInformationAbstract"
+    name="BusinessSegmentOtherInformationAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentOtherInformationHierarchy"
+    name="BusinessSegmentOtherInformationHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentResultRollUp"
+    name="BusinessSegmentResultRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentRevenueRollUp"
+    name="BusinessSegmentRevenueRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsAssetsSchedule"
+    name="BusinessSegmentsAssetsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsDepreciationAndAmortizationSchedule"
+    name="BusinessSegmentsDepreciationAndAmortizationSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsLiabilitiesSchedule"
+    name="BusinessSegmentsLiabilitiesSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsLineItems"
+    name="BusinessSegmentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsOtherInformationSchedule"
+    name="BusinessSegmentsOtherInformationSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsResultSchedule"
+    name="BusinessSegmentsResultSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsRevenuesSchedule"
+    name="BusinessSegmentsRevenuesSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_BusinessSegmentsTable"
+    name="BusinessSegmentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CaliforniaMember"
+    name="CaliforniaMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CanadaMember"
+    name="CanadaMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CapitalAdditions"
+    name="CapitalAdditions"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_CashAndCashEquivalents"
+    name="CashAndCashEquivalents"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_CashAndCashEquivalentsPerCashFlowStatement"
+    name="CashAndCashEquivalentsPerCashFlowStatement"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_CashAndCashEquivalentsPolicyHTML"
+    name="CashAndCashEquivalentsPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CashAndCashEquivalentsReconcilationRollUp"
+    name="CashAndCashEquivalentsReconcilationRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashAndCashEquivalentsRollUp"
+    name="CashAndCashEquivalentsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashCashEquivalentsComponentsLineItems"
+    name="CashCashEquivalentsComponentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashCashEquivalentsComponentsSchedule"
+    name="CashCashEquivalentsComponentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CashCashEquivalentsComponentsTable"
+    name="CashCashEquivalentsComponentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashCashEquivalentsHTML"
+    name="CashCashEquivalentsHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CashCashEquivalentsNoteLineItems"
+    name="CashCashEquivalentsNoteLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashCashEquivalentsNoteTable"
+    name="CashCashEquivalentsNoteTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowDirectMethodRollForward"
+    name="CashFlowDirectMethodRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowNet"
+    name="CashFlowNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowNetRollUp"
+    name="CashFlowNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowProvidedByUsedInOperatingActivitiesNet"
+    name="CashFlowProvidedByUsedInOperatingActivitiesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowStatementDirectMethodLineItems"
+    name="CashFlowStatementDirectMethodLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowStatementDirectMethodTable"
+    name="CashFlowStatementDirectMethodTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNet"
+    name="CashFlowsProvidedByUsedInFinancingActivitiesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowsProvidedByUsedInFinancingActivitiesNetRollUp"
+    name="CashFlowsProvidedByUsedInFinancingActivitiesNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNet"
+    name="CashFlowsProvidedByUsedInInvestingActivitiesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowsProvidedByUsedInInvestingActivitiesNetRollUp"
+    name="CashFlowsProvidedByUsedInInvestingActivitiesNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashFlowsProvidedByUsedInOperatingActivitiesNetRollUp"
+    name="CashFlowsProvidedByUsedInOperatingActivitiesNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CashRestricted"
+    name="CashRestricted"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_CashUnrestricted"
+    name="CashUnrestricted"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_City"
+    name="City"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ClassOfCommonStockDescriptionAxis"
+    name="ClassOfCommonStockDescriptionAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ClassOfPreferredStockDescriptionAxis"
+    name="ClassOfPreferredStockDescriptionAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CommonStock"
+    name="CommonStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock"
+    name="CommonStockAndAdditionalPaidInCapitalIssuanceOfCommonStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockByClassHierarchy"
+    name="CommonStockByClassHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockByClassLineItems"
+    name="CommonStockByClassLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockByClassSchedule"
+    name="CommonStockByClassSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockByClassTable"
+    name="CommonStockByClassTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockChangesRollForward"
+    name="CommonStockChangesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockDisclosuresHTML"
+    name="CommonStockDisclosuresHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockIssued"
+    name="CommonStockIssued"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockOptionsExercised"
+    name="CommonStockOptionsExercised"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockParValuePerShare"
+    name="CommonStockParValuePerShare"
+    type="xbrli:decimalItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockShareSubscriptions"
+    name="CommonStockShareSubscriptions"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockShares"
+    name="CommonStockShares"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockSharesAdditionalSharesIssued"
+    name="CommonStockSharesAdditionalSharesIssued"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockSharesAuthorized"
+    name="CommonStockSharesAuthorized"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockSharesChangesRollForward"
+    name="CommonStockSharesChangesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockSharesIssued"
+    name="CommonStockSharesIssued"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockSharesOptionsExercised"
+    name="CommonStockSharesOptionsExercised"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CommonStockSharesOutstandingRollForwardSchedule"
+    name="CommonStockSharesOutstandingRollForwardSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CompanyAddressMember"
+    name="CompanyAddressMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ContinuingOperationsMember"
+    name="ContinuingOperationsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_CostOfSales"
+    name="CostOfSales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_Country"
+    name="Country"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_CustomerAxis"
+    name="CustomerAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DebtInstrumentDescription"
+    name="DebtInstrumentDescription"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DebtInstrumentHierarchy"
+    name="DebtInstrumentHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DebtInstrumentIdentifierAxis"
+    name="DebtInstrumentIdentifierAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_Depreciation"
+    name="Depreciation"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DepreciationAndAmortization"
+    name="DepreciationAndAmortization"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DirectorBonuses"
+    name="DirectorBonuses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DirectorCompensationLineItems"
+    name="DirectorCompensationLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DirectorCompensationTable"
+    name="DirectorCompensationTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DirectorFees"
+    name="DirectorFees"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DirectorNameAxis"
+    name="DirectorNameAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DirectorOptionsGrantedAtFairValue"
+    name="DirectorOptionsGrantedAtFairValue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DirectorOptionsGrantedHierarchy"
+    name="DirectorOptionsGrantedHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DirectorSalary"
+    name="DirectorSalary"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DirectorSalaryBonusesAndFees"
+    name="DirectorSalaryBonusesAndFees"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DirectorSalaryBonusesAndFeesRollUp"
+    name="DirectorSalaryBonusesAndFeesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DirectorsCompensationOptionsGrantedSchedule"
+    name="DirectorsCompensationOptionsGrantedSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DirectorsCompensationSchedule"
+    name="DirectorsCompensationSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DiscontinuedOperationsMember"
+    name="DiscontinuedOperationsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DividendsPaid"
+    name="DividendsPaid"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_DocumentCreator"
+    name="DocumentCreator"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DocumentDescription"
+    name="DocumentDescription"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DocumentFiscalPeriodFocus"
+    name="DocumentFiscalPeriodFocus"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DocumentFiscalYearFocus"
+    name="DocumentFiscalYearFocus"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DocumentIdentifier"
+    name="DocumentIdentifier"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DocumentInformationHierarchy"
+    name="DocumentInformationHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DocumentInformationLineItems"
+    name="DocumentInformationLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DocumentInformationTable"
+    name="DocumentInformationTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_DocumentLanguage"
+    name="DocumentLanguage"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_DocumentTitle"
+    name="DocumentTitle"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_EarningsLossPerShare"
+    name="EarningsLossPerShare"
+    type="types:EPSItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_EarningsLossPerShareHierarchy"
+    name="EarningsLossPerShareHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EarningsPerShareLineItems"
+    name="EarningsPerShareLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EarningsPerShareTable"
+    name="EarningsPerShareTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EconomicEntityIdentifier"
+    name="EconomicEntityIdentifier"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_EconomicEntityName"
+    name="EconomicEntityName"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_EliminationsMember"
+    name="EliminationsMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EntityInformationHierarchy"
+    name="EntityInformationHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EntityNAISCSCode"
+    name="EntityNAISCSCode"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_Equity"
+    name="Equity"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_EquityChangesRollForward"
+    name="EquityChangesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EquityDisclosuresLineItems"
+    name="EquityDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EquityDisclosuresTable"
+    name="EquityDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EquityPolicyHTML"
+    name="EquityPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_EquityRollUp"
+    name="EquityRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_EstimatedUsefulLifeBuildings"
+    name="EstimatedUsefulLifeBuildings"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_EstimatedUsefulLifeFurnitureAndFixtures"
+    name="EstimatedUsefulLifeFurnitureAndFixtures"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_EstimatedUsefulLifeOtherPropertyPlantAndEquipment"
+    name="EstimatedUsefulLifeOtherPropertyPlantAndEquipment"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ExternalSales"
+    name="ExternalSales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_FinanceLeaseReceivablesNetCurrent"
+    name="FinanceLeaseReceivablesNetCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_FinancialHighlightsHTML"
+    name="FinancialHighlightsHTML"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_FinancialHighlightsHierarchy"
+    name="FinancialHighlightsHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_FinancialHighlightsLineItems"
+    name="FinancialHighlightsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_FinancialHighlightsTable"
+    name="FinancialHighlightsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_FinishedGoods"
+    name="FinishedGoods"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_FurnitureAndFixturesMember"
+    name="FurnitureAndFixturesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_FurnitureAndFixturesNet"
+    name="FurnitureAndFixturesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_FurnitureAndFixturesNetAdditions"
+    name="FurnitureAndFixturesNetAdditions"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_FurnitureAndFixturesNetDisposals"
+    name="FurnitureAndFixturesNetDisposals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_FurnitureAndFixturesNetTranslationDifference"
+    name="FurnitureAndFixturesNetTranslationDifference"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_FurnitureFixturesNetRollForward"
+    name="FurnitureFixturesNetRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_GeneralInformationHierarchy"
+    name="GeneralInformationHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_GrossProfitLoss"
+    name="GrossProfitLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_GrossProfitLossRollUp"
+    name="GrossProfitLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ImpairmentLossesReversalsRecognizedInIncome"
+    name="ImpairmentLossesReversalsRecognizedInIncome"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeLossFromAffiliates"
+    name="IncomeLossFromAffiliates"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeLossFromContinuingOperations"
+    name="IncomeLossFromContinuingOperations"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+    name="IncomeLossFromContinuingOperationsBeforeIncomeTaxes"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesRollUp"
+    name="IncomeLossFromContinuingOperationsBeforeIncomeTaxesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeLossFromContinuingOperationsRollUp"
+    name="IncomeLossFromContinuingOperationsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeLossFromDiscontinuedOperationsNet"
+    name="IncomeLossFromDiscontinuedOperationsNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeLossFromInvestments"
+    name="IncomeLossFromInvestments"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeStatementLineItems"
+    name="IncomeStatementLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeStatementPeriod"
+    name="IncomeStatementPeriod"
+    type="xbrli:dateItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_IncomeStatementTable"
+    name="IncomeStatementTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefit"
+    name="IncomeTaxExpenseBenefit"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitComponentsLineItems"
+    name="IncomeTaxExpenseBenefitComponentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitComponentsRollUp"
+    name="IncomeTaxExpenseBenefitComponentsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitComponentsSchedule"
+    name="IncomeTaxExpenseBenefitComponentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitComponentsTable"
+    name="IncomeTaxExpenseBenefitComponentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitCurrent"
+    name="IncomeTaxExpenseBenefitCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitCurrentDomestic"
+    name="IncomeTaxExpenseBenefitCurrentDomestic"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitCurrentForeign"
+    name="IncomeTaxExpenseBenefitCurrentForeign"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitCurrentRollUp"
+    name="IncomeTaxExpenseBenefitCurrentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitDeferred"
+    name="IncomeTaxExpenseBenefitDeferred"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitDeferredDomestic"
+    name="IncomeTaxExpenseBenefitDeferredDomestic"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitDeferredForeign"
+    name="IncomeTaxExpenseBenefitDeferredForeign"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxExpenseBenefitDeferredRollUp"
+    name="IncomeTaxExpenseBenefitDeferredRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxesDisclosuresHTML"
+    name="IncomeTaxesDisclosuresHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxesDisclosuresLineItems"
+    name="IncomeTaxesDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxesDisclosuresTable"
+    name="IncomeTaxesDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_IncomeTaxesPolicyHTML"
+    name="IncomeTaxesPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_InterestExpenseIncome"
+    name="InterestExpenseIncome"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_IntersegmentalSales"
+    name="IntersegmentalSales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_Inventory"
+    name="Inventory"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_InventoryByCompomentTable"
+    name="InventoryByCompomentTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InventoryByComponentLineItems"
+    name="InventoryByComponentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InventoryByComponentRollUp"
+    name="InventoryByComponentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InventoryComponentsSchedule"
+    name="InventoryComponentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_InventoryCostMethod"
+    name="InventoryCostMethod"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_InventoryHTML"
+    name="InventoryHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_InventoryLineItems"
+    name="InventoryLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InventoryPolicyHTML"
+    name="InventoryPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_InventoryTable"
+    name="InventoryTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InventoryValuationMethod"
+    name="InventoryValuationMethod"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentCountryAxis"
+    name="InvestmentCountryAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentDescriptionAxis"
+    name="InvestmentDescriptionAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentEntityAxis"
+    name="InvestmentEntityAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentHierarchy"
+    name="InvestmentHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentInAffiliates"
+    name="InvestmentInAffiliates"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentInGovernmentalEntitiesMember"
+    name="InvestmentInGovernmentalEntitiesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentInNongovernmentalEntitiesMember"
+    name="InvestmentInNongovernmentalEntitiesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentLineItems"
+    name="InvestmentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentMoodysRatingAxis"
+    name="InvestmentMoodysRatingAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentSPRatingAxis"
+    name="InvestmentSPRatingAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentShares"
+    name="InvestmentShares"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentTable"
+    name="InvestmentTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentTermAxis"
+    name="InvestmentTermAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentTypeAxis"
+    name="InvestmentTypeAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentsAtCost"
+    name="InvestmentsAtCost"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentsPolicyHTML"
+    name="InvestmentsPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_InvestmentsSchedule"
+    name="InvestmentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_Land"
+    name="Land"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_LandAdditions"
+    name="LandAdditions"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_LandDisposals"
+    name="LandDisposals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LandMember"
+    name="LandMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LandRollForward"
+    name="LandRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LandTranslationDifference"
+    name="LandTranslationDifference"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingDescriptionOfFacility"
+    name="LeaseholdLandAndBuildingDescriptionOfFacility"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingIdentifierAxis"
+    name="LeaseholdLandAndBuildingIdentifierAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingLandArea"
+    name="LeaseholdLandAndBuildingLandArea"
+    type="xbrli:decimalItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingLineItems"
+    name="LeaseholdLandAndBuildingLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingLocation"
+    name="LeaseholdLandAndBuildingLocation"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingStateAxis"
+    name="LeaseholdLandAndBuildingStateAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingTable"
+    name="LeaseholdLandAndBuildingTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingTenure"
+    name="LeaseholdLandAndBuildingTenure"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingTenureStartDate"
+    name="LeaseholdLandAndBuildingTenureStartDate"
+    type="xbrli:dateItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingValueAtCost"
+    name="LeaseholdLandAndBuildingValueAtCost"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandAndBuildingsHierarchy"
+    name="LeaseholdLandAndBuildingsHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LeaseholdLandBuildingsSchedule"
+    name="LeaseholdLandBuildingsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LeasingArrangementsWithRelatedPartyMember"
+    name="LeasingArrangementsWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_Liabilities"
+    name="Liabilities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesAndEquity"
+    name="LiabilitiesAndEquity"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesAndEquityRollUp"
+    name="LiabilitiesAndEquityRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesCurrent"
+    name="LiabilitiesCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesCurrentRollUp"
+    name="LiabilitiesCurrentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesNoncurrent"
+    name="LiabilitiesNoncurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesNoncurrentRollUp"
+    name="LiabilitiesNoncurrentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesRollUp"
+    name="LiabilitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesSegmental"
+    name="LiabilitiesSegmental"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LiabilitiesUnallocatedCorporate"
+    name="LiabilitiesUnallocatedCorporate"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LicenseArrangementsWithRelatedPartyMember"
+    name="LicenseArrangementsWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebt"
+    name="LongTermDebt"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtByComponentLineItems"
+    name="LongTermDebtByComponentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtByComponentRollUp"
+    name="LongTermDebtByComponentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtByComponentTable"
+    name="LongTermDebtByComponentTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtByCurrentNoncurrentPortionsRollUp"
+    name="LongTermDebtByCurrentNoncurrentPortionsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtComponentsSchedule"
+    name="LongTermDebtComponentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtCurrent"
+    name="LongTermDebtCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtCurrentAndNoncurrentBreakdownSchedule"
+    name="LongTermDebtCurrentAndNoncurrentBreakdownSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtCurrentNoncurrentBreakdownLineItems"
+    name="LongTermDebtCurrentNoncurrentBreakdownLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtCurrentNoncurrentBreakdownTable"
+    name="LongTermDebtCurrentNoncurrentBreakdownTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtDisclosuresHTML"
+    name="LongTermDebtDisclosuresHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtDisclosuresLineItems"
+    name="LongTermDebtDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtDisclosuresTable"
+    name="LongTermDebtDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtInstrumentLineItems"
+    name="LongTermDebtInstrumentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtInstrumentTable"
+    name="LongTermDebtInstrumentTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtInstrumentsSchedule"
+    name="LongTermDebtInstrumentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturingInFiveYears"
+    name="LongTermDebtMaturingInFiveYears"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturingInFourYears"
+    name="LongTermDebtMaturingInFourYears"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturingInThreeYears"
+    name="LongTermDebtMaturingInThreeYears"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturingInTwoYears"
+    name="LongTermDebtMaturingInTwoYears"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturingThereafter"
+    name="LongTermDebtMaturingThereafter"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturitiesLineItems"
+    name="LongTermDebtMaturitiesLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturitiesRollUp"
+    name="LongTermDebtMaturitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturitiesSchedule"
+    name="LongTermDebtMaturitiesSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtMaturitiesTable"
+    name="LongTermDebtMaturitiesTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtNoncurrent"
+    name="LongTermDebtNoncurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtPolicyHTML"
+    name="LongTermDebtPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtSecured"
+    name="LongTermDebtSecured"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtSubordinated"
+    name="LongTermDebtSubordinated"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermDebtUnsecured"
+    name="LongTermDebtUnsecured"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_LongTermMember"
+    name="LongTermMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_MinorityInterestInNetIncomeLossNet"
+    name="MinorityInterestInNetIncomeLossNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_NatureBusinessOverallFinancialReportingPresentationDisplayMattersLineItems"
+    name="NatureBusinessOverallFinancialReportingPresentationDisplayMattersLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_NatureBusinessOverallFinancialReportingPresentationDisplayMattersTable"
+    name="NatureBusinessOverallFinancialReportingPresentationDisplayMattersTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_NatureOfBusinessHTML"
+    name="NatureOfBusinessHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_NetIncomeLoss"
+    name="NetIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_NetIncomeLossRollUp"
+    name="NetIncomeLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_NonoperatingIncomeLoss"
+    name="NonoperatingIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_NonoperatingIncomeLossRollUp"
+    name="NonoperatingIncomeLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OperatingExpenses"
+    name="OperatingExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OperatingIncomeLoss"
+    name="OperatingIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OperatingIncomeLossRollUp"
+    name="OperatingIncomeLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OregonMember"
+    name="OregonMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+    name="OtherAdjustmentsToReconcileNetIncomeLossToCashProvidedByUsedInOperations"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssets"
+    name="OtherAssets"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsByCurrentAndNoncurrentPortionRollUp"
+    name="OtherAssetsByCurrentAndNoncurrentPortionRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsCurrent"
+    name="OtherAssetsCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsCurrentNoncurrentPortionSchedule"
+    name="OtherAssetsCurrentNoncurrentPortionSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsCurrentNoncurrentPortionsLineItems"
+    name="OtherAssetsCurrentNoncurrentPortionsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsCurrentNoncurrentPortionsTable"
+    name="OtherAssetsCurrentNoncurrentPortionsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsDisclosuresLineItems"
+    name="OtherAssetsDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsDisclosuresTable"
+    name="OtherAssetsDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsHTML"
+    name="OtherAssetsHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsNoncurrent"
+    name="OtherAssetsNoncurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherAssetsPolicyHTML"
+    name="OtherAssetsPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherCashAndCashEquivalents"
+    name="OtherCashAndCashEquivalents"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherCashFlowFromUsedInOtherOperatingActivities"
+    name="OtherCashFlowFromUsedInOtherOperatingActivities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInAdditionalPaidInCapital"
+    name="OtherIncreaseDecreaseInAdditionalPaidInCapital"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInBuildingsNet"
+    name="OtherIncreaseDecreaseInBuildingsNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInCommonStock"
+    name="OtherIncreaseDecreaseInCommonStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInCommonStockShares"
+    name="OtherIncreaseDecreaseInCommonStockShares"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInEquity"
+    name="OtherIncreaseDecreaseInEquity"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInFurnitureAndFixturesNet"
+    name="OtherIncreaseDecreaseInFurnitureAndFixturesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInLand"
+    name="OtherIncreaseDecreaseInLand"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet"
+    name="OtherIncreaseDecreaseInOtherPropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInPreferredStock"
+    name="OtherIncreaseDecreaseInPreferredStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInPreferredStockShares"
+    name="OtherIncreaseDecreaseInPreferredStockShares"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet"
+    name="OtherIncreaseDecreaseInPropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses"
+    name="OtherIncreaseDecreaseInRetainedEarningsAccumulatedLosses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilities"
+    name="OtherLiabilities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesCurrent"
+    name="OtherLiabilitiesCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesCurrentAndNoncurrentBreakdownSchedule"
+    name="OtherLiabilitiesCurrentAndNoncurrentBreakdownSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesCurrentNoncurrentBreakdownLineItems"
+    name="OtherLiabilitiesCurrentNoncurrentBreakdownLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesCurrentNoncurrentBreakdownTable"
+    name="OtherLiabilitiesCurrentNoncurrentBreakdownTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesDisclosuresHTML"
+    name="OtherLiabilitiesDisclosuresHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesDisclosuresLineItems"
+    name="OtherLiabilitiesDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesDisclosuresTable"
+    name="OtherLiabilitiesDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesNoncurrent"
+    name="OtherLiabilitiesNoncurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesPolicyHTML"
+    name="OtherLiabilitiesPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherLiabilitiesRollUp"
+    name="OtherLiabilitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherLongTermDebt"
+    name="OtherLongTermDebt"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherMattersHTML"
+    name="OtherMattersHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_OtherNonoperatingExpensesIncome"
+    name="OtherNonoperatingExpensesIncome"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherOperatingIncome"
+    name="OtherOperatingIncome"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherPayablesAndAccruals"
+    name="OtherPayablesAndAccruals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherPropertyPlantAndEquipmentMember"
+    name="OtherPropertyPlantAndEquipmentMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherPropertyPlantAndEquipmentNet"
+    name="OtherPropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherPropertyPlantAndEquipmentNetAdditions"
+    name="OtherPropertyPlantAndEquipmentNetAdditions"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherPropertyPlantAndEquipmentNetDisposals"
+    name="OtherPropertyPlantAndEquipmentNetDisposals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_OtherPropertyPlantAndEquipmentNetTranslationDifference"
+    name="OtherPropertyPlantAndEquipmentNetTranslationDifference"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OtherPropertyPlantEquipmentNetRollForward"
+    name="OtherPropertyPlantEquipmentNetRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_OtherReceivablesNetCurrent"
+    name="OtherReceivablesNetCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_OverallFinancialReportPresentationDisplayHTML"
+    name="OverallFinancialReportPresentationDisplayHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAccrualsComponentsLineItems"
+    name="PayablesAccrualsComponentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAccrualsComponentsSchedule"
+    name="PayablesAccrualsComponentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAccrualsComponentsTable"
+    name="PayablesAccrualsComponentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAccrualsDisclosuresLineItems"
+    name="PayablesAccrualsDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAccrualsDisclosuresTable"
+    name="PayablesAccrualsDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAccrualsHTML"
+    name="PayablesAccrualsHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAndAccruals"
+    name="PayablesAndAccruals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAndAccrualsPolicyHTML"
+    name="PayablesAndAccrualsPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PayablesAndAccrualsRollUp"
+    name="PayablesAndAccrualsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PaymentsForPurchasesOfPropertyPlantAndEquipment"
+    name="PaymentsForPurchasesOfPropertyPlantAndEquipment"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PaymentsOfIncomeTaxes"
+    name="PaymentsOfIncomeTaxes"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PaymentsOfInterest"
+    name="PaymentsOfInterest"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PaymentsOfLongTermDebt"
+    name="PaymentsOfLongTermDebt"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PaymentsOfOperatingExpenses"
+    name="PaymentsOfOperatingExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PettyCash"
+    name="PettyCash"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PostalCode"
+    name="PostalCode"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStock"
+    name="PreferredStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock"
+    name="PreferredStockAndAdditionalPaidInCapitalIssuanceOfPreferredStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock"
+    name="PreferredStockAndAdditionalPaidInCapitalRemovedBuybacksOfPreferredStock"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockBuybacks"
+    name="PreferredStockBuybacks"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockByClassHierarchy"
+    name="PreferredStockByClassHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockByClassLineItems"
+    name="PreferredStockByClassLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockByClassSchedule"
+    name="PreferredStockByClassSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockByClassTable"
+    name="PreferredStockByClassTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockChangesRollForward"
+    name="PreferredStockChangesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockDisclosuresHTML"
+    name="PreferredStockDisclosuresHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockIssued"
+    name="PreferredStockIssued"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockParValuePerShare"
+    name="PreferredStockParValuePerShare"
+    type="xbrli:decimalItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockShareSubscriptions"
+    name="PreferredStockShareSubscriptions"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockShares"
+    name="PreferredStockShares"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockSharesAdditionalSharesIssued"
+    name="PreferredStockSharesAdditionalSharesIssued"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockSharesAuthorized"
+    name="PreferredStockSharesAuthorized"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockSharesBuybacks"
+    name="PreferredStockSharesBuybacks"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockSharesChangesRollForward"
+    name="PreferredStockSharesChangesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockSharesIssued"
+    name="PreferredStockSharesIssued"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_PreferredStockSharesOutstandingRollForwardSchedule"
+    name="PreferredStockSharesOutstandingRollForwardSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpenses"
+    name="PrepaidExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpensesByComponentLineItems"
+    name="PrepaidExpensesByComponentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpensesByComponentRollUp"
+    name="PrepaidExpensesByComponentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpensesComponentsSchedule"
+    name="PrepaidExpensesComponentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpensesDisclosuresLineItems"
+    name="PrepaidExpensesDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpensesHTML"
+    name="PrepaidExpensesHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpensesPolicyHTML"
+    name="PrepaidExpensesPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidExpensesTable"
+    name="PrepaidExpensesTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidInsurance"
+    name="PrepaidInsurance"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PrepaidInterest"
+    name="PrepaidInterest"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ProceedsFromAdditionalLongTermDebt"
+    name="ProceedsFromAdditionalLongTermDebt"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ProceedsFromCollectionOfInterestIncome"
+    name="ProceedsFromCollectionOfInterestIncome"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ProceedsFromCollectionOfRevenues"
+    name="ProceedsFromCollectionOfRevenues"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ProceedsFromIncomeTaxesRefunded"
+    name="ProceedsFromIncomeTaxesRefunded"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ProceedsFromSaleOfPropertyPlantAndEquipment"
+    name="ProceedsFromSaleOfPropertyPlantAndEquipment"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentAllMajorClassesMember"
+    name="PropertyPlantAndEquipmentAllMajorClassesMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentComponentsSchedule"
+    name="PropertyPlantAndEquipmentComponentsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentDescriptionOfMajorClassAxis"
+    name="PropertyPlantAndEquipmentDescriptionOfMajorClassAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentNet"
+    name="PropertyPlantAndEquipmentNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentNetAdditions"
+    name="PropertyPlantAndEquipmentNetAdditions"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentNetComponentsRollUp"
+    name="PropertyPlantAndEquipmentNetComponentsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentNetDisposals"
+    name="PropertyPlantAndEquipmentNetDisposals"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentNetRollUp"
+    name="PropertyPlantAndEquipmentNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantAndEquipmentNetTranslationDifference"
+    name="PropertyPlantAndEquipmentNetTranslationDifference"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentComponentsLineItems"
+    name="PropertyPlantEquipmentComponentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentComponentsTable"
+    name="PropertyPlantEquipmentComponentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentDisclosuresClassAsAxisLineItems"
+    name="PropertyPlantEquipmentDisclosuresClassAsAxisLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentDisclosuresLineItems"
+    name="PropertyPlantEquipmentDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentDisclosuresTable"
+    name="PropertyPlantEquipmentDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentEstimatedUsefulLife"
+    name="PropertyPlantEquipmentEstimatedUsefulLife"
+    type="xbrli:durationItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentEstimatedUsefulLifeHierarchy"
+    name="PropertyPlantEquipmentEstimatedUsefulLifeHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentEstimatedUsefulLivesByTypeTable"
+    name="PropertyPlantEquipmentEstimatedUsefulLivesByTypeTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentEstimatedUsefulLivesSchedule"
+    name="PropertyPlantEquipmentEstimatedUsefulLivesSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentHTML"
+    name="PropertyPlantEquipmentHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentNetByComponentClassAsAxisLineItems"
+    name="PropertyPlantEquipmentNetByComponentClassAsAxisLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentNetByComponentClassAsAxisTable"
+    name="PropertyPlantEquipmentNetByComponentClassAsAxisTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentNetRollForward"
+    name="PropertyPlantEquipmentNetRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentRollForwardLineItems"
+    name="PropertyPlantEquipmentRollForwardLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentRollForwardSchedule"
+    name="PropertyPlantEquipmentRollForwardSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_PropertyPlantEquipmentRollForwardTable"
+    name="PropertyPlantEquipmentRollForwardTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ProvinceOrState"
+    name="ProvinceOrState"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ProvisionsGuaranteesAndCollateralsWithRelatedPartyMember"
+    name="ProvisionsGuaranteesAndCollateralsWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PurchaseOrSaleOfGoodsWithRelatedPartyMember"
+    name="PurchaseOrSaleOfGoodsWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_PurchaseOrSaleOfPropertyOrOtherAssetsWithRelatedPartyMember"
+    name="PurchaseOrSaleOfPropertyOrOtherAssetsWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RawMaterial"
+    name="RawMaterial"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesByCompomentTable"
+    name="ReceivablesByCompomentTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesByComponentLineItems"
+    name="ReceivablesByComponentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesByComponentSchedule"
+    name="ReceivablesByComponentSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesCurrentNoncurrentSchedule"
+    name="ReceivablesCurrentNoncurrentSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesDetailsCurrentNoncurrentLineItems"
+    name="ReceivablesDetailsCurrentNoncurrentLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesDetailsCurrentNoncurrentTable"
+    name="ReceivablesDetailsCurrentNoncurrentTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesDetailsGrossNetLineItems"
+    name="ReceivablesDetailsGrossNetLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesDetailsGrossNetTable"
+    name="ReceivablesDetailsGrossNetTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesDisclosuresLineItems"
+    name="ReceivablesDisclosuresLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesDisclosuresTable"
+    name="ReceivablesDisclosuresTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesGross"
+    name="ReceivablesGross"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesHTML"
+    name="ReceivablesHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNet"
+    name="ReceivablesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNetByCurrentAndNoncurrentRollUp"
+    name="ReceivablesNetByCurrentAndNoncurrentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNetByNetAndGrossRollUp"
+    name="ReceivablesNetByNetAndGrossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNetCurrent"
+    name="ReceivablesNetCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNetCurrentByComponentRollUp"
+    name="ReceivablesNetCurrentByComponentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNetCurrentRollUp"
+    name="ReceivablesNetCurrentRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNetGrossSchedule"
+    name="ReceivablesNetGrossSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesNetNoncurrent"
+    name="ReceivablesNetNoncurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ReceivablesPolicyHTML"
+    name="ReceivablesPolicyHTML"
+    type="types:TextBlockPolicyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReclassificationOfFinancialStatementItems"
+    name="ReclassificationOfFinancialStatementItems"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilationBalanceSheetCashCashEquivalentsToCashFlowStatementSchedule"
+    name="ReconcilationBalanceSheetCashCashEquivalentsToCashFlowStatementSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilationToCashFlowStatementDetailSchedule"
+    name="ReconcilationToCashFlowStatementDetailSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilationToCashFlowStatementSummarySchedule"
+    name="ReconcilationToCashFlowStatementSummarySchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReconciliationOfCashSummaryLineItems"
+    name="ReconciliationOfCashSummaryLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReconciliationOfCashSummaryTable"
+    name="ReconciliationOfCashSummaryTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilingItemAmount"
+    name="ReconcilingItemAmount"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilingItemDescription"
+    name="ReconcilingItemDescription"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilingItemOfCashAndCashEquivalentsHierarchy"
+    name="ReconcilingItemOfCashAndCashEquivalentsHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilingItemOfCashAndCashEquivalentsLineItems"
+    name="ReconcilingItemOfCashAndCashEquivalentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilingItemOfCashAndCashEquivalentsTable"
+    name="ReconcilingItemOfCashAndCashEquivalentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReconcilingItemTypeAxis"
+    name="ReconcilingItemTypeAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartiesSchedule"
+    name="RelatedPartiesSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyHierarchy"
+    name="RelatedPartyHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyLineItems"
+    name="RelatedPartyLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyNameAxis"
+    name="RelatedPartyNameAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyNatureOfRelationship"
+    name="RelatedPartyNatureOfRelationship"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTable"
+    name="RelatedPartyTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTransactionAmount"
+    name="RelatedPartyTransactionAmount"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTransactionDescription"
+    name="RelatedPartyTransactionDescription"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTransactionHierarchy"
+    name="RelatedPartyTransactionHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTransactionLineItems"
+    name="RelatedPartyTransactionLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTransactionPricingPolicy"
+    name="RelatedPartyTransactionPricingPolicy"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTransactionTable"
+    name="RelatedPartyTransactionTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTransactionTypeAxis"
+    name="RelatedPartyTransactionTypeAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTrasactionsSchedule"
+    name="RelatedPartyTrasactionsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RelatedPartyTypeOfRelationship"
+    name="RelatedPartyTypeOfRelationship"
+    type="types:RelatedPartyItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RenderingOrReceivingGoodsOrServicesWithRelatedPartyMember"
+    name="RenderingOrReceivingGoodsOrServicesWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ReportingStyleCode"
+    name="ReportingStyleCode"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RetainedEarningsAccumulatedLosses"
+    name="RetainedEarningsAccumulatedLosses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_RetainedEarningsAccumulatedLossesChangesInAccountingPolicies"
+    name="RetainedEarningsAccumulatedLossesChangesInAccountingPolicies"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_RetainedEarningsAccumulatedLossesChangesRollForward"
+    name="RetainedEarningsAccumulatedLossesChangesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RetainedEarningsAccumulatedLossesDisclosuresHTML"
+    name="RetainedEarningsAccumulatedLossesDisclosuresHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_RetainedEarningsAccumulatedLossesPriorPeriodAdjustmentsAdjustment"
+    name="RetainedEarningsAccumulatedLossesPriorPeriodAdjustmentsAdjustment"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_RetainedEarningsAccumulatedLossesPriorPeriodErrors"
+    name="RetainedEarningsAccumulatedLossesPriorPeriodErrors"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_ReturnsAndAllowances"
+    name="ReturnsAndAllowances"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_RevenuesGross"
+    name="RevenuesGross"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_RevenuesNet"
+    name="RevenuesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_RevenuesNetRollUp"
+    name="RevenuesNetRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SalesAnalysisByCustomerHierarchy"
+    name="SalesAnalysisByCustomerHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SalesAnalysisByCustomerLineItems"
+    name="SalesAnalysisByCustomerLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SalesAnalysisByCustomerSchedule"
+    name="SalesAnalysisByCustomerSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_SalesAnalysisByCustomerTable"
+    name="SalesAnalysisByCustomerTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SegmentResult"
+    name="SegmentResult"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="gaap_ShareOptionsOutstandingRollForwardSchedule"
+    name="ShareOptionsOutstandingRollForwardSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanDescriptionGeneralTermsAndConditionsHTML"
+    name="ShareOwnershipPlanDescriptionGeneralTermsAndConditionsHTML"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanIdentifierAxis"
+    name="ShareOwnershipPlanIdentifierAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanLineItems"
+    name="ShareOwnershipPlanLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanShareOptionsExercised"
+    name="ShareOwnershipPlanShareOptionsExercised"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanShareOptionsExpired"
+    name="ShareOwnershipPlanShareOptionsExpired"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanShareOptionsForfeited"
+    name="ShareOwnershipPlanShareOptionsForfeited"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanShareOptionsGranted"
+    name="ShareOwnershipPlanShareOptionsGranted"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanShareOptionsOutstanding"
+    name="ShareOwnershipPlanShareOptionsOutstanding"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanShareOptionsOutstandingRollForward"
+    name="ShareOwnershipPlanShareOptionsOutstandingRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ShareOwnershipPlanTable"
+    name="ShareOwnershipPlanTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ShareRegisterAddressMember"
+    name="ShareRegisterAddressMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_ShortTermMember"
+    name="ShortTermMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SignificantAccountingPoliciesNote"
+    name="SignificantAccountingPoliciesNote"
+    type="types:TextBlockNoteItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_StateAndLocalGovernmentMember"
+    name="StateAndLocalGovernmentMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementChangesInEquityPriorPeriodAdjustmentsTable"
+    name="StatementChangesInEquityPriorPeriodAdjustmentsTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementChangesInEquityPriorPriodAdjustmentsLineItems"
+    name="StatementChangesInEquityPriorPriodAdjustmentsLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementOfChangesInEquityCommonStockByClassLineItems"
+    name="StatementOfChangesInEquityCommonStockByClassLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementOfChangesInEquityCommonStockByClassTable"
+    name="StatementOfChangesInEquityCommonStockByClassTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementOfChangesInEquityLineItems"
+    name="StatementOfChangesInEquityLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementOfChangesInEquityPreferredStockByClassLineItems"
+    name="StatementOfChangesInEquityPreferredStockByClassLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementOfChangesInEquityPreferredStockByClassTable"
+    name="StatementOfChangesInEquityPreferredStockByClassTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_StatementOfChangesInEquityTable"
+    name="StatementOfChangesInEquityTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_Street1"
+    name="Street1"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_Street2"
+    name="Street2"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventCategoryAxis"
+    name="SubsequentEventCategoryAxis"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:dimensionItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventDate"
+    name="SubsequentEventDate"
+    type="xbrli:dateItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventDescription"
+    name="SubsequentEventDescription"
+    type="xbrli:tokenItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventHierarchy"
+    name="SubsequentEventHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventLineItems"
+    name="SubsequentEventLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventRelatingToLossOfPlantOrInventoryFromFireOrFloodMember"
+    name="SubsequentEventRelatingToLossOfPlantOrInventoryFromFireOrFloodMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventRelatingToLossOfUncollectableReceivableMember"
+    name="SubsequentEventRelatingToLossOfUncollectableReceivableMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventRelatingToPurchaseOfBusinessMember"
+    name="SubsequentEventRelatingToPurchaseOfBusinessMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventTable"
+    name="SubsequentEventTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_SubsequentEventsSchedule"
+    name="SubsequentEventsSchedule"
+    type="types:TextBlockScheduleItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_TradeReceivablesNetCurrent"
+    name="TradeReceivablesNetCurrent"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_TransfersOfResearchAndDevelopmentWithRelatedPartyMember"
+    name="TransfersOfResearchAndDevelopmentWithRelatedPartyMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_USAMember"
+    name="USAMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_USFederalGovernmentMember"
+    name="USFederalGovernmentMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_UnallocatedCorporateExpenses"
+    name="UnallocatedCorporateExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="gaap_WashingtonMember"
+    name="WashingtonMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="gaap_WeightedAverageCommonShares"
+    name="WeightedAverageCommonShares"
+    type="xbrli:sharesItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="gaap_WorkInProgress"
+    name="WorkInProgress"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+</schema>

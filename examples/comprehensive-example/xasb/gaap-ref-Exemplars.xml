@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase
+	  xmlns="http://www.xbrl.org/2003/linkbase"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:xlink="http://www.w3.org/1999/xlink"
+	  xmlns:gaap="http://xasb.org/gaap"
+	  xmlns:ref="http://www.xbrl.org/2004/ref"
+	  xsi:schemaLocation="
+    		http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    		http://xasb.org/gaap  gaap.xsd
+    		http://www.xbrl.org/2004/ref http://www.xbrl.org/2004/ref-2004-08-10.xsd
+    ">
+  <documentation>Exemplars</documentation>
+  <referenceLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <documentation>Contains a minimum of one reference per concept.</documentation>
+
+    <loc xlink:type="locator"
+      xlink:label="gaap_LongTermDebtDisclosuresHTML"
+      xlink:href="gaap.xsd#gaap_LongTermDebtDisclosuresHTML" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="gaap_LongTermDebtDisclosuresHTML"
+      xlink:to="gaap_LongTermDebtDisclosuresHTML_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="gaap_LongTermDebtDisclosuresHTML_ref">
+      <ref:Example>Ascendis Pharma A/S</ref:Example>
+      <ref:URI>http://www.xbrlsite.com/2018/20F/Exemplar-40340.html</ref:URI>
+    </reference>
+
+
+    <loc xlink:type="locator"
+      xlink:label="gaap_NatureOfBusinessHTML"
+      xlink:href="gaap.xsd#gaap_NatureOfBusinessHTML" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="gaap_NatureOfBusinessHTML"
+      xlink:to="gaap_NatureOfBusinessHTML_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/reference"
+      xlink:label="gaap_NatureOfBusinessHTML_ref">
+      <ref:Example>Adtalem Global Education Inc.</ref:Example>
+      <ref:URI>http://www.xbrlsite.com/2018/10K/Notes/Exemplar-46.html</ref:URI>
+    </reference>
+
+  </referenceLink>
+</linkbase>
+
+
+

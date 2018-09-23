@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman 2017-01-01 -->
+<schema 
+   xmlns="http://www.w3.org/2001/XMLSchema" 
+   xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+   xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+   xmlns:types="http://xasb.org/gaap/types" 
+   targetNamespace="http://xasb.org/gaap/types" 
+   elementFormDefault="qualified" 
+   attributeFormDefault="unqualified">
+
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+
+
+
+    <complexType name="TextBlockNoteItemType">
+        <simpleContent>
+            <restriction base="nonnum:textBlockItemType" />
+        </simpleContent>
+    </complexType>
+    <complexType name="TextBlockPolicyItemType">
+        <simpleContent>
+            <restriction base="nonnum:textBlockItemType" />
+        </simpleContent>
+    </complexType>
+    <complexType name="TextBlockScheduleItemType">
+        <simpleContent>
+            <restriction base="nonnum:textBlockItemType" />
+        </simpleContent>
+    </complexType>
+
+
+  <complexType name="EPSItemType">
+    <simpleContent>
+      <restriction base="xbrli:monetaryItemType" />
+    </simpleContent>
+  </complexType>
+  <complexType name="InventoryValuationMethodsItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <enumeration value="Cost" />
+        <enumeration value="NetRealizableValue" />
+        <enumeration value="LowerOfCostOrNetRealizableValue" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType name="RelatedPartyItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <enumeration value="Parent">
+          <annotation>
+            <documentation>Parent</documentation>
+          </annotation>
+        </enumeration>
+        <enumeration value="EntitiesWithJointControlOrSignificantInfluence">
+          <annotation>
+            <documentation>Entities with Joint Control or Significant Influence</documentation>
+          </annotation>
+        </enumeration>
+        <enumeration value="Subsidiary">
+          <annotation>
+            <documentation>Subsidiary</documentation>
+          </annotation>
+        </enumeration>
+        <enumeration value="Associate">
+          <annotation>
+            <documentation>Associate</documentation>
+          </annotation>
+        </enumeration>
+        <enumeration value="JointVenture">
+          <annotation>
+            <documentation>Joint Venture</documentation>
+          </annotation>
+        </enumeration>
+        <enumeration value="KeyManagementPersonel">
+          <annotation>
+            <documentation>Key Management Personel</documentation>
+          </annotation>
+        </enumeration>
+        <enumeration value="OtherRelatedParties">
+          <annotation>
+            <documentation>Other Related Parties</documentation>
+          </annotation>
+        </enumeration>
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType name="TextPhoneNumberItemType">
+    <simpleContent>
+      <restriction base="xbrli:stringItemType">
+        <pattern value="(\([0-9][0-9][0-9]\)|[0-9][0-9][0-9]) [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+
+
+
+  <!-- This should be moved to the XBRLS schema most likely -->
+  <complexType name="MonetaryNonNegativeItemType">
+    <simpleContent>
+      <restriction base="xbrli:monetaryItemType">
+        <minInclusive value="0" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType name="PercentItemType">
+    <simpleContent>
+      <restriction base="xbrli:decimalItemType">
+        <minInclusive value="0" />
+        <maxInclusive value="1" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType name="PureNonNegativeItemType">
+    <simpleContent>
+      <restriction base="xbrli:pureItemType">
+        <minInclusive value="0" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+
+</schema>
