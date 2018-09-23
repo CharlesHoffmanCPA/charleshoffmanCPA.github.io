@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2433 (2009-05-15 09:36).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2011 UBmatrix inc., All Rights Reserved
+Produced on 2011-07-18 07:47:51
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/SimpleCompoundFact"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+  targetNamespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/SimpleCompoundFact"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/SimpleCompoundFact/DirectorCompensation"
+        id="DirectorCompensation">
+        <link:definition>Director Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="SimpleCompoundFact-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="SimpleCompoundFact-definition.xml"
+        xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="SimpleCompoundFact-presentation.xml"
+        xlink:title="Presentation Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+   
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+    schemaLocation="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/2017-05-07/frm.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2004/ref"
+    schemaLocation="http://www.xbrl.org/2004/ref-2004-08-10.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="pattern_DirectorBonuses"
+    name="DirectorBonuses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_DirectorCompensationLineItems"
+    name="DirectorCompensationLineItems"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_DirectorCompensationTable"
+    name="DirectorCompensationTable"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrldt:hypercubeItem"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_DirectorFees"
+    name="DirectorFees"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_DirectorHierarchy"
+    name="DirectorHierarchy"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_DirectorOptionsGrantedAtFairValue"
+    name="DirectorOptionsGrantedAtFairValue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_DirectorSalary"
+    name="DirectorSalary"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="pattern_JaneDoeMember"
+    name="JaneDoeMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="pattern_JohnDoeMember"
+    name="JohnDoeMember"
+    type="nonnum:domainItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+</schema>
