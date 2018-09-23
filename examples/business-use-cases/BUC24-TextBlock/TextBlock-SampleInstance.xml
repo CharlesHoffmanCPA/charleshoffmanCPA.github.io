@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl xmlns="http://www.xbrl.org/2003/instance" 
+      xmlns:xbrli="http://www.xbrl.org/2003/instance"
+      xmlns:link="http://www.xbrl.org/2003/linkbase" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+       
+      xmlns:frm="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/Schemas/frm"
+      xmlns:pattern="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/TextBlock" 
+      xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+      xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd">
+
+   <link:schemaRef xlink:type="simple" xlink:href="TextBlock.xsd" />
+  	<link:linkbaseRef xlink:type='simple' xlink:href='TextBlock-formula.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+   <context id="D-2010">
+      <entity>
+         <identifier scheme="http://www.SampleCompany.com">SAMP</identifier>
+         <segment>
+            <xbrldi:explicitMember dimension="frm:LegalEntityAxis">frm:ConsolidatedEntityMember</xbrldi:explicitMember>
+         </segment>
+      </entity>
+      <period>
+         <startDate>2010-01-01</startDate>
+         <endDate>2010-12-31</endDate>
+      </period>
+   </context>
+
+   <pattern:AccountingPoliciesTextBlock contextRef="D-2010">
+		&lt;div&gt;
+		&lt;p&gt;Duis fermentum&lt;/p&gt;
+		
+		&lt;p&gt;Sed mauris. Nulla facilisi. Fusce tristique posuere ipsum. Nulla facilisi. Aliquam viverra risus vitae ante. 
+		Sed rhoncus mi in wisi. Nullam nibh dui, molestie vitae, imperdiet non, ornare at, elit.&lt;/p&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;Suspendisse accumsan, arcu vel ornare interdum, magna tellus porta mauris, in porta mi lacus sodales felis.&lt;/li&gt;
+			&lt;li&gt;Phasellus eleifend, diam vitae dapibus pulvinar, erat ligula auctor dui, eget congue justo lorem hendrerit tellus.&lt;/li&gt;
+			&lt;li&gt;Fusce gravida, ligula a placerat placerat, leo erat euismod lectus, et lacinia justo libero non pede.&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;p&gt;Fusce gravida, ligula a placerat placerat, leo erat euismod lectus, et lacinia justo libero non pede. Vivamus ac velit vel magna nonummy pretium.&lt;/p&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Etiam ut augue&lt;/li&gt;
+			&lt;li&gt;Aliquam erat volutpat&lt;/li&gt;
+		&lt;/ol&gt;
+
+		&lt;p&gt;DONEC PULVINAR NONUMMY ERAT&lt;/p&gt;
+		&lt;p&gt;Etiam porttitor. Ut venenatis, velit a accumsan interdum, odio metus mollis mauris, non pharetra augue arcu eu felis. Ut eget felis. Mauris leo nulla, sodales et, pharetra quis, fermentum nec, diam.&lt;/p&gt;
+		&lt;/div&gt;
+
+   </pattern:AccountingPoliciesTextBlock>
+
+
+</xbrl>
