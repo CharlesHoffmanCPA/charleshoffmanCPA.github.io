@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2433 (2009-05-15 09:36).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2011 UBmatrix inc., All Rights Reserved
+Produced on 2011-07-16 09:09:28
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="SimpleRollUp.xsd#PropertyPlantAndEquipmentByComponent"
+    roleURI="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/SimpleRollUp/PropertyPlantAndEquipmentByComponent" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/BusinessUseCases/SimpleRollUp/PropertyPlantAndEquipmentByComponent">
+    <loc xlink:type="locator"
+      xlink:label="pattern_PropertyPlantAndEquipmentNet"
+      xlink:href="SimpleRollUp.xsd#pattern_PropertyPlantAndEquipmentNet" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_Land"
+      xlink:href="SimpleRollUp.xsd#pattern_Land" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet"
+      xlink:to="pattern_Land"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_BuildingsNet"
+      xlink:href="SimpleRollUp.xsd#pattern_BuildingsNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet"
+      xlink:to="pattern_BuildingsNet"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_FurnitureAndFixturesNet"
+      xlink:href="SimpleRollUp.xsd#pattern_FurnitureAndFixturesNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet"
+      xlink:to="pattern_FurnitureAndFixturesNet"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_ComputerEquipmentNet"
+      xlink:href="SimpleRollUp.xsd#pattern_ComputerEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet"
+      xlink:to="pattern_ComputerEquipmentNet"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="pattern_OtherPropertyPlantAndEquipmentNet"
+      xlink:href="SimpleRollUp.xsd#pattern_OtherPropertyPlantAndEquipmentNet" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="pattern_PropertyPlantAndEquipmentNet"
+      xlink:to="pattern_OtherPropertyPlantAndEquipmentNet"
+      order="5"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>
