@@ -1,0 +1,999 @@
+<html xmlns:exsl="http://exslt.org/common" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><STYLE type="text/css"> body { font:normal 68% verdana,arial,helvetica;
+                    color:#000000; } table tr td, table tr th { font-size: 68%; } table.details tr
+                    th{ font-weight: bold; text-align:left; background:#a6caf0; } table.details tr
+                    td{ background:#eeeee0; } p { line-height:1.5em; margin-top:0.5em;
+                    margin-bottom:1.0em; } h1 { margin: 0px 0px 5px; font: 165%
+                    verdana,arial,helvetica } h2 { margin-top: 1em; margin-bottom: 0.5em; font: bold
+                    125% verdana,arial,helvetica } h3 { margin-bottom: 0.5em; font: bold 115%
+                    verdana,arial,helvetica } h4 { margin-bottom: 0.5em; font: bold 100%
+                    verdana,arial,helvetica }h5 { margin-bottom: 0.5em; font: bold 100%
+                    verdana,arial,helvetica } h6 { margin-bottom: 0.5em; font: bold 100%
+                    verdana,arial,helvetica } .Error { font-weight:bold; color:red; } .Failure {
+                    font-weight:bold; color:purple; } .Properties { text-align:right; } .IsVisible {
+                    display: block; } .NotVisible { display: none; } .Expander { cursor: hand;
+                    font-family: Courier; } .Parent DIV { margin-Left: 30px !important; } </STYLE><title>Business Rules Results</title>
+   </head>
+   <body>
+      <h1>Business Rules Results</h1>
+      <h2>Tue Sep 04 09:41:22 PDT 2018</h2>
+      <h2> XBRL Processor Version:4.0.0.2125</h2>
+      <h2> Report name: Detailed Output
+         
+      </h2>
+      <hr size="1">
+      <h2> Summary </h2>
+      <table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+         <tr valign="top">
+            <th> Formulas Compiled </th>
+            <th> Formula Fired </th>
+            <th> Assertions Compiled </th>
+            <th> Assertions Fired </th>
+            <th> Assertions Satisfied </th>
+            <th> Assertions Not Satisfied </th>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>0</td>
+            <td>0</td>
+            <td>24</td>
+            <td>154</td>
+            <td>154</td>
+            <td>0</td>
+         </tr>
+      </table>
+      <hr size="1">
+      <h2> Assertion Report </h2>
+      <h2> Existence Assertions</h2>
+      <table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+         <tr valign="top">
+            <th> id </th>
+            <th> satisfied </th>
+            <th> message </th>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>EXISTS_ValuationDate (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>
+               						The element(s) in your XBRL submission exists. 
+            </td>
+         </tr>
+      </table>
+      <h3> Value Assertions</h3>
+      <table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+         <tr valign="top">
+            <th> id </th>
+            <th> satisfied </th>
+            <th> message </th>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>COMPUTATION_EquityValue (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The reported value of equity value 1200596676932 for the concept dcfm:EquityValue agrees to the computed value.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLUP_WithTolerance_Capital (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The reported value of $952,398,020,000 for the roll up of dcfm:Capital 
+               				agrees to the sum of its pieces within the allowed tolerance of 1.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsReceivable (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=26481000000 - $VARIABLE_Change1=-2648100000 = $VARIABLE_BalanceEnd=29129100000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsReceivable (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=29129100000 - $VARIABLE_Change1=-3204201000 = $VARIABLE_BalanceEnd=32333301000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsReceivable (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=32333301000 - $VARIABLE_Change1=-3879996120 = $VARIABLE_BalanceEnd=36213297120</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsReceivable (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=36213297120 - $VARIABLE_Change1=-4707728626 = $VARIABLE_BalanceEnd=40921025746</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsReceivable (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=40921025746 - $VARIABLE_Change1=-5319733347 = $VARIABLE_BalanceEnd=46240759093</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_Inventories (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=2662000000 - $VARIABLE_Change1=-39930000 = $VARIABLE_BalanceEnd=2701930000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_Inventories (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=2701930000 - $VARIABLE_Change1=-135096500 = $VARIABLE_BalanceEnd=2837026500</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_Inventories (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=2837026500 - $VARIABLE_Change1=-141851325 = $VARIABLE_BalanceEnd=2978877825</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_Inventories (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=2978877825 - $VARIABLE_Change1=-148943891 = $VARIABLE_BalanceEnd=3127821716</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_Inventories (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=3127821716 - $VARIABLE_Change1=-156391085 = $VARIABLE_BalanceEnd=3284212801</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PrepaidExpenses (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=6751000000 - $VARIABLE_Change1=-1012650000 = $VARIABLE_BalanceEnd=7763650000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PrepaidExpenses (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=7763650000 - $VARIABLE_Change1=-1164547500 = $VARIABLE_BalanceEnd=8928197500</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PrepaidExpenses (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=8928197500 - $VARIABLE_Change1=-1339229625 = $VARIABLE_BalanceEnd=10267427125</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PrepaidExpenses (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=10267427125 - $VARIABLE_Change1=-1540114069 = $VARIABLE_BalanceEnd=11807541194</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PrepaidExpenses (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=11807541194 - $VARIABLE_Change1=-1771131179 = $VARIABLE_BalanceEnd=13578672373</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsPayable (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=8617000000 + $VARIABLE_Change1=861700000 = $VARIABLE_BalanceEnd=9478700000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsPayable (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=9478700000 + $VARIABLE_Change1=947870000 = $VARIABLE_BalanceEnd=10426570000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsPayable (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=10426570000 + $VARIABLE_Change1=1042657000 = $VARIABLE_BalanceEnd=11469227000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsPayable (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=11469227000 + $VARIABLE_Change1=1146922700 = $VARIABLE_BalanceEnd=12616149700</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccountsPayable (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=12616149700 + $VARIABLE_Change1=1261614970 = $VARIABLE_BalanceEnd=13877764670</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccruedExpenses (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=6103000000 + $VARIABLE_Change1=610300000 = $VARIABLE_BalanceEnd=6713300000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccruedExpenses (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=6713300000 + $VARIABLE_Change1=671330000 = $VARIABLE_BalanceEnd=7384630000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccruedExpenses (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=7384630000 + $VARIABLE_Change1=738463000 = $VARIABLE_BalanceEnd=8123093000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccruedExpenses (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=8123093000 + $VARIABLE_Change1=812309300 = $VARIABLE_BalanceEnd=8935402300</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_AccruedExpenses (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=8935402300 + $VARIABLE_Change1=893540230 = $VARIABLE_BalanceEnd=9828942530</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PropertyPlantAndEquipmentGross (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=58683000000 - $VARIABLE_Change1=-5868300000 = $VARIABLE_BalanceEnd=64551300000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PropertyPlantAndEquipmentGross (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=64551300000 - $VARIABLE_Change1=-6455130000 = $VARIABLE_BalanceEnd=71006430000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PropertyPlantAndEquipmentGross (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=71006430000 - $VARIABLE_Change1=-7100643000 = $VARIABLE_BalanceEnd=78107073000</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PropertyPlantAndEquipmentGross (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=78107073000 - $VARIABLE_Change1=-7810707300 = $VARIABLE_BalanceEnd=85917780300</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLFORWARD_PropertyPlantAndEquipmentGross (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>$VARIABLE_BalanceStart=85917780300 - $VARIABLE_Change1=-8591778030 = $VARIABLE_BalanceEnd=94509558330</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLUP_EnterpriseValue (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The reported value of $1,265,548,676,932 for the roll up of dcfm:EnterpriseValue agrees to the sum of its
+               pieces.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>ROLLUP_ValuationGapPerShare (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The reported value of $42 for the roll up of dcfm:ValuationGapPerShare agrees to the sum of its pieces.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsReceivable (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-2648100000 - ($GrowthRate=.100 * $BeginningBalance=26481000000) * -1) le $Threshold2=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsReceivable (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-3204201000 - ($GrowthRate=.110 * $BeginningBalance=29129100000) * -1) le $Threshold2=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsReceivable (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-3879996120 - ($GrowthRate=.120 * $BeginningBalance=32333301000) * -1) le $Threshold2=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsReceivable (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-4707728626 - ($GrowthRate=.130 * $BeginningBalance=36213297120) * -1) le $Threshold2=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsReceivable (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-5319733347 - ($GrowthRate=.130 * $BeginningBalance=40921025746) * -1) le $Threshold2=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_Inventories (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-39930000 - ($GrowthRate=.015 * $BeginningBalance=2662000000) * -1) le $Threshold3=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_Inventories (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-135096500 - ($GrowthRate=.050 * $BeginningBalance=2701930000) * -1) le $Threshold3=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_Inventories (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-141851325 - ($GrowthRate=.050 * $BeginningBalance=2837026500) * -1) le $Threshold3=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_Inventories (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-148943891 - ($GrowthRate=.050 * $BeginningBalance=2978877825) * -1) le $Threshold3=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_Inventories (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-156391085 - ($GrowthRate=.050 * $BeginningBalance=3127821716) * -1) le $Threshold3=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PrepaidExpenses (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-1012650000 - ($GrowthRate=.150 * $BeginningBalance=6751000000) * -1) le $Threshold4=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PrepaidExpenses (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-1164547500 - ($GrowthRate=.150 * $BeginningBalance=7763650000) * -1) le $Threshold4=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PrepaidExpenses (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-1339229625 - ($GrowthRate=.150 * $BeginningBalance=8928197500) * -1) le $Threshold4=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PrepaidExpenses (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-1540114069 - ($GrowthRate=.150 * $BeginningBalance=10267427125) * -1) le $Threshold4=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PrepaidExpenses (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=-1771131179 - ($GrowthRate=.150 * $BeginningBalance=11807541194) * -1) le $Threshold4=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsPayable (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=861700000 - ($GrowthRate=.100 * $BeginningBalance=8617000000)) le $Threshold5=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsPayable (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=947870000 - ($GrowthRate=.100 * $BeginningBalance=9478700000)) le $Threshold5=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsPayable (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=1042657000 - ($GrowthRate=.100 * $BeginningBalance=10426570000)) le $Threshold5=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsPayable (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=1146922700 - ($GrowthRate=.100 * $BeginningBalance=11469227000)) le $Threshold5=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccountsPayable (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=1261614970 - ($GrowthRate=.100 * $BeginningBalance=12616149700)) le $Threshold5=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccruedExpenses (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=610300000 - ($GrowthRate=.100 * $BeginningBalance=6103000000)) le $Threshold6=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccruedExpenses (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=671330000 - ($GrowthRate=.100 * $BeginningBalance=6713300000)) le $Threshold6=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccruedExpenses (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=738463000 - ($GrowthRate=.100 * $BeginningBalance=7384630000)) le $Threshold6=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccruedExpenses (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=812309300 - ($GrowthRate=.100 * $BeginningBalance=8123093000)) le $Threshold6=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_AccruedExpenses (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>(abs($AmountOfChange=893540230 - ($GrowthRate=.100 * $BeginningBalance=8935402300)) le $Threshold6=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PropertyPlantAndEquipmentGross (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>(abs($CapitalExpendatures=-5868300000 - ($GrowthRate=.100 * $BeginningBalance=58683000000) * -1) le $Threshold7=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PropertyPlantAndEquipmentGross (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>(abs($CapitalExpendatures=-6455130000 - ($GrowthRate=.100 * $BeginningBalance=64551300000) * -1) le $Threshold7=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PropertyPlantAndEquipmentGross (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>(abs($CapitalExpendatures=-7100643000 - ($GrowthRate=.100 * $BeginningBalance=71006430000) * -1) le $Threshold7=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PropertyPlantAndEquipmentGross (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>(abs($CapitalExpendatures=-7810707300 - ($GrowthRate=.100 * $BeginningBalance=78107073000) * -1) le $Threshold7=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_PropertyPlantAndEquipmentGross (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>(abs($CapitalExpendatures=-8591778030 - ($GrowthRate=.100 * $BeginningBalance=85917780300) * -1) le $Threshold7=1)</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>SUM_PresentValueOfFreeCashFlows (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>$PresentValueOfFreeCashFlows_2018=125458211123 eq (sum(($PresentValueOfFreeCashFlows_2019=26738456798 ,
+               $PresentValueOfFreeCashFlows_2020=25852442011 , $PresentValueOfFreeCashFlows_2021=25040516417 ,
+               $PresentValueOfFreeCashFlows_2022=24218129591 , $PresentValueOfFreeCashFlows_2023=23608666306)))
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_RevenueGrowth (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>abs($RevenueGrowthRate=.100 - (($Revenue_CURRENT=121396000000 - $Revenue_PRIOR=110360000000) div $Revenue_PRIOR=110360000000))
+               le $Threshold_rg=0.001
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_RevenueGrowth (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>abs($RevenueGrowthRate=.100 - (($Revenue_CURRENT=133535600000 - $Revenue_PRIOR=121396000000) div $Revenue_PRIOR=121396000000))
+               le $Threshold_rg=0.001
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_RevenueGrowth (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>abs($RevenueGrowthRate=.100 - (($Revenue_CURRENT=146889160000 - $Revenue_PRIOR=133535600000) div $Revenue_PRIOR=133535600000))
+               le $Threshold_rg=0.001
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_RevenueGrowth (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>abs($RevenueGrowthRate=.100 - (($Revenue_CURRENT=161578076000 - $Revenue_PRIOR=146889160000) div $Revenue_PRIOR=146889160000))
+               le $Threshold_rg=0.001
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>GROWTH_RevenueGrowth (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>abs($RevenueGrowthRate=.100 - (($Revenue_CURRENT=177735883600 - $Revenue_PRIOR=161578076000) div $Revenue_PRIOR=161578076000))
+               le $Threshold_rg=0.001
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITDAMargin (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $121,396,000,000 times dcfm:EBITDAMargin of .4 equals dcfm:EBITDA of $48,558,400,000 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITDAMargin (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $133,535,600,000 times dcfm:EBITDAMargin of .4 equals dcfm:EBITDA of $53,414,240,000 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITDAMargin (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $146,889,160,000 times dcfm:EBITDAMargin of .4 equals dcfm:EBITDA of $58,755,664,000 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITDAMargin (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $161,578,076,000 times dcfm:EBITDAMargin of .4 equals dcfm:EBITDA of $64,631,230,400 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITDAMargin (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $177,735,883,600 times dcfm:EBITDAMargin of .4 equals dcfm:EBITDA of $71,094,353,440 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITMargin (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $121,396,000,000 times dcfm:EBITMargin of .3 equals dcfm:EBIT of $36,418,800,000 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITMargin (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $133,535,600,000 times dcfm:EBITMargin of .3 equals dcfm:EBIT of $40,060,680,000 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITMargin (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $146,889,160,000 times dcfm:EBITMargin of .3 equals dcfm:EBIT of $44,066,748,000 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITMargin (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $161,578,076,000 times dcfm:EBITMargin of .3 equals dcfm:EBIT of $48,473,422,800 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_EBITMargin (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $177,735,883,600 times dcfm:EBITMargin of .3 equals dcfm:EBIT of $53,320,765,080 within tolerance.</td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_DepreciationAndAmortization (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $121,396,000,000 times dcfm:DepreciationAndAmortizationAsPercentOfRevenue of .08 equals dcfm:DepreciationAndAmortization
+               of $9,711,680,000 within tolerance.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_DepreciationAndAmortization (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $133,535,600,000 times dcfm:DepreciationAndAmortizationAsPercentOfRevenue of .08 equals dcfm:DepreciationAndAmortization
+               of $10,682,848,000 within tolerance.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_DepreciationAndAmortization (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $146,889,160,000 times dcfm:DepreciationAndAmortizationAsPercentOfRevenue of .08 equals dcfm:DepreciationAndAmortization
+               of $11,751,132,800 within tolerance.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_DepreciationAndAmortization (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $161,578,076,000 times dcfm:DepreciationAndAmortizationAsPercentOfRevenue of .08 equals dcfm:DepreciationAndAmortization
+               of $12,926,246,080 within tolerance.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>CHECK_COMPUTATION_DepreciationAndAmortization (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: dcfm:Revenue of $177,735,883,600 times dcfm:DepreciationAndAmortizationAsPercentOfRevenue of .08 equals dcfm:DepreciationAndAmortization
+               of $14,218,870,688 within tolerance.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 1)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsPayableGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 2)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsPayableGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 3)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsPayableGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 4)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsPayableGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 5)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsPayableGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 6)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsReceivableGrowth having a value 0.1 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 7)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsReceivableGrowth having a value 0.11 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 8)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsReceivableGrowth having a value 0.12 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 9)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsReceivableGrowth having a value 0.13 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 10)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccountsReceivableGrowth having a value 0.13 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 11)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccruedExpensesGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 12)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccruedExpensesGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 13)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccruedExpensesGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 14)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccruedExpensesGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 15)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AccruedExpensesGrowth having a value 0.1 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 16)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:AfterTaxCostOfDebt having a value 0.041 (which is a
+               percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 17)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:CapitalExpendituresGrowth having a value 0.1 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 18)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:CapitalExpendituresGrowth having a value 0.1 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 19)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:CapitalExpendituresGrowth having a value 0.1 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 20)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:CapitalExpendituresGrowth having a value 0.1 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 21)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:CapitalExpendituresGrowth having a value 0.1 (which
+               is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 22)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:CostOfDebt having a value 0.052 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 23)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:CostOfEquity having a value 0.13 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 24)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:DebtWeighting having a value 0.081 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 25)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:DepreciationAndAmortizationAsPercentOfRevenue having
+               a value 0.08 (which is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 26)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:DepreciationAndAmortizationAsPercentOfRevenue having
+               a value 0.08 (which is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 27)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:DepreciationAndAmortizationAsPercentOfRevenue having
+               a value 0.08 (which is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 28)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:DepreciationAndAmortizationAsPercentOfRevenue having
+               a value 0.08 (which is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 29)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:DepreciationAndAmortizationAsPercentOfRevenue having
+               a value 0.08 (which is a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 30)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITDAMargin having a value 0.4 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 31)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITDAMargin having a value 0.4 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 32)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITDAMargin having a value 0.4 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 33)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITDAMargin having a value 0.4 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 34)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITDAMargin having a value 0.4 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 35)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITMargin having a value 0.3 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 36)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITMargin having a value 0.3 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 37)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITMargin having a value 0.3 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 38)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITMargin having a value 0.3 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 39)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EBITMargin having a value 0.3 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 40)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:EquityWeighting having a value 0.919 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 41)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:InventoriesGrowth having a value 0.015 (which is a
+               percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 42)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:InventoriesGrowth having a value 0.05 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 43)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:InventoriesGrowth having a value 0.05 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 44)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:InventoriesGrowth having a value 0.05 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 45)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:InventoriesGrowth having a value 0.05 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 46)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:LongTermGrowthRate having a value 0.01 (which is a
+               percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 47)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:PrepaidExpensesGrowth having a value 0.15 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 48)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:PrepaidExpensesGrowth having a value 0.15 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 49)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:PrepaidExpensesGrowth having a value 0.15 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 50)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:PrepaidExpensesGrowth having a value 0.15 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 51)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:PrepaidExpensesGrowth having a value 0.15 (which is
+               a percentage) is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 52)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:RevenueGrowthRate having a value 0.1 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 53)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:RevenueGrowthRate having a value 0.1 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 54)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:RevenueGrowthRate having a value 0.1 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 55)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:RevenueGrowthRate having a value 0.1 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 56)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:RevenueGrowthRate having a value 0.1 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 57)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:TaxRate having a value 0.22 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 58)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:TaxRate having a value 0.22 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 59)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:TaxRate having a value 0.22 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 60)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:TaxRate having a value 0.22 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 61)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:TaxRate having a value 0.22 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 62)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:TaxRate having a value 0.22 (which is a percentage)
+               is properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 63)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:WACC having a value 0.123 (which is a percentage) is
+               properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 64)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:WACC having a value 0.123 (which is a percentage) is
+               properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 65)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:WACC having a value 0.123 (which is a percentage) is
+               properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 66)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:WACC having a value 0.123 (which is a percentage) is
+               properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 67)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:WACC having a value 0.123 (which is a percentage) is
+               properly reported.
+            </td>
+         </tr>
+         <tr valign="top" class="Pass">
+            <td>DATATYPE_PercentProperlyReported (evaluation 68)</td>
+            <td>satisfied</td>
+            <td>SATISFIED: (OK) The fact value with the concept characteristic of dcfm:WACC having a value 0.123 (which is a percentage) is
+               properly reported.
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
