@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- Created by Charles Hoffman, CPA: 2018-02-19 -->
+<xbrl 
+	xmlns="http://www.xbrl.org/2003/instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase" 
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	
+	xmlns:basic="http://www.xbrlsite.com/basic" 
+	xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+
+	  >
+	
+	  <link:schemaRef xlink:href="basic.xsd" xlink:type="simple" />
+
+  	  <link:linkbaseRef xlink:type='simple' xlink:title="Report specific business rules" xlink:href='basic-SampleInstance-XBRL-Formulas.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+  	  <link:linkbaseRef xlink:type='simple' xlink:title="Continuity cross checks" xlink:href='basic-SampleInstance-Fundamental-Accounting-Concepts.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+
+
+	  <context id="I-2018">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <instant>2018-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2017">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <instant>2017-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="D-2018">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <startDate>2018-01-01</startDate>
+	      <endDate>2018-12-31</endDate>
+	    </period>
+	  </context>
+	
+	
+	
+	  <unit id="U-Monetary">
+	    <measure>iso4217:USD</measure>
+	  </unit>
+
+
+
+
+
+  <!-- Balance sheet -->
+  <basic:CashAndCashEquivalents contextRef="I-2018" decimals="INF" unitRef="U-Monetary">4000</basic:CashAndCashEquivalents>
+  <basic:CashAndCashEquivalents contextRef="I-2017" decimals="INF" unitRef="U-Monetary">3000</basic:CashAndCashEquivalents>
+
+  <basic:Receivables contextRef="I-2018" decimals="INF" unitRef="U-Monetary">2000</basic:Receivables>
+  <basic:Receivables contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Receivables>
+
+  <basic:Inventories contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Inventories>
+  <basic:Inventories contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Inventories>
+
+  <basic:CurrentAssets contextRef="I-2018" decimals="INF" unitRef="U-Monetary">7000</basic:CurrentAssets>
+  <basic:CurrentAssets contextRef="I-2017" decimals="INF" unitRef="U-Monetary">5000</basic:CurrentAssets>
+
+  <basic:PropertyPlantAndEquipment contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:PropertyPlantAndEquipment>
+  <basic:PropertyPlantAndEquipment contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:PropertyPlantAndEquipment>
+
+  <basic:NoncurrentAssets contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:NoncurrentAssets>
+  <basic:NoncurrentAssets contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:NoncurrentAssets>
+
+  <basic:Assets contextRef="I-2018" decimals="INF" unitRef="U-Monetary">13000</basic:Assets>
+  <basic:Assets contextRef="I-2017" decimals="INF" unitRef="U-Monetary">6000</basic:Assets>
+
+
+  <basic:AccountsPayable contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:AccountsPayable>
+  <basic:AccountsPayable contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:AccountsPayable>
+
+  <basic:CurrentLiabilities contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:CurrentLiabilities>
+  <basic:CurrentLiabilities contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:CurrentLiabilities>
+
+  <basic:LongtermDebt contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:LongtermDebt>
+  <basic:LongtermDebt contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:LongtermDebt>
+
+  <basic:NoncurrentLiabilities contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:NoncurrentLiabilities>
+  <basic:NoncurrentLiabilities contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:NoncurrentLiabilities>
+
+  <basic:Liabilities contextRef="I-2018" decimals="INF" unitRef="U-Monetary">7000</basic:Liabilities>
+  <basic:Liabilities contextRef="I-2017" decimals="INF" unitRef="U-Monetary">2000</basic:Liabilities>
+
+  <basic:RetainedEarnings contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:RetainedEarnings>
+  <basic:RetainedEarnings contextRef="I-2017" decimals="INF" unitRef="U-Monetary">4000</basic:RetainedEarnings>
+
+  <basic:Equity contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:Equity>
+  <basic:Equity contextRef="I-2017" decimals="INF" unitRef="U-Monetary">4000</basic:Equity>
+
+  <basic:LiabilitiesAndEquity contextRef="I-2018" decimals="INF" unitRef="U-Monetary">13000</basic:LiabilitiesAndEquity>
+  <basic:LiabilitiesAndEquity contextRef="I-2017" decimals="INF" unitRef="U-Monetary">6000</basic:LiabilitiesAndEquity>
+
+
+  <basic:GeneralLedgerTrialBalance contextRef="I-2018" decimals="INF" unitRef="U-Monetary">0</basic:GeneralLedgerTrialBalance>
+  <basic:GeneralLedgerTrialBalance contextRef="I-2017" decimals="INF" unitRef="U-Monetary">0</basic:GeneralLedgerTrialBalance>
+
+
+
+  <!-- Income Statement -->
+  <basic:GrossProfitLoss contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:GrossProfitLoss>
+
+  <!-- Cash Flow Statement -->
+  <basic:NetCashFlowOperatingActivities contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:NetCashFlowOperatingActivities>
+  <basic:NetCashFlowFinancingActivities contextRef="D-2018" decimals="INF" unitRef="U-Monetary">5000</basic:NetCashFlowFinancingActivities>
+  <basic:NetCashFlowInvestingActivities contextRef="D-2018" decimals="INF" unitRef="U-Monetary">-5000</basic:NetCashFlowInvestingActivities>
+
+  <basic:NetCashFlow contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:NetCashFlow>
+
+
+  <!-- Cash and Cash Equivalents Roll Forward -->
+  <basic:CollectionReceivables contextRef="D-2018" decimals="INF" unitRef="U-Monetary">3000</basic:CollectionReceivables>
+  <basic:CollectionReceivables2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">3000</basic:CollectionReceivables2>
+
+  <basic:PaymentOfAccountsPayable contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:PaymentOfAccountsPayable>
+  <basic:PaymentOfAccountsPayable2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:PaymentOfAccountsPayable2>
+
+  <basic:AdditionalLongtermBorrowings contextRef="D-2018" decimals="INF" unitRef="U-Monetary">6000</basic:AdditionalLongtermBorrowings>
+  <basic:AdditionalLongtermBorrowings2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">6000</basic:AdditionalLongtermBorrowings2>
+
+  <basic:RepaymentLongtermBorrowings contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:RepaymentLongtermBorrowings>
+  <basic:RepaymentLongtermBorrowings2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">1000</basic:RepaymentLongtermBorrowings2>
+
+  <basic:CapitalAdditionsPropertyPlantAndEquipment contextRef="D-2018" decimals="INF" unitRef="U-Monetary">5000</basic:CapitalAdditionsPropertyPlantAndEquipment>
+  <basic:CapitalAdditionsPropertyPlantAndEquipment2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">5000</basic:CapitalAdditionsPropertyPlantAndEquipment2>
+
+
+  <!-- Receivables Roll Forward -->
+  <basic:Sales contextRef="D-2018" decimals="INF" unitRef="U-Monetary">4000</basic:Sales>
+  <basic:Sales2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">4000</basic:Sales2>
+
+  <basic:AdditionsToAllowanceForBadDebts contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:AdditionsToAllowanceForBadDebts>
+  <basic:BadDebtsWrittenOff contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:BadDebtsWrittenOff>
+
+
+  <!-- Inventories Roll Forward -->
+  <basic:PurchasesOfInventoryForSale contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:PurchasesOfInventoryForSale>
+  <basic:PurchasesOfInventoryForSale2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:PurchasesOfInventoryForSale2>
+
+  <basic:CostsOfSales contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:CostsOfSales>
+  <basic:CostsOfSales2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:CostsOfSales2>
+
+  <basic:InventoryWrittenOff contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:InventoryWrittenOff>
+
+
+  <!-- Property, Plant and Equipment Roll Forward -->
+  <basic:DepreciationAndAmortization contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:DepreciationAndAmortization>
+  <basic:DepreciationAndAmortization2 contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:DepreciationAndAmortization2>
+
+  <basic:PropertyPlantAndEquipmentWrittenOff contextRef="D-2018" decimals="INF" unitRef="U-Monetary">0</basic:PropertyPlantAndEquipmentWrittenOff>
+
+
+  <!-- Accounts Payable Roll Forward -->
+
+
+
+  <!-- Long-term Debt Roll Forward -->
+
+
+
+  <!-- Equity Roll Forward -->
+  <basic:NetIncomeLoss contextRef="D-2018" decimals="INF" unitRef="U-Monetary">2000</basic:NetIncomeLoss>
+
+
+
+
+  <!-- Inventories Detail Roll Up -->
+  <basic:FinishedGoods contextRef="I-2018" decimals="INF" unitRef="U-Monetary">600</basic:FinishedGoods>
+  <basic:FinishedGoods contextRef="I-2017" decimals="INF" unitRef="U-Monetary">700</basic:FinishedGoods>
+
+  <basic:WorkInProgress contextRef="I-2018" decimals="INF" unitRef="U-Monetary">200</basic:WorkInProgress>
+  <basic:WorkInProgress contextRef="I-2017" decimals="INF" unitRef="U-Monetary">100</basic:WorkInProgress>
+
+  <basic:RawMaterial contextRef="I-2018" decimals="INF" unitRef="U-Monetary">200</basic:RawMaterial>
+  <basic:RawMaterial contextRef="I-2017" decimals="INF" unitRef="U-Monetary">200</basic:RawMaterial>
+
+
+
+  <!-- Finished Goods Detail Roll Up -->
+  <basic:ProductAlpha contextRef="I-2018" decimals="INF" unitRef="U-Monetary">400</basic:ProductAlpha>
+  <basic:ProductAlpha contextRef="I-2017" decimals="INF" unitRef="U-Monetary">600</basic:ProductAlpha>
+
+  <basic:ProductBravo contextRef="I-2018" decimals="INF" unitRef="U-Monetary">200</basic:ProductBravo>
+  <basic:ProductBravo contextRef="I-2017" decimals="INF" unitRef="U-Monetary">100</basic:ProductBravo>
+
+</xbrl>

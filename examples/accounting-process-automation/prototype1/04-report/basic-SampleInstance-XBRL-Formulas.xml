@@ -1,0 +1,1462 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created by Charles Hoffman, CPA: 2018-02-19 -->
+<link:linkbase
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xbrli="http://www.xbrl.org/2003/instance"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xfi='http://www.xbrl.org/2008/function/instance'
+	xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+	xmlns:generic="http://xbrl.org/2008/generic"
+	xmlns:formula="http://xbrl.org/2008/formula"
+	xmlns:validation="http://xbrl.org/2008/validation"
+	xmlns:ca="http://xbrl.org/2008/assertion/consistency"
+   xmlns:ea="http://xbrl.org/2008/assertion/existence"
+   xmlns:va="http://xbrl.org/2008/assertion/value"
+	xmlns:variable="http://xbrl.org/2008/variable"
+	xmlns:pf="http://xbrl.org/2008/filter/period"
+	xmlns:cf="http://xbrl.org/2008/filter/concept"
+	xmlns:df="http://xbrl.org/2008/filter/dimension"
+	xmlns:gf="http://xbrl.org/2008/filter/general"
+	xmlns:label="http://xbrl.org/2008/label"
+   xmlns:uf="http://xbrl.org/2008/filter/unit"
+   xmlns:ef="http://xbrl.org/2008/filter/entity"
+   xmlns:msg="http://xbrl.org/2010/message"
+
+	xmlns:basic="http://www.xbrlsite.com/basic"
+
+   xsi:schemaLocation='
+		http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+		http://www.xbrl.org/dtr/type/numeric http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd
+		http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd
+		http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd
+		http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd
+		http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/2008/consistency-assertion.xsd
+      http://xbrl.org/2008/assertion/existence http://www.xbrl.org/2008/existence-assertion.xsd
+      http://xbrl.org/2008/assertion/value http://www.xbrl.org/2008/value-assertion.xsd
+		http://xbrl.org/2008/filter/period http://www.xbrl.org/2008/period-filter.xsd
+		http://xbrl.org/2008/filter/concept http://www.xbrl.org/2008/concept-filter.xsd
+		http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd
+		http://xbrl.org/2008/filter/general http://www.xbrl.org/2008/general-filter.xsd
+		http://xbrl.org/2008/filter/unit http://www.xbrl.org/2008/unit-filter.xsd
+		http://xbrl.org/2008/filter/entity http://www.xbrl.org/2008/entity-filter.xsd
+		http://xbrl.org/2008/variable http://www.xbrl.org/2008/variable.xsd
+		http://xbrl.org/2008/validation http://www.xbrl.org/2008/validation.xsd
+     http://xbrl.org/2010/message http://www.xbrl.org/2010/generic-message.xsd
+  '>
+
+
+	<!-- ArcroleRef declarations.  All these are declared by XBRL Formulas. -->
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-filter" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set-precondition" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:href="http://www.xbrl.org/2008/consistency-assertion.xsd#consistency-assertion-formula" xlink:type="simple"/>
+
+	<link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role" xlink:type="simple"/>
+	<link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label" xlink:type="simple"/>
+	<link:roleRef roleURI="http://www.xbrl.org/2010/role/message" xlink:href="http://www.xbrl.org/2010/generic-message.xsd#standard-message" xlink:type="simple"/>
+
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-satisfied-message" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-satisfied-message" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-unsatisfied-message" xlink:type="simple"/>
+
+
+
+	<link:documentation>
+		Basic example of financial report plus supporting information for report.
+	</link:documentation>
+
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#BalanceSheet" roleURI="http://www.xbrlsite.com/basic/role/BalanceSheet" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#IncomeStatement" roleURI="http://www.xbrlsite.com/basic/role/IncomeStatement" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#CashFlowStatement" roleURI="http://www.xbrlsite.com/basic/role/CashFlowStatement" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#CashAndCashEquivalents" roleURI="http://www.xbrlsite.com/basic/role/CashAndCashEquivalents" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#Receivables" roleURI="http://www.xbrlsite.com/basic/role/Receivables" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#Inventories" roleURI="http://www.xbrlsite.com/basic/role/Inventories" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#PropertyPlantAndEquipment" roleURI="http://www.xbrlsite.com/basic/role/PropertyPlantAndEquipment" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#AccountsPayable" roleURI="http://www.xbrlsite.com/basic/role/AccountsPayable" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#LongTermDebt" roleURI="http://www.xbrlsite.com/basic/role/LongTermDebt" />
+	<link:roleRef xlink:type="simple" xlink:href="basic.xsd#RetainedEarnings" roleURI="http://www.xbrlsite.com/basic/role/RetainedEarnings" />
+
+
+
+
+
+
+
+<!-- Balance sheet -->
+     <generic:link xlink:type='extended' xlink:role='http://www.xbrlsite.com/basic/role/BalanceSheet'>
+		       <va:valueAssertion xlink:type='resource' xlink:label='ASSERTION_Balances'
+		         id='REPORT_Balances_BalanceSheet'
+		         aspectModel='dimensional'
+		         implicitFiltering='true'
+		         test='$Total_Assets = $Total_LiabilitiesAndEquity' />
+
+				<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+				    xlink:from='ASSERTION_Balances'
+				    xlink:to='ASSERTION_Label'
+				    order='1.0'/>
+
+				<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+				    xml:lang='en'>Balance sheet balances.</label:label>
+
+			    <!-- ARC: (B) to (C)(Formula to Variable) -->
+			    <variable:variableArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-set'
+			             xlink:from='ASSERTION_Balances' order='1.0'
+			             xlink:to='VARIABLE_Total_Assets'
+			             name='Total_Assets'
+			             />
+
+			    <variable:variableArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-set'
+			             xlink:from='ASSERTION_Balances' order='1.0'
+			             xlink:to='VARIABLE_Total_LiabilitiesAndEquity'
+			             name='Total_LiabilitiesAndEquity'
+			             />
+
+			    <!--  RESOURCE: VARIABLES-Fact -->
+			    <variable:factVariable xlink:type='resource' xlink:label='VARIABLE_Total_Assets' bindAsSequence='false' />
+
+			    <variable:factVariable xlink:type='resource' xlink:label='VARIABLE_Total_LiabilitiesAndEquity' bindAsSequence='false' />
+
+			    <!--  ARC: (Variables to Filters) -->
+			    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter'
+			             xlink:from='VARIABLE_Total_Assets'
+			             xlink:to='FILTER_Total_Assets' order='1.0' complement='false' cover='true' />
+
+			    <variable:variableFilterArc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/variable-filter'
+			             xlink:from='VARIABLE_Total_LiabilitiesAndEquity'
+			             xlink:to='FILTER_Total_LiabilitiesAndEquity' order='1.0' complement='false' cover='true' />
+
+
+			    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+			    <cf:conceptName xlink:type='resource' xlink:label='FILTER_Total_Assets'><cf:concept><cf:qname>basic:Assets</cf:qname></cf:concept></cf:conceptName>
+
+			    <cf:conceptName xlink:type='resource' xlink:label='FILTER_Total_LiabilitiesAndEquity'><cf:concept><cf:qname>basic:LiabilitiesAndEquity</cf:qname></cf:concept></cf:conceptName>
+
+
+     </generic:link>
+
+
+
+
+
+
+	<!-- Cash Flow Statement Roll Forward -->
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/CashFlowStatement">
+		    <!-- Roll Forward reconciles -->
+
+		    <!-- RESOURCE: (A) ASSERTION-Consistency -->
+	       <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+	         id="REPORT_RollFowardReconciles_CashFlowStatement"
+	         aspectModel="dimensional"
+	         implicitFiltering="true"
+	         test="$VARIABLE_BalanceStart + $NetCashFlow = $VARIABLE_BalanceEnd" />
+
+				<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+				    xlink:from='ASSERTION_RollForwardReconciles'
+				    xlink:to='ASSERTION_Label'
+				    order='1.0'/>
+
+				<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+				    xml:lang='en'>Cash Flow Statement Roll Forward reconciles.</label:label>
+
+
+
+		    <!-- ARC: (B) to (C)(Formula to Variable) -->
+		    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		             xlink:from="ASSERTION_RollForwardReconciles"
+		             xlink:to="VARIABLE_BalanceStart"
+		             order="1.0"
+		             name="VARIABLE_BalanceStart"
+		             />
+		    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		             xlink:from="ASSERTION_RollForwardReconciles"
+		             xlink:to="VARIABLE_BalanceEnd"
+		             order="1.0"
+		             name="VARIABLE_BalanceEnd"
+		             />
+		    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		             xlink:from="ASSERTION_RollForwardReconciles"
+		             xlink:to="VARIABLE_Change1"
+		             order="2.0"
+		             name="NetCashFlow"
+		             />
+
+
+
+
+		    <!--  RESOURCE: (C) VARIABLES-Fact -->
+		    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		             bindAsSequence="false"
+		             />
+		    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		             bindAsSequence="false"
+		             />
+		    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		             bindAsSequence="false"
+		             />
+
+
+		    <!--  ARC: (C) to (D)(Variables to Filters) -->
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceStart"
+		             xlink:to="FILTER_PERIOD_BalanceStart"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceEnd"
+		             xlink:to="FILTER_PERIOD_BalanceEnd"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_Change1"
+		             xlink:to="FILTER_CONCEPT_Change1"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+
+
+
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceStart"
+		             xlink:to="FILTER_CONCEPT_Balance"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceEnd"
+		             xlink:to="FILTER_CONCEPT_Balance"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+
+
+		    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		    <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		      <cf:concept>
+		        <cf:qname>basic:CashAndCashEquivalents</cf:qname>
+		      </cf:concept>
+		    </cf:conceptName>
+
+		    <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		      <cf:concept>
+		        <cf:qname>basic:NetCashFlow</cf:qname>
+		      </cf:concept>
+		    </cf:conceptName>
+
+
+
+
+		    <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		    <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		             variable="NetCashFlow"
+		             boundary="start"
+		             />
+
+		    <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		             variable="NetCashFlow"
+		             boundary="end"
+		             />
+
+	</generic:link>
+
+
+
+
+
+	<!-- Cash and Cash Equivalents Roll forward -->
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/CashAndCashEquivalents">
+		  <!-- Roll Forward reconciles -->
+
+		  <!-- RESOURCE: (A) ASSERTION-Consistency -->
+		   <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+		     id="REPORT_RollForwardReconciles_CashAndCashEquivalents"
+		     aspectModel="dimensional"
+		     implicitFiltering="true"
+		     test="$VARIABLE_BalanceStart + $CollectionReceivables - $PaymentOfAccountsPayable + $AdditionalLongtermBorrowings - $RepaymentLongtermBorrowings - $CapitalAdditionsPropertyPlantAndEquipment = $VARIABLE_BalanceEnd" />
+
+			<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+			    xlink:from='ASSERTION_RollForwardReconciles'
+			    xlink:to='ASSERTION_Label'
+			    order='1.0'/>
+
+			<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+			    xml:lang='en'>Cash and Cash Equivalents Rolls Forward.</label:label>
+
+
+
+		  <!-- ARC: (B) to (C)(Formula to Variable) -->
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceStart"
+		           order="1.0"
+		           name="VARIABLE_BalanceStart"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceEnd"
+		           order="2.0"
+		           name="VARIABLE_BalanceEnd"
+		           />
+
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change1"
+		           order="3.0"
+		           name="CollectionReceivables"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change2"
+		           order="4.0"
+		           name="PaymentOfAccountsPayable"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change3"
+		           order="5.0"
+		           name="AdditionalLongtermBorrowings"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+					xlink:from="ASSERTION_RollForwardReconciles"
+					xlink:to="VARIABLE_Change4"
+					order="6.0"
+					name="RepaymentLongtermBorrowings"
+					/>
+		   <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+					xlink:from="ASSERTION_RollForwardReconciles"
+					xlink:to="VARIABLE_Change5"
+					order="7.0"
+					name="CapitalAdditionsPropertyPlantAndEquipment"
+					/>
+
+
+
+		  <!--  RESOURCE: (C) VARIABLES-Fact -->
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		           bindAsSequence="false"
+		           />
+
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change2"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change3"
+		           bindAsSequence="false"
+		           />
+		 	<variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change4"
+		           bindAsSequence="false"
+		           />
+		 	<variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change5"
+		           bindAsSequence="false"
+		           />
+
+
+		  <!--  ARC: (C) to (D)(Variables to Filters) -->
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_PERIOD_BalanceStart"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_PERIOD_BalanceEnd"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change1"
+		           xlink:to="FILTER_CONCEPT_Change1"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change2"
+		           xlink:to="FILTER_CONCEPT_Change2"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change3"
+		           xlink:to="FILTER_CONCEPT_Change3"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		 <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change4"
+		           xlink:to="FILTER_CONCEPT_Change4"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		 <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change5"
+		           xlink:to="FILTER_CONCEPT_Change5"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+
+
+		  <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		    <cf:concept>
+		      <cf:qname>basic:CashAndCashEquivalents</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		    <cf:concept>
+		      <cf:qname>basic:CollectionReceivables</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change2">
+		    <cf:concept>
+		      <cf:qname>basic:PaymentOfAccountsPayable</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change3">
+		    <cf:concept>
+		      <cf:qname>basic:AdditionalLongtermBorrowings</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+			<cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change4">
+		    <cf:concept>
+		      <cf:qname>basic:RepaymentLongtermBorrowings</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+			<cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change5">
+		    <cf:concept>
+		      <cf:qname>basic:CapitalAdditionsPropertyPlantAndEquipment</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+
+		  <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		           variable="CollectionReceivables"
+		           boundary="start"
+		           />
+
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		           variable="CollectionReceivables"
+		           boundary="end"
+		           />
+
+	</generic:link>
+
+
+
+	<!-- Receivables Roll forward -->
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/Receivables">
+		  <!-- Roll Forward reconciles -->
+
+		  <!-- RESOURCE: (A) ASSERTION-Consistency -->
+		   <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+		     id="REPORT_RollForwardReconciles_Receivables"
+		     aspectModel="dimensional"
+		     implicitFiltering="true"
+		     test="$VARIABLE_BalanceStart + $Sales - $CollectionReceivables - $AdditionsToAllowanceForBadDebts - $BadDebtsWrittenOff = $VARIABLE_BalanceEnd" />
+
+			<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+			    xlink:from='ASSERTION_RollForwardReconciles'
+			    xlink:to='ASSERTION_Label'
+			    order='1.0'/>
+
+			<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+			    xml:lang='en'>Receivables Rolls Forward.</label:label>
+
+
+
+		  <!-- ARC: (B) to (C)(Formula to Variable) -->
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceStart"
+		           order="1.0"
+		           name="VARIABLE_BalanceStart"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceEnd"
+		           order="2.0"
+		           name="VARIABLE_BalanceEnd"
+		           />
+
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change1"
+		           order="3.0"
+		           name="Sales"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change2"
+		           order="4.0"
+		           name="CollectionReceivables"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change3"
+		           order="5.0"
+		           name="AdditionsToAllowanceForBadDebts"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+					xlink:from="ASSERTION_RollForwardReconciles"
+					xlink:to="VARIABLE_Change4"
+					order="6.0"
+					name="BadDebtsWrittenOff"
+					/>
+
+
+
+		  <!--  RESOURCE: (C) VARIABLES-Fact -->
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		           bindAsSequence="false"
+		           />
+
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change2"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change3"
+		           bindAsSequence="false"
+		           />
+		 	<variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change4"
+		           bindAsSequence="false"
+		           />
+
+
+		  <!--  ARC: (C) to (D)(Variables to Filters) -->
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_PERIOD_BalanceStart"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_PERIOD_BalanceEnd"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change1"
+		           xlink:to="FILTER_CONCEPT_Change1"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change2"
+		           xlink:to="FILTER_CONCEPT_Change2"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change3"
+		           xlink:to="FILTER_CONCEPT_Change3"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		 <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change4"
+		           xlink:to="FILTER_CONCEPT_Change4"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+
+		  <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		    <cf:concept>
+		      <cf:qname>basic:Receivables</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		    <cf:concept>
+		      <cf:qname>basic:Sales</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change2">
+		    <cf:concept>
+		      <cf:qname>basic:CollectionReceivables</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change3">
+		    <cf:concept>
+		      <cf:qname>basic:AdditionsToAllowanceForBadDebts</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+			<cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change4">
+		    <cf:concept>
+		      <cf:qname>basic:BadDebtsWrittenOff</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+
+		  <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		           variable="Sales"
+		           boundary="start"
+		           />
+
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		           variable="Sales"
+		           boundary="end"
+		           />
+
+	</generic:link>
+
+
+
+	<!-- Inventories Roll forward -->
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/Inventories">
+		  <!-- Roll Forward reconciles -->
+
+		  <!-- RESOURCE: (A) ASSERTION-Consistency -->
+		   <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+		     id="REPORT_RollForwardReconciles_Inventories"
+		     aspectModel="dimensional"
+		     implicitFiltering="true"
+		     test="$VARIABLE_BalanceStart + $PurchasesOfInventoryForSale - $CostsOfSales - $InventoryWrittenOff = $VARIABLE_BalanceEnd" />
+
+			<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+			    xlink:from='ASSERTION_RollForwardReconciles'
+			    xlink:to='ASSERTION_Label'
+			    order='1.0'/>
+
+			<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+			    xml:lang='en'>Inventories Rolls Forward.</label:label>
+
+
+
+		  <!-- ARC: (B) to (C)(Formula to Variable) -->
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceStart"
+		           order="1.0"
+		           name="VARIABLE_BalanceStart"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceEnd"
+		           order="2.0"
+		           name="VARIABLE_BalanceEnd"
+		           />
+
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change1"
+		           order="3.0"
+		           name="PurchasesOfInventoryForSale"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change2"
+		           order="4.0"
+		           name="CostsOfSales"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change3"
+		           order="5.0"
+		           name="InventoryWrittenOff"
+		           />
+
+
+
+		  <!--  RESOURCE: (C) VARIABLES-Fact -->
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		           bindAsSequence="false"
+		           />
+
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change2"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change3"
+		           bindAsSequence="false"
+		           />
+
+
+		  <!--  ARC: (C) to (D)(Variables to Filters) -->
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_PERIOD_BalanceStart"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_PERIOD_BalanceEnd"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change1"
+		           xlink:to="FILTER_CONCEPT_Change1"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change2"
+		           xlink:to="FILTER_CONCEPT_Change2"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change3"
+		           xlink:to="FILTER_CONCEPT_Change3"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+
+		  <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		    <cf:concept>
+		      <cf:qname>basic:Inventories</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		    <cf:concept>
+		      <cf:qname>basic:PurchasesOfInventoryForSale</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change2">
+		    <cf:concept>
+		      <cf:qname>basic:CostsOfSales</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change3">
+		    <cf:concept>
+		      <cf:qname>basic:InventoryWrittenOff</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+
+
+		  <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		           variable="PurchasesOfInventoryForSale"
+		           boundary="start"
+		           />
+
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		           variable="PurchasesOfInventoryForSale"
+		           boundary="end"
+		           />
+
+	</generic:link>
+
+
+
+
+
+	<!-- Property, Plant and Equipment Roll forward -->
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/PropertyPlantAndEquipment">
+		  <!-- Roll Forward reconciles -->
+
+		  <!-- RESOURCE: (A) ASSERTION-Consistency -->
+		   <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+		     id="REPORT_RollForwardReconciles_PropertyPlantAndEquipment"
+		     aspectModel="dimensional"
+		     implicitFiltering="true"
+		     test="$VARIABLE_BalanceStart + $CapitalAdditionsPropertyPlantAndEquipment - $DepreciationAndAmortization - $PropertyPlantAndEquipmentWrittenOff = $VARIABLE_BalanceEnd" />
+
+			<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+			    xlink:from='ASSERTION_RollForwardReconciles'
+			    xlink:to='ASSERTION_Label'
+			    order='1.0'/>
+
+			<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+			    xml:lang='en'>Property, Plant, and Equipment Rolls Forward.</label:label>
+
+
+
+		  <!-- ARC: (B) to (C)(Formula to Variable) -->
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceStart"
+		           order="1.0"
+		           name="VARIABLE_BalanceStart"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceEnd"
+		           order="2.0"
+		           name="VARIABLE_BalanceEnd"
+		           />
+
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change1"
+		           order="3.0"
+		           name="CapitalAdditionsPropertyPlantAndEquipment"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change2"
+		           order="4.0"
+		           name="DepreciationAndAmortization"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change3"
+		           order="5.0"
+		           name="PropertyPlantAndEquipmentWrittenOff"
+		           />
+
+
+
+		  <!--  RESOURCE: (C) VARIABLES-Fact -->
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		           bindAsSequence="false"
+		           />
+
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change2"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change3"
+		           bindAsSequence="false"
+		           />
+
+
+		  <!--  ARC: (C) to (D)(Variables to Filters) -->
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_PERIOD_BalanceStart"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_PERIOD_BalanceEnd"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change1"
+		           xlink:to="FILTER_CONCEPT_Change1"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change2"
+		           xlink:to="FILTER_CONCEPT_Change2"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change3"
+		           xlink:to="FILTER_CONCEPT_Change3"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+
+		  <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		    <cf:concept>
+		      <cf:qname>basic:PropertyPlantAndEquipment</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		    <cf:concept>
+		      <cf:qname>basic:CapitalAdditionsPropertyPlantAndEquipment</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change2">
+		    <cf:concept>
+		      <cf:qname>basic:DepreciationAndAmortization</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change3">
+		    <cf:concept>
+		      <cf:qname>basic:PropertyPlantAndEquipmentWrittenOff</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+
+
+		  <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		           variable="CapitalAdditionsPropertyPlantAndEquipment"
+		           boundary="start"
+		           />
+
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		           variable="CapitalAdditionsPropertyPlantAndEquipment"
+		           boundary="end"
+		           />
+
+	</generic:link>
+
+
+
+	<!-- Accounts Payable Roll forward -->
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/AccountsPayable">
+		  <!-- Roll Forward reconciles -->
+
+		  <!-- RESOURCE: (A) ASSERTION-Consistency -->
+		   <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+		     id="REPORT_RollForwardReconciles_AccountsPayable"
+		     aspectModel="dimensional"
+		     implicitFiltering="true"
+		     test="$VARIABLE_BalanceStart + $PurchasesOfInventoryForSale - $PaymentOfAccountsPayable = $VARIABLE_BalanceEnd" />
+
+			<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+			    xlink:from='ASSERTION_RollForwardReconciles'
+			    xlink:to='ASSERTION_Label'
+			    order='1.0'/>
+
+			<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+			    xml:lang='en'>Accounts Payable Rolls Forward.</label:label>
+
+
+
+		  <!-- ARC: (B) to (C)(Formula to Variable) -->
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceStart"
+		           order="1.0"
+		           name="VARIABLE_BalanceStart"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceEnd"
+		           order="2.0"
+		           name="VARIABLE_BalanceEnd"
+		           />
+
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change1"
+		           order="3.0"
+		           name="PurchasesOfInventoryForSale"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change2"
+		           order="4.0"
+		           name="PaymentOfAccountsPayable"
+		           />
+
+
+
+
+		  <!--  RESOURCE: (C) VARIABLES-Fact -->
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		           bindAsSequence="false"
+		           />
+
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change2"
+		           bindAsSequence="false"
+		           />
+
+
+		  <!--  ARC: (C) to (D)(Variables to Filters) -->
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_PERIOD_BalanceStart"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_PERIOD_BalanceEnd"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change1"
+		           xlink:to="FILTER_CONCEPT_Change1"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change2"
+		           xlink:to="FILTER_CONCEPT_Change2"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+
+
+		  <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		    <cf:concept>
+		      <cf:qname>basic:AccountsPayable</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		    <cf:concept>
+		      <cf:qname>basic:PurchasesOfInventoryForSale</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change2">
+		    <cf:concept>
+		      <cf:qname>basic:PaymentOfAccountsPayable</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+
+
+		  <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		           variable="PurchasesOfInventoryForSale"
+		           boundary="start"
+		           />
+
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		           variable="PurchasesOfInventoryForSale"
+		           boundary="end"
+		           />
+
+	</generic:link>
+
+
+	<!-- Long term debt Roll forward -->
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/LongTermDebt">
+		  <!-- Roll Forward reconciles -->
+
+		  <!-- RESOURCE: (A) ASSERTION-Consistency -->
+		   <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+		     id="REPORT_RollForwardReconciles_LongTermDebt"
+		     aspectModel="dimensional"
+		     implicitFiltering="true"
+		     test="$VARIABLE_BalanceStart + $AdditionalLongtermBorrowings - $RepaymentLongtermBorrowings = $VARIABLE_BalanceEnd" />
+
+			<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+			    xlink:from='ASSERTION_RollForwardReconciles'
+			    xlink:to='ASSERTION_Label'
+			    order='1.0'/>
+
+			<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+			    xml:lang='en'>Long term Debt Rolls Forward.</label:label>
+
+
+
+		  <!-- ARC: (B) to (C)(Formula to Variable) -->
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceStart"
+		           order="1.0"
+		           name="VARIABLE_BalanceStart"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_BalanceEnd"
+		           order="2.0"
+		           name="VARIABLE_BalanceEnd"
+		           />
+
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change1"
+		           order="3.0"
+		           name="AdditionalLongtermBorrowings"
+		           />
+		  <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		           xlink:from="ASSERTION_RollForwardReconciles"
+		           xlink:to="VARIABLE_Change2"
+		           order="4.0"
+		           name="RepaymentLongtermBorrowings"
+		           />
+
+
+
+
+		  <!--  RESOURCE: (C) VARIABLES-Fact -->
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		           bindAsSequence="false"
+		           />
+
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		           bindAsSequence="false"
+		           />
+		  <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change2"
+		           bindAsSequence="false"
+		           />
+
+
+		  <!--  ARC: (C) to (D)(Variables to Filters) -->
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_PERIOD_BalanceStart"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_PERIOD_BalanceEnd"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceStart"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_BalanceEnd"
+		           xlink:to="FILTER_CONCEPT_Balance"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change1"
+		           xlink:to="FILTER_CONCEPT_Change1"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+		  <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		           xlink:from="VARIABLE_Change2"
+		           xlink:to="FILTER_CONCEPT_Change2"
+		           order="1.0"
+		           complement="false"
+		           cover="true"
+		           />
+
+
+
+		  <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		    <cf:concept>
+		      <cf:qname>basic:LongtermDebt</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		    <cf:concept>
+		      <cf:qname>basic:AdditionalLongtermBorrowings</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+		  <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change2">
+		    <cf:concept>
+		      <cf:qname>basic:RepaymentLongtermBorrowings</cf:qname>
+		    </cf:concept>
+		  </cf:conceptName>
+
+
+
+		  <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		           variable="AdditionalLongtermBorrowings"
+		           boundary="start"
+		           />
+
+		  <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		           variable="AdditionalLongtermBorrowings"
+		           boundary="end"
+		           />
+
+	</generic:link>
+
+
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrlsite.com/basic/role/RetainedEarnings">
+		    <!-- Roll Forward reconciles -->
+
+		    <!-- RESOURCE: (A) ASSERTION-Consistency -->
+	       <va:valueAssertion xlink:type="resource" xlink:label="ASSERTION_RollForwardReconciles"
+	         id="REPORT_RollFowardReconciles_RetainedEarnings"
+	         aspectModel="dimensional"
+	         implicitFiltering="true"
+	         test="$VARIABLE_BalanceStart + $VARIABLE_Change1 = $VARIABLE_BalanceEnd" />
+
+				<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+				    xlink:from='ASSERTION_RollForwardReconciles'
+				    xlink:to='ASSERTION_Label'
+				    order='1.0'/>
+
+				<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label'
+				    xml:lang='en'>Cash and cash equivalents reconciles.</label:label>
+
+
+
+		    <!-- ARC: (B) to (C)(Formula to Variable) -->
+		    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		             xlink:from="ASSERTION_RollForwardReconciles"
+		             xlink:to="VARIABLE_BalanceStart"
+		             order="1.0"
+		             name="VARIABLE_BalanceStart"
+		             />
+		    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		             xlink:from="ASSERTION_RollForwardReconciles"
+		             xlink:to="VARIABLE_BalanceEnd"
+		             order="1.0"
+		             name="VARIABLE_BalanceEnd"
+		             />
+		    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set"
+		             xlink:from="ASSERTION_RollForwardReconciles"
+		             xlink:to="VARIABLE_Change1"
+		             order="2.0"
+		             name="VARIABLE_Change1"
+		             />
+
+
+
+
+		    <!--  RESOURCE: (C) VARIABLES-Fact -->
+		    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Change1"
+		             bindAsSequence="false"
+		             />
+		    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceStart"
+		             bindAsSequence="false"
+		             />
+		    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_BalanceEnd"
+		             bindAsSequence="false"
+		             />
+
+
+		    <!--  ARC: (C) to (D)(Variables to Filters) -->
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceStart"
+		             xlink:to="FILTER_PERIOD_BalanceStart"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceEnd"
+		             xlink:to="FILTER_PERIOD_BalanceEnd"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_Change1"
+		             xlink:to="FILTER_CONCEPT_Change1"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+
+
+
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceStart"
+		             xlink:to="FILTER_CONCEPT_Balance"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+		    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+		             xlink:from="VARIABLE_BalanceEnd"
+		             xlink:to="FILTER_CONCEPT_Balance"
+		             order="1.0"
+		             complement="false"
+		             cover="true"
+		             />
+
+
+		    <!-- RESOURCE: (D) FILTER-Concept (similar to WHERE statement) -->
+		    <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Balance">
+		      <cf:concept>
+		        <cf:qname>basic:RetainedEarnings</cf:qname>
+		      </cf:concept>
+		    </cf:conceptName>
+
+		    <cf:conceptName xlink:type="resource" xlink:label="FILTER_CONCEPT_Change1">
+		      <cf:concept>
+		        <cf:qname>basic:NetIncomeLoss</cf:qname>
+		      </cf:concept>
+		    </cf:conceptName>
+
+
+
+
+		    <!-- RESOURCE: (D) FILTER-Period (similar to WHERE statement) -->
+		    <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceStart"
+		             variable="VARIABLE_Change1"
+		             boundary="start"
+		             />
+
+		    <pf:instantDuration xlink:type="resource" xlink:label="FILTER_PERIOD_BalanceEnd"
+		             variable="VARIABLE_Change1"
+		             boundary="end"
+		             />
+
+	</generic:link>
+
+
+
+</link:linkbase>
