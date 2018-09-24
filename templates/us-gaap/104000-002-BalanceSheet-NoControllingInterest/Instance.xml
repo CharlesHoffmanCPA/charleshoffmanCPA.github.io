@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='us-ascii' standalone='yes'?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl 
+	xmlns='http://www.xbrl.org/2003/instance' 
+	xmlns:xbrll='http://www.xbrl.org/2003/linkbase' 
+	xmlns:xlink='http://www.w3.org/1999/xlink' 
+	xmlns:iso4217='http://www.xbrl.org/2003/iso4217' 
+	xmlns:xbrldi='http://xbrl.org/2006/xbrldi' 
+	xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xmlns:dei='http://xbrl.sec.gov/dei/2014-01-31' 
+	xmlns:us-gaap='http://fasb.org/us-gaap/2017-01-31' 
+	xmlns:us-roles='http://fasb.org/us-roles/2017-01-31' 
+	xmlns:us-types='http://fasb.org/us-types/2017-01-31' 
+   xmlns:negated='http://www.xbrl.org/2009/role/negated'
+
+   xmlns:added='http://www.template.com/added'
+   
+   xsi:schemaLocation='http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd'>
+
+  <xbrll:schemaRef xlink:href='Template.xsd' xlink:type='simple' xlink:arcrole='http://www.xbrl.org/2003/linkbase' />
+  <xbrll:linkbaseRef xlink:type='simple' xlink:href='Template_formulas.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+  
+  <context id="I-2010">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+  <context id="I-2009">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+    </entity>
+    <period>
+      <instant>2009-12-31</instant>
+    </period>
+  </context>
+
+   <unit id='U-Monetary'>
+      <measure>iso4217:USD</measure>
+   </unit>
+
+	<!-- Balance Sheet -->
+
+  <us-gaap:CashAndCashEquivalentsAtCarryingValue id="Fact-1019" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">11000000</us-gaap:CashAndCashEquivalentsAtCarryingValue>
+  <us-gaap:RestrictedCashAndInvestmentsCurrent id="Fact-1020" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">1000000</us-gaap:RestrictedCashAndInvestmentsCurrent>
+  <us-gaap:ShortTermInvestments id="Fact-1021" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">1000000</us-gaap:ShortTermInvestments>
+
+  <us-gaap:AccountsReceivableNetCurrent id="Fact-1022" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">29000000</us-gaap:AccountsReceivableNetCurrent>
+  <us-gaap:InventoryNet id="Fact-1023" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">4000000</us-gaap:InventoryNet>
+  <us-gaap:PrepaidExpenseCurrent id="Fact-1024" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">8000000</us-gaap:PrepaidExpenseCurrent>
+  <us-gaap:OtherAssetsCurrent id="Fact-1025" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">2000000</us-gaap:OtherAssetsCurrent>
+  <us-gaap:AssetsCurrent id="Fact-1026" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">56000000</us-gaap:AssetsCurrent>
+
+  <us-gaap:PropertyPlantAndEquipmentNet id="Fact-1027" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">9000000</us-gaap:PropertyPlantAndEquipmentNet>
+  <us-gaap:OtherAssetsNoncurrent id="Fact-2001" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">82000000</us-gaap:OtherAssetsNoncurrent>
+  <us-gaap:AssetsNoncurrent id="Fact-1029" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">91000000</us-gaap:AssetsNoncurrent>
+
+  <us-gaap:Assets id="Fact-1030" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">147000000</us-gaap:Assets>
+
+  <us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent id="Fact-1031" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">7000000</us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent>
+  <us-gaap:DebtCurrent id="Fact-1032" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">22000000</us-gaap:DebtCurrent>
+  <us-gaap:OtherLiabilitiesCurrent id="Fact-1033" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">26000000</us-gaap:OtherLiabilitiesCurrent>
+  <us-gaap:LiabilitiesCurrent id="Fact-1034" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">55000000</us-gaap:LiabilitiesCurrent>
+
+  <us-gaap:AccountsPayableAndAccruedLiabilitiesNoncurrent id="Fact-1035" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">1000000</us-gaap:AccountsPayableAndAccruedLiabilitiesNoncurrent>
+  <us-gaap:LongTermDebt id="Fact-1036" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">19000000</us-gaap:LongTermDebt>
+  <us-gaap:OtherLiabilitiesNoncurrent id="Fact-2002" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">32000000</us-gaap:OtherLiabilitiesNoncurrent>
+  <us-gaap:LiabilitiesNoncurrent id="Fact-1038" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">52000000</us-gaap:LiabilitiesNoncurrent>
+
+  <us-gaap:Liabilities id="Fact-1039" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">107000000</us-gaap:Liabilities>
+
+  <us-gaap:PreferredStockValue id="Fact-1040" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:PreferredStockValue>
+  <us-gaap:CommonStockValue id="Fact-1041" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">20000000</us-gaap:CommonStockValue>
+  <us-gaap:AdditionalPaidInCapital id="Fact-1042" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">1000000</us-gaap:AdditionalPaidInCapital>
+  <us-gaap:TreasuryStockValue id="Fact-1043" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">2000000</us-gaap:TreasuryStockValue>
+  <us-gaap:RetainedEarningsAccumulatedDeficit id="Fact-1044" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">6000000</us-gaap:RetainedEarningsAccumulatedDeficit>
+  <us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax id="Fact-2044" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">5000000</us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax>
+  <us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest id="Fact-1047" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">40000000</us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest>
+
+  <us-gaap:LiabilitiesAndStockholdersEquity id="Fact-1048" contextRef="I-2010" unitRef="U-Monetary" decimals="-3">147000000</us-gaap:LiabilitiesAndStockholdersEquity>
+
+
+
+
+  <us-gaap:CashAndCashEquivalentsAtCarryingValue id="Fact-1049" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:CashAndCashEquivalentsAtCarryingValue>
+  <us-gaap:RestrictedCashAndInvestmentsCurrent id="Fact-1050" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">1000000</us-gaap:RestrictedCashAndInvestmentsCurrent>
+  <us-gaap:ShortTermInvestments id="Fact-1051" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">2000000</us-gaap:ShortTermInvestments>
+
+  <us-gaap:AccountsReceivableNetCurrent id="Fact-1052" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">29000000</us-gaap:AccountsReceivableNetCurrent>
+  <us-gaap:InventoryNet id="Fact-1053" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">4000000</us-gaap:InventoryNet>
+  <us-gaap:PrepaidExpenseCurrent id="Fact-1054" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">8000000</us-gaap:PrepaidExpenseCurrent>
+  <us-gaap:OtherAssetsCurrent id="Fact-1055" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">2000000</us-gaap:OtherAssetsCurrent>
+  <us-gaap:AssetsCurrent id="Fact-1056" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">56000000</us-gaap:AssetsCurrent>
+
+  <us-gaap:PropertyPlantAndEquipmentNet id="Fact-1057" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">9000000</us-gaap:PropertyPlantAndEquipmentNet>
+  <us-gaap:OtherAssetsNoncurrent id="Fact-1058" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">82000000</us-gaap:OtherAssetsNoncurrent>
+  <us-gaap:AssetsNoncurrent id="Fact-1059" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">91000000</us-gaap:AssetsNoncurrent>
+
+  <us-gaap:Assets id="Fact-1060" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">147000000</us-gaap:Assets>
+
+  <us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent id="Fact-1061" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">7000000</us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent>
+  <us-gaap:DebtCurrent id="Fact-1062" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">22000000</us-gaap:DebtCurrent>
+  <us-gaap:OtherLiabilitiesCurrent id="Fact-1063" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">26000000</us-gaap:OtherLiabilitiesCurrent>
+  <us-gaap:LiabilitiesCurrent id="Fact-1064" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">55000000</us-gaap:LiabilitiesCurrent>
+
+  <us-gaap:AccountsPayableAndAccruedLiabilitiesNoncurrent id="Fact-1065" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">1000000</us-gaap:AccountsPayableAndAccruedLiabilitiesNoncurrent>
+  <us-gaap:LongTermDebt id="Fact-1066" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">19000000</us-gaap:LongTermDebt>
+  <us-gaap:OtherLiabilitiesNoncurrent id="Fact-1067" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">33000000</us-gaap:OtherLiabilitiesNoncurrent>
+  <us-gaap:LiabilitiesNoncurrent id="Fact-1068" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">53000000</us-gaap:LiabilitiesNoncurrent>
+
+  <us-gaap:Liabilities id="Fact-1069" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">108000000</us-gaap:Liabilities>
+
+  <us-gaap:PreferredStockValue id="Fact-1070" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:PreferredStockValue>
+  <us-gaap:CommonStockValue id="Fact-1071" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">20000000</us-gaap:CommonStockValue>
+  <us-gaap:AdditionalPaidInCapital id="Fact-1072" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">1000000</us-gaap:AdditionalPaidInCapital>
+  <us-gaap:TreasuryStockValue id="Fact-1073" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">2000000</us-gaap:TreasuryStockValue>
+  <us-gaap:RetainedEarningsAccumulatedDeficit id="Fact-1074" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">6000000</us-gaap:RetainedEarningsAccumulatedDeficit>
+  <us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax id="Fact-2074" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">4000000</us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax>
+  <us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest id="Fact-1077" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">39000000</us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest>
+
+  <us-gaap:LiabilitiesAndStockholdersEquity id="Fact-1078" contextRef="I-2009" unitRef="U-Monetary" decimals="-3">147000000</us-gaap:LiabilitiesAndStockholdersEquity>
+
+
+  <xbrll:footnoteLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <xbrll:loc xlink:type="locator" xlink:href="#Fact-2001" xlink:label="Fact-2001" />
+    <xbrll:loc xlink:type="locator" xlink:href="#Fact-2002" xlink:label="Fact-2002" />
+    <xbrll:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="Fact-2001" xlink:to="Footnote-01" order="1" />
+    <xbrll:footnoteArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" xlink:from="Fact-2002" xlink:to="Footnote-01" order="2" />
+    <xbrll:footnote xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:label="Footnote-01" xml:lang="en-US">Proin elit sem, ornare non, ullamcorper vel, sollicitudin a, lacus. Mauris tincidunt cursus est. Nulla sit amet nibh. Sed elementum feugiat augue. Nam non tortor non leo porta bibendum. Morbi eu pede.</xbrll:footnote>
+  </xbrll:footnoteLink>
+
+
+</xbrl>
