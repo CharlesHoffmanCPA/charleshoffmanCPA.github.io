@@ -1,8 +1,8 @@
 # Reference Implementation of an XBRL-based Financial Report using US GAAP
 
-[Documentation](http://xbrlsite.azurewebsites.net/2017/IntelligentDigitalFinancialReporting/Part04_Chapter07.6_ReferenceImplementationExample.pdf)
+[Documentation - PDF](http://xbrlsite.azurewebsites.net/2017/IntelligentDigitalFinancialReporting/Part04_Chapter07.6_ReferenceImplementationExample.pdf)
 
-[Documentation](http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ReferenceImplementation/us-gaap/2017-05-07/)
+[Documentation - Web pages](http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ReferenceImplementation/us-gaap/2017-05-07/)
 
 [Human Readable Version of Report](http://xbrlsite.azurewebsites.net/DigitalFinancialReporting/ReferenceImplementation/us-gaap/2017-05-07/evidence-package/contents/index.html#Rendering-DocumentInformation-dei_DocumentInformationTable.html)
 
