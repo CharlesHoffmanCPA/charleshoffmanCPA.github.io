@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-09-24 08:24:34
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="basic.xsd#GeneralLedgerTrialBalance"
+    roleURI="http://www.xbrlsite.com/basic/role/GeneralLedgerTrialBalance" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.xbrlsite.com/basic/role/GeneralLedgerTrialBalance">
+    <loc xlink:type="locator"
+      xlink:label="basic_GeneralLedgerTrialBalance"
+      xlink:href="basic.xsd#basic_GeneralLedgerTrialBalance" />
+    <loc xlink:type="locator"
+      xlink:label="basic_CashAndCashEquivalents"
+      xlink:href="basic.xsd#basic_CashAndCashEquivalents" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_GeneralLedgerTrialBalance"
+      xlink:to="basic_CashAndCashEquivalents"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Receivables"
+      xlink:href="basic.xsd#basic_Receivables" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_GeneralLedgerTrialBalance"
+      xlink:to="basic_Receivables"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_Inventories"
+      xlink:href="basic.xsd#basic_Inventories" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_GeneralLedgerTrialBalance"
+      xlink:to="basic_Inventories"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_PropertyPlantAndEquipment"
+      xlink:href="basic.xsd#basic_PropertyPlantAndEquipment" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_GeneralLedgerTrialBalance"
+      xlink:to="basic_PropertyPlantAndEquipment"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_AccountsPayable"
+      xlink:href="basic.xsd#basic_AccountsPayable" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_GeneralLedgerTrialBalance"
+      xlink:to="basic_AccountsPayable"
+      order="5"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_LongtermDebt"
+      xlink:href="basic.xsd#basic_LongtermDebt" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_GeneralLedgerTrialBalance"
+      xlink:to="basic_LongtermDebt"
+      order="6"
+      weight="-1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="basic_RetainedEarnings"
+      xlink:href="basic.xsd#basic_RetainedEarnings" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="basic_GeneralLedgerTrialBalance"
+      xlink:to="basic_RetainedEarnings"
+      order="7"
+      weight="-1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

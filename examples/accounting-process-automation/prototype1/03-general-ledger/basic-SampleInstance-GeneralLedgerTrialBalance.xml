@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- Created by Charles Hoffman, CPA: 2018-02-19 -->
+<xbrl 
+	xmlns="http://www.xbrl.org/2003/instance" 
+	xmlns:link="http://www.xbrl.org/2003/linkbase" 
+	xmlns:xbrldi="http://xbrl.org/2006/xbrldi" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	
+	xmlns:basic="http://www.xbrlsite.com/basic" 
+	xmlns:iso4217="http://www.xbrl.org/2003/iso4217" 
+
+	  >
+	
+	  <link:schemaRef xlink:href="basic.xsd" xlink:type="simple" />
+
+	  <context id="I-2018">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <instant>2018-12-31</instant>
+	    </period>
+	  </context>
+	  <context id="I-2017">
+	    <entity>
+	      <identifier scheme="http://standards.iso.org/iso/17442">30810137d58f76b84afd</identifier>
+	    </entity>
+	    <period>
+	      <instant>2017-12-31</instant>
+	    </period>
+	  </context>
+	
+	
+	
+	  <unit id="U-Monetary">
+	    <measure>iso4217:USD</measure>
+	  </unit>
+
+
+
+
+
+  <!-- General Ledger Trial Balance Post Close -->
+  <basic:CashAndCashEquivalents contextRef="I-2018" decimals="INF" unitRef="U-Monetary">4000</basic:CashAndCashEquivalents>
+  <basic:CashAndCashEquivalents contextRef="I-2017" decimals="INF" unitRef="U-Monetary">3000</basic:CashAndCashEquivalents>
+
+  <basic:Receivables contextRef="I-2018" decimals="INF" unitRef="U-Monetary">2000</basic:Receivables>
+  <basic:Receivables contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Receivables>
+
+  <basic:Inventories contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:Inventories>
+  <basic:Inventories contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:Inventories>
+
+  <basic:PropertyPlantAndEquipment contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:PropertyPlantAndEquipment>
+  <basic:PropertyPlantAndEquipment contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:PropertyPlantAndEquipment>
+
+  <basic:AccountsPayable contextRef="I-2018" decimals="INF" unitRef="U-Monetary">1000</basic:AccountsPayable>
+  <basic:AccountsPayable contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:AccountsPayable>
+
+  <basic:LongtermDebt contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:LongtermDebt>
+  <basic:LongtermDebt contextRef="I-2017" decimals="INF" unitRef="U-Monetary">1000</basic:LongtermDebt>
+
+  <basic:RetainedEarnings contextRef="I-2018" decimals="INF" unitRef="U-Monetary">6000</basic:RetainedEarnings>
+  <basic:RetainedEarnings contextRef="I-2017" decimals="INF" unitRef="U-Monetary">4000</basic:RetainedEarnings>
+
+
+  <basic:GeneralLedgerTrialBalance contextRef="I-2018" decimals="INF" unitRef="U-Monetary">0</basic:GeneralLedgerTrialBalance>
+  <basic:GeneralLedgerTrialBalance contextRef="I-2017" decimals="INF" unitRef="U-Monetary">0</basic:GeneralLedgerTrialBalance>
+
+
+
+</xbrl>

@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-09-24 08:24:34
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:basic="http://www.xbrlsite.com/basic"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  targetNamespace="http://www.xbrlsite.com/basic"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/BalanceSheet"
+        id="BalanceSheet">
+        <link:definition>1110 - Statement - Balance Sheet</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/IncomeStatement"
+        id="IncomeStatement">
+        <link:definition>1120 - Statement - Income Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/CashFlowStatement"
+        id="CashFlowStatement">
+        <link:definition>1130 - Statement - Cash Flow Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/CashAndCashEquivalents"
+        id="CashAndCashEquivalents">
+        <link:definition>1210 - Disclosure - Cash and Cash Equivalents Roll Forward</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Receivables"
+        id="Receivables">
+        <link:definition>1220 - Disclosure - Receivables Roll Forward</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/Inventories"
+        id="Inventories">
+        <link:definition>1230 - Disclosure - Inventories</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/PropertyPlantAndEquipment"
+        id="PropertyPlantAndEquipment">
+        <link:definition>1240 - Disclosure - Property, Plant, and Equipment</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/AccountsPayable"
+        id="AccountsPayable">
+        <link:definition>1250 - Disclosure - Accounts Payable</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/LongTermDebt"
+        id="LongTermDebt">
+        <link:definition>1260 - Disclosure - Long-term Debt</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/RetainedEarnings"
+        id="RetainedEarnings">
+        <link:definition>1270 - Disclosure - Retained Earnings</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/InventoriesDetail"
+        id="InventoriesDetail">
+        <link:definition>2101 - Disclosure - Inventories Detail</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/FinishedGoodsDetail"
+        id="FinishedGoodsDetail">
+        <link:definition>3101 - Disclosure - Finished Goods Detail</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.xbrlsite.com/basic/role/GeneralLedgerTrialBalance"
+        id="GeneralLedgerTrialBalance">
+        <link:definition>9901 - Schedule - General Ledger Trial Balance (Real accounts, post close)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="basic-label.xml"
+        xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="basic-presentation.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="basic-calculation.xml"
+        xlink:title="Calculation Links, all" />
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/arcrole/fact-explanatoryFact"
+    schemaLocation="http://www.xbrl.org/lrr/arcrole/factExplanatory-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/negated"
+    schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/net"
+    schemaLocation="http://www.xbrl.org/lrr/role/net-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <element
+    id="basic_AccountsPayable"
+    name="AccountsPayable"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_AccountsPayableRollForward"
+    name="AccountsPayableRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_AdditionalLongtermBorrowings"
+    name="AdditionalLongtermBorrowings"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_AdditionalLongtermBorrowings2"
+    name="AdditionalLongtermBorrowings2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_AdditionsToAllowanceForBadDebts"
+    name="AdditionsToAllowanceForBadDebts"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_Assets"
+    name="Assets"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_AssetsRollUp"
+    name="AssetsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_BadDebtsWrittenOff"
+    name="BadDebtsWrittenOff"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_BalanceSheetAbstract"
+    name="BalanceSheetAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_CapitalAdditionsPropertyPlantAndEquipment"
+    name="CapitalAdditionsPropertyPlantAndEquipment"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_CapitalAdditionsPropertyPlantAndEquipment2"
+    name="CapitalAdditionsPropertyPlantAndEquipment2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_CashAndCashEquivalents"
+    name="CashAndCashEquivalents"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_CashCashEquivalentsRollForward"
+    name="CashCashEquivalentsRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_CashFlowStatementRollForward"
+    name="CashFlowStatementRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_CollectionReceivables"
+    name="CollectionReceivables"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_CollectionReceivables2"
+    name="CollectionReceivables2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_CostsOfSales"
+    name="CostsOfSales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_CostsOfSales2"
+    name="CostsOfSales2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_CurrentAssets"
+    name="CurrentAssets"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_CurrentAssetsRollUp"
+    name="CurrentAssetsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_CurrentLiabilities"
+    name="CurrentLiabilities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_CurrentLiabilitiesRollUp"
+    name="CurrentLiabilitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_DepreciationAndAmortization"
+    name="DepreciationAndAmortization"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_DepreciationAndAmortization2"
+    name="DepreciationAndAmortization2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_Equity"
+    name="Equity"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_EquityRollUp"
+    name="EquityRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_FinishedGoods"
+    name="FinishedGoods"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_FinishedGoodsRollUp"
+    name="FinishedGoodsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_GeneralLedgerTrialBalance"
+    name="GeneralLedgerTrialBalance"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_GeneralLedgerTrialBalanceRollUp"
+    name="GeneralLedgerTrialBalanceRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_GrossProfitLoss"
+    name="GrossProfitLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_GrossProfitRollUp"
+    name="GrossProfitRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Inventories"
+    name="Inventories"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_InventoriesRollForward"
+    name="InventoriesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_InventoriesRollUp"
+    name="InventoriesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_InventoryWrittenOff"
+    name="InventoryWrittenOff"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_Liabilities"
+    name="Liabilities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_LiabilitiesAndEquity"
+    name="LiabilitiesAndEquity"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_LiabilitiesAndEquityRollUp"
+    name="LiabilitiesAndEquityRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_LiabilitiesRollUp"
+    name="LiabilitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_LongtermDebt"
+    name="LongtermDebt"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_LongtermDebtRollForward"
+    name="LongtermDebtRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlow"
+    name="NetCashFlow"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlowFinancingActivities"
+    name="NetCashFlowFinancingActivities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlowFinancingActivitiesRollUp"
+    name="NetCashFlowFinancingActivitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlowInvestingActivities"
+    name="NetCashFlowInvestingActivities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlowInvestingActivitiesRollUp"
+    name="NetCashFlowInvestingActivitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlowOperatingActivities"
+    name="NetCashFlowOperatingActivities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlowOperatingActivitiesRollUp"
+    name="NetCashFlowOperatingActivitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NetCashFlowRollUp"
+    name="NetCashFlowRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NetIncomeLoss"
+    name="NetIncomeLoss"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_NetIncomeLossRollUp"
+    name="NetIncomeLossRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NoncurrentAssets"
+    name="NoncurrentAssets"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_NoncurrentAssetsRollUp"
+    name="NoncurrentAssetsRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_NoncurrentLiabilities"
+    name="NoncurrentLiabilities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_NoncurrentLiabilitiesRollUp"
+    name="NoncurrentLiabilitiesRollUp"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_PaymentOfAccountsPayable"
+    name="PaymentOfAccountsPayable"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_PaymentOfAccountsPayable2"
+    name="PaymentOfAccountsPayable2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_ProductAlpha"
+    name="ProductAlpha"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_ProductBravo"
+    name="ProductBravo"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_PropertyPlantAndEquipment"
+    name="PropertyPlantAndEquipment"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_PropertyPlantAndEquipmentWrittenOff"
+    name="PropertyPlantAndEquipmentWrittenOff"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_PropertyPlantEquipmentRollForward"
+    name="PropertyPlantEquipmentRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_PurchasesOfInventoryForSale"
+    name="PurchasesOfInventoryForSale"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_PurchasesOfInventoryForSale2"
+    name="PurchasesOfInventoryForSale2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_RawMaterial"
+    name="RawMaterial"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_Receivables"
+    name="Receivables"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_ReceivablesRollForward"
+    name="ReceivablesRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_RepaymentLongtermBorrowings"
+    name="RepaymentLongtermBorrowings"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_RepaymentLongtermBorrowings2"
+    name="RepaymentLongtermBorrowings2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_RetainedEarnings"
+    name="RetainedEarnings"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_RetainedEarningsRollForward"
+    name="RetainedEarningsRollForward"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="basic_Sales"
+    name="Sales"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="basic_Sales2"
+    name="Sales2"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="basic_WorkInProgress"
+    name="WorkInProgress"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+</schema>
