@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Label Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2012 UBmatrix inc., All Rights Reserved
+Produced on 2012-05-09 07:11:50
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <labelLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="added_BalanceSheetParentheticalTable"
+      xlink:href="Template.xsd#added_BalanceSheetParentheticalTable" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="added_BalanceSheetParentheticalTable"
+      xlink:to="added_BalanceSheetParentheticalTable_lbl" />
+    <label xlink:type="resource"
+      xlink:label="added_BalanceSheetParentheticalTable_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Balance Sheet Parenthetical [Table]</label>
+    <loc xlink:type="locator"
+      xlink:label="dei_EntityDomain"
+      xlink:href="http://xbrl.sec.gov/dei/2013/dei-2013-01-31.xsd#dei_EntityDomain" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="dei_EntityDomain" xlink:to="dei_EntityDomain_lbl" />
+    <label xlink:type="resource"
+      xlink:label="dei_EntityDomain_lbl" xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Entity [Domain]</label>
+    <loc xlink:type="locator"
+      xlink:label="dei_LegalEntityAxis"
+      xlink:href="http://xbrl.sec.gov/dei/2013/dei-2013-01-31.xsd#dei_LegalEntityAxis" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="dei_LegalEntityAxis" xlink:to="dei_LegalEntityAxis_lbl" />
+    <label xlink:type="resource"
+      xlink:label="dei_LegalEntityAxis_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Legal Entity [Axis]</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent"
+      xlink:to="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Accounts receivable, allowance for doubtful accounts</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockParOrStatedValuePerShare"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockParOrStatedValuePerShare" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_CommonStockParOrStatedValuePerShare"
+      xlink:to="us-gaap_CommonStockParOrStatedValuePerShare_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_CommonStockParOrStatedValuePerShare_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Common stock, par value</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockSharesAuthorized"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockSharesAuthorized" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_CommonStockSharesAuthorized"
+      xlink:to="us-gaap_CommonStockSharesAuthorized_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_CommonStockSharesAuthorized_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Common stock, shares authorized</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockSharesIssued"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockSharesIssued" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_CommonStockSharesIssued"
+      xlink:to="us-gaap_CommonStockSharesIssued_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_CommonStockSharesIssued_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Common stock, issued</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockSharesOutstanding"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockSharesOutstanding" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_CommonStockSharesOutstanding"
+      xlink:to="us-gaap_CommonStockSharesOutstanding_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_CommonStockSharesOutstanding_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Common stock, outstanding</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_PreferredStockParOrStatedValuePerShare"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_PreferredStockParOrStatedValuePerShare" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_PreferredStockParOrStatedValuePerShare"
+      xlink:to="us-gaap_PreferredStockParOrStatedValuePerShare_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_PreferredStockParOrStatedValuePerShare_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Preferred stock, par value</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_PreferredStockSharesAuthorized"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_PreferredStockSharesAuthorized" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_PreferredStockSharesAuthorized"
+      xlink:to="us-gaap_PreferredStockSharesAuthorized_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_PreferredStockSharesAuthorized_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Preferred stock, shares authorized</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_PreferredStockSharesIssued"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_PreferredStockSharesIssued" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_PreferredStockSharesIssued"
+      xlink:to="us-gaap_PreferredStockSharesIssued_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_PreferredStockSharesIssued_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Preferred stock, issued</label>
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_StatementLineItems"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_StatementLineItems" />
+    <labelArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_StatementLineItems_lbl" />
+    <label xlink:type="resource"
+      xlink:label="us-gaap_StatementLineItems_lbl"
+      xml:lang="en-US"
+      xlink:role="http://www.xbrl.org/2003/role/label">Balance Sheet Parenthetical [Line Items]</label>
+  </labelLink>
+</linkbase>

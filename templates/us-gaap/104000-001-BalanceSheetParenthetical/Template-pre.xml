@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Presentation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2012 UBmatrix inc., All Rights Reserved
+Produced on 2012-05-09 07:11:50
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="Template.xsd#SomeNetwork"
+    roleURI="http://www.template.com/SomeNetwork" />
+  <presentationLink xlink:type="extended"
+    xlink:role="http://www.template.com/SomeNetwork">
+    <loc xlink:type="locator"
+      xlink:label="added_BalanceSheetParentheticalTable"
+      xlink:href="Template.xsd#added_BalanceSheetParentheticalTable" />
+    <loc xlink:type="locator"
+      xlink:label="dei_LegalEntityAxis"
+      xlink:href="http://xbrl.sec.gov/dei/2013/dei-2013-01-31.xsd#dei_LegalEntityAxis" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="added_BalanceSheetParentheticalTable"
+      xlink:to="dei_LegalEntityAxis"
+      order="2"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="dei_EntityDomain"
+      xlink:href="http://xbrl.sec.gov/dei/2013/dei-2013-01-31.xsd#dei_EntityDomain" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="dei_LegalEntityAxis" xlink:to="dei_EntityDomain"
+      order="3"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_StatementLineItems"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_StatementLineItems" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="added_BalanceSheetParentheticalTable"
+      xlink:to="us-gaap_StatementLineItems"
+      order="4"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent"
+      order="5"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_PreferredStockParOrStatedValuePerShare"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_PreferredStockParOrStatedValuePerShare" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_PreferredStockParOrStatedValuePerShare"
+      order="6"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_PreferredStockSharesAuthorized"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_PreferredStockSharesAuthorized" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_PreferredStockSharesAuthorized"
+      order="7"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_PreferredStockSharesIssued"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_PreferredStockSharesIssued" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_PreferredStockSharesIssued"
+      order="8"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockParOrStatedValuePerShare"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockParOrStatedValuePerShare" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_CommonStockParOrStatedValuePerShare"
+      order="9"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockSharesAuthorized"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockSharesAuthorized" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_CommonStockSharesAuthorized"
+      order="10"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockSharesIssued"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockSharesIssued" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_CommonStockSharesIssued"
+      order="11"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_CommonStockSharesOutstanding"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2013/elts/us-gaap-2013-01-31.xsd#us-gaap_CommonStockSharesOutstanding" />
+    <presentationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+      xlink:from="us-gaap_StatementLineItems"
+      xlink:to="us-gaap_CommonStockSharesOutstanding"
+      order="12"
+      use="optional" />
+  </presentationLink>
+</linkbase>
