@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by XBRL Cloud Web Services on 2012-05-01T18:35:57.547Z--><link:linkbase xmlns:xlink="http://www.w3.org/1999/xlink"
+               xmlns="http://www.xbrl.org/2003/linkbase"
+               xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+               xmlns:link="http://www.xbrl.org/2003/linkbase"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+   <link:roleRef xlink:type="simple" xlink:href="Template.xsd#SomeNetwork"
+                 roleURI="http://www.template.com/SomeNetwork"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"/>
+   <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/all"/>
+   <!-- Hypercube Definition (Line Items to Hypercube)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator" xlink:href="Template.xsd#added_BalanceSheetTable"
+                xlink:label="added_BalanceSheetTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                          xlink:from="added_BalanceSheetTable"
+                          xlink:to="dei_LegalEntityAxis"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Domain Members --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                          xlink:from="dei_LegalEntityAxis"
+                          xlink:to="dei_EntityDomain"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (All)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator" xlink:href="Template.xsd#added_BalanceSheetTable"
+                xlink:label="added_BalanceSheetTable"/>
+      <link:loc xlink:type="locator" xlink:href="Template.xsd#added_BalanceSheetLineItems"
+                xlink:label="added_BalanceSheetLineItems"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="added_BalanceSheetTable"
+                          order="2"
+                          xbrldt:closed="true"
+                          xbrldt:contextElement="segment"/>
+   </link:definitionLink>
+   <!-- Inheritance for Line Items:  added:BalanceSheetLineItems--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator" xlink:href="Template.xsd#added_BalanceSheetLineItems"
+                xlink:label="added_BalanceSheetLineItems"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AssetsAbstract"
+                xlink:label="us-gaap_AssetsAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AssetsCurrentAbstract"
+                xlink:label="us-gaap_AssetsCurrentAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CashAndCashEquivalentsAtCarryingValue"
+                xlink:label="us-gaap_CashAndCashEquivalentsAtCarryingValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_RestrictedCashAndInvestmentsCurrent"
+                xlink:label="us-gaap_RestrictedCashAndInvestmentsCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_ShortTermInvestments"
+                xlink:label="us-gaap_ShortTermInvestments"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AccountsReceivableNetCurrent"
+                xlink:label="us-gaap_AccountsReceivableNetCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_InventoryNet"
+                xlink:label="us-gaap_InventoryNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PrepaidExpenseCurrent"
+                xlink:label="us-gaap_PrepaidExpenseCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_OtherAssetsCurrent"
+                xlink:label="us-gaap_OtherAssetsCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AssetsCurrent"
+                xlink:label="us-gaap_AssetsCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AssetsNoncurrentAbstract"
+                xlink:label="us-gaap_AssetsNoncurrentAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PropertyPlantAndEquipmentNet"
+                xlink:label="us-gaap_PropertyPlantAndEquipmentNet"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_OtherAssetsNoncurrent"
+                xlink:label="us-gaap_OtherAssetsNoncurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AssetsNoncurrent"
+                xlink:label="us-gaap_AssetsNoncurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_Assets"
+                xlink:label="us-gaap_Assets"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LiabilitiesAndStockholdersEquityAbstract"
+                xlink:label="us-gaap_LiabilitiesAndStockholdersEquityAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LiabilitiesAbstract"
+                xlink:label="us-gaap_LiabilitiesAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LiabilitiesCurrentAbstract"
+                xlink:label="us-gaap_LiabilitiesCurrentAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilitiesCurrent"
+                xlink:label="us-gaap_AccountsPayableAndAccruedLiabilitiesCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_DebtCurrent"
+                xlink:label="us-gaap_DebtCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_OtherLiabilitiesCurrent"
+                xlink:label="us-gaap_OtherLiabilitiesCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LiabilitiesCurrent"
+                xlink:label="us-gaap_LiabilitiesCurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LiabilitiesNoncurrentAbstract"
+                xlink:label="us-gaap_LiabilitiesNoncurrentAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AccountsPayableAndAccruedLiabilitiesNoncurrent"
+                xlink:label="us-gaap_AccountsPayableAndAccruedLiabilitiesNoncurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LongTermDebt"
+                xlink:label="us-gaap_LongTermDebt"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_OtherLiabilitiesNoncurrent"
+                xlink:label="us-gaap_OtherLiabilitiesNoncurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LiabilitiesNoncurrent"
+                xlink:label="us-gaap_LiabilitiesNoncurrent"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_Liabilities"
+                xlink:label="us-gaap_Liabilities"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommitmentsAndContingencies"
+                xlink:label="us-gaap_CommitmentsAndContingencies"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StockholdersEquityIncludingPortionAttributableToNoncontrollingInterestAbstract"
+                xlink:label="us-gaap_StockholdersEquityIncludingPortionAttributableToNoncontrollingInterestAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StockholdersEquityAbstract"
+                xlink:label="us-gaap_StockholdersEquityAbstract"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredStockValue"
+                xlink:label="us-gaap_PreferredStockValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonStockValue"
+                xlink:label="us-gaap_CommonStockValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AdditionalPaidInCapital"
+                xlink:label="us-gaap_AdditionalPaidInCapital"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_TreasuryStockValue"
+                xlink:label="us-gaap_TreasuryStockValue"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_RetainedEarningsAccumulatedDeficit"
+                xlink:label="us-gaap_RetainedEarningsAccumulatedDeficit"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AccumulatedOtherComprehensiveIncomeLossNetOfTax"
+                xlink:label="us-gaap_AccumulatedOtherComprehensiveIncomeLossNetOfTax"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StockholdersEquity"
+                xlink:label="us-gaap_StockholdersEquity"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_MinorityInterest"
+                xlink:label="us-gaap_MinorityInterest"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+                xlink:label="us-gaap_StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_LiabilitiesAndStockholdersEquity"
+                xlink:label="us-gaap_LiabilitiesAndStockholdersEquity"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_CashAndCashEquivalentsAtCarryingValue"
+                          order="3"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_RestrictedCashAndInvestmentsCurrent"
+                          order="4"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_ShortTermInvestments"
+                          order="5"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_AccountsReceivableNetCurrent"
+                          order="6"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_InventoryNet"
+                          order="7"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_PrepaidExpenseCurrent"
+                          order="8"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_OtherAssetsCurrent"
+                          order="9"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_AssetsCurrent"
+                          order="10"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_PropertyPlantAndEquipmentNet"
+                          order="12"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_OtherAssetsNoncurrent"
+                          order="13"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_AssetsNoncurrent"
+                          order="14"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_Assets"
+                          order="15"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_AccountsPayableAndAccruedLiabilitiesCurrent"
+                          order="19"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_DebtCurrent"
+                          order="20"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_OtherLiabilitiesCurrent"
+                          order="21"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_LiabilitiesCurrent"
+                          order="22"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_AccountsPayableAndAccruedLiabilitiesNoncurrent"
+                          order="24"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_LongTermDebt"
+                          order="25"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_OtherLiabilitiesNoncurrent"
+                          order="26"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_LiabilitiesNoncurrent"
+                          order="27"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_Liabilities"
+                          order="28"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_CommitmentsAndContingencies"
+                          order="29"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_PreferredStockValue"
+                          order="32"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_CommonStockValue"
+                          order="33"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_AdditionalPaidInCapital"
+                          order="34"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_TreasuryStockValue"
+                          order="35"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_RetainedEarningsAccumulatedDeficit"
+                          order="36"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_AccumulatedOtherComprehensiveIncomeLossNetOfTax"
+                          order="37"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_StockholdersEquity"
+                          order="38"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_MinorityInterest"
+                          order="39"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+                          order="40"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetLineItems"
+                          xlink:to="us-gaap_LiabilitiesAndStockholdersEquity"
+                          order="41"/>
+   </link:definitionLink>
+   <!-- Dimension Defaults --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+                          xlink:from="dei_LegalEntityAxis"
+                          xlink:to="dei_EntityDomain"
+                          order="1"/>
+   </link:definitionLink>
+</link:linkbase>
