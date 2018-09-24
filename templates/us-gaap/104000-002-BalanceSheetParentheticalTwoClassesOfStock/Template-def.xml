@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by XBRL Cloud Web Services on 2012-05-26T19:53:41.205Z--><link:linkbase xmlns:xlink="http://www.w3.org/1999/xlink"
+               xmlns="http://www.xbrl.org/2003/linkbase"
+               xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+               xmlns:link="http://www.xbrl.org/2003/linkbase"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+   <link:roleRef xlink:type="simple" xlink:href="Template.xsd#SomeNetwork"
+                 roleURI="http://www.template.com/SomeNetwork"/>
+   <link:roleRef xlink:type="simple" xlink:href="Template.xsd#SomeNetwork2"
+                 roleURI="http://www.template.com/SomeNetwork2"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default"/>
+   <link:arcroleRef xlink:type="simple"
+                    xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"/>
+   <link:arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all"
+                    arcroleURI="http://xbrl.org/int/dim/arcrole/all"/>
+   <!-- Hypercube Definition (Line Items to Hypercube)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_CommonStockInformationByClassTable"
+                xlink:label="added_CommonStockInformationByClassTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                          xlink:from="added_CommonStockInformationByClassTable"
+                          xlink:to="dei_LegalEntityAxis"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Domain Members --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                          xlink:from="dei_LegalEntityAxis"
+                          xlink:to="dei_EntityDomain"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (Line Items to Hypercube)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_CommonStockInformationByClassTable"
+                xlink:label="added_CommonStockInformationByClassTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StatementClassOfStockAxis"
+                xlink:label="us-gaap_StatementClassOfStockAxis"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                          xlink:from="added_CommonStockInformationByClassTable"
+                          xlink:to="us-gaap_StatementClassOfStockAxis"
+                          order="2"/>
+   </link:definitionLink>
+   <!-- Domain Members --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StatementClassOfStockAxis"
+                xlink:label="us-gaap_StatementClassOfStockAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_ClassOfStockDomain"
+                xlink:label="us-gaap_ClassOfStockDomain"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonClassAMember"
+                xlink:label="us-gaap_CommonClassAMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonClassBMember"
+                xlink:label="us-gaap_CommonClassBMember"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                          xlink:from="us-gaap_StatementClassOfStockAxis"
+                          xlink:to="us-gaap_ClassOfStockDomain"
+                          order="1"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="us-gaap_ClassOfStockDomain"
+                          xlink:to="us-gaap_CommonClassAMember"
+                          order="1"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="us-gaap_ClassOfStockDomain"
+                          xlink:to="us-gaap_CommonClassBMember"
+                          order="2"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (All)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_CommonStockInformationByClassTable"
+                xlink:label="added_CommonStockInformationByClassTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_CommonStockInformationByClassLineItems"
+                xlink:label="added_CommonStockInformationByClassLineItems"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+                          xlink:from="added_CommonStockInformationByClassLineItems"
+                          xlink:to="added_CommonStockInformationByClassTable"
+                          order="3"
+                          xbrldt:closed="true"
+                          xbrldt:contextElement="segment"/>
+   </link:definitionLink>
+   <!-- Inheritance for Line Items:  added:CommonStockInformationByClassLineItems--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_CommonStockInformationByClassLineItems"
+                xlink:label="added_CommonStockInformationByClassLineItems"/>
+      <link:loc xlink:type="locator" xlink:href="Template.xsd#added_ClassCommonStockHierarchy"
+                xlink:label="added_ClassCommonStockHierarchy"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonStockParOrStatedValuePerShare"
+                xlink:label="us-gaap_CommonStockParOrStatedValuePerShare"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonStockSharesAuthorized"
+                xlink:label="us-gaap_CommonStockSharesAuthorized"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonStockSharesIssued"
+                xlink:label="us-gaap_CommonStockSharesIssued"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonStockSharesOutstanding"
+                xlink:label="us-gaap_CommonStockSharesOutstanding"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_CommonStockValueOutstanding"
+                xlink:label="us-gaap_CommonStockValueOutstanding"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_CommonStockInformationByClassLineItems"
+                          xlink:to="us-gaap_CommonStockParOrStatedValuePerShare"
+                          order="2"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_CommonStockInformationByClassLineItems"
+                          xlink:to="us-gaap_CommonStockSharesAuthorized"
+                          order="3"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_CommonStockInformationByClassLineItems"
+                          xlink:to="us-gaap_CommonStockSharesIssued"
+                          order="4"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_CommonStockInformationByClassLineItems"
+                          xlink:to="us-gaap_CommonStockSharesOutstanding"
+                          order="5"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_CommonStockInformationByClassLineItems"
+                          xlink:to="us-gaap_CommonStockValueOutstanding"
+                          order="6"/>
+   </link:definitionLink>
+   <!-- Dimension Defaults --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+                          xlink:from="dei_LegalEntityAxis"
+                          xlink:to="dei_EntityDomain"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Dimension Defaults --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StatementClassOfStockAxis"
+                xlink:label="us-gaap_StatementClassOfStockAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_ClassOfStockDomain"
+                xlink:label="us-gaap_ClassOfStockDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+                          xlink:from="us-gaap_StatementClassOfStockAxis"
+                          xlink:to="us-gaap_ClassOfStockDomain"
+                          order="2"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (Line Items to Hypercube)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_BalanceSheetParentheticalTable"
+                xlink:label="added_BalanceSheetParentheticalTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                          xlink:from="added_BalanceSheetParentheticalTable"
+                          xlink:to="dei_LegalEntityAxis"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Domain Members --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (All)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_BalanceSheetParentheticalTable"
+                xlink:label="added_BalanceSheetParentheticalTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_BalanceSheetParentheticalLineItems"
+                xlink:label="added_BalanceSheetParentheticalLineItems"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+                          xlink:from="added_BalanceSheetParentheticalLineItems"
+                          xlink:to="added_BalanceSheetParentheticalTable"
+                          order="2"
+                          xbrldt:closed="true"
+                          xbrldt:contextElement="segment"/>
+   </link:definitionLink>
+   <!-- Inheritance for Line Items:  added:BalanceSheetParentheticalLineItems--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_BalanceSheetParentheticalLineItems"
+                xlink:label="added_BalanceSheetParentheticalLineItems"/>
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_BalanceSheetParentheticalHierarchy"
+                xlink:label="added_BalanceSheetParentheticalHierarchy"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent"
+                xlink:label="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_BalanceSheetParentheticalLineItems"
+                          xlink:to="us-gaap_AllowanceForDoubtfulAccountsReceivableCurrent"
+                          order="2"/>
+   </link:definitionLink>
+   <!-- Dimension Defaults --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork"
+                        xlink:title="Some Network">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (Line Items to Hypercube)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_PreferredStockInformationByClassTable"
+                xlink:label="added_PreferredStockInformationByClassTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                          xlink:from="added_PreferredStockInformationByClassTable"
+                          xlink:to="dei_LegalEntityAxis"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Domain Members --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                          xlink:from="dei_LegalEntityAxis"
+                          xlink:to="dei_EntityDomain"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (Line Items to Hypercube)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_PreferredStockInformationByClassTable"
+                xlink:label="added_PreferredStockInformationByClassTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StatementClassOfStockAxis"
+                xlink:label="us-gaap_StatementClassOfStockAxis"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+                          xlink:from="added_PreferredStockInformationByClassTable"
+                          xlink:to="us-gaap_StatementClassOfStockAxis"
+                          order="2"/>
+   </link:definitionLink>
+   <!-- Domain Members --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StatementClassOfStockAxis"
+                xlink:label="us-gaap_StatementClassOfStockAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_ClassOfStockDomain"
+                xlink:label="us-gaap_ClassOfStockDomain"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredClassAMember"
+                xlink:label="us-gaap_PreferredClassAMember"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredClassBMember"
+                xlink:label="us-gaap_PreferredClassBMember"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+                          xlink:from="us-gaap_StatementClassOfStockAxis"
+                          xlink:to="us-gaap_ClassOfStockDomain"
+                          order="1"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="us-gaap_ClassOfStockDomain"
+                          xlink:to="us-gaap_PreferredClassAMember"
+                          order="1"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="us-gaap_ClassOfStockDomain"
+                          xlink:to="us-gaap_PreferredClassBMember"
+                          order="2"/>
+   </link:definitionLink>
+   <!-- Hypercube Definition (All)--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_PreferredStockInformationByClassTable"
+                xlink:label="added_PreferredStockInformationByClassTable"/>
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_PreferredStockInformationByClassLineItems"
+                xlink:label="added_PreferredStockInformationByClassLineItems"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+                          xlink:from="added_PreferredStockInformationByClassLineItems"
+                          xlink:to="added_PreferredStockInformationByClassTable"
+                          order="3"
+                          xbrldt:closed="true"
+                          xbrldt:contextElement="segment"/>
+   </link:definitionLink>
+   <!-- Inheritance for Line Items:  added:PreferredStockInformationByClassLineItems--><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_PreferredStockInformationByClassLineItems"
+                xlink:label="added_PreferredStockInformationByClassLineItems"/>
+      <link:loc xlink:type="locator"
+                xlink:href="Template.xsd#added_ClassPreferredStockHierarchy"
+                xlink:label="added_ClassPreferredStockHierarchy"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredStockParOrStatedValuePerShare"
+                xlink:label="us-gaap_PreferredStockParOrStatedValuePerShare"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredStockSharesAuthorized"
+                xlink:label="us-gaap_PreferredStockSharesAuthorized"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredStockSharesIssued"
+                xlink:label="us-gaap_PreferredStockSharesIssued"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredStockSharesOutstanding"
+                xlink:label="us-gaap_PreferredStockSharesOutstanding"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_PreferredStockValueOutstanding"
+                xlink:label="us-gaap_PreferredStockValueOutstanding"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_PreferredStockInformationByClassLineItems"
+                          xlink:to="us-gaap_PreferredStockParOrStatedValuePerShare"
+                          order="2"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_PreferredStockInformationByClassLineItems"
+                          xlink:to="us-gaap_PreferredStockSharesAuthorized"
+                          order="3"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_PreferredStockInformationByClassLineItems"
+                          xlink:to="us-gaap_PreferredStockSharesIssued"
+                          order="4"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_PreferredStockInformationByClassLineItems"
+                          xlink:to="us-gaap_PreferredStockSharesOutstanding"
+                          order="5"/>
+      <link:definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+                          xlink:from="added_PreferredStockInformationByClassLineItems"
+                          xlink:to="us-gaap_PreferredStockValueOutstanding"
+                          order="6"/>
+   </link:definitionLink>
+   <!-- Dimension Defaults --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_LegalEntityAxis"
+                xlink:label="dei_LegalEntityAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.sec.gov/dei/2014/dei-2014-01-31.xsd#dei_EntityDomain"
+                xlink:label="dei_EntityDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+                          xlink:from="dei_LegalEntityAxis"
+                          xlink:to="dei_EntityDomain"
+                          order="1"/>
+   </link:definitionLink>
+   <!-- Dimension Defaults --><link:definitionLink xlink:type="extended" xlink:role="http://www.template.com/SomeNetwork2"
+                        xlink:title="Some Network 2">
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_StatementClassOfStockAxis"
+                xlink:label="us-gaap_StatementClassOfStockAxis"/>
+      <link:loc xlink:type="locator"
+                xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_ClassOfStockDomain"
+                xlink:label="us-gaap_ClassOfStockDomain"/>
+      <link:definitionArc xlink:type="arc"
+                          xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+                          xlink:from="us-gaap_StatementClassOfStockAxis"
+                          xlink:to="us-gaap_ClassOfStockDomain"
+                          order="2"/>
+   </link:definitionLink>
+</link:linkbase>

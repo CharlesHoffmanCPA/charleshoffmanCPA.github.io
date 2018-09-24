@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='us-ascii' standalone='yes'?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl 
+	xmlns='http://www.xbrl.org/2003/instance' 
+	xmlns:xbrll='http://www.xbrl.org/2003/linkbase' 
+	xmlns:xlink='http://www.w3.org/1999/xlink' 
+	xmlns:iso4217='http://www.xbrl.org/2003/iso4217' 
+	xmlns:xbrldi='http://xbrl.org/2006/xbrldi' 
+	xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xmlns:dei='http://xbrl.sec.gov/dei/2014-01-31' 
+	xmlns:us-gaap='http://fasb.org/us-gaap/2017-01-31' 
+	xmlns:us-roles='http://fasb.org/us-roles/2017-01-31' 
+	xmlns:us-types='http://fasb.org/us-types/2017-01-31' 
+   xmlns:negated='http://www.xbrl.org/2009/role/negated'
+
+   xmlns:added='http://www.template.com/added'
+   
+   xsi:schemaLocation='http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd'>
+
+  <xbrll:schemaRef xlink:href='Template.xsd' xlink:type='simple' xlink:arcrole='http://www.xbrl.org/2003/linkbase' />
+  <xbrll:linkbaseRef xlink:type='simple' xlink:href='Template_formulas.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+  
+  <context id="I-2010">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+  <context id="I-2009">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+    </entity>
+    <period>
+      <instant>2009-12-31</instant>
+    </period>
+  </context>
+
+
+  <context id="I-2010-CommonA">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:CommonClassAMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+  <context id="I-2009-CommonA">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:CommonClassAMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2009-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2010-CommonB">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:CommonClassBMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+  <context id="I-2009-CommonB">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:CommonClassBMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2009-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2010-PreferredA">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:PreferredClassAMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+  <context id="I-2010-PreferredB">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:PreferredClassBMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2010-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2009-PreferredA">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:PreferredClassAMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2009-12-31</instant>
+    </period>
+  </context>
+  <context id="I-2009-PreferredB">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:PreferredClassBMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2009-12-31</instant>
+    </period>
+  </context>
+
+   <unit id='U-Monetary'>
+      <measure>iso4217:USD</measure>
+   </unit>
+   <unit id="U-Shares">
+     <measure>shares</measure>
+   </unit>
+
+  <us-gaap:AllowanceForDoubtfulAccountsReceivableCurrent contextRef="I-2010" unitRef="U-Monetary" decimals="-3">7000000</us-gaap:AllowanceForDoubtfulAccountsReceivableCurrent>
+  <us-gaap:AllowanceForDoubtfulAccountsReceivableCurrent contextRef="I-2009" unitRef="U-Monetary" decimals="-3">6000000</us-gaap:AllowanceForDoubtfulAccountsReceivableCurrent>
+
+
+
+  <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="I-2010-PreferredA" unitRef="U-Shares" decimals="INF">1.00</us-gaap:PreferredStockParOrStatedValuePerShare>
+  <us-gaap:PreferredStockSharesAuthorized contextRef="I-2010-PreferredA" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesAuthorized>
+  <us-gaap:PreferredStockSharesIssued contextRef="I-2010-PreferredA" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesIssued>
+  <us-gaap:PreferredStockSharesOutstanding contextRef="I-2010-PreferredA" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesOutstanding>
+  <us-gaap:PreferredStockValueOutstanding contextRef="I-2010-PreferredA" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:PreferredStockValueOutstanding>
+
+  <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="I-2009-PreferredA" unitRef="U-Shares" decimals="INF">1.00</us-gaap:PreferredStockParOrStatedValuePerShare>
+  <us-gaap:PreferredStockSharesAuthorized contextRef="I-2009-PreferredA" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesAuthorized>
+  <us-gaap:PreferredStockSharesIssued contextRef="I-2009-PreferredA" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesIssued>
+  <us-gaap:PreferredStockSharesOutstanding contextRef="I-2009-PreferredA" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesOutstanding>
+  <us-gaap:PreferredStockValueOutstanding contextRef="I-2009-PreferredA" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:PreferredStockValueOutstanding>
+
+  <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="I-2010-PreferredB" unitRef="U-Shares" decimals="INF">1.00</us-gaap:PreferredStockParOrStatedValuePerShare>
+  <us-gaap:PreferredStockSharesAuthorized contextRef="I-2010-PreferredB" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesAuthorized>
+  <us-gaap:PreferredStockSharesIssued contextRef="I-2010-PreferredB" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesIssued>
+  <us-gaap:PreferredStockSharesOutstanding contextRef="I-2010-PreferredB" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesOutstanding>
+  <us-gaap:PreferredStockValueOutstanding contextRef="I-2010-PreferredB" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:PreferredStockValueOutstanding>
+
+  <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="I-2009-PreferredB" unitRef="U-Shares" decimals="INF">1.00</us-gaap:PreferredStockParOrStatedValuePerShare>
+  <us-gaap:PreferredStockSharesAuthorized contextRef="I-2009-PreferredB" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesAuthorized>
+  <us-gaap:PreferredStockSharesIssued contextRef="I-2009-PreferredB" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesIssued>
+  <us-gaap:PreferredStockSharesOutstanding contextRef="I-2009-PreferredB" unitRef="U-Shares" decimals="INF">20000</us-gaap:PreferredStockSharesOutstanding>
+  <us-gaap:PreferredStockValueOutstanding contextRef="I-2009-PreferredB" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:PreferredStockValueOutstanding>
+
+
+  <us-gaap:PreferredStockValueOutstanding contextRef="I-2010" unitRef="U-Monetary" decimals="-3">20000000</us-gaap:PreferredStockValueOutstanding>
+  <us-gaap:PreferredStockValueOutstanding contextRef="I-2009" unitRef="U-Monetary" decimals="-3">20000000</us-gaap:PreferredStockValueOutstanding>
+
+
+
+  <us-gaap:CommonStockParOrStatedValuePerShare contextRef="I-2010-CommonA" unitRef="U-Shares" decimals="INF">1.00</us-gaap:CommonStockParOrStatedValuePerShare>
+  <us-gaap:CommonStockSharesAuthorized contextRef="I-2010-CommonA" unitRef="U-Shares" decimals="INF">60000</us-gaap:CommonStockSharesAuthorized>
+  <us-gaap:CommonStockSharesIssued contextRef="I-2010-CommonA" unitRef="U-Shares" decimals="INF">50000</us-gaap:CommonStockSharesIssued>
+  <us-gaap:CommonStockSharesOutstanding contextRef="I-2010-CommonA" unitRef="U-Shares" decimals="INF">50000</us-gaap:CommonStockSharesOutstanding>
+  <us-gaap:CommonStockValueOutstanding contextRef="I-2010-CommonA" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:CommonStockValueOutstanding>
+
+  <us-gaap:CommonStockParOrStatedValuePerShare contextRef="I-2009-CommonA" unitRef="U-Shares" decimals="INF">1.00</us-gaap:CommonStockParOrStatedValuePerShare>
+  <us-gaap:CommonStockSharesAuthorized contextRef="I-2009-CommonA" unitRef="U-Shares" decimals="INF">60000</us-gaap:CommonStockSharesAuthorized>
+  <us-gaap:CommonStockSharesIssued contextRef="I-2009-CommonA" unitRef="U-Shares" decimals="INF">50000</us-gaap:CommonStockSharesIssued>
+  <us-gaap:CommonStockSharesOutstanding contextRef="I-2009-CommonA" unitRef="U-Shares" decimals="INF">50000</us-gaap:CommonStockSharesOutstanding>
+  <us-gaap:CommonStockValueOutstanding contextRef="I-2009-CommonA" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:CommonStockValueOutstanding>
+
+
+  <us-gaap:CommonStockParOrStatedValuePerShare contextRef="I-2010-CommonB" unitRef="U-Shares" decimals="INF">1.00</us-gaap:CommonStockParOrStatedValuePerShare>
+  <us-gaap:CommonStockSharesAuthorized contextRef="I-2010-CommonB" unitRef="U-Shares" decimals="INF">50000</us-gaap:CommonStockSharesAuthorized>
+  <us-gaap:CommonStockSharesIssued contextRef="I-2010-CommonB" unitRef="U-Shares" decimals="INF">40000</us-gaap:CommonStockSharesIssued>
+  <us-gaap:CommonStockSharesOutstanding contextRef="I-2010-CommonB" unitRef="U-Shares" decimals="INF">40000</us-gaap:CommonStockSharesOutstanding>
+  <us-gaap:CommonStockValueOutstanding contextRef="I-2010-CommonB" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:CommonStockValueOutstanding>
+
+  <us-gaap:CommonStockParOrStatedValuePerShare contextRef="I-2009-CommonB" unitRef="U-Shares" decimals="INF">1.00</us-gaap:CommonStockParOrStatedValuePerShare>
+  <us-gaap:CommonStockSharesAuthorized contextRef="I-2009-CommonB" unitRef="U-Shares" decimals="INF">50000</us-gaap:CommonStockSharesAuthorized>
+  <us-gaap:CommonStockSharesIssued contextRef="I-2009-CommonB" unitRef="U-Shares" decimals="INF">40000</us-gaap:CommonStockSharesIssued>
+  <us-gaap:CommonStockSharesOutstanding contextRef="I-2009-CommonB" unitRef="U-Shares" decimals="INF">40000</us-gaap:CommonStockSharesOutstanding>
+  <us-gaap:CommonStockValueOutstanding contextRef="I-2009-CommonB" unitRef="U-Monetary" decimals="-3">10000000</us-gaap:CommonStockValueOutstanding>
+
+
+  <us-gaap:CommonStockValueOutstanding contextRef="I-2010" unitRef="U-Monetary" decimals="-3">20000000</us-gaap:CommonStockValueOutstanding>
+  <us-gaap:CommonStockValueOutstanding contextRef="I-2009" unitRef="U-Monetary" decimals="-3">20000000</us-gaap:CommonStockValueOutstanding>
+
+
+</xbrl>
