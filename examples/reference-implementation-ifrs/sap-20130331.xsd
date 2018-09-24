@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 12:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2013 UBmatrix inc., All Rights Reserved
+Produced on 2013-04-19 09:53:28
+-->
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:sap="http://www.sap.com/20130331"
+  xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+  targetNamespace="http://www.sap.com/20130331"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/ConsolidatedStatementofFinancialPosition"
+        id="ConsolidatedStatementofFinancialPosition">
+        <link:definition>101 - Statement - Consolidated Statement of Financial Position</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/ConsolidatedIncomeStatement"
+        id="ConsolidatedIncomeStatement">
+        <link:definition>102 - Statement - Consolidated Income Statement</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/ConsolidatedStatementofComprehensiveIncome"
+        id="ConsolidatedStatementofComprehensiveIncome">
+        <link:definition>103 - Statement - Consolidated Statement of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/ConsolidatedStatementofCashFlows"
+        id="ConsolidatedStatementofCashFlows">
+        <link:definition>104 - Statement - Consolidated Statement of Cash Flows</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/ConsolidatedStatementofChangesinEquity"
+        id="ConsolidatedStatementofChangesinEquity">
+        <link:definition>105 - Statement - Consolidated Statement of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsGeneralInformationAboutConsolidatedStatements"
+        id="NotesToFinancialStatementsGeneralInformationAboutConsolidatedStatelents">
+        <link:definition>201 - Disclosure - Note 1 - General Information about Consolidated Interim Financial Statements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsScopeOfConsolidation"
+        id="NotesToFinancialStatementsScopeOfConsolidation">
+        <link:definition>202 - Disclosure - Note 2 - Scope of Consolidation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsSummaryOfSignificantAccountingPolicies"
+        id="NotesToFinancialStatementsSummaryOfSignificantAccountingPolicies">
+        <link:definition>203 - Disclosure - Note 3 - Summary of Significant Accounting Policies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsBusinessCombinations"
+        id="NotesToFinancialStatementsBusinessCombinations">
+        <link:definition>204 - Disclosure - Note 4 - Business Combinations</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsEmployeeBenefitsAndHeadcount"
+        id="NotesToFinancialStatementsExpensesByNatureAndHeadcount">
+        <link:definition>205 - Disclosure - Note 5 - Employee Benefits Expense and Headcount</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsIncomeTax"
+        id="NotesToFinancialStatementsIncomeTax">
+        <link:definition>206 - Disclosure - Note 6 - Income Tax</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsEarningsPerShare"
+        id="NotesToFinancialStatementsEarningsPerShare">
+        <link:definition>207 - Disclosure - Note 7 - Earnings per Share</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsOtherFinancialAssets"
+        id="NotesToFinancialStatementsOtherFinancialAssets">
+        <link:definition>208 - Disclosure - Note 8 - Other Financial Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsTradeAndOtherReceivables"
+        id="NotesToFinancialStatementsTradeAndOtherReceivables">
+        <link:definition>209 - Disclosure - Note 9 - Trade and Other Receivables</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsFinancialLiabilities"
+        id="NotesToFinancialStatementsFinancialLiabilities">
+        <link:definition>210 - Disclosure - Note 10 - Financial Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsDeferredIncome"
+        id="NotesToFinancialStatementsDeferredIncome">
+        <link:definition>211 - Disclosure - Note 11 - Deferred Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsShareholdersEquity"
+        id="NotesToFinancialStatementsShareholdersEquity">
+        <link:definition>212 - Disclosure - Note 12 - Total Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsOtherFinancialCommitmentsAndContingentLiabilities"
+        id="NotesToFinancialStatementsOtherFinancialCommitmentsAndContingentLiabilities">
+        <link:definition>213 - Disclosure - Note 13 - Contingent Liabilities</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsLitigationAndClaims"
+        id="NotesToFinancialStatementsLitigationAndClaims">
+        <link:definition>214 - Disclosure - Note 14 - Litigation and Claims</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsShareBasedPayment"
+        id="NotesToFinancialStatementsShareBasedPaymentPlans">
+        <link:definition>215 - Disclosure - Note 15 - Share-Based Payments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsFinancialInstruments"
+        id="NotesToFinancialStatementsFinancialInstruments">
+        <link:definition>216 - Disclosure - Note 16 - Other Financial Instruments</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsSegmentAndGeographicInformation"
+        id="NotesToFinancialStatementsSegmentAndGeographicInformation">
+        <link:definition>217 - Disclosure - Note 17 - Segment and Geographic Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsRelatedPartyTransactions"
+        id="NotesToFinancialStatementsRelatedPartyTransactions">
+        <link:definition>218 - Disclosure - Note 18 - Related Party Transactions</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/20130331/role/NotesToFinancialStatementsSubsequentEvents"
+        id="NotesToFinancialStatementsSubsequentEvents">
+        <link:definition>219 - Disclosure - Note 19 - Subsequent Events</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType
+        roleURI="http://www.sap.com/dei/role/DocumentInformation"
+        id="DocumentInformation">
+        <link:definition>901 - Document - Document and Entity Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="sap-20130331_pre.xml"
+        xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="sap-20130331_cal.xml"
+        xlink:title="Calculation Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="sap-20130331_def.xml"
+        xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="sap-20130331_ref.xml"
+        xlink:title="Reference Links, all" />
+      <link:linkbaseRef xlink:type="simple"
+        xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"
+        xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+        xlink:href="sap-20130331_lab.xml"
+        xlink:title="Label Links, en-US" />
+
+
+
+
+      <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/labels/lab_ifrs-ja_2013-03-28.xml" xlink:title="Japanese labels" />
+      <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/labels/lab_ifrs-es_2013-03-28.xml" xlink:title="Spanish labels" />
+      <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/labels/lab_ifrs-ar_2013-03-28.xml" xlink:title="Arabic labels" />
+      <link:linkbaseRef xlink:type="simple" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/labels/lab_ifrs-ko_2013-03-28.xml" xlink:title="Korean labels" />
+
+
+
+
+    </appinfo>
+  </annotation>
+  <import
+    namespace="http://www.xbrl.org/2003/instance"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/non-numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2006/ref"
+    schemaLocation="http://www.xbrl.org/2006/ref-2006-02-27.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/reference"
+    schemaLocation="http://www.xbrl.org/lrr/role/reference-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.sec.gov/dei/2012-01-31"
+    schemaLocation="http://xbrl.sec.gov/dei/2012/dei-2012-01-31.xsd" />
+  <import
+    namespace="http://www.xbrl.org/dtr/type/numeric"
+    schemaLocation="http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.org/2005/xbrldt"
+    schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2009/role/negated"
+    schemaLocation="http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd" />
+  <import
+    namespace="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs"
+    schemaLocation="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd" />
+  <import
+    namespace="http://www.xbrl.org/2003/linkbase"
+    schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <complexType
+    name="SECReportItemType">
+    <simpleContent>
+      <restriction
+        base="xbrli:tokenItemType">
+        <enumeration
+          value="485BPOS" />
+        <enumeration
+          value="8-K" />
+        <enumeration
+          value="6-K" />
+        <enumeration
+          value="10" />
+        <enumeration
+          value="10-Q" />
+        <enumeration
+          value="10-K" />
+        <enumeration
+          value="20-F" />
+        <enumeration
+          value="40-F" />
+        <enumeration
+          value="F-1" />
+        <enumeration
+          value="F-3" />
+        <enumeration
+          value="F-4" />
+        <enumeration
+          value="F-9" />
+        <enumeration
+          value="F-10" />
+        <enumeration
+          value="NCSR" />
+        <enumeration
+          value="N-1A" />
+        <enumeration
+          value="N-Q" />
+        <enumeration
+          value="S-1" />
+        <enumeration
+          value="S-3" />
+        <enumeration
+          value="S-4" />
+        <enumeration
+          value="S-11" />
+        <enumeration
+          value="Other" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType
+    name="yesNoItemType">
+    <simpleContent>
+      <restriction
+        base="xbrli:tokenItemType">
+        <enumeration
+          value="Yes" />
+        <enumeration
+          value="No" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType
+    name="fiscalPeriodItemType">
+    <simpleContent>
+      <restriction
+        base="xbrli:tokenItemType">
+        <enumeration
+          value="FY" />
+        <enumeration
+          value="Q1" />
+        <enumeration
+          value="Q2" />
+        <enumeration
+          value="Q3" />
+        <enumeration
+          value="Q4" />
+        <enumeration
+          value="H1" />
+        <enumeration
+          value="H2" />
+        <enumeration
+          value="M9" />
+        <enumeration
+          value="T1" />
+        <enumeration
+          value="T2" />
+        <enumeration
+          value="T3" />
+        <enumeration
+          value="M8" />
+        <enumeration
+          value="CY" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <complexType
+    name="filerCategoryItemType">
+    <simpleContent>
+      <restriction
+        base="xbrli:tokenItemType">
+        <enumeration
+          value="Large Accelerated Filer" />
+        <enumeration
+          value="Accelerated Filer" />
+        <enumeration
+          value="Non-accelerated Filer" />
+        <enumeration
+          value="Smaller Reporting Company" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <element
+    id="sap_CashOutflowsDueToTomorrowNowLitigation"
+    name="CashOutflowsDueToTomorrowNowLitigation"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_CashOutflowsForBusinessCombinationsNetCashCashEquivalentsAcquired"
+    name="CashOutflowsForBusinessCombinationsNetCashCashEquivalentsAcquired"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_CashPaymentsForDerivativeInstrumentsRelatedToBusinessCombinations"
+    name="CashPaymentsForDerivativeInstrumentsRelatedToBusinessCombinations"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_CloudSubscriptionsSupportRevenue"
+    name="CloudSubscriptionsSupportRevenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_ConsultingRevenue"
+    name="ConsultingRevenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_CostProfessionalServicesOtherServices"
+    name="CostProfessionalServicesOtherServices"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_CostSoftwareSoftwareRelatedServices"
+    name="CostSoftwareSoftwareRelatedServices"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_DecreaseIncreaseInAllowanceAccountsOnTradeReceivables"
+    name="DecreaseIncreaseInAllowanceAccountsOnTradeReceivables"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_DisclosureofLitigationAndClaims"
+    name="DisclosureofLitigationAndClaims"
+    type="nonnum:textBlockItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="sap_DocumentEntityInformationAbstract"
+    name="DocumentEntityInformationAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="sap_FinanceCostsTomorrowNowLitigation"
+    name="FinanceCostsTomorrowNowLitigation"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_FinancialIncomeNet"
+    name="FinancialIncomeNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_FinancialIncomeNetAbstract"
+    name="FinancialIncomeNetAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="sap_GainsLossesOnDisposalFinancialAssets"
+    name="GainsLossesOnDisposalFinancialAssets"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_GrossProfitAbstract"
+    name="GrossProfitAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="sap_IncomeTaxExpenseAbstract"
+    name="IncomeTaxExpenseAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="sap_IncomeTaxExpenseTomorrowNowLitigation"
+    name="IncomeTaxExpenseTomorrowNowLitigation"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="sap_IncomeTaxRelatingToItemsOfOtherComprehensiveIncomeThatMayBeReclassified"
+    name="IncomeTaxRelatingToItemsOfOtherComprehensiveIncomeThatMayBeReclassified"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_NonCurrentTaxAssets"
+    name="NonCurrentTaxAssets"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_NonCurrentTaxLiabilities"
+    name="NonCurrentTaxLiabilities"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_NotesToFinancialStatementsAbstract"
+    name="NotesToFinancialStatementsAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="sap_OperatingExpenses"
+    name="OperatingExpenses"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_OperatingExpensesAbstract"
+    name="OperatingExpensesAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="sap_OperatingProfit"
+    name="OperatingProfit"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_OperatingProfitAbstract"
+    name="OperatingProfitAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="sap_OtherFinanceCosts"
+    name="OtherFinanceCosts"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_OtherIncomeTaxExpense"
+    name="OtherIncomeTaxExpense"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    nillable="true" />
+  <element
+    id="sap_OtherNonOperatingIncomeExpensesNet"
+    name="OtherNonOperatingIncomeExpensesNet"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_OtherServiceRevenue"
+    name="OtherServiceRevenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_ProceedsFromExerciseEquity-basedDerivativeFinancialInstruments"
+    name="ProceedsFromExerciseEquity-basedDerivativeFinancialInstruments"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_ProceedsFromReissuanceTreasuryShares"
+    name="ProceedsFromReissuanceTreasuryShares"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+  <element
+    id="sap_ProfessionalServicesOtherServiceRevenue"
+    name="ProfessionalServicesOtherServiceRevenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_ProfitLossBeforeTaxAbstract"
+    name="ProfitLossBeforeTaxAbstract"
+    type="xbrli:stringItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    abstract="true"
+    nillable="true" />
+  <element
+    id="sap_ProvisionTomorrowNowLitigation"
+    name="ProvisionTomorrowNowLitigation"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="instant"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_PurchaseEquityBasedDerivativeInstrumentsHedgeForCashSettledShareBasedPaymentPlans"
+    name="PurchaseEquityBasedDerivativeInstrumentsHedgeForCashSettledShareBasedPaymentPlans"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_PurchaseNon-controllingInterests"
+    name="PurchaseNon-controllingInterests"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_SoftwareCloudSubscription"
+    name="SoftwareCloudSubscription"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_SoftwareRevenue"
+    name="SoftwareRevenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_SoftwareSoftwareRelatedServiceRevenue"
+    name="SoftwareSoftwareRelatedServiceRevenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_SupportRevenue"
+    name="SupportRevenue"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="credit"
+    nillable="true" />
+  <element
+    id="sap_TomorrowNowLitigationExpense"
+    name="TomorrowNowLitigationExpense"
+    type="xbrli:monetaryItemType"
+    substitutionGroup="xbrli:item"
+    xbrli:periodType="duration"
+    xbrli:balance="debit"
+    nillable="true" />
+</schema>

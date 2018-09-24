@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<!-- IFRS -->
+<!-- Core Financial Semantics Rules, Version 2013.4, Financial Report Semantics and Dynamics Theory -->
+
+<link:linkbase
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xbrli="http://www.xbrl.org/2003/instance" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:link="http://www.xbrl.org/2003/linkbase"
+	xmlns:xfi='http://www.xbrl.org/2008/function/instance'
+	xmlns:num="http://www.xbrl.org/dtr/type/numeric"
+	xmlns:generic="http://xbrl.org/2008/generic"
+	xmlns:formula="http://xbrl.org/2008/formula"
+	xmlns:validation="http://xbrl.org/2008/validation"
+	xmlns:ca="http://xbrl.org/2008/assertion/consistency"
+   xmlns:ea="http://xbrl.org/2008/assertion/existence"
+   xmlns:va="http://xbrl.org/2008/assertion/value"
+	xmlns:variable="http://xbrl.org/2008/variable"
+	xmlns:pf="http://xbrl.org/2008/filter/period"
+	xmlns:cf="http://xbrl.org/2008/filter/concept"
+	xmlns:df="http://xbrl.org/2008/filter/dimension"
+	xmlns:gf="http://xbrl.org/2008/filter/general"
+	xmlns:label="http://xbrl.org/2008/label"
+   xmlns:uf="http://xbrl.org/2008/filter/unit"
+   xmlns:ef="http://xbrl.org/2008/filter/entity"
+   xmlns:msg="http://xbrl.org/2010/message"
+
+	xmlns:dei="http://xbrl.sec.gov/dei/2012-01-31" 
+	xmlns:ifrs="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs"
+
+	xsi:schemaLocation="
+		http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+		http://www.xbrl.org/dtr/type/numeric http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd
+		http://xbrl.org/2008/generic http://www.xbrl.org/2008/generic-link.xsd
+		http://xbrl.org/2008/formula http://www.xbrl.org/2008/formula.xsd
+		http://xbrl.org/2008/label http://www.xbrl.org/2008/generic-label.xsd
+		http://xbrl.org/2008/assertion/consistency http://www.xbrl.org/2008/consistency-assertion.xsd
+      http://xbrl.org/2008/assertion/existence http://www.xbrl.org/2008/existence-assertion.xsd
+      http://xbrl.org/2008/assertion/value http://www.xbrl.org/2008/value-assertion.xsd
+		http://xbrl.org/2008/filter/period http://www.xbrl.org/2008/period-filter.xsd
+		http://xbrl.org/2008/filter/concept http://www.xbrl.org/2008/concept-filter.xsd
+		http://xbrl.org/2008/filter/dimension http://www.xbrl.org/2008/dimension-filter.xsd
+		http://xbrl.org/2008/filter/general http://www.xbrl.org/2008/general-filter.xsd
+		http://xbrl.org/2008/filter/unit http://www.xbrl.org/2008/unit-filter.xsd
+		http://xbrl.org/2008/filter/entity http://www.xbrl.org/2008/entity-filter.xsd
+		http://xbrl.org/2008/variable http://www.xbrl.org/2008/variable.xsd
+		http://xbrl.org/2008/validation http://www.xbrl.org/2008/validation.xsd
+      http://xbrl.org/2010/message http://www.xbrl.org/2010/generic-message.xsd
+  ">
+  
+	<!-- ArcroleRef declarations.  All these are declared by XBRL Formulas. -->
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/element-label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#element-label" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-filter" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-filter" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/variable-set-precondition" xlink:href="http://www.xbrl.org/2008/variable.xsd#variable-set-precondition" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2008/consistency-assertion-formula" xlink:href="http://www.xbrl.org/2008/consistency-assertion.xsd#consistency-assertion-formula" xlink:type="simple"/>
+
+	<link:roleRef roleURI="http://www.xbrl.org/2008/role/link" xlink:href="http://www.xbrl.org/2008/generic-link.xsd#standard-link-role" xlink:type="simple"/>
+	<link:roleRef roleURI="http://www.xbrl.org/2008/role/label" xlink:href="http://www.xbrl.org/2008/generic-label.xsd#standard-label" xlink:type="simple"/>
+	<link:roleRef roleURI="http://www.xbrl.org/2010/role/message" xlink:href="http://www.xbrl.org/2010/generic-message.xsd#standard-message" xlink:type="simple"/>
+
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-satisfied-message" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-satisfied-message" xlink:type="simple"/>
+	<link:arcroleRef arcroleURI="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" xlink:href="http://www.xbrl.org/2010/validation-message.xsd#assertion-unsatisfied-message" xlink:type="simple"/>
+
+	<link:documentation> 
+		IFRS; Domain Level Business Rules, Version 2013.01
+	</link:documentation>
+	
+	<!-- BALANCE SHEET -->
+	
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+	
+		<!-- Assets must exist -->
+
+		<!-- Assertion -->
+		<ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+		  id="DOMAIN_Exists_Assets"
+		  aspectModel="dimensional" 
+		  implicitFiltering="true"/>
+	
+		<!-- Label -->
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>Assets is expected to be reported on the balance sheet.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for Assets which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for Assets which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"/>
+	
+		 <!-- Concept filter -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+			<cf:concept>
+				<cf:qname>ifrs:Assets</cf:qname>
+			</cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+
+	
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+	
+		<!-- Liabilities and equity must exist -->
+
+		<!-- Label -->
+		<ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+		  id="DOMAIN_Exists_LiabilitiesAndEquity"
+		  aspectModel="dimensional" 
+		  implicitFiltering="true"/>
+	
+		<!-- Label -->
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>Liabilities and Equity is required to be reported on the balance sheet.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for Liabilities and Equity which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for Liabilities and Equity which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"/>
+	
+		 <!-- Concept filters -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+		   <cf:concept>
+		     <cf:qname>ifrs:EquityAndLiabilities</cf:qname>
+		   </cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+	
+	
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+	
+		 <!-- Equity exists -->
+	    <ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+	        id="DOMAIN_Exists_Equity"
+	        aspectModel="dimensional" 
+	        implicitFiltering="true"/>
+	
+		<!-- Label -->
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>Equity is required to be reported on the balance sheet.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for Equity which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for Equity which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"/>
+	
+		 <!-- Concept filters -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+		   <cf:concept>
+		     <cf:qname>ifrs:Equity</cf:qname>
+		   </cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+
+		
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+
+		<!-- EQUALITY: Tests to determine if two facts which should be equal are, in fact, equal.  For example, 'Assets' is always expected to equal 'Liabilities and Equity' (i.e. balance sheets balance). -->
+
+		<!-- Assertion -->
+		<va:valueAssertion xlink:type="resource" xlink:label="ASSERTION"
+			 id="DOMAIN_Equality_BalanceSheetBalances"
+			 aspectModel="dimensional" 
+			 implicitFiltering="true" 
+			 test="$VARIABLE_Assets eq $VARIABLE_LiabilitiesAndEquity" />
+		
+		<!-- Label -->		
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>Balance sheet balances (assets = liabilities and equity.</label:label>
+		
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact value of {$VARIABLE_Assets} for {node-name($VARIABLE_Assets)} is equal to the reported fact {$VARIABLE_LiabilitiesAndEquity} for {node-name($VARIABLE_LiabilitiesAndEquity)} as expected.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact value of {$VARIABLE_Assets} for {node-name($VARIABLE_Assets)} is *NOT* equal to the reported fact {$VARIABLE_LiabilitiesAndEquity} for {node-name($VARIABLE_LiabilitiesAndEquity)} which would be expected.
+				There is a difference of {$VARIABLE_Assets - $VARIABLE_LiabilitiesAndEquity}.
+		 	</msg:message>
+
+
+		<!-- Fact variables -->
+		<variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		     xlink:from="ASSERTION" 
+		     xlink:to="VARIABLE_Assets" 
+		     name="VARIABLE_Assets" 
+		     order="1.0"/>
+
+		<variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+		     xlink:from="ASSERTION" 
+		     xlink:to="VARIABLE_LiabilitiesAndEquity" 
+		     name="VARIABLE_LiabilitiesAndEquity" 
+		     order="1.0"/>
+		
+		<variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Assets" 
+		     bindAsSequence="false" 
+		     />
+
+		<variable:factVariable xlink:type="resource" xlink:label="VARIABLE_LiabilitiesAndEquity" 
+		     bindAsSequence="false" 
+		     />
+		
+		<!-- Concept filters -->
+		<variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+		     xlink:from="VARIABLE_Assets" 
+		     xlink:to="FILTER_Assets" 
+		     complement="false" 
+		     cover="true" 
+		     order="1.0"/>
+
+		<variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter" 
+		     xlink:from="VARIABLE_LiabilitiesAndEquity" 
+		     xlink:to="FILTER_LiabilitiesAndEquity" 
+		     complement="false" 
+		     cover="true" 
+		     order="1.0"/>
+		
+		<cf:conceptName xlink:type="resource" xlink:label="FILTER_Assets">
+			<cf:concept>
+				<cf:qname>ifrs:Assets</cf:qname>
+			</cf:concept>
+		</cf:conceptName>
+		
+		<cf:conceptName xlink:type="resource" xlink:label="FILTER_LiabilitiesAndEquity">
+			<cf:concept>
+				<cf:qname>ifrs:EquityAndLiabilities</cf:qname>
+			</cf:concept>
+		</cf:conceptName>
+	
+	</generic:link>   
+	
+	
+	<!-- INCOME STATEMENT -->	
+	
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+	
+		<!-- Net income (loss) exists -->
+
+		<!-- Messages -->
+		<ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+		  id="DOMAIN_Exists_NetIncomeLoss"
+		  aspectModel="dimensional" 
+		  implicitFiltering="true"/>
+	
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>Net Income (Loss) is required to be reported on the income statement.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for Net Income (Loss) which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for Net Income (Loss) which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"/>
+	
+		 <!-- Concept filters -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+		   <cf:concept>
+		     <cf:qname>ifrs:ProfitLoss</cf:qname>
+		   </cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+	
+	
+	
+	
+	
+	
+	<!-- CASH FLOWS STATEMENT -->
+	
+	<generic:link xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+	
+		<!-- Net Cash Flows Exists -->
+
+		<!-- Messages -->
+		<ea:existenceAssertion xlink:type="resource" xlink:label="ASSERTION"
+		  id="DOMAIN_Exists_NetCashFlow"
+		  aspectModel="dimensional" 
+		  implicitFiltering="true"/>
+	
+		<generic:arc xlink:type='arc' xlink:arcrole='http://xbrl.org/arcrole/2008/element-label'
+		    xlink:from='ASSERTION' 
+		    xlink:to='ASSERTION_Label'
+		    order='1.0'/>
+		
+		<label:label xlink:type='resource' xlink:label='ASSERTION_Label' xlink:role='http://www.xbrl.org/2008/role/label' 
+		    xml:lang='en'>Net cash flow is required to be reported on the cash flow statement.</label:label>
+	
+		<!-- Messages -->
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-satisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_satisfied" 
+			order="1.0"/>
+		<generic:arc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2010/assertion-unsatisfied-message" 
+			xlink:from="ASSERTION" 
+			xlink:to="MESSAGE_unsatisfied" 
+			order="1.0"/>
+
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_satisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				SATISFIED: (OK) The reported fact for Net Cash Flow which is expected was found.
+		 	</msg:message>
+		
+		 <msg:message xlink:type="resource" 
+		 	xlink:label="MESSAGE_unsatisfied" 
+		 	xlink:role="http://www.xbrl.org/2010/role/message" 
+		 	xml:lang="en">
+				UNSATISFIED: (ERROR) The reported fact for Net Cash Flow which is expected was *NOT FOUND*.
+		 	</msg:message>
+
+		 <!-- Fact variables -->
+	    <variable:variableArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-set" 
+	      xlink:from="ASSERTION" 
+	      xlink:to="VARIABLE_Concept" 
+	      name="VARIABLE_Concept"
+	      order="1.0"/>
+	
+	    <variable:factVariable xlink:type="resource" xlink:label="VARIABLE_Concept"
+	         bindAsSequence="false"/>
+	
+		 <!-- Concept filters -->
+	    <variable:variableFilterArc xlink:type="arc" xlink:arcrole="http://xbrl.org/arcrole/2008/variable-filter"
+	        xlink:from="VARIABLE_Concept" 
+	        xlink:to="FILTER_Concept" 
+	        complement="false" 
+	        cover="true" 
+	        order="1.0"/>
+	
+	    <cf:conceptName xlink:type="resource" xlink:label="FILTER_Concept">
+	      <cf:concept>
+	        <cf:qname>ifrs:IncreaseDecreaseInCashAndCashEquivalents</cf:qname>
+	      </cf:concept>
+	    </cf:conceptName>
+	
+	</generic:link>
+
+
+</link:linkbase>

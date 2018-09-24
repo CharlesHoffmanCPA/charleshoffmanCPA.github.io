@@ -1,0 +1,2959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Reference Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 12:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2013 UBmatrix inc., All Rights Reserved
+Produced on 2013-04-19 09:53:28
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:sap="http://www.sap.com/20130331"
+  xmlns:ref="http://www.xbrl.org/2006/ref"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    http://www.sap.com/20130331  sap-20130331.xsd
+    http://www.xbrl.org/2006/ref 
+      http://www.xbrl.org/2006/ref-2006-02-27.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="http://www.xbrl.org/lrr/role/reference-2009-12-16.xsd#commonPracticeRef"
+    roleURI="http://www.xbrl.org/2009/role/commonPracticeRef" />
+  <referenceLink xlink:type="extended"
+    xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables"
+      xlink:to="ifrs_AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForDecreaseIncreaseInTradeAccountReceivable"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForDecreaseIncreaseInTradeAccountReceivable" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForDecreaseIncreaseInTradeAccountReceivable"
+      xlink:to="ifrs_AdjustmentsForDecreaseIncreaseInTradeAccountReceivable_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForDecreaseIncreaseInTradeAccountReceivable_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForDepreciationAndAmortisationExpense"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForDepreciationAndAmortisationExpense" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForDepreciationAndAmortisationExpense"
+      xlink:to="ifrs_AdjustmentsForDepreciationAndAmortisationExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForDepreciationAndAmortisationExpense_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForFinanceCosts"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForFinanceCosts" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForFinanceCosts"
+      xlink:to="ifrs_AdjustmentsForFinanceCosts_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForFinanceCosts_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>c</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_c&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"
+      xlink:to="ifrs_AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForIncomeTaxExpense"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForIncomeTaxExpense" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForIncomeTaxExpense"
+      xlink:to="ifrs_AdjustmentsForIncomeTaxExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_AdjustmentsForIncomeTaxExpense_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>35</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2013-03-28&amp;anchor=para_35&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_AdjustmentsForIncomeTaxExpense_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>35</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_35&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForIncreaseDecreaseInOtherOperatingPayables"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForIncreaseDecreaseInOtherOperatingPayables" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForIncreaseDecreaseInOtherOperatingPayables"
+      xlink:to="ifrs_AdjustmentsForIncreaseDecreaseInOtherOperatingPayables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForIncreaseDecreaseInOtherOperatingPayables_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForIncreaseDecreaseInTradeAccountPayable"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForIncreaseDecreaseInTradeAccountPayable" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForIncreaseDecreaseInTradeAccountPayable"
+      xlink:to="ifrs_AdjustmentsForIncreaseDecreaseInTradeAccountPayable_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForIncreaseDecreaseInTradeAccountPayable_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets"
+      xlink:to="ifrs_AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>14</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_14&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdjustmentsForSharebasedPayments"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdjustmentsForSharebasedPayments" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdjustmentsForSharebasedPayments"
+      xlink:to="ifrs_AdjustmentsForSharebasedPayments_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_AdjustmentsForSharebasedPayments_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>20</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_20_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_AdministrativeExpense"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_AdministrativeExpense" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_AdministrativeExpense"
+      xlink:to="ifrs_AdministrativeExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_AdministrativeExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_AdministrativeExpense_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>103</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_103&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_Assets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_Assets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_Assets" xlink:to="ifrs_Assets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Assets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Assets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_BasicEarningsLossPerShare"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_BasicEarningsLossPerShare" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_BasicEarningsLossPerShare"
+      xlink:to="ifrs_BasicEarningsLossPerShare_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_BasicEarningsLossPerShare_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_BasicEarningsLossPerShare_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>33</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>66</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=33&amp;date=2012-03-27&amp;anchor=para_66&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CancellationOfTreasuryShares"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CancellationOfTreasuryShares" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CancellationOfTreasuryShares"
+      xlink:to="ifrs_CancellationOfTreasuryShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_CancellationOfTreasuryShares_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CashAndCashEquivalents"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CashAndCashEquivalents" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CashAndCashEquivalents"
+      xlink:to="ifrs_CashAndCashEquivalents_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashAndCashEquivalents_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashAndCashEquivalents_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>i</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_i&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CashFlowsFromUsedInFinancingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CashFlowsFromUsedInFinancingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CashFlowsFromUsedInFinancingActivities"
+      xlink:to="ifrs_CashFlowsFromUsedInFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsFromUsedInFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsFromUsedInFinancingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>10</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_10&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CashFlowsFromUsedInInvestingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CashFlowsFromUsedInInvestingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CashFlowsFromUsedInInvestingActivities"
+      xlink:to="ifrs_CashFlowsFromUsedInInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsFromUsedInInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsFromUsedInInvestingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>10</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_10&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CashFlowsFromUsedInOperatingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CashFlowsFromUsedInOperatingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CashFlowsFromUsedInOperatingActivities"
+      xlink:to="ifrs_CashFlowsFromUsedInOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsFromUsedInOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsFromUsedInOperatingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>10</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_10&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities"
+      xlink:to="ifrs_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>39</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_39&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ComponentsOfEquityAxis"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ComponentsOfEquityAxis" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ComponentsOfEquityAxis"
+      xlink:to="ifrs_ComponentsOfEquityAxis_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComponentsOfEquityAxis_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComponentsOfEquityAxis_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ComprehensiveIncomeAttributableToNoncontrollingInterests"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ComprehensiveIncomeAttributableToNoncontrollingInterests" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ComprehensiveIncomeAttributableToNoncontrollingInterests"
+      xlink:to="ifrs_ComprehensiveIncomeAttributableToNoncontrollingInterests_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComprehensiveIncomeAttributableToNoncontrollingInterests_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComprehensiveIncomeAttributableToNoncontrollingInterests_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ComprehensiveIncomeAttributableToOwnersOfParent"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ComprehensiveIncomeAttributableToOwnersOfParent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ComprehensiveIncomeAttributableToOwnersOfParent"
+      xlink:to="ifrs_ComprehensiveIncomeAttributableToOwnersOfParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComprehensiveIncomeAttributableToOwnersOfParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComprehensiveIncomeAttributableToOwnersOfParent_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ComprehensiveIncome"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ComprehensiveIncome" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ComprehensiveIncome"
+      xlink:to="ifrs_ComprehensiveIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComprehensiveIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ComprehensiveIncome_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CostOfSales"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CostOfSales" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CostOfSales" xlink:to="ifrs_CostOfSales_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CostOfSales_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>99</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_99&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CurrentAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CurrentAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CurrentAssets" xlink:to="ifrs_CurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>66</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_66&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CurrentFinancialLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CurrentFinancialLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CurrentFinancialLiabilities"
+      xlink:to="ifrs_CurrentFinancialLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentFinancialLiabilities_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>25</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_25&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CurrentLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CurrentLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CurrentLiabilities" xlink:to="ifrs_CurrentLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentLiabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>69</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_69&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CurrentProvisions"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CurrentProvisions" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CurrentProvisions" xlink:to="ifrs_CurrentProvisions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentProvisions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentProvisions_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>l</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_l&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CurrentTaxAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CurrentTaxAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CurrentTaxAssets" xlink:to="ifrs_CurrentTaxAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentTaxAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentTaxAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>n</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_n&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_CurrentTaxLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_CurrentTaxLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_CurrentTaxLiabilities"
+      xlink:to="ifrs_CurrentTaxLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentTaxLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_CurrentTaxLiabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>n</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_n&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DeferredIncomeClassifiedAsCurrent"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DeferredIncomeClassifiedAsCurrent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DeferredIncomeClassifiedAsCurrent"
+      xlink:to="ifrs_DeferredIncomeClassifiedAsCurrent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_DeferredIncomeClassifiedAsCurrent_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DeferredIncomeClassifiedAsNoncurrent"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DeferredIncomeClassifiedAsNoncurrent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DeferredIncomeClassifiedAsNoncurrent"
+      xlink:to="ifrs_DeferredIncomeClassifiedAsNoncurrent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_DeferredIncomeClassifiedAsNoncurrent_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DeferredTaxAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DeferredTaxAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DeferredTaxAssets" xlink:to="ifrs_DeferredTaxAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DeferredTaxAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DeferredTaxAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>12</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>81</ref:Paragraph>
+      <ref:Subparagraph>g</ref:Subparagraph>
+      <ref:Clause>i</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=12&amp;date=2012-03-27&amp;anchor=para_81_g_i&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DeferredTaxLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DeferredTaxLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DeferredTaxLiabilities"
+      xlink:to="ifrs_DeferredTaxLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DeferredTaxLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DeferredTaxLiabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>12</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>81</ref:Paragraph>
+      <ref:Subparagraph>g</ref:Subparagraph>
+      <ref:Clause>i</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=12&amp;date=2012-03-27&amp;anchor=para_81_g_i&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DilutedEarningsLossPerShare"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DilutedEarningsLossPerShare" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DilutedEarningsLossPerShare"
+      xlink:to="ifrs_DilutedEarningsLossPerShare_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DilutedEarningsLossPerShare_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DilutedEarningsLossPerShare_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>33</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>66</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=33&amp;date=2012-03-27&amp;anchor=para_66&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfAdditionalInformationAboutUnderstandingFinancialPositionsAndLiquidityOfEntityExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfAdditionalInformationAboutUnderstandingFinancialPositionsAndLiquidityOfEntityExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfAdditionalInformationAboutUnderstandingFinancialPositionsAndLiquidityOfEntityExplanatory"
+      xlink:to="ifrs_DisclosureOfAdditionalInformationAboutUnderstandingFinancialPositionsAndLiquidityOfEntityExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_DisclosureOfAdditionalInformationAboutUnderstandingFinancialPositionsAndLiquidityOfEntityExplanatory_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfBusinessCombinationsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfBusinessCombinationsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfBusinessCombinationsExplanatory"
+      xlink:to="ifrs_DisclosureOfBusinessCombinationsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfBusinessCombinationsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfBusinessCombinationsExplanatory_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>3</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Disclosures</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=3&amp;date=2012-03-27&amp;anchor=sect_Disclosures&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfCommitmentsAndContingentLiabilitiesExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfCommitmentsAndContingentLiabilitiesExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfCommitmentsAndContingentLiabilitiesExplanatory"
+      xlink:to="ifrs_DisclosureOfCommitmentsAndContingentLiabilitiesExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_DisclosureOfCommitmentsAndContingentLiabilitiesExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>10</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_10_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfConsolidatedAndSeparateFinancialStatementsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfConsolidatedAndSeparateFinancialStatementsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfConsolidatedAndSeparateFinancialStatementsExplanatory"
+      xlink:to="ifrs_DisclosureOfConsolidatedAndSeparateFinancialStatementsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfConsolidatedAndSeparateFinancialStatementsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfConsolidatedAndSeparateFinancialStatementsExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>27</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Disclosure</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=27&amp;date=2012-03-27&amp;anchor=sect_Disclosure&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfEarningsPerShareExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfEarningsPerShareExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfEarningsPerShareExplanatory"
+      xlink:to="ifrs_DisclosureOfEarningsPerShareExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfEarningsPerShareExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfEarningsPerShareExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>33</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Disclosure</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=33&amp;date=2012-03-27&amp;anchor=sect_Disclosure&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfEmployeeBenefitsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfEmployeeBenefitsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfEmployeeBenefitsExplanatory"
+      xlink:to="ifrs_DisclosureOfEmployeeBenefitsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfEmployeeBenefitsExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>19</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Scope</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=19&amp;date=2012-03-27&amp;anchor=sect_Scope&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfEntitysReportableSegmentsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfEntitysReportableSegmentsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfEntitysReportableSegmentsExplanatory"
+      xlink:to="ifrs_DisclosureOfEntitysReportableSegmentsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfEntitysReportableSegmentsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfEntitysReportableSegmentsExplanatory_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>8</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Disclosure</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=8&amp;date=2012-03-27&amp;anchor=sect_Disclosure&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfEventsAfterReportingPeriodExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfEventsAfterReportingPeriodExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfEventsAfterReportingPeriodExplanatory"
+      xlink:to="ifrs_DisclosureOfEventsAfterReportingPeriodExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfEventsAfterReportingPeriodExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfEventsAfterReportingPeriodExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>10</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Disclosure</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=10&amp;date=2012-03-27&amp;anchor=sect_Disclosure&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfFairValueOfFinancialAssetsAndFinancialLiabilitiesAndReclassificationExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfFairValueOfFinancialAssetsAndFinancialLiabilitiesAndReclassificationExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfFairValueOfFinancialAssetsAndFinancialLiabilitiesAndReclassificationExplanatory"
+      xlink:to="ifrs_DisclosureOfFairValueOfFinancialAssetsAndFinancialLiabilitiesAndReclassificationExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfFairValueOfFinancialAssetsAndFinancialLiabilitiesAndReclassificationExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfFairValueOfFinancialAssetsAndFinancialLiabilitiesAndReclassificationExplanatory_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>30</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_30&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfFinancialAssetsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfFinancialAssetsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfFinancialAssetsExplanatory"
+      xlink:to="ifrs_DisclosureOfFinancialAssetsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfFinancialAssetsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfFinancialAssetsExplanatory_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_6&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfFinancialLiabilitiesExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfFinancialLiabilitiesExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfFinancialLiabilitiesExplanatory"
+      xlink:to="ifrs_DisclosureOfFinancialLiabilitiesExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfFinancialLiabilitiesExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfFinancialLiabilitiesExplanatory_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>6</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_6&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfGeneralInformationAboutFinancialStatementsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfGeneralInformationAboutFinancialStatementsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfGeneralInformationAboutFinancialStatementsExplanatory"
+      xlink:to="ifrs_DisclosureOfGeneralInformationAboutFinancialStatementsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfGeneralInformationAboutFinancialStatementsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfGeneralInformationAboutFinancialStatementsExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>51</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_51&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfIncomeTaxExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfIncomeTaxExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfIncomeTaxExplanatory"
+      xlink:to="ifrs_DisclosureOfIncomeTaxExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfIncomeTaxExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfIncomeTaxExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>12</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Disclosure</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=12&amp;date=2012-03-27&amp;anchor=sect_Disclosure&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfIntangibleAssetsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfIntangibleAssetsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfIntangibleAssetsExplanatory"
+      xlink:to="ifrs_DisclosureOfIntangibleAssetsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfIntangibleAssetsExplanatory_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfOtherProvisionsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfOtherProvisionsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfOtherProvisionsExplanatory"
+      xlink:to="ifrs_DisclosureOfOtherProvisionsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfOtherProvisionsExplanatory_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfPropertyPlantAndEquipmentExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfPropertyPlantAndEquipmentExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfPropertyPlantAndEquipmentExplanatory"
+      xlink:to="ifrs_DisclosureOfPropertyPlantAndEquipmentExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfPropertyPlantAndEquipmentExplanatory_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfRelatedPartyExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfRelatedPartyExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfRelatedPartyExplanatory"
+      xlink:to="ifrs_DisclosureOfRelatedPartyExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfRelatedPartyExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfRelatedPartyExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>24</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Section>Disclosures</ref:Section>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=24&amp;date=2012-03-27&amp;anchor=sect_Disclosures&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfRevenueExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfRevenueExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfRevenueExplanatory"
+      xlink:to="ifrs_DisclosureOfRevenueExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfRevenueExplanatory_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfShareCapitalReservesAndOtherEquityInterestExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfShareCapitalReservesAndOtherEquityInterestExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfShareCapitalReservesAndOtherEquityInterestExplanatory"
+      xlink:to="ifrs_DisclosureOfShareCapitalReservesAndOtherEquityInterestExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfShareCapitalReservesAndOtherEquityInterestExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfShareCapitalReservesAndOtherEquityInterestExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>79</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_79&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfSharebasedPaymentArrangementsExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfSharebasedPaymentArrangementsExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfSharebasedPaymentArrangementsExplanatory"
+      xlink:to="ifrs_DisclosureOfSharebasedPaymentArrangementsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfSharebasedPaymentArrangementsExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfSharebasedPaymentArrangementsExplanatory_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>2</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>44</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=2&amp;date=2012-03-27&amp;anchor=para_44&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfSignificantInvestmentsInSubsidiariesExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfSignificantInvestmentsInSubsidiariesExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfSignificantInvestmentsInSubsidiariesExplanatory"
+      xlink:to="ifrs_DisclosureOfSignificantInvestmentsInSubsidiariesExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfSignificantInvestmentsInSubsidiariesExplanatory_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfSummaryOfSignificantAccountingPoliciesExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfSummaryOfSignificantAccountingPoliciesExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfSummaryOfSignificantAccountingPoliciesExplanatory"
+      xlink:to="ifrs_DisclosureOfSummaryOfSignificantAccountingPoliciesExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfSummaryOfSignificantAccountingPoliciesExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DisclosureOfSummaryOfSignificantAccountingPoliciesExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>114</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_114_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DisclosureOfTradeAndOtherReceivablesExplanatory"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DisclosureOfTradeAndOtherReceivablesExplanatory" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DisclosureOfTradeAndOtherReceivablesExplanatory"
+      xlink:to="ifrs_DisclosureOfTradeAndOtherReceivablesExplanatory_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_DisclosureOfTradeAndOtherReceivablesExplanatory_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>10</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_10_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DistributionCosts"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DistributionCosts" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DistributionCosts" xlink:to="ifrs_DistributionCosts_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DistributionCosts_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DividendsPaidClassifiedAsFinancingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DividendsPaidClassifiedAsFinancingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DividendsPaidClassifiedAsFinancingActivities"
+      xlink:to="ifrs_DividendsPaidClassifiedAsFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DividendsPaidClassifiedAsFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DividendsPaidClassifiedAsFinancingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>31</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_31&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_DividendsPaid"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_DividendsPaid" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_DividendsPaid" xlink:to="ifrs_DividendsPaid_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DividendsPaid_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_DividendsPaid_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>107</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_107&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_EffectOfExchangeRateChangesOnCashAndCashEquivalents"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_EffectOfExchangeRateChangesOnCashAndCashEquivalents" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_EffectOfExchangeRateChangesOnCashAndCashEquivalents"
+      xlink:to="ifrs_EffectOfExchangeRateChangesOnCashAndCashEquivalents_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EffectOfExchangeRateChangesOnCashAndCashEquivalents_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EffectOfExchangeRateChangesOnCashAndCashEquivalents_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>25</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_25&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_EquityAndLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_EquityAndLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_EquityAndLiabilities"
+      xlink:to="ifrs_EquityAndLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityAndLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityAndLiabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_EquityAttributableToOwnersOfParent"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_EquityAttributableToOwnersOfParent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_EquityAttributableToOwnersOfParent"
+      xlink:to="ifrs_EquityAttributableToOwnersOfParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityAttributableToOwnersOfParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityAttributableToOwnersOfParent_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>r</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_r&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_EquityAttributableToOwnersOfParentMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_EquityAttributableToOwnersOfParentMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_EquityAttributableToOwnersOfParentMember"
+      xlink:to="ifrs_EquityAttributableToOwnersOfParentMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityAttributableToOwnersOfParentMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityAttributableToOwnersOfParentMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_Equity"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_Equity" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_Equity" xlink:to="ifrs_Equity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Equity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Equity_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_EquityMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_EquityMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_EquityMember" xlink:to="ifrs_EquityMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_EquityMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ExpenseOfRestructuringActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ExpenseOfRestructuringActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ExpenseOfRestructuringActivities"
+      xlink:to="ifrs_ExpenseOfRestructuringActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ExpenseOfRestructuringActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ExpenseOfRestructuringActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>98</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_98_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_FinanceCosts"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_FinanceCosts" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_FinanceCosts" xlink:to="ifrs_FinanceCosts_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_FinanceCosts_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_FinanceCosts_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>82</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_82_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_FinanceIncome"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_FinanceIncome" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_FinanceIncome" xlink:to="ifrs_FinanceIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_FinanceIncome_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>85</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_85&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_GainsLossesOnCashFlowHedgesBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_GainsLossesOnCashFlowHedgesBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_GainsLossesOnCashFlowHedgesBeforeTax"
+      xlink:to="ifrs_GainsLossesOnCashFlowHedgesBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_GainsLossesOnCashFlowHedgesBeforeTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_GainsLossesOnExchangeDifferencesOnTranslationBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_GainsLossesOnExchangeDifferencesOnTranslationBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_GainsLossesOnExchangeDifferencesOnTranslationBeforeTax"
+      xlink:to="ifrs_GainsLossesOnExchangeDifferencesOnTranslationBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_GainsLossesOnExchangeDifferencesOnTranslationBeforeTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax"
+      xlink:to="ifrs_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_GainsLossesOnRemeasuringAvailableforsaleFinancialAssetsBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_GainsLossesOnRemeasuringAvailableforsaleFinancialAssetsBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_GainsLossesOnRemeasuringAvailableforsaleFinancialAssetsBeforeTax"
+      xlink:to="ifrs_GainsLossesOnRemeasuringAvailableforsaleFinancialAssetsBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_GainsLossesOnRemeasuringAvailableforsaleFinancialAssetsBeforeTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_Goodwill"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_Goodwill" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_Goodwill" xlink:to="ifrs_Goodwill_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Goodwill_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Goodwill_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>c</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_c&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_GrossProfit"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_GrossProfit" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_GrossProfit" xlink:to="ifrs_GrossProfit_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_GrossProfit_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>103</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_103&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncomeTaxExpenseContinuingOperations"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncomeTaxExpenseContinuingOperations" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncomeTaxExpenseContinuingOperations"
+      xlink:to="ifrs_IncomeTaxExpenseContinuingOperations_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxExpenseContinuingOperations_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxExpenseContinuingOperations_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>12</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>79</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=12&amp;date=2012-03-27&amp;anchor=para_79&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome"
+      xlink:to="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncome_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss"
+      xlink:to="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Effective 2012-07-01</ref:Note>
+      <ref:Paragraph>91</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_91&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome"
+      xlink:to="ifrs_IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxRelatingToDefinedBenefitPlansOfOtherComprehensiveIncome_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>12</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Expiry date 2013-01-01</ref:Note>
+      <ref:Paragraph>81</ref:Paragraph>
+      <ref:Subparagraph>ab</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=12&amp;date=2012-03-27&amp;anchor=para_81_ab&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncomeTaxesPaidRefundClassifiedAsOperatingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncomeTaxesPaidRefundClassifiedAsOperatingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncomeTaxesPaidRefundClassifiedAsOperatingActivities"
+      xlink:to="ifrs_IncomeTaxesPaidRefundClassifiedAsOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxesPaidRefundClassifiedAsOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncomeTaxesPaidRefundClassifiedAsOperatingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>35</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_35&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncreaseDecreaseInCashAndCashEquivalents"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncreaseDecreaseInCashAndCashEquivalents" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncreaseDecreaseInCashAndCashEquivalents"
+      xlink:to="ifrs_IncreaseDecreaseInCashAndCashEquivalents_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseInCashAndCashEquivalents_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseInCashAndCashEquivalents_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>45</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_45&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl"
+      xlink:to="ifrs_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:Clause>iii</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d_iii&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncreaseDecreaseThroughOtherDistributionsToOwners"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncreaseDecreaseThroughOtherDistributionsToOwners" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncreaseDecreaseThroughOtherDistributionsToOwners"
+      xlink:to="ifrs_IncreaseDecreaseThroughOtherDistributionsToOwners_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughOtherDistributionsToOwners_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncreaseDecreaseThroughSharebasedPaymentTransactions"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncreaseDecreaseThroughSharebasedPaymentTransactions" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncreaseDecreaseThroughSharebasedPaymentTransactions"
+      xlink:to="ifrs_IncreaseDecreaseThroughSharebasedPaymentTransactions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughSharebasedPaymentTransactions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughSharebasedPaymentTransactions_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:Clause>iii</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d_iii&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncreaseDecreaseThroughTransfersAndOtherChangesEquity" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncreaseDecreaseThroughTransfersAndOtherChangesEquity"
+      xlink:to="ifrs_IncreaseDecreaseThroughTransfersAndOtherChangesEquity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughTransfersAndOtherChangesEquity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughTransfersAndOtherChangesEquity_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IncreaseDecreaseThroughTreasuryShareTransactions"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IncreaseDecreaseThroughTreasuryShareTransactions" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IncreaseDecreaseThroughTreasuryShareTransactions"
+      xlink:to="ifrs_IncreaseDecreaseThroughTreasuryShareTransactions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughTreasuryShareTransactions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IncreaseDecreaseThroughTreasuryShareTransactions_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IntangibleAssetsOtherThanGoodwill"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IntangibleAssetsOtherThanGoodwill" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IntangibleAssetsOtherThanGoodwill"
+      xlink:to="ifrs_IntangibleAssetsOtherThanGoodwill_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IntangibleAssetsOtherThanGoodwill_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IntangibleAssetsOtherThanGoodwill_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>c</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_c&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_InterestPaidClassifiedAsOperatingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_InterestPaidClassifiedAsOperatingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_InterestPaidClassifiedAsOperatingActivities"
+      xlink:to="ifrs_InterestPaidClassifiedAsOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_InterestPaidClassifiedAsOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_InterestPaidClassifiedAsOperatingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>31</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_31&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_InterestReceivedClassifiedAsOperatingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_InterestReceivedClassifiedAsOperatingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_InterestReceivedClassifiedAsOperatingActivities"
+      xlink:to="ifrs_InterestReceivedClassifiedAsOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_InterestReceivedClassifiedAsOperatingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_InterestReceivedClassifiedAsOperatingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>31</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_31&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IssueOfEquity"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IssueOfEquity" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IssueOfEquity" xlink:to="ifrs_IssueOfEquity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IssueOfEquity_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IssueOfEquity_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:Clause>iii</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d_iii&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IssuedCapital"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IssuedCapital" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IssuedCapital" xlink:to="ifrs_IssuedCapital_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_IssuedCapital_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_IssuedCapital_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_IssuedCapitalMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_IssuedCapitalMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_IssuedCapitalMember"
+      xlink:to="ifrs_IssuedCapitalMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IssuedCapitalMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_IssuedCapitalMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_Liabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_Liabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_Liabilities" xlink:to="ifrs_Liabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Liabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Liabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale"
+      xlink:to="ifrs_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncontrollingInterests"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncontrollingInterests" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncontrollingInterests"
+      xlink:to="ifrs_NoncontrollingInterests_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncontrollingInterests_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncontrollingInterests_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>q</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_q&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncontrollingInterestsMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncontrollingInterestsMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncontrollingInterestsMember"
+      xlink:to="ifrs_NoncontrollingInterestsMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncontrollingInterestsMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncontrollingInterestsMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncurrentAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncurrentAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncurrentAssets" xlink:to="ifrs_NoncurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>66</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_66&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners"
+      xlink:to="ifrs_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncurrentFinancialLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncurrentFinancialLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncurrentFinancialLiabilities"
+      xlink:to="ifrs_NoncurrentFinancialLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentFinancialLiabilities_ref">
+      <ref:Name>IFRS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>25</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IFRS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_25&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncurrentLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncurrentLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncurrentLiabilities"
+      xlink:to="ifrs_NoncurrentLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentLiabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>69</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_69&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncurrentPayables"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncurrentPayables" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncurrentPayables" xlink:to="ifrs_NoncurrentPayables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentPayables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentPayables_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>k</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_k&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncurrentProvisions"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncurrentProvisions" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncurrentProvisions"
+      xlink:to="ifrs_NoncurrentProvisions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentProvisions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentProvisions_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>l</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_l&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_NoncurrentReceivables"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_NoncurrentReceivables" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_NoncurrentReceivables"
+      xlink:to="ifrs_NoncurrentReceivables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentReceivables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_NoncurrentReceivables_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>h</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_h&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities"
+      xlink:to="ifrs_OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>16</ref:Paragraph>
+      <ref:Subparagraph>c</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_16_c&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities"
+      xlink:to="ifrs_OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>16</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_16_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans"
+      xlink:to="ifrs_OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>19</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Expiry date 2013-01-01</ref:Note>
+      <ref:Paragraph>120A</ref:Paragraph>
+      <ref:Subparagraph>h</ref:Subparagraph>
+      <ref:Clause>i</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=19&amp;date=2012-03-27&amp;anchor=para_120A_h_i&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxAvailableforsaleFinancialAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncomeBeforeTaxAvailableforsaleFinancialAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncomeBeforeTaxAvailableforsaleFinancialAssets"
+      xlink:to="ifrs_OtherComprehensiveIncomeBeforeTaxAvailableforsaleFinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxAvailableforsaleFinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxAvailableforsaleFinancialAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Expiry date 2015-01-01</ref:Note>
+      <ref:Paragraph>91</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_91_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxCashFlowHedges"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncomeBeforeTaxCashFlowHedges" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncomeBeforeTaxCashFlowHedges"
+      xlink:to="ifrs_OtherComprehensiveIncomeBeforeTaxCashFlowHedges_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxCashFlowHedges_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxCashFlowHedges_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>91</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_91_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncomeBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncomeBeforeTax"
+      xlink:to="ifrs_OtherComprehensiveIncomeBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation"
+      xlink:to="ifrs_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>91</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_91_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncome"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncome" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncome"
+      xlink:to="ifrs_OtherComprehensiveIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncome_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncome_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:Clause>ii</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d_ii&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncomeNetOfTaxActuarialGainsLossesOnDefinedBenefitPlans"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncomeNetOfTaxActuarialGainsLossesOnDefinedBenefitPlans" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncomeNetOfTaxActuarialGainsLossesOnDefinedBenefitPlans"
+      xlink:to="ifrs_OtherComprehensiveIncomeNetOfTaxActuarialGainsLossesOnDefinedBenefitPlans_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeNetOfTaxActuarialGainsLossesOnDefinedBenefitPlans_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeNetOfTaxActuarialGainsLossesOnDefinedBenefitPlans_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>19</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Expiry date 2013-01-01</ref:Note>
+      <ref:Paragraph>120A</ref:Paragraph>
+      <ref:Subparagraph>h</ref:Subparagraph>
+      <ref:Clause>i</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=19&amp;date=2012-03-27&amp;anchor=para_120A_h_i&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax"
+      xlink:to="ifrs_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Effective 2012-07-01</ref:Note>
+      <ref:Paragraph>IG6</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_IG6&amp;doctype=Implementation%20Guidance</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherCurrentFinancialAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherCurrentFinancialAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherCurrentFinancialAssets"
+      xlink:to="ifrs_OtherCurrentFinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherCurrentFinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherCurrentFinancialAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherCurrentFinancialLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherCurrentFinancialLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherCurrentFinancialLiabilities"
+      xlink:to="ifrs_OtherCurrentFinancialLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherCurrentFinancialLiabilities_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherCurrentNonfinancialAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherCurrentNonfinancialAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherCurrentNonfinancialAssets"
+      xlink:to="ifrs_OtherCurrentNonfinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_OtherCurrentNonfinancialAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherCurrentNonfinancialLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherCurrentNonfinancialLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherCurrentNonfinancialLiabilities"
+      xlink:to="ifrs_OtherCurrentNonfinancialLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_OtherCurrentNonfinancialLiabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherEquityInterest"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherEquityInterest" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherEquityInterest"
+      xlink:to="ifrs_OtherEquityInterest_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_OtherEquityInterest_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_OtherEquityInterest_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherEquityInterestMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherEquityInterestMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherEquityInterestMember"
+      xlink:to="ifrs_OtherEquityInterestMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherEquityInterestMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherEquityInterestMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherLongtermProvisions"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherLongtermProvisions" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherLongtermProvisions"
+      xlink:to="ifrs_OtherLongtermProvisions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherLongtermProvisions_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherNoncurrentFinancialAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherNoncurrentFinancialAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherNoncurrentFinancialAssets"
+      xlink:to="ifrs_OtherNoncurrentFinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherNoncurrentFinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherNoncurrentFinancialAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherNoncurrentFinancialLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherNoncurrentFinancialLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherNoncurrentFinancialLiabilities"
+      xlink:to="ifrs_OtherNoncurrentFinancialLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherNoncurrentFinancialLiabilities_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherNoncurrentNonfinancialAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherNoncurrentNonfinancialAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherNoncurrentNonfinancialAssets"
+      xlink:to="ifrs_OtherNoncurrentNonfinancialAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_OtherNoncurrentNonfinancialAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherNoncurrentNonfinancialLiabilities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherNoncurrentNonfinancialLiabilities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherNoncurrentNonfinancialLiabilities"
+      xlink:to="ifrs_OtherNoncurrentNonfinancialLiabilities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_OtherNoncurrentNonfinancialLiabilities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>55</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_55&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherOperatingIncomeExpense"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherOperatingIncomeExpense" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherOperatingIncomeExpense"
+      xlink:to="ifrs_OtherOperatingIncomeExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_OtherOperatingIncomeExpense_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>85</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_85&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherRevenue"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherRevenue" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherRevenue" xlink:to="ifrs_OtherRevenue_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherRevenue_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_OtherShorttermProvisions"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_OtherShorttermProvisions" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_OtherShorttermProvisions"
+      xlink:to="ifrs_OtherShorttermProvisions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherShorttermProvisions_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_OtherShorttermProvisions_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_PaymentsToAcquireOrRedeemEntitysShares"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_PaymentsToAcquireOrRedeemEntitysShares" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_PaymentsToAcquireOrRedeemEntitysShares"
+      xlink:to="ifrs_PaymentsToAcquireOrRedeemEntitysShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_PaymentsToAcquireOrRedeemEntitysShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_PaymentsToAcquireOrRedeemEntitysShares_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>17</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_17_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProceedsFromBorrowingsClassifiedAsFinancingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProceedsFromBorrowingsClassifiedAsFinancingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProceedsFromBorrowingsClassifiedAsFinancingActivities"
+      xlink:to="ifrs_ProceedsFromBorrowingsClassifiedAsFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ProceedsFromBorrowingsClassifiedAsFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ProceedsFromBorrowingsClassifiedAsFinancingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>17</ref:Paragraph>
+      <ref:Subparagraph>c</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_17_c&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets"
+      xlink:to="ifrs_ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>16</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_16&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProceedsFromIssuingShares"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProceedsFromIssuingShares" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProceedsFromIssuingShares"
+      xlink:to="ifrs_ProceedsFromIssuingShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ProceedsFromIssuingShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ProceedsFromIssuingShares_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>17</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_17_a&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities"
+      xlink:to="ifrs_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProfitLossAttributableToNoncontrollingInterests"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProfitLossAttributableToNoncontrollingInterests" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProfitLossAttributableToNoncontrollingInterests"
+      xlink:to="ifrs_ProfitLossAttributableToNoncontrollingInterests_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ProfitLossAttributableToNoncontrollingInterests_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ProfitLossAttributableToNoncontrollingInterests_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Expiry date 2012-07-01</ref:Note>
+      <ref:Paragraph>83</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:Clause>i</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_83_a_i&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProfitLossAttributableToOwnersOfParent"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProfitLossAttributableToOwnersOfParent" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProfitLossAttributableToOwnersOfParent"
+      xlink:to="ifrs_ProfitLossAttributableToOwnersOfParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ProfitLossAttributableToOwnersOfParent_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ProfitLossAttributableToOwnersOfParent_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Expiry date 2012-07-01</ref:Note>
+      <ref:Paragraph>83</ref:Paragraph>
+      <ref:Subparagraph>a</ref:Subparagraph>
+      <ref:Clause>ii</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_83_a_ii&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProfitLossBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProfitLossBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProfitLossBeforeTax"
+      xlink:to="ifrs_ProfitLossBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ProfitLossBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ProfitLossBeforeTax_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>103</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_103&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ProfitLoss"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ProfitLoss" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ProfitLoss" xlink:to="ifrs_ProfitLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ProfitLoss_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ProfitLoss_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:Clause>i</ref:Clause>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d_i&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_PropertyPlantAndEquipment"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_PropertyPlantAndEquipment" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_PropertyPlantAndEquipment"
+      xlink:to="ifrs_PropertyPlantAndEquipment_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_PropertyPlantAndEquipment_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_PropertyPlantAndEquipment_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>16</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>73</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=16&amp;date=2012-03-27&amp;anchor=para_73_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities"
+      xlink:to="ifrs_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets"
+      xlink:to="ifrs_PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>16</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_16&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_PurchaseOfTreasuryShares"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_PurchaseOfTreasuryShares" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_PurchaseOfTreasuryShares"
+      xlink:to="ifrs_PurchaseOfTreasuryShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_PurchaseOfTreasuryShares_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnAvailableforsaleFinancialAssetsBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ReclassificationAdjustmentsOnAvailableforsaleFinancialAssetsBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ReclassificationAdjustmentsOnAvailableforsaleFinancialAssetsBeforeTax"
+      xlink:to="ifrs_ReclassificationAdjustmentsOnAvailableforsaleFinancialAssetsBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnAvailableforsaleFinancialAssetsBeforeTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax"
+      xlink:to="ifrs_ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnCashFlowHedgesBeforeTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax"
+      xlink:to="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationBeforeTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationNetOfTax"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationNetOfTax" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationNetOfTax"
+      xlink:to="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationNetOfTax_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ReclassificationAdjustmentsOnExchangeDifferencesOnTranslationNetOfTax_ref" />
+    <loc xlink:type="locator"
+      xlink:label="ifrs_RepaymentsOfBorrowingsClassifiedAsFinancingActivities"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_RepaymentsOfBorrowingsClassifiedAsFinancingActivities" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_RepaymentsOfBorrowingsClassifiedAsFinancingActivities"
+      xlink:to="ifrs_RepaymentsOfBorrowingsClassifiedAsFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_RepaymentsOfBorrowingsClassifiedAsFinancingActivities_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_RepaymentsOfBorrowingsClassifiedAsFinancingActivities_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>7</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>17</ref:Paragraph>
+      <ref:Subparagraph>d</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=7&amp;date=2012-03-27&amp;anchor=para_17_d&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ResearchAndDevelopmentExpense"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ResearchAndDevelopmentExpense" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ResearchAndDevelopmentExpense"
+      xlink:to="ifrs_ResearchAndDevelopmentExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ResearchAndDevelopmentExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_ResearchAndDevelopmentExpense_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>38</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>126</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=38&amp;date=2012-03-27&amp;anchor=para_126&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ReserveOfCashFlowHedgesMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ReserveOfCashFlowHedgesMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ReserveOfCashFlowHedgesMember"
+      xlink:to="ifrs_ReserveOfCashFlowHedgesMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ReserveOfCashFlowHedgesMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ReserveOfCashFlowHedgesMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>108</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_108&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ReserveOfExchangeDifferencesOnTranslationMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ReserveOfExchangeDifferencesOnTranslationMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ReserveOfExchangeDifferencesOnTranslationMember"
+      xlink:to="ifrs_ReserveOfExchangeDifferencesOnTranslationMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ReserveOfExchangeDifferencesOnTranslationMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ReserveOfExchangeDifferencesOnTranslationMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>108</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_108&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_ReserveOfGainsAndLossesOnRemeasuringAvailableforsaleFinancialAssetsMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_ReserveOfGainsAndLossesOnRemeasuringAvailableforsaleFinancialAssetsMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_ReserveOfGainsAndLossesOnRemeasuringAvailableforsaleFinancialAssetsMember"
+      xlink:to="ifrs_ReserveOfGainsAndLossesOnRemeasuringAvailableforsaleFinancialAssetsMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ReserveOfGainsAndLossesOnRemeasuringAvailableforsaleFinancialAssetsMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_ReserveOfGainsAndLossesOnRemeasuringAvailableforsaleFinancialAssetsMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Note>Expiry date 2015-01-01</ref:Note>
+      <ref:Paragraph>108</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_108&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_RetainedEarnings"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_RetainedEarnings" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_RetainedEarnings" xlink:to="ifrs_RetainedEarnings_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_RetainedEarnings_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_RetainedEarnings_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_RetainedEarningsMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_RetainedEarningsMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_RetainedEarningsMember"
+      xlink:to="ifrs_RetainedEarningsMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_RetainedEarningsMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_RetainedEarningsMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_Revenue"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_Revenue" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_Revenue" xlink:to="ifrs_Revenue_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Revenue_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_Revenue_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>18</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>35</ref:Paragraph>
+      <ref:Subparagraph>b</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=18&amp;date=2012-03-27&amp;anchor=para_35_b&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_SalesAndMarketingExpense"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_SalesAndMarketingExpense" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_SalesAndMarketingExpense"
+      xlink:to="ifrs_SalesAndMarketingExpense_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2009/role/commonPracticeRef"
+      xlink:label="ifrs_SalesAndMarketingExpense_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>85</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_85&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_SharePremium"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_SharePremium" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_SharePremium" xlink:to="ifrs_SharePremium_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_SharePremium_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_SharePremium_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_SharePremiumMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_SharePremiumMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_SharePremiumMember" xlink:to="ifrs_SharePremiumMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_SharePremiumMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_SharePremiumMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_StatementOfChangesInEquityTable"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_StatementOfChangesInEquityTable" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_StatementOfChangesInEquityTable"
+      xlink:to="ifrs_StatementOfChangesInEquityTable_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_StatementOfChangesInEquityTable_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_StatementOfChangesInEquityTable_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_TradeAndOtherCurrentPayables"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_TradeAndOtherCurrentPayables" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_TradeAndOtherCurrentPayables"
+      xlink:to="ifrs_TradeAndOtherCurrentPayables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_TradeAndOtherCurrentPayables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_TradeAndOtherCurrentPayables_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>k</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_k&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_TradeAndOtherCurrentReceivables"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_TradeAndOtherCurrentReceivables" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_TradeAndOtherCurrentReceivables"
+      xlink:to="ifrs_TradeAndOtherCurrentReceivables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_TradeAndOtherCurrentReceivables_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_TradeAndOtherCurrentReceivables_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>54</ref:Paragraph>
+      <ref:Subparagraph>h</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_54_h&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_TreasuryShares"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_TreasuryShares" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_TreasuryShares" xlink:to="ifrs_TreasuryShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_TreasuryShares_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/exampleRef"
+      xlink:label="ifrs_TreasuryShares_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>78</ref:Paragraph>
+      <ref:Subparagraph>e</ref:Subparagraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_78_e&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+    <loc xlink:type="locator"
+      xlink:label="ifrs_TreasurySharesMember"
+      xlink:href="http://xbrl.ifrs.org/taxonomy/2013-03-28/ifrs-cor_2013-03-28.xsd#ifrs_TreasurySharesMember" />
+    <referenceArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-reference"
+      xlink:from="ifrs_TreasurySharesMember"
+      xlink:to="ifrs_TreasurySharesMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_TreasurySharesMember_ref" />
+    <reference xlink:type="resource"
+      xlink:role="http://www.xbrl.org/2003/role/disclosureRef"
+      xlink:label="ifrs_TreasurySharesMember_ref">
+      <ref:Name>IAS</ref:Name>
+      <ref:Number>1</ref:Number>
+      <ref:IssueDate>2012-01-01</ref:IssueDate>
+      <ref:Paragraph>106</ref:Paragraph>
+      <ref:URI>http://eifrs.ifrs.org/eifrs/XBRL?type=IAS&amp;num=1&amp;date=2012-03-27&amp;anchor=para_106&amp;doctype=Standard</ref:URI>
+      <ref:URIDate>2013-03-28</ref:URIDate>
+    </reference>
+  </referenceLink>
+</linkbase>
