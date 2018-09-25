@@ -1,5 +1,9 @@
 # Overview of Conceptual Model of Financial Report
 
+[Financial Report Semantics and Dynamics Theory](http://xbrl.squarespace.com/fin-report-sem-dyn-theory/)
+
+[Conceptual Model of a Digital Financial Report](http://xbrlsite.azurewebsites.net/2017/IntelligentDigitalFinancialReporting/Part02_Chapter05.1_IntroductionToTheConceptualModelOfDigitalFinancialReport.pdf)
+
 * A **fact** defines a single, observable, reportable piece of information contained within a financial report, or fact value, contextualized for unambiguous interpretation or analysis by one or more distinguishing characteristics.  Facts can be numbers, text, or prose.
 * A financial **report** provides facts.
 * Facts can be organized into report fragments or sets.
