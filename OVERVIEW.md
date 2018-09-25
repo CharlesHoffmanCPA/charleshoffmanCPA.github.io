@@ -13,4 +13,5 @@
 * A fact can be **PART OF** (an intersection between) two or more report fragments.
 * A **fact table** is a set of facts which go together for some specific reason which can be described. (A fact table correlates with a report fragment).
 * **Grain** is the level of depth of information or granularity.
+
 [Multidimensional Model](http://xbrl.squarespace.com/journal/2016/3/18/introduction-to-the-multidimensional-model-for-professional.html)
