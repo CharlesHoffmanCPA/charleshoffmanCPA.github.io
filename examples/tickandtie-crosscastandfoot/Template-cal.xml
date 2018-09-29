@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Taxonomy Calculation Links linkbase based on XBRL standard Version 2.1.
+Created by UBmatrix Taxonomy Designer 3.0.3.2436 (2009-06-02 13:18).  
+Contact www.ubmatrix.com
+Copyright (c) 2002-2018 UBmatrix inc., All Rights Reserved
+Produced on 2018-09-29 11:08:22
+-->
+<linkbase
+  xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xsi:schemaLocation="
+    http://www.xbrl.org/2003/linkbase 
+      http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    ">
+  <roleRef xlink:type="simple"
+    xlink:href="Template.xsd#SomeNetwork"
+    roleURI="http://www.template.com/SomeNetwork" />
+  <calculationLink xlink:type="extended"
+    xlink:role="http://www.template.com/SomeNetwork">
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesAmortizedCost"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesAmortizedCost" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesAmortizedCost"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesAmortizedCost"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesAmortizedCost"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesAmortizedCost"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesAmortizedCost"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost"
+      order="5"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtSecurities"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtSecurities" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesDebtSecurities"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue"
+      order="1"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesDebtSecurities"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue"
+      order="2"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesDebtSecurities"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue"
+      order="3"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesDebtSecurities"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue"
+      order="4"
+      weight="1"
+      use="optional" />
+    <loc xlink:type="locator"
+      xlink:label="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue"
+      xlink:href="http://xbrl.fasb.org/us-gaap/2017/elts/us-gaap-2017-01-31.xsd#us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue" />
+    <calculationArc xlink:type="arc"
+      xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item"
+      xlink:from="us-gaap_AvailableForSaleSecuritiesDebtSecurities"
+      xlink:to="us-gaap_AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue"
+      order="5"
+      weight="1"
+      use="optional" />
+  </calculationLink>
+</linkbase>

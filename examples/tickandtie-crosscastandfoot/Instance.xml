@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='us-ascii' standalone='yes'?>
+<!-- Created by Charles Hoffman, CPA: 2013-05-15 -->
+<xbrl 
+	xmlns='http://www.xbrl.org/2003/instance' 
+	xmlns:xbrll='http://www.xbrl.org/2003/linkbase' 
+	xmlns:xlink='http://www.w3.org/1999/xlink' 
+	xmlns:iso4217='http://www.xbrl.org/2003/iso4217' 
+	xmlns:xbrldi='http://xbrl.org/2006/xbrldi' 
+	xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xmlns:dei='http://xbrl.sec.gov/dei/2014-01-31' 
+	xmlns:us-gaap='http://fasb.org/us-gaap/2017-01-31' 
+	xmlns:us-roles='http://fasb.org/us-roles/2017-01-31' 
+	xmlns:us-types='http://fasb.org/us-types/2017-01-31' 
+   xmlns:negated='http://www.xbrl.org/2009/role/negated'
+
+   xmlns:added='http://www.template.com/added'
+   
+   xsi:schemaLocation='http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd'>
+
+  <xbrll:schemaRef xlink:href='Template.xsd' xlink:type='simple' xlink:arcrole='http://www.xbrl.org/2003/linkbase' />
+  <xbrll:linkbaseRef xlink:type='simple' xlink:href='Template_formulas.xml' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase'/>
+  
+  <context id="I-2011">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+    </entity>
+    <period>
+      <instant>2011-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2011-TB">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:MajorTypesOfDebtAndEquitySecuritiesAxis">us-gaap:USTreasurySecuritiesMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2011-12-31</instant>
+    </period>
+  </context>
+
+  <context id="I-2011-CB">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:MajorTypesOfDebtAndEquitySecuritiesAxis">us-gaap:CorporateBondSecuritiesMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2011-12-31</instant>
+    </period>
+  </context>
+
+
+  <context id="I-2011-SD">
+    <entity>
+      <identifier scheme="http://www.sec.gov/CIK">0000000001</identifier>
+      <segment>
+      	<xbrldi:explicitMember dimension="us-gaap:MajorTypesOfDebtAndEquitySecuritiesAxis">us-gaap:SovereignDebtSecuritiesMember</xbrldi:explicitMember>
+      </segment>
+    </entity>
+    <period>
+      <instant>2011-12-31</instant>
+    </period>
+  </context>
+
+
+   <unit id='U-Monetary'>
+      <measure>iso4217:USD</measure>
+   </unit>
+
+	<!-- Total -->
+	<!-- Amortized cost -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost>
+
+   <us-gaap:AvailableForSaleSecuritiesAmortizedCost contextRef="I-2011" unitRef="U-Monetary" decimals="-6">1500000000</us-gaap:AvailableForSaleSecuritiesAmortizedCost>
+
+
+	<!-- Estimated fair value -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue contextRef="I-2011" unitRef="U-Monetary" decimals="-6">300000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue>
+
+   <us-gaap:AvailableForSaleSecuritiesDebtSecurities contextRef="I-2011" unitRef="U-Monetary" decimals="-6">1500000000</us-gaap:AvailableForSaleSecuritiesDebtSecurities>
+
+
+
+	<!-- TB -->
+	<!-- Amortized cost -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost>
+
+   <us-gaap:AvailableForSaleSecuritiesAmortizedCost contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">500000000</us-gaap:AvailableForSaleSecuritiesAmortizedCost>
+
+
+	<!-- Estimated fair value -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue>
+
+   <us-gaap:AvailableForSaleSecuritiesDebtSecurities contextRef="I-2011-TB" unitRef="U-Monetary" decimals="-6">500000000</us-gaap:AvailableForSaleSecuritiesDebtSecurities>
+
+
+	<!-- CB -->
+	<!-- Amortized cost -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost>
+
+   <us-gaap:AvailableForSaleSecuritiesAmortizedCost contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">500000000</us-gaap:AvailableForSaleSecuritiesAmortizedCost>
+
+
+	<!-- Estimated fair value -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue>
+
+   <us-gaap:AvailableForSaleSecuritiesDebtSecurities contextRef="I-2011-CB" unitRef="U-Monetary" decimals="-6">500000000</us-gaap:AvailableForSaleSecuritiesDebtSecurities>
+
+
+	<!-- SD -->
+	<!-- Amortized cost -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsAmortizedCost>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateAmortizedCost>
+
+   <us-gaap:AvailableForSaleSecuritiesAmortizedCost contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">500000000</us-gaap:AvailableForSaleSecuritiesAmortizedCost>
+
+
+	<!-- Estimated fair value -->
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithinOneYearFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterOneThroughFiveYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterFiveThroughTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesAfterTenYearsFairValue>
+   <us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">100000000</us-gaap:AvailableForSaleSecuritiesDebtMaturitiesWithoutSingleMaturityDateFairValue>
+
+   <us-gaap:AvailableForSaleSecuritiesDebtSecurities contextRef="I-2011-SD" unitRef="U-Monetary" decimals="-6">500000000</us-gaap:AvailableForSaleSecuritiesDebtSecurities>
+
+
+</xbrl>
